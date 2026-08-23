@@ -1,6 +1,7 @@
 このリポジトリの目的は「Ramsey数を解く」ではなく、Codex + ChatGPTの数学研究ワークフローを検証することにある。
 
 リポジトリの構成は以下を想定している。
+```text
 Ramsey-benchmark/
 ├── README.md
 ├── methodology.md
@@ -17,3 +18,4 @@ Ramsey-benchmark/
 │   └── chatgpt-review.md
 └── results/
     └── benchmark-summary.md
+```
