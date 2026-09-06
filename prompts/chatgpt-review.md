@@ -1,57 +1,57 @@
-# ChatGPT Independent Review Protocol
+# ChatGPT 独立レビュープロトコル
 
-Review Git as the source of truth. Do not rely on the Codex conversation, self-assessment, or unstored reasoning.
+Gitをsource of truthとしてレビューする。Codexの会話履歴、自己評価、Gitに保存されていない推論には依存しない。
 
-## Inputs
+## 入力
 
-At minimum, receive:
+最低限、次を受け取る。
 
-- benchmark path;
-- base commit before the Goal;
-- result commit after the Goal;
-- files changed by the Goal.
+- benchmarkのパス
+- Goal開始前のbase commit
+- Goal終了後のresult commit
+- Goalによって変更されたファイル
 
-Prefer reviewing the commit diff first, then inspect dependencies as needed.
+まずcommit diffを確認し、必要に応じて依存するファイルやClaimを参照する。
 
-## Review posture
+## レビュー姿勢
 
-Attempt to falsify the claimed result before accepting it.
+受理する前に、まず主張の反証を試みる。
 
-Check in particular:
+特に次を確認する。
 
-1. the exact statement being claimed;
-2. whether the evidence proves that statement rather than a nearby one;
-3. whether computational exploration is being mistaken for exhaustive proof;
-4. whether all cases are covered;
-5. whether WLOG or symmetry reductions are justified;
-6. whether edge cases, integrality, and boundary conditions are handled;
-7. whether the proof depends circularly on another claim;
-8. whether a certificate can be independently checked from the repository alone;
-9. whether a fresh session could resume without hidden conversation context.
+1. 何を正確に主張しているか
+2. 根拠がその主張そのものを証明しているか
+3. 計算探索を完全証明と取り違えていないか
+4. 全ケースを尽くしているか
+5. WLOGや対称性による簡約が正当か
+6. 端点、整数性、境界条件が扱われているか
+7. 別Claimへの依存に循環がないか
+8. 証明書をGitだけから独立に検査できるか
+9. fresh sessionが隠れた会話コンテキストなしに研究を再開できるか
 
-## For lower-bound certificates
+## 下界証明書のレビュー
 
-Independently verify that:
+独立に次を検証する。
 
-- the encoded object has the claimed number of vertices;
-- the graph/coloring representation is unambiguous;
-- no forbidden red triangle exists;
-- no forbidden blue `K_4` exists;
-- the verifier actually checks the full relevant search space for the fixed certificate.
+- 符号化された対象が主張された頂点数を持つこと
+- グラフまたは彩色の表現が曖昧でないこと
+- 禁止された赤い三角形が存在しないこと
+- 禁止された青い `K_4` が存在しないこと
+- verifierが固定された証明書について必要な全組合せを実際に検査していること
 
-Where practical, use a verification path distinct from the discovery path.
+可能な限り、発見経路とは異なる方法で検証する。
 
-## Required output
+## 必須出力
 
-Update `verification.md` with:
+`verification.md` に次を記録する。
 
-- Claim ID;
-- source/result commit;
-- verification method;
-- whether the verification path is independent;
-- `ACCEPTED`, `REJECTED`, or `NEEDS_REVISION`;
-- any remaining assumptions or gaps.
+- Claim ID
+- source/result commit
+- 検証方法
+- 検証経路が発見経路から独立しているか
+- `ACCEPTED`、`REJECTED`、`NEEDS_REVISION` のいずれか
+- 残っている仮定・ギャップ
 
-If accepted, update `research-notes.md` so mathematical status and review status remain distinguishable.
+受理した場合でも、数学的状態とレビュー状態が混ざらないよう `research-notes.md` を更新する。
 
-Do not silently repair a failed proof and then approve the original claim. Record the failure and create a new Goal or revision path.
+失敗した証明をreviewer側で密かに修正し、そのまま元のClaimを承認してはならない。失敗を記録し、新しいGoalまたは修正経路を作る。
