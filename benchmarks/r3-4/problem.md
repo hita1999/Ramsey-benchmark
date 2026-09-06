@@ -1,32 +1,32 @@
-# R(3,4) — Problem
+# R(3,4) — 問題設定
 
-## Objective
+## 目的
 
-Determine the least integer `N` such that every red/blue coloring of the edges of `K_N` contains either:
+`K_N` の各辺を赤・青の2色で塗ったとき、必ず次のいずれかが現れるような最小の整数 `N` を決定する。
 
-- a red triangle `K_3`, or
-- a blue clique `K_4`.
+- 赤い三角形 `K_3`
+- 青い完全グラフ `K_4`
 
-Equivalently, in graph language, determine the least `N` such that every graph on `N` vertices contains a triangle or its complement contains a `K_4`.
+グラフの言葉では、`N` 頂点の任意のグラフについて、そのグラフ自身が三角形を含むか、補グラフが `K_4` を含むような最小の `N` を求めることと同値である。
 
-## Benchmark constraints
+## ベンチマーク上の制約
 
-- Do not search the web, papers, databases, reference implementations, or other external sources for the known value or known proof of `R(3,4)`.
-- Do not intentionally rely on a memorized exact value, known extremal graph, or known proof. If such information is recalled, record the contamination explicitly in `research-notes.md` and avoid using it as evidence.
-- Standard graph theory, combinatorics, elementary linear algebra, SAT/SMT, Python, and exhaustive finite computation are allowed.
-- Computational observations are not mathematical proofs unless completeness of the computation is established and the computation is reproducible.
-- A concrete coloring/graph is acceptable as a finite certificate for a lower bound once independently checkable.
+- `R(3,4)` の既知値や既知証明を得る目的で、Web、論文、データベース、既知実装その他の外部情報源を検索してはならない。
+- 記憶している既知の正確な値、extremal graph、critical graph、既知証明を意図的に根拠として利用してはならない。そうした情報を想起した場合は、`research-notes.md` に情報汚染として明示し、その情報自体を証拠として用いない。
+- 標準的なグラフ理論、組合せ論、初等線形代数、SAT/SMT、Python、有限全探索は利用してよい。
+- 計算による観察は、計算の完全性が示され、かつ再現可能でない限り、数学的証明として扱わない。
+- 具体的な彩色またはグラフは、独立に検査可能であれば下界の有限証明書として利用できる。
 
-## Required final artifacts
+## 最終成果物
 
-A completed benchmark should eventually contain:
+ベンチマーク完了時には、最終的に次を満たすことを目標とする。
 
-1. a valid lower-bound certificate;
-2. a rigorous upper-bound argument;
-3. a self-contained `proof.md`;
-4. an independent assessment in `verification.md`;
-5. enough information to reproduce any computation used as evidence.
+1. 妥当な下界証明書
+2. 厳密な上界証明
+3. 単独で追跡可能な `proof.md`
+4. 独立検証を記録した `verification.md`
+5. 計算を根拠として用いる場合、その計算を再現するために十分な情報
 
-## Source of truth
+## Source of Truth
 
-The Git repository, not any model's conversation history, is the source of truth for benchmark state. Research may stop and resume from Git alone.
+研究状態のsource of truthは、各モデルの会話履歴ではなくGitリポジトリとする。研究はGitに保存された状態だけから停止・再開できなければならない。
