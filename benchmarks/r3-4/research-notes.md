@@ -1,59 +1,59 @@
-# R(3,4) — Research Notes
+# R(3,4) — 研究ノート
 
-## Current status
+## 現在の状態
 
-Benchmark initialized. No mathematical claim is yet accepted as established by this repository.
+ベンチマークを初期化した。現時点で、このリポジトリ上で確定事項として受理された数学的主張はない。
 
-## Claim ledger
+## Claim台帳
 
-Use one entry per substantive claim.
+重要な主張ごとに1件ずつ記録する。
 
-### Template
+### テンプレート
 
 - Claim ID: `Cxxx`
-- Statement:
-- Mathematical status: `UNVERIFIED | CONJECTURE | COMPUTATIONALLY VERIFIED | PROVEN | REFUTED`
-- Evidence:
-- Dependencies:
-- Independent verification:
-- Introduced by Goal:
+- 命題:
+- 数学的状態: `UNVERIFIED | CONJECTURE | COMPUTATIONALLY VERIFIED | PROVEN | REFUTED`
+- 根拠:
+- 依存するClaim:
+- 独立検証:
+- 導入したGoal:
 
-## Established results
+## 確定した結果
 
-_None yet._
+_まだなし。_
 
-## Computationally verified results
+## 計算によって確認された結果
 
-_None yet._
+_まだなし。_
 
-## Conjectures / unverified claims
+## 予想・未検証の主張
 
-_None yet._
+_まだなし。_
 
-## Refuted hypotheses / failed approaches
+## 反証された仮説・失敗した方針
 
-_None yet._
+_まだなし。_
 
-## Known contamination
+## 既知情報による汚染
 
-_None recorded._
+_記録なし。_
 
-If a model recalls the known value, a known extremal construction, or a known proof, record that fact here before continuing.
+モデルが既知値、既知のextremal/critical graph、既知証明などを想起した場合は、研究を続ける前にその事実をここへ記録する。
 
-## Current frontier
+## 現在のフロンティア
 
-### Lower bound
+### 下界
 
-No certificate has yet been accepted.
+受理済みの証明書はまだない。
 
-### Upper bound
+### 上界
 
-No proof has yet been accepted.
+受理済みの証明はまだない。
 
-## Current bottleneck
+## 現在のボトルネック
 
-Produce the first independently checkable lower-bound certificate without using an external known solution.
+外部の既知解を利用せず、独立に検査可能な最初の下界証明書を作ること。
 
-## Next Goal
+## 次のGoal
 
-`G001`: search for and save a concrete coloring/graph giving a nontrivial lower bound, together with a reproducible verifier.
+`G001`: 非自明な下界を与える具体的な彩色またはグラフを探索して保存し、それを再現可能に検証するverifierを用意する。
