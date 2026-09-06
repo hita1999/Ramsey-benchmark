@@ -1,96 +1,98 @@
-# Codex Goal Protocol
+# Codex Goal プロトコル
 
-Use this document to start a bounded research task from Git. The repository is the source of truth; conversation history is optional and must not be required for resumption.
+この文書は、Gitに保存された状態から境界付きの研究タスクを開始するために用いる。source of truthはGitリポジトリであり、会話履歴は任意で、再開に必須であってはならない。
 
-## Goal contract
+## Goal契約
 
-Every Goal should specify:
+各Goalでは、少なくとも次を明示する。
 
 - Goal ID
-- Benchmark
+- 対象benchmark
 - Base commit
-- Research question
-- Allowed methods
-- Forbidden information
-- Required artifacts
-- Acceptance criteria
-- Token / compute budget
-- Checkpoint policy
-- Stop conditions
+- 研究課題
+- 許可する手段
+- 禁止する情報
+- 必須成果物
+- 達成条件
+- Token / 計算予算
+- Checkpoint方針
+- 停止条件
 
-At Goal completion or interruption, update Git with:
+Goalの完了時または中断時には、Gitへ次を保存する。
 
-1. newly established claims;
-2. computational-only findings;
-3. refuted hypotheses / failed approaches;
-4. remaining cases;
-5. current bottleneck;
-6. concrete next-step recommendation;
-7. enough information for a fresh session to resume.
+1. 新たに確定したClaim
+2. 計算でのみ確認された事項
+3. 反証された仮説・失敗した方針
+4. 残っているケース
+5. 現在のボトルネック
+6. 次に試すべき具体的な方針
+7. 新しいセッションが研究を再開するために十分な情報
 
-Do not report budget exhaustion as mathematical success.
+予算切れを数学的成功として報告してはならない。
 
 ---
 
-# G001 — Construct a lower-bound certificate for R(3,4)
+# G001 — R(3,4) の下界証明書を構成する
 
-## Benchmark
+## 対象benchmark
 
 `benchmarks/r3-4/problem.md`
 
-## Research question
+## 研究課題
 
-Without consulting external known solutions, find a concrete red/blue coloring (equivalently, a graph) on as many vertices as you can that contains neither a red triangle nor a blue `K_4`.
+外部の既知解を参照せず、赤い三角形も青い `K_4` も含まない赤青彩色（同値にグラフ）を、可能な限り多くの頂点上で具体的に構成する。
 
-The immediate objective is not to determine the exact Ramsey number. The objective is to create the first reproducible, independently checkable lower-bound certificate in this benchmark.
+このGoalの直接の目的は、Ramsey数の正確な値を決定することではない。最初の再現可能かつ独立に検査可能な下界証明書を作成することを目的とする。
 
-## Allowed methods
+## 許可する手段
 
-- direct mathematical construction;
-- Python search;
-- brute force where feasible;
-- local search / randomized search;
-- SAT/SMT or other finite constraint solving;
-- symmetry reduction.
+- 直接的な数学的構成
+- Pythonによる探索
+- 実行可能な範囲でのbrute force
+- local search / randomized search
+- SAT/SMTその他の有限制約充足
+- 対称性による簡約
 
-## Forbidden information
+## 禁止する情報
 
-- web search;
-- papers, OEIS, databases, benchmark repositories, or reference implementations;
-- intentionally using a memorized exact value, known critical graph, or known proof.
+- Web検索
+- 論文、OEIS、データベース、benchmark repository、reference implementation
+- 記憶している既知の正確な値、既知critical graph、既知証明を意図的に利用すること
 
-If prior knowledge is involuntarily recalled, record it under `Known contamination` in `research-notes.md` and do not use it as evidence.
+事前知識を意図せず想起した場合は、`research-notes.md` の「既知情報による汚染」に記録し、その情報自体を根拠として利用しない。
 
-## Required artifacts
+## 必須成果物
 
-At minimum:
+最低限、次を残す。
 
-1. an explicit certificate (edge list, adjacency representation, or coloring representation);
-2. a verifier that checks the certificate for both forbidden configurations;
-3. instructions to reproduce the verification;
-4. an update to `research-notes.md` with a Claim ID and precise status;
-5. a concise record of failed search approaches that would otherwise be repeated by a fresh session.
+1. 明示的な証明書（edge list、adjacency表現、彩色表現など）
+2. 証明書が2種類の禁止構造を含まないことを検査するverifier
+3. 検証を再現するための手順
+4. Claim IDと正確な状態を記録した `research-notes.md` の更新
+5. fresh sessionが同じ失敗を繰り返さないために必要な、失敗した探索方針の簡潔な記録
 
-Put code and certificates under `benchmarks/r3-4/` in clearly named files or subdirectories.
+コードと証明書は `benchmarks/r3-4/` 配下の分かりやすいファイルまたはサブディレクトリに置く。
 
-## Acceptance criteria
+## 達成条件
 
-The Goal is `SOLVED` only if:
+次の全てを満たす場合に限り、このGoalを `SOLVED` とする。
 
-- a concrete certificate is stored in Git;
-- the verifier deterministically confirms the claimed avoidance properties;
-- the claimed lower bound follows directly from that certificate;
-- `research-notes.md` is updated so another session can understand exactly what has been established.
+- 具体的な証明書がGitに保存されている。
+- verifierが決定的に、主張された回避条件を確認する。
+- その証明書から主張する下界が直接導かれる。
+- 別セッションが何を確定したのか正確に把握できるよう `research-notes.md` が更新されている。
 
-Independent verification is not required to finish G001; that is a separate review step. Until reviewed, do not describe the result as independently verified.
+独立検証はG001完了の必須条件ではない。これは別のreview工程で行う。reviewを通過するまでは、結果を「独立検証済み」と表現しない。
 
-## Budget
+## 予算
 
-Use a bounded research run. Prefer simple, auditable computation over elaborate infrastructure for this first benchmark. If the run is nearing its token or compute limit, checkpoint partial progress rather than compressing reasoning into an unsupported conclusion.
+研究実行には明確な上限を設ける。最初のbenchmarkでは、複雑な基盤を作るより、単純で監査しやすい計算を優先する。
 
-## Stop conditions
+Tokenまたは計算予算の上限が近づいた場合、根拠の弱い結論へ圧縮するのではなく、途中成果をcheckpointとしてGitへ保存する。
 
-End with exactly one research outcome classification:
+## 停止条件
+
+終了時には、研究結果を必ず次のいずれか1つに分類する。
 
 - `SOLVED`
 - `PARTIAL_PROGRESS`
@@ -98,4 +100,4 @@ End with exactly one research outcome classification:
 - `BLOCKED`
 - `NO_PROGRESS`
 
-Regardless of outcome, commit or otherwise save the durable research state before stopping.
+どの分類で終了しても、停止前に再開可能な研究状態をGitへ保存する。
