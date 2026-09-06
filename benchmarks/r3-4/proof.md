@@ -1,7 +1,7 @@
-# R(3,4) — Proof
+# R(3,4) — 証明
 
-No final proof has been accepted yet.
+現時点では、最終証明として受理された内容はない。
 
-Only claims whose mathematical status is `PROVEN` and whose dependencies are auditable should be incorporated here.
+ここには、数学的状態が `PROVEN` であり、依存関係を監査可能な主張のみを組み込む。
 
-Computational evidence may appear only when the computation itself forms part of a complete finite proof and its completeness and reproducibility are documented.
+計算結果を証明の一部として利用する場合は、その計算自体が完全な有限証明を構成し、完全性と再現可能性が文書化されている場合に限る。
