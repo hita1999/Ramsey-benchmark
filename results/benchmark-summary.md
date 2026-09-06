@@ -4,7 +4,7 @@
 
 | Benchmark | 状態 | 下界 | 上界 | 検証 | Goal | 備考 |
 |---|---|---:|---:|---|---:|---|
-| R(3,4) | PARTIAL_PROGRESS | ≥9 | — | 自己検算済み・独立レビュー待ち | 完了1件 | G001 SOLVED、C001/C002に自足的証明 |
+| R(3,4) | PARTIAL_PROGRESS | ≥9 | — | C001/C002 独立レビュー ACCEPTED | 完了1件 | G001 SOLVED、DiscoveryはCONTAMINATED |
 | R(3,5) | NOT_STARTED | — | — | — | 0 | — |
 | R(4,4) | NOT_STARTED | — | — | — | 0 | — |
 
