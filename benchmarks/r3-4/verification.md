@@ -1,37 +1,37 @@
-# R(3,4) — Independent Verification
+# R(3,4) — 独立検証
 
-## Review status
+## レビュー状態
 
-No claim has yet passed independent verification.
+現時点で、独立検証を通過したClaimはない。
 
-## Verification record template
+## 検証記録テンプレート
 
-For each reviewed claim, record:
+各Claimについて、次を記録する。
 
 - Claim ID:
-- Source commit:
-- Claim under review:
-- Discovery method:
-- Verification method:
-- Independent from discovery path: `YES | PARTIAL | NO`
-- Result: `ACCEPTED | REJECTED | NEEDS_REVISION`
-- Remaining assumptions or gaps:
-- Reviewer / model configuration:
-- Notes:
+- 対象コミット:
+- 検証対象の主張:
+- 発見方法:
+- 検証方法:
+- 発見経路から独立しているか: `YES | PARTIAL | NO`
+- 結果: `ACCEPTED | REJECTED | NEEDS_REVISION`
+- 残っている仮定・ギャップ:
+- Reviewer / モデル設定:
+- 備考:
 
-## Required checks
+## 必須チェック
 
-For lower-bound certificates:
+### 下界証明書
 
-1. the graph/coloring is explicitly encoded;
-2. a verifier checks every forbidden configuration;
-3. the verifier is simple enough to audit or has an independent implementation;
-4. the certificate and verifier produce the claimed result from a fresh checkout.
+1. グラフまたは彩色が明示的に符号化されていること。
+2. verifierが禁止された全ての構造を検査していること。
+3. verifierが監査可能な程度に単純であるか、独立実装による再検査が可能であること。
+4. fresh checkoutから証明書とverifierだけで主張された結果を再現できること。
 
-For upper-bound arguments:
+### 上界証明
 
-1. every case is covered;
-2. WLOG/symmetry reductions are justified;
-3. computational observations are not silently promoted to proofs;
-4. dependency chains contain no circular reasoning;
-5. boundary and integrality cases are checked.
+1. 全ケースが尽くされていること。
+2. WLOGや対称性による簡約が正当化されていること。
+3. 計算上の観察が暗黙に証明へ昇格していないこと。
+4. Claimの依存関係に循環論法がないこと。
+5. 境界条件・整数性・偶奇性などが確認されていること。
