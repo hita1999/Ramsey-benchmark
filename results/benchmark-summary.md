@@ -5,7 +5,7 @@
 | Benchmark | 状態 | 下界 | 上界 | 検証 | Goal | 備考 |
 |---|---|---:|---:|---|---:|---|
 | R(3,4) | SOLVED | ≥9 | ≤9 | C001〜C006 独立レビュー ACCEPTED | 完了2件 | R(3,4)=9独立検証済み、Discoveryは両GoalともCONTAMINATED |
-| R(3,5) | INITIALIZED | — | — | 未開始 | 0 | R35-G001準備済み。fresh sessionで固定予算の下界探索を実施予定 |
+| R(3,5) | PARTIAL_PROGRESS | ≥14 | — | R35-C001/C002 PROVEN × UNREVIEWED | 完了1件 | R35-G001 SOLVED。13頂点証明書、Discovery CONTAMINATED |
 | R(4,4) | NOT_STARTED | — | — | — | 0 | — |
 
 ## 収集する指標
@@ -30,4 +30,11 @@
 
 ## Stage 2
 
-R(3,5)を初期化した。`benchmarks/r3-5/problem.md` と `benchmarks/r3-5/goals/G001.md` を起点に、会話履歴を引き継がないfresh sessionで最初の下界探索Goalを実行する。
+R35-G001をfresh sessionから実施し、500万候補・探索約120.57秒で13頂点26辺の証明書を保存した。
+全286個の3集合・1287個の5集合を検査し、R(3,5) ≥ 14を `PROVEN × UNREVIEWED` として記録した。
+探索停止は候補数予算切れ、Goal分類は `SOLVED`。上界・正確な値は未確定。
+成果物は `7a84bf9`、詳細は [研究ノート](../benchmarks/r3-5/research-notes.md) と [検証手順](../benchmarks/r3-5/verification.md)。
+
+既知値・構成の想起を探索前の独立checkpoint `d74bedc` に記録したため、Discoveryは `CONTAMINATED`。
+Gitだけからの研究開始を実施できたが、別fresh sessionでの再実行と独立レビューは未実施。
+実際のモデルの正確なID・reasoning effortは環境から確認できず欠測とし、推奨設定で実行したとは断定しない。
