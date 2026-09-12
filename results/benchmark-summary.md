@@ -5,7 +5,7 @@
 | Benchmark | 状態 | 下界 | 上界 | 検証 | Goal | 備考 |
 |---|---|---:|---:|---|---:|---|
 | R(3,4) | SOLVED | ≥9 | ≤9 | C001〜C006 独立レビュー ACCEPTED | 完了2件 | R(3,4)=9独立検証済み、Discoveryは両GoalともCONTAMINATED |
-| R(3,5) | NOT_STARTED | — | — | — | 0 | — |
+| R(3,5) | INITIALIZED | — | — | 未開始 | 0 | R35-G001準備済み。fresh sessionで固定予算の下界探索を実施予定 |
 | R(4,4) | NOT_STARTED | — | — | — | 0 | — |
 
 ## 収集する指標
@@ -26,4 +26,8 @@
 
 ## Stage 1 retrospective
 
-[評価・根拠・改善事項](stage1-retrospective.md)を参照。数学的課題と研究・Git・独立レビューの実施は成功。未知問題でのDiscovery能力、モデル間の効率差、会話履歴なしの再開能力は未評価。Stage 2は未開始。
+[評価・根拠・改善事項](stage1-retrospective.md)を参照。数学的課題と研究・Git・独立レビューの実施は成功。未知問題でのDiscovery能力、モデル間の効率差、会話履歴なしの再開能力は未評価。
+
+## Stage 2
+
+R(3,5)を初期化した。`benchmarks/r3-5/problem.md` と `benchmarks/r3-5/goals/G001.md` を起点に、会話履歴を引き継がないfresh sessionで最初の下界探索Goalを実行する。
