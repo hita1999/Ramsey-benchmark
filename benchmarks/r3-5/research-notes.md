@@ -46,6 +46,10 @@
 ### R35-G002 — 結果と引継ぎ
 
 - 開始設定checkpoint: `36215af`。
+- 成果物commit: `07b809b37a556a85898b38194172f0f3b48ace83`。
+- Goal完了時計測: `update_goal(status="complete")`、`2026-09-12T06:49:41Z`、
+  tokensUsed=60968、timeUsedSeconds=367（**6分7秒**）。準備・証明・自己監査・成果物commitを含み、
+  20分上限内。この最終カウンタ追記の保存操作は含まない。tokenはツール由来の累積指標。
 - 終了分類: **`SOLVED`**。理論証明を `proof.md` に保存した。
 - 上界 `R35-C003` は既存Stage 1 `C005` の上界方向のみを利用する。
   Stage 1 `C003 → C004 → C005` の証明を再掲し、新しい非自明な補助命題の未証明引用を避けた。
@@ -140,8 +144,7 @@
 - 根拠: `proof.md` の次数による2場合と、同書に再掲した9頂点補題の証明。
 - 依存するClaim: Stage 1 `C005`（推移的に `C004`、`C003`）。
   `benchmarks/r3-4/proof.md` および `verification.md`、base `c9dd76f` で `PROVEN × ACCEPTED`。
-- 研究成果対象commit: 本Claimを追加する `Complete R35-G002 with self-contained upper-bound proof` commit
-  （ハッシュは保存後の計測記録に追記）。
+- 研究成果対象commit: `07b809b37a556a85898b38194172f0f3b48ace83`。
 - 導入したGoal: `R35-G002`。
 
 ### R35-C004
