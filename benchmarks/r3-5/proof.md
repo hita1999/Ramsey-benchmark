@@ -2,7 +2,7 @@
 
 ## R35-C001: 13頂点の回避グラフ
 
-数学的状態: `PROVEN`。独立レビュー状態: `UNREVIEWED`。
+数学的状態: `PROVEN`。独立レビュー状態: `ACCEPTED`（`verification.md`参照）。
 Discovery: `CONTAMINATED`（詳細は研究ノートの事前checkpoint記録）。
 
 頂点集合を `V={0,1,...,12}` とし、次の隣接表で単純無向グラフ `G` を定める。
@@ -44,12 +44,13 @@ Discovery: `CONTAMINATED`（詳細は研究ノートの事前checkpoint記録）
 
 以上の2つの全列挙は対象となる禁止構造を尽くす。したがって主張が従う。
 再現コマンドと期待出力は `verification.md`、結果は `verification-result.json` に保存した。
-この証明は保存されたPythonの有限検査に依存し、独立レビューはまだ受けていない。
 探索コード、その最適化、乱数、停止理由の正しさには依存しない。
+
+独立Reviewerは研究側verifierを前提にせず、隣接bitmaskを用いる別実装でも証明書を検査した。全13頂点の次数が4、各辺の両端の共通近傍が0、独立数が4であることを確認しており、再現資材は `review/` 配下に保存されている。
 
 ## R35-C002: R(3,5) ≥ 14
 
-数学的状態: `PROVEN`。独立レビュー状態: `UNREVIEWED`。
+数学的状態: `PROVEN`。独立レビュー状態: `ACCEPTED`（`verification.md`参照）。
 依存するClaim: `R35-C001`。
 
 上のグラフの辺を赤、非辺を青にすると、`K_13` の赤青彩色が得られる。
