@@ -1,73 +1,15 @@
 # R(3,5) — 研究ノート
 
-## R35-G002: 利用前の追加汚染記録
-
-2026-09-12T06:45Z、上界の証明本文の作成前に、一般的なRamsey上界の漸化式
-`R(s,t) ≤ R(s−1,t) + R(s,t−1)` と、その近傍・非近傍による場合分けを想起した。
-さらに小さい三角形回避問題を次数制約と握手補題の偶奇性で扱う方針も想起した。
-この時点では、これらの記憶を正しさの根拠にせず、研究成果としても主張しない。
-本記録のみを独立checkpoint commitへ保存した後、利用する命題をGit上の確定事項と
-自足的な証明で根拠づける。既存の値・構成の汚染記録も引き継ぎ、Discoveryは
-`CONTAMINATED` のままとする。外部の既知解検索は行っていない。
-
 ## 現在の状態
 
-- Benchmark状態: `SOLVED`（数学的証明が保存済み。上界・等号の独立レビューは未実施）。
-- 現在のGoal: `R35-G002`、終了分類 **`SOLVED`**。
-- R35-G001の探索停止分類: `EXHAUSTED_BUDGET`、具体的理由 `CANDIDATE_LIMIT`。
+- Benchmark状態: `PARTIAL_PROGRESS`（下界のみ。上界・正確な値は未確定）。
+- 現在のGoal: `R35-G001`、終了分類 **`SOLVED`**。
+- 探索停止分類: `EXHAUSTED_BUDGET`、具体的理由 `CANDIDATE_LIMIT`。
 - 確定した下界: **R(3,5) ≥ 14**、`PROVEN × ACCEPTED`。
-- 新しい上界・等号: **R(3,5) ≤ 14、R(3,5) = 14**、`PROVEN × UNREVIEWED`。
 - Discoveryタグ: `CONTAMINATED`。
 - fresh-session開始評価: `PASS`。別fresh sessionによる探索全再実行は未実施。
 
 ## Goal実行記録
-
-### R35-G002 — 開始設定
-
-- Goal契約: `goals/G002.md`。
-- Base commit: `c9dd76f32edf6d1f22c007ac7bb7afa39ff29256`（開始時の `git rev-parse HEAD`）。
-- 作業ブランチ: `codex/r35-g002-upper-bound`。
-- 実際のmodel/effort: **GPT-6 Astra / High（ユーザーが開始メッセージで明示）**。
-  実行環境のモデルID・effortを返す独立した計測値は取得できず、ユーザー申告と環境による確認を区別する。
-- 開始: `2026-09-12T06:43:34Z`（`get_goal.createdAt=1789195414`）。準備・Git取得を含める保守的起点。
-- wall-clock上限: **1200秒**、期限 `2026-09-12T07:03:34Z`。証明・検査・Git保存も含める。
-- 手段: 理論証明を第一選択とし、必要な場合のみ補助計算を実施する。
-- 開始時計測: `get_goal`、`2026-09-12T06:43:42Z`相当、tokensUsed=0、timeUsedSeconds=8。
-- 準備途中計測: `get_goal`、`2026-09-12T06:44:47Z`、tokensUsed=20734、timeUsedSeconds=73。
-  いずれもツール由来の累積カウンタであり、生成token数や費用ではない。
-- fresh session: `YES`。過去の研究会話の引継ぎなし。入力はリポジトリ、Goalのパス、ユーザー申告の実行設定。
-- 当初checkout: `e546714`。対象ファイルがなかったため `git fetch origin` により上記baseを取得した。
-- 読んだ資料: README、methodology、prompts/codex-goal、対象Goal、r3-5のproblem・research-notes・proof・verification、
-  r3-4のproof・verification、results/benchmark-summary。全て対象Gitリポジトリ内。
-- 追加情報: Gitリモート更新のみ。過去のタスク閲覧、Web・既知解検索、ユーザーへの追加質問なし。
-- fresh-session開始評価: 研究側 `PASS`。独立ReviewerによるこのGoalの評価は未実施。
-- Discovery: `CONTAMINATED`。追加汚染のみのcheckpoint: `00b886b`。本設定も証明本文作成前にGitへ保存する。
-
-### R35-G002 — 結果と引継ぎ
-
-- 開始設定checkpoint: `36215af`。
-- 成果物commit: `07b809b37a556a85898b38194172f0f3b48ace83`。
-- Goal完了時計測: `update_goal(status="complete")`、`2026-09-12T06:49:41Z`、
-  tokensUsed=60968、timeUsedSeconds=367（**6分7秒**）。準備・証明・自己監査・成果物commitを含み、
-  20分上限内。この最終カウンタ追記の保存操作は含まない。tokenはツール由来の累積指標。
-- 終了分類: **`SOLVED`**。理論証明を `proof.md` に保存した。
-- 上界 `R35-C003` は既存Stage 1 `C005` の上界方向のみを利用する。
-  Stage 1 `C003 → C004 → C005` の証明を再掲し、新しい非自明な補助命題の未証明引用を避けた。
-- 等号 `R35-C004` は `R35-C002` と `R35-C003` を結合する。
-- 証明本文保存後の途中計測: `get_goal`、`2026-09-12T06:46:58Z`、tokensUsed=43709、timeUsedSeconds=204。
-- 終了直前計測: `get_goal`、`2026-09-12T06:49:20Z`、tokensUsed=53195、timeUsedSeconds=346（5分46秒）。
-  準備・証明・自己監査・文書更新を含む。直後のGit保存と最終カウンタ追記はこの値に含めない。
-- 文書検査: `git diff --check` 通過。変更は証明・研究ノート・検証記録・サマリーのみ。
-- 数学的探索・補助計算: 未実施。上界の証明は理論のみ。コード・証明書の変更なし。
-- 失敗した方針: なし。最初の近傍・非近傍による場合分けで証明が閉じた。
-  追加のSAT・全探索・構造分類は必要にならなかった。
-- 反証された仮説: なし。未解決の数学的ギャップ・残存ケース: なし。
-- 自己監査: 三角形の有無、整数次数 `d≥5` / `d≤4` の被覆、非近傍数 `13−d≥9`、
-  誘導部分グラフへの継承、頂点の追加、Stage 1の偶奇性と依存方向を確認。詳細は `verification.md`。
-- fresh-sessionからGitだけで開始・完了できたか: 研究側 `PASS`。追加質問なし。
-- 現在のボトルネック: 新しい上界と等号の独立レビューが未実施。
-- Reviewerの重点: 9頂点補題の再掲、14頂点の全場合被覆、独立4集合に加える頂点が集合外か、
-  上界に下界が混入しないか、Claim依存と汚染checkpointの順序。
 
 ### R35-G001
 
@@ -135,48 +77,7 @@
 - 独立レビュー: `verification.md` 参照。
 - 導入したGoal: `R35-G001`。
 
-### R35-C003
-
-- 命題: 14頂点の任意の単純グラフは三角形または独立5集合を持つ。従って `R(3,5) ≤ 14`。
-- 数学的状態: `PROVEN`。
-- 独立レビュー状態: `UNREVIEWED`。
-- Discovery: `CONTAMINATED`。
-- 根拠: `proof.md` の次数による2場合と、同書に再掲した9頂点補題の証明。
-- 依存するClaim: Stage 1 `C005`（推移的に `C004`、`C003`）。
-  `benchmarks/r3-4/proof.md` および `verification.md`、base `c9dd76f` で `PROVEN × ACCEPTED`。
-- 研究成果対象commit: `07b809b37a556a85898b38194172f0f3b48ace83`。
-- 導入したGoal: `R35-G002`。
-
-### R35-C004
-
-- 命題: `R(3,5) = 14`。
-- 数学的状態: `PROVEN`。
-- 独立レビュー状態: `UNREVIEWED`。
-- Discovery: `CONTAMINATED`。
-- 根拠: `proof.md` の下界と上界の結合。
-- 依存するClaim: `R35-C002`、`R35-C003`。
-- 研究成果対象commit: R35-C003と同じ成果物commit。
-- 導入したGoal: `R35-G002`。
-
-## R35-G002 Acceptance criteriaの自己確認
-
-| 条件 | 保存根拠・判定 |
-|---|---|
-| 任意の14頂点グラフ | `proof.md` R35-C003、三角形あり／なし — PASS |
-| 独立5集合と上界の導出 | 次数5以上の近傍／次数4以下の非近傍 — PASS |
-| 補助補題に未証明の穴なし | Stage 1 C003〜C005の自足的証明を再掲 — PASS |
-| 全ケース・端点の被覆 | 整数次数、非近傍が最小9頂点 — PASS |
-| 依存関係の正確さと非循環性 | `proof.md` の依存図 — PASS |
-| G001の探索不成功に非依存 | 上界証明が理論のみで完結 — PASS |
-| proof.md単独で主要論理を追跡 | 定義・6頂点補題・9頂点補題を収録 — PASS |
-| 終了状態と再開情報をGitへ保存 | 成果物commitと後続の計測記録 — PASS |
-
-独立レビュー状態は本自己確認によって変更しない。
-
 ## 確定した結果
-
-R35-G002で上界 `R35-C003` と等号 `R35-C004` の自足的証明を保存した。
-両者は `PROVEN × UNREVIEWED` であり、以下のG001に対する独立受理とは区別する。
 
 R35-C001、R35-C002は独立レビュー `ACCEPTED`。
 保存証明書について研究側verifierは全286個の3集合と全1287個の5集合を検査した。
@@ -191,7 +92,7 @@ R35-C001、R35-C002は独立レビュー `ACCEPTED`。
 
 ## 予想・未検証の主張
 
-上界・正確な値の新しいClaimは証明済みだが独立レビュー未実施である。
+上界・正確な値について新たなClaimは提出していない。
 探索ログの決定的再現性については再現コマンドがあるが、別fresh sessionでの5,000,000候補全再実行は未実施。
 
 ## 反証された仮説・失敗した方針
@@ -214,7 +115,7 @@ R35-C001、R35-C002は独立レビュー `ACCEPTED`。
 独立Reviewerはcommit順を確認し、汚染checkpointが成果物commitより前に存在することを監査した。
 ただし想起による影響を完全には除去できないため、DiscoveryをCLEANへ変更しない。
 
-## R35-G001 Acceptance criteriaの確認
+## Acceptance criteriaの確認
 
 | 条件 | 保存根拠・判定 |
 |---|---|
@@ -232,19 +133,18 @@ R35-C001、R35-C002は独立レビュー `ACCEPTED`。
 ## 現在のフロンティアとボトルネック
 
 - 下界: `R(3,5) ≥ 14`、`PROVEN × ACCEPTED`。
-- 上界・等号: `R(3,5) ≤ 14`、`R(3,5) = 14`、`PROVEN × UNREVIEWED`。
+- 上界: 本Goalでは研究していない。新たな上界はない。
 - Discovery評価: `CONTAMINATED`。既知情報を想起せず発見できたという実験ではない。
 - fresh-session研究開始: `PASS`。
 - 別fresh sessionでの探索全再実行: `UNTESTED`。
-- モデル比較: G001の設定は欠測、G002はユーザー申告があるが環境での独立確認は欠測。
-  この2実験だけでモデル間の効率差を評価しない。
+- モデル比較: 正確なmodel ID/effortが欠測のため、モデル間効率差を評価できない。
 
 ## 次に行う具体的な作業
 
-1. `goals/G002.md` と `proof.md` を別Reviewerへ渡し、R35-C003/C004を独立に監査する。
-   判定後に本書・verification・サマリーのレビュー状態を同期する。
+1. 下界側のR35-G001はレビューまで完了したため、次のGoalを独立に設計する。
 2. 探索再現性自体を評価したい場合は、別fresh sessionで `verification.md` の5,000,000候補再実行を行い、研究Goalとは分離して記録する。
-3. 独立レビュー後、Stage 2の効率・Discovery・fresh-session運用を振り返って次のGoalを設計する。
+3. 次の研究Goalは上界導出、または局所探索の停滞構造調査などとして設計する。
+   探索を改良する場合は停滞したグラフと違反集合を保存し、複数辺の同時変更やSATとの比較を、改めて固定した予算で試す。
 
-再開時は `goals/G002.md`、本書、`proof.md`、`verification.md` を読む。
+再開時は `goals/G001.md`、本書、`proof.md`、`verification.md`、`search-result.json` を読む。
 既知情報の記録を見た後のセッションでもDiscovery汚染を明示し、既知値を証拠や停止条件にしない。
