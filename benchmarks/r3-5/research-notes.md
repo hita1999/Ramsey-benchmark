@@ -5,12 +5,11 @@
 - Benchmark状態: `PARTIAL_PROGRESS`（下界のみ。上界・正確な値は未確定）。
 - 現在のGoal: `R35-G001`、終了分類 **`SOLVED`**。
 - 探索停止分類: `EXHAUSTED_BUDGET`、具体的理由 `CANDIDATE_LIMIT`。
-- 確定した下界: **R(3,5) ≥ 14**、`PROVEN × UNREVIEWED`。
+- 確定した下界: **R(3,5) ≥ 14**、`PROVEN × ACCEPTED`。
 - Discoveryタグ: `CONTAMINATED`。
-- fresh-session開始評価: `YES`。別fresh sessionによる成果物再実行は未実施。
+- fresh-session開始評価: `PASS`。別fresh sessionによる探索全再実行は未実施。
 
 ## Goal実行記録
-
 
 ### R35-G001
 
@@ -29,7 +28,6 @@
 - 追加で要求した情報: ユーザーへの要求なし。Gitリモートからの更新取得のみ。Web・既知解検索なし。
 - Discoveryタグ: `CONTAMINATED`
 
-
 ### 実行結果・計測
 
 - 汚染のみの独立checkpoint: `d74bedc`。実行設定checkpoint: `29a2663`。
@@ -46,8 +44,8 @@
 - 最終状態の記録時刻: `2026-09-12T06:15:41.068568+00:00`。保守的開始時刻から約558.1秒（準備・実装・探索・検査・文書化を含む）。この後のGit保存を除く。30分上限内。
 - Goal完了時計測: `update_goal(status="complete")`、2026-09-12T06:15:45Z、tokensUsed=81995、timeUsedSeconds=562（9分22秒）。ツール由来の累積値。この追記保存の操作は含まない。
 - 終了直前計測: `get_goal`、2026-09-12T06:15:22Z、tokensUsed=80455、timeUsedSeconds=539。記録取得後の保存操作のtokenはこの値に含まれない。
-- 独立レビュー時間・判定: 未実施。
-- 探索再実行: 本セッションでは未実施。固定予算後に探索を追加しないため、再現コマンドを保存。
+- 独立レビュー: 2026-09-12、R35-C001/C002 `ACCEPTED`。詳細は `verification.md`。
+- 探索再実行: 研究セッションでは未実施。独立Reviewerも5,000,000候補の探索全再実行は実施していない。再現コマンドは保存済み。
 
 `search-result.json` は各頂点数の評価数・最小目的関数・時間を記録する。
 5から13までの9証明書が保存され、最大のものが `certificate.json` と一致する。
@@ -59,28 +57,32 @@
 
 - 命題: 保存された13頂点26辺のグラフは三角形も独立5頂点集合も含まない。
 - 数学的状態: `PROVEN`。
-- 独立レビュー状態: `UNREVIEWED`。
+- 独立レビュー状態: `ACCEPTED`。
 - Discovery: `CONTAMINATED`。
-- 根拠: `certificate.json`、`verify.py`、`verification-result.json`、`proof.md` の全列挙の完全性説明。
+- 根拠: `certificate.json`、`verify.py`、`verification-result.json`、`proof.md` の全列挙の完全性説明。独立Reviewerは `review/r35-g001-independent.py` の別実装でも確認。
 - 依存するClaim: なし。
-- 対象commit: `7a84bf9`。
+- 研究成果対象commit: `7a84bf9`。
+- 独立レビュー: `verification.md` 参照。
 - 導入したGoal: `R35-G001`。
 
 ### R35-C002
 
 - 命題: `R(3,5) ≥ 14`。
 - 数学的状態: `PROVEN`。
-- 独立レビュー状態: `UNREVIEWED`。
+- 独立レビュー状態: `ACCEPTED`。
 - Discovery: `CONTAMINATED`。
 - 根拠: `proof.md`。13頂点回避グラフの辺を赤、非辺を青とする彩色と定義。
 - 依存するClaim: `R35-C001`。
-- 対象commit: `7a84bf9`。
+- 研究成果対象commit: `7a84bf9`。
+- 独立レビュー: `verification.md` 参照。
 - 導入したGoal: `R35-G001`。
 
 ## 確定した結果
 
-R35-C001、R35-C002。証明書の検査は全286個の3集合と全1287個の5集合を尽くす。
-証明は有限計算を用いる。独立レビュー済みとは表現しない。
+R35-C001、R35-C002は独立レビュー `ACCEPTED`。
+保存証明書について研究側verifierは全286個の3集合と全1287個の5集合を検査した。
+独立Reviewerは別のbitmask実装で、全頂点次数4、各辺の両端の共通近傍0、独立数4を確認した。
+従ってこのリポジトリでは `R(3,5) ≥ 14` を独立検証済みの下界として扱う。
 
 ## 計算によって確認された結果
 
@@ -90,7 +92,8 @@ R35-C001、R35-C002。証明書の検査は全286個の3集合と全1287個の5�
 
 ## 予想・未検証の主張
 
-上界・正確な値について新たなClaimは提出しない。下界Claimの独立レビューが残る。
+上界・正確な値について新たなClaimは提出していない。
+探索ログの決定的再現性については再現コマンドがあるが、別fresh sessionでの5,000,000候補全再実行は未実施。
 
 ## 反証された仮説・失敗した方針
 
@@ -100,7 +103,6 @@ R35-C001、R35-C002。証明書の検査は全286個の3集合と全1287個の5�
 
 ## 既知情報による汚染
 
-
 2026-09-12T06:07Z、探索コード作成・探索実行前に、事前学習から次を想起した。
 
 - 既知値として `R(3,5)=14` という記憶。
@@ -108,40 +110,40 @@ R35-C001、R35-C002。証明書の検査は全286個の3集合と全1287個の5�
 
 これらを証拠・探索目標・停止条件・初期グラフに利用しない。小さい頂点数からの汎用探索と、証明書の全列挙検査を用いる。想起自体があったため、本GoalとそのClaimのDiscoveryは `CONTAMINATED` とする。外部検索は実施していない。この記録だけを独立checkpoint commitに保存してから研究を開始する。
 
-既知値・既知構成・既知証明方針・主要な既知補題を想起した場合は、その内容を利用する前にここへ具体的に記録し、独立したcheckpoint commitを作る。
-
-
 記録は `d74bedc` に研究ノートのみを変更する独立commitとして保存済み。
 探索コード・初期グラフ・頂点数の進め方・停止判定には想起した値や構成を埋め込んでいない。
+独立Reviewerはcommit順を確認し、汚染checkpointが成果物commitより前に存在することを監査した。
 ただし想起による影響を完全には除去できないため、DiscoveryをCLEANへ変更しない。
 
 ## Acceptance criteriaの確認
 
-| 条件 | 保存根拠 |
+| 条件 | 保存根拠・判定 |
 |---|---|
-| 非自明な回避グラフがGitにある | `7a84bf9` の `certificate.json`（13頂点） |
-| 全3集合・全5集合の検査 | `verify.py`、列挙数286/1287 |
-| verifierが探索から独立して実行可能 | 標準ライブラリのみ、証明書1ファイルを入力 |
-| 再現コマンドと必要環境 | `verification.md` |
-| 予算と停止理由 | 本書・`search-result.json` |
-| fresh sessionでの研究開始記録 | 開始checkpoint `29a2663`、`verification.md` |
-| Claim二軸状態 | R35-C001・R35-C002は `PROVEN × UNREVIEWED` |
-| 想起時の独立checkpoint | `d74bedc`、探索コード作成前 |
+| 非自明な回避グラフがGitにある | `7a84bf9` の `certificate.json`（13頂点） — PASS |
+| 全3集合・全5集合の検査 | `verify.py`、列挙数286/1287 — PASS |
+| verifierが探索から独立して実行可能 | 標準ライブラリのみ、証明書1ファイルを入力 — PASS |
+| 再現コマンドと必要環境 | `verification.md` — PASS |
+| 予算と停止理由 | 本書・`search-result.json` — PASS |
+| fresh sessionでの研究開始記録 | 開始checkpoint `29a2663`、`verification.md` — PASS |
+| Claim二軸状態 | R35-C001・R35-C002は `PROVEN × ACCEPTED` — PASS |
+| 想起時の独立checkpoint | `d74bedc`、探索コード作成前 — PASS |
 
-探索の予算切れとGoal成功を区別する契約に従い、Goalは `SOLVED` とする。
+探索の予算切れとGoal成功を区別する契約に従い、Goal `SOLVED` は独立Reviewerにも受理された。
 
 ## 現在のフロンティアとボトルネック
 
-- 下界: R(3,5) ≥ 14、自己検算済み、独立レビュー待ち。
+- 下界: `R(3,5) ≥ 14`、`PROVEN × ACCEPTED`。
 - 上界: 本Goalでは研究していない。新たな上界はない。
-- Discovery評価: 汚染があるため、既知情報を想起せず発見できたという実験ではない。
+- Discovery評価: `CONTAMINATED`。既知情報を想起せず発見できたという実験ではない。
+- fresh-session研究開始: `PASS`。
+- 別fresh sessionでの探索全再実行: `UNTESTED`。
 - モデル比較: 正確なmodel ID/effortが欠測のため、モデル間効率差を評価できない。
 
 ## 次に行う具体的な作業
 
-1. Reviewerが `7a84bf9` の証明書と検査器を監査し、レビュー状態を同期する。
-2. fresh sessionで `verification.md` の検証・探索再現コマンドを実行し、別セッション再実行の実測を残す。
-3. 次の研究Goalは上界導出、または局所探索の停滞構造調査などとして別に設計する。
+1. 下界側のR35-G001はレビューまで完了したため、次のGoalを独立に設計する。
+2. 探索再現性自体を評価したい場合は、別fresh sessionで `verification.md` の5,000,000候補再実行を行い、研究Goalとは分離して記録する。
+3. 次の研究Goalは上界導出、または局所探索の停滞構造調査などとして設計する。
    探索を改良する場合は停滞したグラフと違反集合を保存し、複数辺の同時変更やSATとの比較を、改めて固定した予算で試す。
 
 再開時は `goals/G001.md`、本書、`proof.md`、`verification.md`、`search-result.json` を読む。
