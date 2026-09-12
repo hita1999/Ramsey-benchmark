@@ -111,3 +111,7 @@ Tokenまたは計算予算の上限が近づいた場合、根拠の弱い結論
 - 履歴なしの再開を評価するGoalでは、会話履歴を引き継がず、渡した入力commit・ファイル一覧と追加で必要になった情報を保存する。同じ会話で再開した場合はその事実を記録する。
 
 背景と残る評価限界は `results/stage1-retrospective.md` を参照する。G001/G002の当時の契約を遡及的に変更するものではない。
+
+### Claim記録の形式
+
+以後のClaim台帳は `methodology.md` §6に従い、数学的状態（CONJECTURE / COMPUTATIONALLY VERIFIED / PROVEN / REFUTED）と独立レビュー状態（UNREVIEWED / ACCEPTED / NEEDS_REVISION / REJECTED）を別フィールドにする。根拠、依存Claim、対象commitを併記する。Discoveryタグ（CLEAN / CONTAMINATED / UNKNOWN）は別管理し、旧UNVERIFIEDを数学的状態として新規使用しない。

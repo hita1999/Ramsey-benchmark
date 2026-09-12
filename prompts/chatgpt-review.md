@@ -64,3 +64,5 @@ Gitをsource of truthとしてレビューする。Codexの会話履歴、自己
 - 実行資材が保存できない場合、その計算は「報告のみ、Gitから再現不可」と明示し、再現可能と呼ばない。
 - 判定の反映先はverification.md、research-notes.mdのClaim台帳と現在地、proof.mdのレビュー状態、results/benchmark-summary.md。数学的本文の修正と状態更新は区別し、古い終了時点の記録には時点を付けて残す。
 - 最終的に、同一Claimが現在の要約でACCEPTEDとレビュー待ちの両方になっていないことを確認する。マージ操作だけを独立レビュー受理の証拠にしない。
+
+数学的状態と独立レビュー状態は `methodology.md` §6の2軸で記録する。未判定はUNREVIEWED、判定後はACCEPTED / NEEDS_REVISION / REJECTEDとし、ACCEPTEDだけをPROVENの代わりに使わない。証明の却下と命題自体の反証を区別し、根拠を実質改訂した場合は旧判定を保存して新版を再レビューする。Discoveryタグは別に記録する。
