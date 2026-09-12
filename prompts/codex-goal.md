@@ -101,3 +101,17 @@ Tokenまたは計算予算の上限が近づいた場合、根拠の弱い結論
 - `NO_PROGRESS`
 
 どの分類で終了しても、停止前に再開可能な研究状態をGitへ保存する。
+---
+
+## Stage 1 retrospective後の運用追記（以後のGoalに適用）
+
+- 研究開始前に、Goalごとの契約・base commit・実際のmodel/effort・数値の計算または時間予算をGitへ保存する。推奨設定と実際の設定を区別し、確認できない項目は不明と記録する。
+- 既知情報を想起したら、具体的内容と対象Goalを研究ノートへ記録し、独立したcheckpoint commitを作ってから研究を続ける。後から時間順序を推定して埋めない。
+- 計測は開始/終了/途中の別、単位、取得元、探索時間/研究時間/レビュー時間の別を記録する。tokenカウンタを生成token数や費用と同一視しない。最終計測を取得できた場合は追記コミットで保存する。
+- 履歴なしの再開を評価するGoalでは、会話履歴を引き継がず、渡した入力commit・ファイル一覧と追加で必要になった情報を保存する。同じ会話で再開した場合はその事実を記録する。
+
+背景と残る評価限界は `results/stage1-retrospective.md` を参照する。G001/G002の当時の契約を遡及的に変更するものではない。
+
+### Claim記録の形式
+
+以後のClaim台帳は `methodology.md` §6に従い、数学的状態（CONJECTURE / COMPUTATIONALLY VERIFIED / PROVEN / REFUTED）と独立レビュー状態（UNREVIEWED / ACCEPTED / NEEDS_REVISION / REJECTED）を別フィールドにする。根拠、依存Claim、対象commitを併記する。Discoveryタグ（CLEAN / CONTAMINATED / UNKNOWN）は別管理し、旧UNVERIFIEDを数学的状態として新規使用しない。

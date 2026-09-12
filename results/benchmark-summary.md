@@ -4,7 +4,7 @@
 
 | Benchmark | 状態 | 下界 | 上界 | 検証 | Goal | 備考 |
 |---|---|---:|---:|---|---:|---|
-| R(3,4) | PARTIAL_PROGRESS | ≥9 | ≤9（PROVEN、レビュー待ち） | C001/C002 ACCEPTED、C003〜C006独立レビュー待ち | 完了2件 | G001/G002 SOLVED、等式=9はPROVEN、Discoveryは両GoalともCONTAMINATED |
+| R(3,4) | SOLVED | ≥9 | ≤9 | C001〜C006 独立レビュー ACCEPTED | 完了2件 | R(3,4)=9独立検証済み、Discoveryは両GoalともCONTAMINATED |
 | R(3,5) | NOT_STARTED | — | — | — | 0 | — |
 | R(4,4) | NOT_STARTED | — | — | — | 0 | — |
 
@@ -23,3 +23,7 @@
 - fresh sessionがGitだけから研究を再開できたか
 
 主要なprocess KPIは、Claim数そのものではなく、Gitに永続化され独立検証を通過した研究進捗とする。
+
+## Stage 1 retrospective
+
+[評価・根拠・改善事項](stage1-retrospective.md)を参照。数学的課題と研究・Git・独立レビューの実施は成功。未知問題でのDiscovery能力、モデル間の効率差、会話履歴なしの再開能力は未評価。Stage 2は未開始。
