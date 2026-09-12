@@ -1,0 +1,12 @@
+{
+  "edges": 26,
+  "first_independent_five": null,
+  "first_triangle": null,
+  "five_sets_checked": 1287,
+  "independent_fives": 0,
+  "n": 13,
+  "ramsey_lower_bound": 14,
+  "triangles": 0,
+  "triples_checked": 286,
+  "valid": true
+}
