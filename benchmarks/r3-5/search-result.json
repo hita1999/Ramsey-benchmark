@@ -1,0 +1,108 @@
+{
+  "algorithm": "conflict-guided single-edge simulated annealing",
+  "best_n": 13,
+  "candidate_definition": "One candidate evaluation means one full initial/restart objective evaluation,\nor one incremental objective evaluation of a proposed single-edge flip,\nincluding rejected proposals. Building constraints, accepting a proposal,\nserializing certificates and verifier calls are not candidate evaluations.",
+  "elapsed_seconds": 120.568091375,
+  "evaluations": 5000000,
+  "finished_utc": "2026-09-12T06:11:57.594143+00:00",
+  "max_evaluations": 5000000,
+  "platform": "macOS-13.7.4-arm64-arm-64bit",
+  "python": "3.9.6",
+  "restart_interval": 10000,
+  "search_stop_classification": "EXHAUSTED_BUDGET",
+  "seconds_limit": 1200.0,
+  "seed": 35001,
+  "stages": [
+    {
+      "best_score": 0,
+      "elapsed_seconds": 0.000421249999999998,
+      "evaluations": 1,
+      "found_at_evaluation": 1,
+      "n": 5,
+      "restarts": 1,
+      "solved": true
+    },
+    {
+      "best_score": 0,
+      "elapsed_seconds": 0.0004844170000000009,
+      "evaluations": 1,
+      "found_at_evaluation": 2,
+      "n": 6,
+      "restarts": 1,
+      "solved": true
+    },
+    {
+      "best_score": 0,
+      "elapsed_seconds": 0.0002655419999999936,
+      "evaluations": 1,
+      "found_at_evaluation": 3,
+      "n": 7,
+      "restarts": 1,
+      "solved": true
+    },
+    {
+      "best_score": 0,
+      "elapsed_seconds": 0.0003473330000000052,
+      "evaluations": 5,
+      "found_at_evaluation": 8,
+      "n": 8,
+      "restarts": 1,
+      "solved": true
+    },
+    {
+      "best_score": 0,
+      "elapsed_seconds": 0.00047633299999999545,
+      "evaluations": 8,
+      "found_at_evaluation": 16,
+      "n": 9,
+      "restarts": 1,
+      "solved": true
+    },
+    {
+      "best_score": 0,
+      "elapsed_seconds": 0.0008987079999999981,
+      "evaluations": 8,
+      "found_at_evaluation": 24,
+      "n": 10,
+      "restarts": 1,
+      "solved": true
+    },
+    {
+      "best_score": 0,
+      "elapsed_seconds": 0.0016651669999999952,
+      "evaluations": 54,
+      "found_at_evaluation": 78,
+      "n": 11,
+      "restarts": 1,
+      "solved": true
+    },
+    {
+      "best_score": 0,
+      "elapsed_seconds": 0.005216291999999997,
+      "evaluations": 201,
+      "found_at_evaluation": 279,
+      "n": 12,
+      "restarts": 1,
+      "solved": true
+    },
+    {
+      "best_score": 0,
+      "elapsed_seconds": 0.08021704200000002,
+      "evaluations": 3381,
+      "found_at_evaluation": 3660,
+      "n": 13,
+      "restarts": 1,
+      "solved": true
+    },
+    {
+      "best_score": 4,
+      "elapsed_seconds": 120.451497417,
+      "evaluations": 4996340,
+      "n": 14,
+      "restarts": 500,
+      "solved": false
+    }
+  ],
+  "started_utc": "2026-09-12T06:09:57.026483+00:00",
+  "stop_reason": "CANDIDATE_LIMIT"
+}

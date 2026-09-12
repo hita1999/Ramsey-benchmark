@@ -1,0 +1,110 @@
+{
+  "n05.json": {
+    "edges": 2,
+    "first_independent_five": null,
+    "first_triangle": null,
+    "five_sets_checked": 1,
+    "independent_fives": 0,
+    "n": 5,
+    "ramsey_lower_bound": 6,
+    "triangles": 0,
+    "triples_checked": 10,
+    "valid": true
+  },
+  "n06.json": {
+    "edges": 3,
+    "first_independent_five": null,
+    "first_triangle": null,
+    "five_sets_checked": 6,
+    "independent_fives": 0,
+    "n": 6,
+    "ramsey_lower_bound": 7,
+    "triangles": 0,
+    "triples_checked": 20,
+    "valid": true
+  },
+  "n07.json": {
+    "edges": 6,
+    "first_independent_five": null,
+    "first_triangle": null,
+    "five_sets_checked": 21,
+    "independent_fives": 0,
+    "n": 7,
+    "ramsey_lower_bound": 8,
+    "triangles": 0,
+    "triples_checked": 35,
+    "valid": true
+  },
+  "n08.json": {
+    "edges": 8,
+    "first_independent_five": null,
+    "first_triangle": null,
+    "five_sets_checked": 56,
+    "independent_fives": 0,
+    "n": 8,
+    "ramsey_lower_bound": 9,
+    "triangles": 0,
+    "triples_checked": 56,
+    "valid": true
+  },
+  "n09.json": {
+    "edges": 12,
+    "first_independent_five": null,
+    "first_triangle": null,
+    "five_sets_checked": 126,
+    "independent_fives": 0,
+    "n": 9,
+    "ramsey_lower_bound": 10,
+    "triangles": 0,
+    "triples_checked": 84,
+    "valid": true
+  },
+  "n10.json": {
+    "edges": 14,
+    "first_independent_five": null,
+    "first_triangle": null,
+    "five_sets_checked": 252,
+    "independent_fives": 0,
+    "n": 10,
+    "ramsey_lower_bound": 11,
+    "triangles": 0,
+    "triples_checked": 120,
+    "valid": true
+  },
+  "n11.json": {
+    "edges": 17,
+    "first_independent_five": null,
+    "first_triangle": null,
+    "five_sets_checked": 462,
+    "independent_fives": 0,
+    "n": 11,
+    "ramsey_lower_bound": 12,
+    "triangles": 0,
+    "triples_checked": 165,
+    "valid": true
+  },
+  "n12.json": {
+    "edges": 21,
+    "first_independent_five": null,
+    "first_triangle": null,
+    "five_sets_checked": 792,
+    "independent_fives": 0,
+    "n": 12,
+    "ramsey_lower_bound": 13,
+    "triangles": 0,
+    "triples_checked": 220,
+    "valid": true
+  },
+  "n13.json": {
+    "edges": 26,
+    "first_independent_five": null,
+    "first_triangle": null,
+    "five_sets_checked": 1287,
+    "independent_fives": 0,
+    "n": 13,
+    "ramsey_lower_bound": 14,
+    "triangles": 0,
+    "triples_checked": 286,
+    "valid": true
+  }
+}

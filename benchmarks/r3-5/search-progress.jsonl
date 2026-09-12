@@ -1,0 +1,60 @@
+{"found_n": 5, "evaluations": 1, "elapsed_seconds": 0.016834750000000002}
+{"found_n": 6, "evaluations": 2, "elapsed_seconds": 0.018015708}
+{"found_n": 7, "evaluations": 3, "elapsed_seconds": 0.018471750000000002}
+{"found_n": 8, "evaluations": 8, "elapsed_seconds": 0.019035625000000007}
+{"found_n": 9, "evaluations": 16, "elapsed_seconds": 0.019891167000000008}
+{"found_n": 10, "evaluations": 24, "elapsed_seconds": 0.021309542000000008}
+{"found_n": 11, "evaluations": 78, "elapsed_seconds": 0.023856125}
+{"found_n": 12, "evaluations": 279, "elapsed_seconds": 0.030431500000000007}
+{"found_n": 13, "evaluations": 3660, "elapsed_seconds": 0.112906542}
+{"searching_n": 14, "evaluations": 100000, "best_score": 4, "elapsed_seconds": 2.663249}
+{"searching_n": 14, "evaluations": 200000, "best_score": 4, "elapsed_seconds": 5.046266333}
+{"searching_n": 14, "evaluations": 300000, "best_score": 4, "elapsed_seconds": 7.442993792}
+{"searching_n": 14, "evaluations": 400000, "best_score": 4, "elapsed_seconds": 9.852326332999999}
+{"searching_n": 14, "evaluations": 500000, "best_score": 4, "elapsed_seconds": 12.270824874999999}
+{"searching_n": 14, "evaluations": 600000, "best_score": 4, "elapsed_seconds": 14.686254667}
+{"searching_n": 14, "evaluations": 700000, "best_score": 4, "elapsed_seconds": 17.091973542}
+{"searching_n": 14, "evaluations": 800000, "best_score": 4, "elapsed_seconds": 19.491517333}
+{"searching_n": 14, "evaluations": 900000, "best_score": 4, "elapsed_seconds": 21.903247208}
+{"searching_n": 14, "evaluations": 1000000, "best_score": 4, "elapsed_seconds": 24.29948325}
+{"searching_n": 14, "evaluations": 1100000, "best_score": 4, "elapsed_seconds": 26.698642333000002}
+{"searching_n": 14, "evaluations": 1200000, "best_score": 4, "elapsed_seconds": 29.079972875000003}
+{"searching_n": 14, "evaluations": 1300000, "best_score": 4, "elapsed_seconds": 31.481716458}
+{"searching_n": 14, "evaluations": 1400000, "best_score": 4, "elapsed_seconds": 33.886907333}
+{"searching_n": 14, "evaluations": 1500000, "best_score": 4, "elapsed_seconds": 36.289850167000004}
+{"searching_n": 14, "evaluations": 1600000, "best_score": 4, "elapsed_seconds": 38.701488792}
+{"searching_n": 14, "evaluations": 1700000, "best_score": 4, "elapsed_seconds": 41.104655042000005}
+{"searching_n": 14, "evaluations": 1800000, "best_score": 4, "elapsed_seconds": 43.503684667}
+{"searching_n": 14, "evaluations": 1900000, "best_score": 4, "elapsed_seconds": 45.916456000000004}
+{"searching_n": 14, "evaluations": 2000000, "best_score": 4, "elapsed_seconds": 48.33689525}
+{"searching_n": 14, "evaluations": 2100000, "best_score": 4, "elapsed_seconds": 50.741516417}
+{"searching_n": 14, "evaluations": 2200000, "best_score": 4, "elapsed_seconds": 53.147432083}
+{"searching_n": 14, "evaluations": 2300000, "best_score": 4, "elapsed_seconds": 55.560857500000004}
+{"searching_n": 14, "evaluations": 2400000, "best_score": 4, "elapsed_seconds": 57.96750125}
+{"searching_n": 14, "evaluations": 2500000, "best_score": 4, "elapsed_seconds": 60.370620917000004}
+{"searching_n": 14, "evaluations": 2600000, "best_score": 4, "elapsed_seconds": 62.841178083}
+{"searching_n": 14, "evaluations": 2700000, "best_score": 4, "elapsed_seconds": 65.248213917}
+{"searching_n": 14, "evaluations": 2800000, "best_score": 4, "elapsed_seconds": 67.669120542}
+{"searching_n": 14, "evaluations": 2900000, "best_score": 4, "elapsed_seconds": 70.060628833}
+{"searching_n": 14, "evaluations": 3000000, "best_score": 4, "elapsed_seconds": 72.512883292}
+{"searching_n": 14, "evaluations": 3100000, "best_score": 4, "elapsed_seconds": 74.946874917}
+{"searching_n": 14, "evaluations": 3200000, "best_score": 4, "elapsed_seconds": 77.34165754200001}
+{"searching_n": 14, "evaluations": 3300000, "best_score": 4, "elapsed_seconds": 79.754338}
+{"searching_n": 14, "evaluations": 3400000, "best_score": 4, "elapsed_seconds": 82.159928417}
+{"searching_n": 14, "evaluations": 3500000, "best_score": 4, "elapsed_seconds": 84.5499985}
+{"searching_n": 14, "evaluations": 3600000, "best_score": 4, "elapsed_seconds": 86.962846125}
+{"searching_n": 14, "evaluations": 3700000, "best_score": 4, "elapsed_seconds": 89.357992208}
+{"searching_n": 14, "evaluations": 3800000, "best_score": 4, "elapsed_seconds": 91.758903792}
+{"searching_n": 14, "evaluations": 3900000, "best_score": 4, "elapsed_seconds": 94.168988458}
+{"searching_n": 14, "evaluations": 4000000, "best_score": 4, "elapsed_seconds": 96.56708625}
+{"searching_n": 14, "evaluations": 4100000, "best_score": 4, "elapsed_seconds": 98.95652712500001}
+{"searching_n": 14, "evaluations": 4200000, "best_score": 4, "elapsed_seconds": 101.397562583}
+{"searching_n": 14, "evaluations": 4300000, "best_score": 4, "elapsed_seconds": 103.79775979200001}
+{"searching_n": 14, "evaluations": 4400000, "best_score": 4, "elapsed_seconds": 106.187929958}
+{"searching_n": 14, "evaluations": 4500000, "best_score": 4, "elapsed_seconds": 108.578215708}
+{"searching_n": 14, "evaluations": 4600000, "best_score": 4, "elapsed_seconds": 110.978666958}
+{"searching_n": 14, "evaluations": 4700000, "best_score": 4, "elapsed_seconds": 113.385798417}
+{"searching_n": 14, "evaluations": 4800000, "best_score": 4, "elapsed_seconds": 115.784047792}
+{"searching_n": 14, "evaluations": 4900000, "best_score": 4, "elapsed_seconds": 118.182436542}
+{"searching_n": 14, "evaluations": 5000000, "best_score": 4, "elapsed_seconds": 120.568022292}
+{"evaluations": 5000000, "best_n": 13, "elapsed_seconds": 120.568091375, "stop_reason": "CANDIDATE_LIMIT"}

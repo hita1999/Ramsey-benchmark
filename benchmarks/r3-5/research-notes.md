@@ -2,83 +2,149 @@
 
 ## 現在の状態
 
-Stage 2を初期化した。数学的な確定Claimはまだない。
-
-- Benchmark状態: `INITIALIZED`
-- 現在のGoal: `R35-G001`
-- Discoveryタグ: `UNKNOWN`
-- fresh-session再開評価: 未実施
+- Benchmark状態: `PARTIAL_PROGRESS`（下界のみ。上界・正確な値は未確定）。
+- 現在のGoal: `R35-G001`、終了分類 **`SOLVED`**。
+- 探索停止分類: `EXHAUSTED_BUDGET`、具体的理由 `CANDIDATE_LIMIT`。
+- 確定した下界: **R(3,5) ≥ 14**、`PROVEN × ACCEPTED`。
+- Discoveryタグ: `CONTAMINATED`。
+- fresh-session開始評価: `PASS`。別fresh sessionによる探索全再実行は未実施。
 
 ## Goal実行記録
 
 ### R35-G001
 
-研究開始前に `goals/G001.md` の契約に従って以下を埋める。
+探索前に設定を記録し、`29a2663` でGitへ固定した。
 
-- Base commit:
-- 作業ブランチ:
-- 実際のmodel:
-- 実際のreasoning effort:
-- 開始時刻:
-- 数値予算:
-- token等の計測方法:
-- fresh sessionか: `YES / NO`
-- fresh sessionへ渡した入力commit:
-- 最初に読んだファイル:
-- 追加で要求した情報:
-- Discoveryタグ: `UNKNOWN`
+- Base commit: `1d9ef4ddad02e5a120dddee508bb9c33979d1b3d`
+- 作業ブランチ: `codex/r35-g001-lower-bound`
+- 実際のmodel: システムが公開する名称は GPT-6 / Codex。正確なモデルIDは実行環境から確認できず欠測（推奨IDの使用は断定しない）。
+- 実際のreasoning effort: 実行環境に公開されておらず欠測。推奨highと一致するかは未確認。
+- 開始時刻: `2026-09-12T06:06:23Z`（goalカウンタcreatedAt。準備・Git取得も含める保守的起点）。
+- 数値予算: wall-clock 1800秒、候補評価5,000,000回の早い方。成果物保存時間を含め30分以内とする。探索は最大1200秒とし残りを検証・保存に使う。候補評価は初期化・再始動時の目的関数計算、または1辺反転提案の差分評価各1回。
+- token等の計測方法: `get_goal`。準備途中（2026-09-12T06:06:30Z相当）tokensUsed=6481/timeUsedSeconds=7、探索前（06:07:46Z相当）tokensUsed=44769/timeUsedSeconds=83。ツールが返す累積指標であり、純粋な研究出力token数ではない。
+- fresh sessionか: `YES`。過去の研究会話の引継ぎなし。
+- fresh sessionへ渡した入力commit: 当初checkoutは`e546714`で指定ファイルがなかった。`git fetch origin`によりGoalを含む`1d9ef4d`を取得して開始。
+- 最初に読んだファイル: README、旧checkoutのprompts/codex-goal.md、methodology.md、results/benchmark-summary.md。その後origin/mainの指定Goal、r3-5の4文書、更新済みmethodologyとGoalプロトコル。
+- 追加で要求した情報: ユーザーへの要求なし。Gitリモートからの更新取得のみ。Web・既知解検索なし。
+- Discoveryタグ: `CONTAMINATED`
+
+### 実行結果・計測
+
+- 汚染のみの独立checkpoint: `d74bedc`。実行設定checkpoint: `29a2663`。
+- 成果物commit: `7a84bf9`。
+- seed: `35001`。探索方式: 禁止集合を優先する1辺反転のsimulated annealing。
+- 探索開始: `2026-09-12T06:09:57.026483Z`。
+- 探索終了: `2026-09-12T06:11:57.594143Z`。
+- 探索wall-clock: `120.568091375` 秒（Python `time.monotonic`）。
+- 探索候補評価: **5,000,000**、上限ちょうど。実験は1回。
+- 13頂点証明書の発見: 累積3,660評価、探索開始から約0.113秒。
+- 14頂点で4,996,340評価、初期化500回、最小目的関数4、回避グラフ未発見。
+- 途中計測: `get_goal`、2026-09-12T06:13:03Z、tokensUsed=70176、timeUsedSeconds=400。
+- 検査: 証明書全9個が通過、verifierの6テストが通過。証明書とverifierだけを一時ディレクトリへコピーして単独実行し、保存出力との一致も確認。
+- 最終状態の記録時刻: `2026-09-12T06:15:41.068568+00:00`。保守的開始時刻から約558.1秒（準備・実装・探索・検査・文書化を含む）。この後のGit保存を除く。30分上限内。
+- Goal完了時計測: `update_goal(status="complete")`、2026-09-12T06:15:45Z、tokensUsed=81995、timeUsedSeconds=562（9分22秒）。ツール由来の累積値。この追記保存の操作は含まない。
+- 終了直前計測: `get_goal`、2026-09-12T06:15:22Z、tokensUsed=80455、timeUsedSeconds=539。記録取得後の保存操作のtokenはこの値に含まれない。
+- 独立レビュー: 2026-09-12、R35-C001/C002 `ACCEPTED`。詳細は `verification.md`。
+- 探索再実行: 研究セッションでは未実施。独立Reviewerも5,000,000候補の探索全再実行は実施していない。再現コマンドは保存済み。
+
+`search-result.json` は各頂点数の評価数・最小目的関数・時間を記録する。
+5から13までの9証明書が保存され、最大のものが `certificate.json` と一致する。
+候補評価数は発見時の整合性再計算や証明書の再検査を含まない。定義・再現条件は `search.py` と `verification.md` を参照。
 
 ## Claim台帳
 
-重要な主張ごとに次の形式で記録する。
+### R35-C001
 
-### テンプレート
+- 命題: 保存された13頂点26辺のグラフは三角形も独立5頂点集合も含まない。
+- 数学的状態: `PROVEN`。
+- 独立レビュー状態: `ACCEPTED`。
+- Discovery: `CONTAMINATED`。
+- 根拠: `certificate.json`、`verify.py`、`verification-result.json`、`proof.md` の全列挙の完全性説明。独立Reviewerは `review/r35-g001-independent.py` の別実装でも確認。
+- 依存するClaim: なし。
+- 研究成果対象commit: `7a84bf9`。
+- 独立レビュー: `verification.md` 参照。
+- 導入したGoal: `R35-G001`。
 
-- Claim ID: `Cxxx`
-- 命題:
-- 数学的状態: `CONJECTURE | COMPUTATIONALLY VERIFIED | PROVEN | REFUTED`
-- 独立レビュー状態: `UNREVIEWED | ACCEPTED | NEEDS_REVISION | REJECTED`
-- 根拠:
-- 依存するClaim:
-- 対象commit:
-- 導入したGoal:
+### R35-C002
+
+- 命題: `R(3,5) ≥ 14`。
+- 数学的状態: `PROVEN`。
+- 独立レビュー状態: `ACCEPTED`。
+- Discovery: `CONTAMINATED`。
+- 根拠: `proof.md`。13頂点回避グラフの辺を赤、非辺を青とする彩色と定義。
+- 依存するClaim: `R35-C001`。
+- 研究成果対象commit: `7a84bf9`。
+- 独立レビュー: `verification.md` 参照。
+- 導入したGoal: `R35-G001`。
 
 ## 確定した結果
 
-_まだなし。_
+R35-C001、R35-C002は独立レビュー `ACCEPTED`。
+保存証明書について研究側verifierは全286個の3集合と全1287個の5集合を検査した。
+独立Reviewerは別のbitmask実装で、全頂点次数4、各辺の両端の共通近傍0、独立数4を確認した。
+従ってこのリポジトリでは `R(3,5) ≥ 14` を独立検証済みの下界として扱う。
 
 ## 計算によって確認された結果
 
-_まだなし。_
+5〜13頂点で回避グラフを発見した。14頂点では今回の実験に限り未発見。
+後者は探索ログの観測であり、数学的な不存在・最大性・上界のClaimではない。
+探索中の最小目的関数4について、到達グラフ自体は保存していないので構造的Claimの根拠にしない。
 
 ## 予想・未検証の主張
 
-_まだなし。_
+上界・正確な値について新たなClaimは提出していない。
+探索ログの決定的再現性については再現コマンドがあるが、別fresh sessionでの5,000,000候補全再実行は未実施。
 
 ## 反証された仮説・失敗した方針
 
-_まだなし。_
+- 同じ温度範囲・10,000提案の再始動を14頂点で繰り返しても、本予算では目的関数0に到達しなかった。
+- 禁止構造数4の停滞が続いたが、その最適性も不存在も示していない。
+- 数学的仮説を反証した記録はない。SAT・DFS等は未実施であり、失敗した方式には数えない。
 
 ## 既知情報による汚染
 
-_現時点では未評価。_
+2026-09-12T06:07Z、探索コード作成・探索実行前に、事前学習から次を想起した。
 
-既知値・既知構成・既知証明方針・主要な既知補題を想起した場合は、その内容を利用する前にここへ具体的に記録し、独立したcheckpoint commitを作る。
+- 既知値として `R(3,5)=14` という記憶。
+- 13頂点の巡回グラフで差 `±1, ±5` を辺にする構成の記憶（正しさはこの時点では未検証）。
 
-## 現在のフロンティア
+これらを証拠・探索目標・停止条件・初期グラフに利用しない。小さい頂点数からの汎用探索と、証明書の全列挙検査を用いる。想起自体があったため、本GoalとそのClaimのDiscoveryは `CONTAMINATED` とする。外部検索は実施していない。この記録だけを独立checkpoint commitに保存してから研究を開始する。
 
-### 下界
+記録は `d74bedc` に研究ノートのみを変更する独立commitとして保存済み。
+探索コード・初期グラフ・頂点数の進め方・停止判定には想起した値や構成を埋め込んでいない。
+独立Reviewerはcommit順を確認し、汚染checkpointが成果物commitより前に存在することを監査した。
+ただし想起による影響を完全には除去できないため、DiscoveryをCLEANへ変更しない。
 
-独立レビュー済みの証明書はまだない。
+## Acceptance criteriaの確認
 
-### 上界
+| 条件 | 保存根拠・判定 |
+|---|---|
+| 非自明な回避グラフがGitにある | `7a84bf9` の `certificate.json`（13頂点） — PASS |
+| 全3集合・全5集合の検査 | `verify.py`、列挙数286/1287 — PASS |
+| verifierが探索から独立して実行可能 | 標準ライブラリのみ、証明書1ファイルを入力 — PASS |
+| 再現コマンドと必要環境 | `verification.md` — PASS |
+| 予算と停止理由 | 本書・`search-result.json` — PASS |
+| fresh sessionでの研究開始記録 | 開始checkpoint `29a2663`、`verification.md` — PASS |
+| Claim二軸状態 | R35-C001・R35-C002は `PROVEN × ACCEPTED` — PASS |
+| 想起時の独立checkpoint | `d74bedc`、探索コード作成前 — PASS |
 
-独立レビュー済みの証明はまだない。
+探索の予算切れとGoal成功を区別する契約に従い、Goal `SOLVED` は独立Reviewerにも受理された。
 
-## 現在のボトルネック
+## 現在のフロンティアとボトルネック
 
-固定予算内で、三角形も独立な5頂点集合も持たない具体的グラフを探索し、再現可能な下界証明書としてGitへ保存する。
+- 下界: `R(3,5) ≥ 14`、`PROVEN × ACCEPTED`。
+- 上界: 本Goalでは研究していない。新たな上界はない。
+- Discovery評価: `CONTAMINATED`。既知情報を想起せず発見できたという実験ではない。
+- fresh-session研究開始: `PASS`。
+- 別fresh sessionでの探索全再実行: `UNTESTED`。
+- モデル比較: 正確なmodel ID/effortが欠測のため、モデル間効率差を評価できない。
 
-## 次のGoal
+## 次に行う具体的な作業
 
-`R35-G001`: 既知値を停止条件にせず、固定予算内の探索で得られる最良の下界証明書を保存・検証し、fresh sessionからGitだけで再現可能な研究状態を作る。
+1. 下界側のR35-G001はレビューまで完了したため、次のGoalを独立に設計する。
+2. 探索再現性自体を評価したい場合は、別fresh sessionで `verification.md` の5,000,000候補再実行を行い、研究Goalとは分離して記録する。
+3. 次の研究Goalは上界導出、または局所探索の停滞構造調査などとして設計する。
+   探索を改良する場合は停滞したグラフと違反集合を保存し、複数辺の同時変更やSATとの比較を、改めて固定した予算で試す。
+
+再開時は `goals/G001.md`、本書、`proof.md`、`verification.md`、`search-result.json` を読む。
+既知情報の記録を見た後のセッションでもDiscovery汚染を明示し、既知値を証拠や停止条件にしない。
