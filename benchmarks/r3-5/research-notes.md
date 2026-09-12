@@ -6,7 +6,7 @@ Stage 2を初期化した。数学的な確定Claimはまだない。
 
 - Benchmark状態: `INITIALIZED`
 - 現在のGoal: `R35-G001`
-- Discoveryタグ: `UNKNOWN`
+- Discoveryタグ: `CONTAMINATED`
 - fresh-session再開評価: 未実施
 
 ## Goal実行記録
@@ -15,18 +15,18 @@ Stage 2を初期化した。数学的な確定Claimはまだない。
 
 研究開始前に `goals/G001.md` の契約に従って以下を埋める。
 
-- Base commit:
-- 作業ブランチ:
-- 実際のmodel:
-- 実際のreasoning effort:
-- 開始時刻:
-- 数値予算:
-- token等の計測方法:
-- fresh sessionか: `YES / NO`
-- fresh sessionへ渡した入力commit:
-- 最初に読んだファイル:
-- 追加で要求した情報:
-- Discoveryタグ: `UNKNOWN`
+- Base commit: `1d9ef4ddad02e5a120dddee508bb9c33979d1b3d`
+- 作業ブランチ: `codex/r35-g001-lower-bound`
+- 実際のmodel: システムが公開する名称は GPT-6 / Codex。正確なモデルIDは実行環境から確認できず欠測（推奨IDの使用は断定しない）。
+- 実際のreasoning effort: 実行環境に公開されておらず欠測。推奨highと一致するかは未確認。
+- 開始時刻: `2026-09-12T06:06:23Z`（goalカウンタcreatedAt。準備・Git取得も含める保守的起点）。
+- 数値予算: wall-clock 1800秒、候補評価5,000,000回の早い方。成果物保存時間を含め30分以内とする。探索は最大1200秒とし残りを検証・保存に使う。候補評価は初期化・再始動時の目的関数計算、または1辺反転提案の差分評価各1回。
+- token等の計測方法: `get_goal`。準備途中（2026-09-12T06:06:30Z相当）tokensUsed=6481/timeUsedSeconds=7、探索前（06:07:46Z相当）tokensUsed=44769/timeUsedSeconds=83。ツールが返す累積指標であり、純粋な研究出力token数ではない。
+- fresh sessionか: `YES`。過去の研究会話の引継ぎなし。
+- fresh sessionへ渡した入力commit: 当初checkoutは`e546714`で指定ファイルがなかった。`git fetch origin`によりGoalを含む`1d9ef4d`を取得して開始。
+- 最初に読んだファイル: README、旧checkoutのprompts/codex-goal.md、methodology.md、results/benchmark-summary.md。その後origin/mainの指定Goal、r3-5の4文書、更新済みmethodologyとGoalプロトコル。
+- 追加で要求した情報: ユーザーへの要求なし。Gitリモートからの更新取得のみ。Web・既知解検索なし。
+- Discoveryタグ: `CONTAMINATED`
 
 ## Claim台帳
 
