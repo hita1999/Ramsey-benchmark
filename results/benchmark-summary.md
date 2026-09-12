@@ -4,7 +4,7 @@
 
 | Benchmark | 状態 | 下界 | 上界 | 検証 | Goal | 備考 |
 |---|---|---:|---:|---|---:|---|
-| R(3,4) | PARTIAL_PROGRESS | ≥9 | — | C001/C002 独立レビュー ACCEPTED | 完了1件 | G001 SOLVED、DiscoveryはCONTAMINATED |
+| R(3,4) | PARTIAL_PROGRESS | ≥9 | ≤9（PROVEN、レビュー待ち） | C001/C002 ACCEPTED、C003〜C006独立レビュー待ち | 完了2件 | G001/G002 SOLVED、等式=9はPROVEN、Discoveryは両GoalともCONTAMINATED |
 | R(3,5) | NOT_STARTED | — | — | — | 0 | — |
 | R(4,4) | NOT_STARTED | — | — | — | 0 | — |
 
