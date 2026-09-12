@@ -21,6 +21,27 @@
 
 ## Goal実行記録
 
+### R35-G002 — 開始設定
+
+- Goal契約: `goals/G002.md`。
+- Base commit: `c9dd76f32edf6d1f22c007ac7bb7afa39ff29256`（開始時の `git rev-parse HEAD`）。
+- 作業ブランチ: `codex/r35-g002-upper-bound`。
+- 実際のmodel/effort: **GPT-6 Astra / High（ユーザーが開始メッセージで明示）**。
+  実行環境のモデルID・effortを返す独立した計測値は取得できず、ユーザー申告と環境による確認を区別する。
+- 開始: `2026-09-12T06:43:34Z`（`get_goal.createdAt=1789195414`）。準備・Git取得を含める保守的起点。
+- wall-clock上限: **1200秒**、期限 `2026-09-12T07:03:34Z`。証明・検査・Git保存も含める。
+- 手段: 理論証明を第一選択とし、必要な場合のみ補助計算を実施する。
+- 開始時計測: `get_goal`、`2026-09-12T06:43:42Z`相当、tokensUsed=0、timeUsedSeconds=8。
+- 準備途中計測: `get_goal`、`2026-09-12T06:44:47Z`、tokensUsed=20734、timeUsedSeconds=73。
+  いずれもツール由来の累積カウンタであり、生成token数や費用ではない。
+- fresh session: `YES`。過去の研究会話の引継ぎなし。入力はリポジトリ、Goalのパス、ユーザー申告の実行設定。
+- 当初checkout: `e546714`。対象ファイルがなかったため `git fetch origin` により上記baseを取得した。
+- 読んだ資料: README、methodology、prompts/codex-goal、対象Goal、r3-5のproblem・research-notes・proof・verification、
+  r3-4のproof・verification、results/benchmark-summary。全て対象Gitリポジトリ内。
+- 追加情報: Gitリモート更新のみ。過去のタスク閲覧、Web・既知解検索、ユーザーへの追加質問なし。
+- fresh-session開始評価: 研究側 `PASS`。独立ReviewerによるこのGoalの評価は未実施。
+- Discovery: `CONTAMINATED`。追加汚染のみのcheckpoint: `00b886b`。本設定も証明本文作成前にGitへ保存する。
+
 ### R35-G001
 
 探索前に設定を記録し、`29a2663` でGitへ固定した。
