@@ -181,3 +181,19 @@ goal-measurements、およびPR記録から研究状態を復元できる。
 - G001のn=18 heuristic failureは上界根拠として禁止
 
 実際のGoal execution baseは、このG002定義PRがmainへマージされた後のmain HEADを研究開始時に記録する。
+
+## R44-G002 実行開始契約（2026-09-21）
+
+- Goal execution base: `89b05a18ecd69baa2d01c815c7e350bfa7c39841`（fetch後の `origin/main` と、専用branch作成後の `git rev-parse HEAD` が一致）。
+- 初期checkout: `a0658a0fe5ca5e957b35f9460477fb6ebc089b95`、未コミット変更なし。古いcheckoutにはG002がなく、originをfetchして最新mainから専用branchを作成した。local mainは更新していない。
+- fresh session: yes。ユーザー入力はrepository URL・Goalパス・Gitをsource of truthとする指示のみ。過去の研究会話は引き継いでいない。
+- Researcher: Codex。環境の自己記述はGPT-6だが、実際の正確なmodel ID / reasoning effortはともに `missing`。Goalの推奨 `gpt-6-astra / high` を実績として転記しない。
+- 全体wall-clock起点: `2026-09-21T12:27:04Z`（`get_goal.createdAt=1789993624`、準備を含む）。上限20分、締切 `12:47:04Z`。
+- 開始counter: `get_goal` updatedAt=1789993630、tokensUsed=5323、timeUsedSeconds=5。契約読了時計測: `12:27:47Z`、tokensUsed=20128、timeUsedSeconds=43。単位はtool counterであり、生成token数・費用ではない。
+- 作業branch: `codex/r44-g002-upper-bound`、作成時upstreamなし。
+- 唯一のpush先: `git push -u origin HEAD:refs/heads/codex/r44-g002-upper-bound`。mainへの統合はPR経由。
+- PR開始条件: `results/stage3-pr-policy-verification.md` のPASS、active main ruleset・bypassなしという保存証跡を確認。サーバー設定の新規監査は実施していない。
+- 読了文書: README、methodology、prompts/codex-goal、results/stage3-pr-policy-verification、G002、r4-4のproblem・research-notes・proof・verification、results/benchmark-summary。
+- 追加質問なし。Web検索・外部数学資料の取得なし。Git fetchは指定repositoryの状態取得のみ。
+- Stage 2のG002研究ノート・proof・Goalは読んでいない。ただしbenchmark-summaryにはStage 2の証明経路が含まれていた。追加想起とこの情報流入を次のnotes-only checkpointへ具体的に保存してから証明に着手する。
+- 開始時Discovery: `CONTAMINATED`。この時点で新規の証明本文・補助計算は未作成。
