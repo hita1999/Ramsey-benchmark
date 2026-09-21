@@ -115,3 +115,22 @@ Tokenまたは計算予算の上限が近づいた場合、根拠の弱い結論
 ### Claim記録の形式
 
 以後のClaim台帳は `methodology.md` §6に従い、数学的状態（CONJECTURE / COMPUTATIONALLY VERIFIED / PROVEN / REFUTED）と独立レビュー状態（UNREVIEWED / ACCEPTED / NEEDS_REVISION / REJECTED）を別フィールドにする。根拠、依存Claim、対象commitを併記する。Discoveryタグ（CLEAN / CONTAMINATED / UNKNOWN）は別管理し、旧UNVERIFIEDを数学的状態として新規使用しない。
+
+## Stage 2 retrospective後のPR・handoff手順
+
+背景とサーバー側の必須設定は [Stage 2 retrospective](../results/stage2-retrospective.md) を参照する。
+
+- Stage 3の研究開始前に、管理担当が保存した `results/stage3-pr-policy-verification.md` で、
+  mainのPR必須設定・bypass制限・確認主体と日付を確認する。証跡がなければ開始条件未達として記録する。
+- fresh sessionにはbase commit、Goalパス、必読ファイルを渡す。古いcheckoutからfetchした場合は、
+  当初commitと実際に開始したcommit、追加質問・情報源を記録する。
+- 作業は `git switch --no-track -c codex/<goal> origin/main` などで作る専用ブランチで行う。
+  push前にbranch・remote・upstream・差分を確認する。mainをupstreamにしたまま送信しない。
+- pushが許可された作業では `git push -u origin HEAD:refs/heads/codex/<goal>` と送信先を明示する。
+  引数なしpush、mainへの直接push・force push、`--all`、`--mirror`、ローカルmainへのmerge後のpushは行わない。
+- 成果・checkpoint・運用文書・レビュー・closure・事故復旧はPR経由で統合する。
+  PRにはbase/result commit、Goal状態、Claim状態、Discovery、検証、残課題を保存する。
+  数学的にSOLVEDでもレビュー前はUNREVIEWED。未完了checkpointも状態を明示して保存できる。
+- Reviewerへの引継ぎでレビューartifactの保存先と4文書の同期担当を指定する。
+  統合担当は状態同期を確認してGitHub上でmergeし、merge SHAを記録する。
+- 事故時は送信を止め、refと履歴・影響を保存する。revertと再適用は差分を確認して復旧PRで行い、履歴を消して事故を隠さない。
