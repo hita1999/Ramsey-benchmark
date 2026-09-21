@@ -57,3 +57,12 @@ G001では正確な値をGoalへ埋め込まず、固定予算内で `K_4` も�
 - 開始counter: `get_goal` 2026-09-21T11:51:12Z、tokensUsed=5295、timeUsedSeconds=7。契約読了時counter: 11:51:52Z、tokensUsed=20536、timeUsedSeconds=47。単位はtool counterであり生成token数・課金量ではない。
 - 開始時Discovery: `CONTAMINATED`。既知内容の想起を認識した。次のnotes-only checkpointに具体的内容を保存してから研究を行う。
 - この時点の探索評価数: 0。独立レビュー: 未実施。
+
+## 既知情報による汚染 — 利用前独立checkpoint
+
+2026-09-21、契約読了時に、事前学習由来の `R(4,4)=18` という既知値と、17頂点のPaley graph（法17で平方剰余差を辺とする構成）が下界を与えるという内容を想起した。
+この想起自体は証拠として採用せず、正誤の外部確認もしない。Discoveryは `CONTAMINATED`。
+想起内容を目標頂点数、停止条件、search horizon、初期グラフ、証明根拠として使わない。
+この追記だけを独立commitに保存する時点で探索評価数は0であり、探索コード・証明書はまだ作成していない。
+使用する探索はn=4からの一般的なランダム局所探索であり、既知構成の辺集合・巡回対称性を入力しない。
+記憶の影響が完全に排除されたと主張せず、数学的なcertificate検査とDiscovery評価を分離する。
