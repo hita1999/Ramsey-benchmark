@@ -6,7 +6,7 @@
 |---|---|---:|---:|---|---:|---|
 | R(3,4) | SOLVED | ≥9 | ≤9 | C001〜C006 独立レビュー ACCEPTED | 完了2件 | R(3,4)=9独立検証済み、Discoveryは両GoalともCONTAMINATED |
 | R(3,5) | SOLVED | ≥14 | ≤14 | R35-C001〜C004 PROVEN × ACCEPTED | 完了2件 | R(3,5)=14独立検証済み、Discovery CONTAMINATED |
-| R(4,4) | PARTIAL_PROGRESS | ≥18 | — | R44-C001/C002 PROVEN × ACCEPTED | 完了1件、G002定義済み | 17頂点68辺を独立検証済み、上界研究待ち、Discovery CONTAMINATED |
+| R(4,4) | SOLVED | ≥18 | ≤18 | R44-C001/C002/L001/C003/C004 PROVEN × ACCEPTED | 完了2件 | R(4,4)=18独立検証済み、Discovery CONTAMINATED |
 
 ## 収集する指標
 
@@ -76,7 +76,7 @@ G001は正確な既知値を目標として与えず、固定予算内で `K_4` 
 fresh sessionでbase `a0658a0fe5ca5e957b35f9460477fb6ebc089b95` から実行した。
 17頂点68辺の証明書を構成し、全2,380個の4集合を検査してK4=0・独立4集合=0を確認。
 従って下界 **R(4,4)>=18** は **PROVEN × ACCEPTED**。独立Reviewerが研究側と別のbitmask実装で全2,380個の4集合を再検査した。
-Benchmark全体は下界のみで `PARTIAL_PROGRESS`。上界・正確な値は未証明。
+G001終了時点ではBenchmark全体は下界のみで `PARTIAL_PROGRESS` だった。現在の上界・等号は末尾のG002成果参照。
 
 探索はn=4から順に増やすseed固定の焼きなましで、1,000万候補・124.310935125秒で候補予算終了。
 n=18での探索不成功は不存在証明に使わない。全14証明書・verifier・7テスト・再現資材を保存した。
@@ -97,3 +97,17 @@ G002は任意の18頂点グラフにK4または独立4集合が存在するこ�
 
 具体的な証明ルートはGoalへ与えていない。Git上で既に `PROVEN × ACCEPTED` のClaimは利用可能だが、未確定の一般公式・補題はGoal内で証明する必要がある。
 G001の18頂点heuristic探索失敗は上界の根拠として使用禁止。fresh Codex session、20分予算、専用branch/PR運用で実施する。
+
+## Stage 3 — R44-G002研究成果
+
+base `89b05a18ecd69baa2d01c815c7e350bfa7c39841` からfresh sessionで実行し、研究を **SOLVED** とした。
+任意の18頂点グラフで選んだ頂点の近傍か非近傍が9頂点以上になることから、
+受理済みStage 1 C005とその補グラフでの向きを適用し、上界 **R(4,4)<=18** を理論的に証明した。
+独立受理済み下界との結合により **R(4,4)=18**。
+R44-L001/C003/C004は独立レビューにより **PROVEN × ACCEPTED**。下界R44-C001/C002も **PROVEN × ACCEPTED**。従って **R(4,4)=18** を独立受理した。
+
+補助計算なし。一般再帰式・近傍分割の想起とGit summary経由のStage 2証明経路の流入を、
+利用前checkpoint `9dd3fcbd2b7d5f5b7c8978be6970429d09a64cd4` に保存した。Discoveryは **CONTAMINATED**。
+正確なmodel ID/effortは `missing`。20分予算、fresh-session評価、counter、成果commit、明示pushとPRの記録は
+[研究ノート](../benchmarks/r4-4/research-notes.md)を参照。
+独立レビューと4文書のclosure同期は2026-09-21に完了。残工程はPR #12のmain統合のみ。数学的な未解決gapはない。

@@ -2,12 +2,13 @@
 
 ## 現在の状態
 
-- Benchmark: `PARTIAL_PROGRESS`（下界のみ、上界・正確な値は未証明）。
+- Benchmark: **SOLVED**。`R(4,4)=18` を上下界とも独立レビュー済み。
+- R44-G002: **SOLVED**。独立レビュー受理済み、PR統合待ち。R44-L001/C003/C004は **PROVEN × ACCEPTED**。
 - R44-G001: **SOLVED**。独立レビュー受理済み。PR #10でmainへ統合済み（merge `4a459b19723dbe8f177c7ad07af75d23fa62dd79`）。
-- 今回の最大証明書: 17頂点68辺。n=4..17の全14証明書を保存。
+- G001の最大証明書: 17頂点68辺。n=4..17の全14証明書を保存。
 - `R44-C001` / `R44-C002`: **PROVEN × ACCEPTED**。
-- Discovery: **CONTAMINATED**。利用前checkpoint `8ca54fd7a4dbc751da870e658d5967185e90dfb2`。
-- 探索停止: `EXHAUSTED_BUDGET`（10,000,000候補、124.310935125秒）。
+- Discovery: **CONTAMINATED**。利用前checkpointはG001 `8ca54fd7a4dbc751da870e658d5967185e90dfb2`、G002 `9dd3fcbd2b7d5f5b7c8978be6970429d09a64cd4`。
+- G001探索停止: `EXHAUSTED_BUDGET`（10,000,000候補、124.310935125秒）。G002では探索なし。
 - fresh-session研究開始: 実施済み。詳細は実行契約・handoff評価。
 - PR policy開始条件: 保存済みPASS確認。mainへの直接pushなし。
 
@@ -35,14 +36,18 @@ G001では正確な値をGoalへ埋め込まず、固定予算内で `K_4` も�
 |---|---|---|---|---|---|---|
 | R44-C001 | 保存した17頂点68辺のグラフにK4も独立4集合もない | PROVEN | ACCEPTED | run/certificate.json、研究側verifier、独立bitmask検査、proof.md | なし | `02b7fee706a2f569be8a9d1f3b5c7aa9324e5078` |
 | R44-C002 | R(4,4)>=18 | PROVEN | ACCEPTED | proof.mdの定義と単調性、`reviews/G001.md` | R44-C001 | C001と同じ |
+| R44-L001 | 9頂点以上の任意のグラフはK3または独立4集合を含み、かつK4または独立3集合を含む | PROVEN | ACCEPTED | proof.mdの9頂点への制限と補グラフ変換、`reviews/G002.md` | Stage 1 C005（PROVEN × ACCEPTED） | `1265d2fd7ac4218329a096939feb9dae37f9d688` |
+| R44-C003 | 任意の18頂点グラフにK4または独立4集合がある。従ってR(4,4)<=18 | PROVEN | ACCEPTED | proof.mdのd>=9 / d<=8の全場合、`reviews/G002.md` | R44-L001 | `1265d2fd7ac4218329a096939feb9dae37f9d688` |
+| R44-C004 | R(4,4)=18 | PROVEN | ACCEPTED | 受理済み下界と本Goalの上界の結合、`reviews/G002.md` | R44-C002、R44-C003 | `1265d2fd7ac4218329a096939feb9dae37f9d688` |
 
-Discoveryは両ClaimともCONTAMINATED。証明書hashはproof.mdに固定。
+Discoveryは全ClaimともCONTAMINATED。証明書hashはproof.mdに固定。
 
 ## 現在のフロンティア
 
 G001の独立レビューとmain統合は完了し、R44-C001/C002は `PROVEN × ACCEPTED`。
-次の研究Goalは `R44-G002`。任意の18頂点グラフにK4または独立4集合があることを自足的に証明し、`R(4,4)<=18` を狙う。
-G002の証明ルートはGoalに埋め込まず、G001の18頂点探索失敗は上界・不存在・最大性の根拠にしない。
+G002の上界R44-C003と等号R44-C004は独立Reviewerに受理された。数学的な未解決gapはない。
+残工程はPR #12のmain統合のみ。
+G001の探索失敗・17頂点証明書の構造は上界に使用していない。
 
 
 ## R44-G001 独立レビューとclosure（2026-09-21）
@@ -181,3 +186,105 @@ goal-measurements、およびPR記録から研究状態を復元できる。
 - G001のn=18 heuristic failureは上界根拠として禁止
 
 実際のGoal execution baseは、このG002定義PRがmainへマージされた後のmain HEADを研究開始時に記録する。
+
+## R44-G002 独立レビューとclosure（2026-09-21）
+
+- Reviewer: ChatGPT / GPT-5.6 Sol、reasoning effort High。
+- Goal execution base: `89b05a18ecd69baa2d01c815c7e350bfa7c39841`。
+- 対象数学成果commit: `1265d2fd7ac4218329a096939feb9dae37f9d688`。
+- レビュー開始時PR head: `daabf7b3c16458aad282a507db120ad8ea51eca1`。
+- レビュー記録: `reviews/G002.md`。
+- 判定: R44-L001 / R44-C003 / R44-C004 はすべて **PROVEN × ACCEPTED**。R44-G002の `SOLVED` を受理。
+- Benchmark: **SOLVED**。R44-C002とR44-C003から `R(4,4)=18` を独立受理。
+- Discovery: **CONTAMINATED** を維持。
+- 補助計算: なし。証明が短い理論論証であり、既存依存Stage 1 C005は既に独立受理済みのため、新規計算を受理条件にしなかった。
+- 独立監査では、9頂点以上への制限、補グラフのK3↔独立3集合・独立4集合↔K4、18頂点での `d>=9 / d<=8` の完全被覆、vによる拡張、依存DAGの非循環を個別に確認した。
+- 上界はG001の18頂点探索失敗、best score、17頂点certificateの特殊構造、未証明の一般Ramsey recurrenceに依存していない。
+- 汚染checkpoint `9dd3fcbd` が数学成果 `1265d2fd` より前に存在することをGit履歴で確認した。
+- fresh-session handoffは保存記録に基づく運用監査として整合的。Reviewerは研究開始セッションを再演したものではない。
+- review closureとしてproof・research-notes・verification・benchmark-summaryを同期した。研究提出時のUNREVIEWED記録は時点付き履歴として保持する。
+
+## R44-G002 実行開始契約（2026-09-21）
+
+- Goal execution base: `89b05a18ecd69baa2d01c815c7e350bfa7c39841`（fetch後の `origin/main` と、専用branch作成後の `git rev-parse HEAD` が一致）。
+- 初期checkout: `a0658a0fe5ca5e957b35f9460477fb6ebc089b95`、未コミット変更なし。古いcheckoutにはG002がなく、originをfetchして最新mainから専用branchを作成した。local mainは更新していない。
+- fresh session: yes。ユーザー入力はrepository URL・Goalパス・Gitをsource of truthとする指示のみ。過去の研究会話は引き継いでいない。
+- Researcher: Codex。環境の自己記述はGPT-6だが、実際の正確なmodel ID / reasoning effortはともに `missing`。Goalの推奨 `gpt-6-astra / high` を実績として転記しない。
+- 全体wall-clock起点: `2026-09-21T12:27:04Z`（`get_goal.createdAt=1789993624`、準備を含む）。上限20分、締切 `12:47:04Z`。
+- 開始counter: `get_goal` updatedAt=1789993630、tokensUsed=5323、timeUsedSeconds=5。契約読了時計測: `12:27:47Z`、tokensUsed=20128、timeUsedSeconds=43。単位はtool counterであり、生成token数・費用ではない。
+- 作業branch: `codex/r44-g002-upper-bound`、作成時upstreamなし。
+- 唯一のpush先: `git push -u origin HEAD:refs/heads/codex/r44-g002-upper-bound`。mainへの統合はPR経由。
+- PR開始条件: `results/stage3-pr-policy-verification.md` のPASS、active main ruleset・bypassなしという保存証跡を確認。サーバー設定の新規監査は実施していない。
+- 読了文書: README、methodology、prompts/codex-goal、results/stage3-pr-policy-verification、G002、r4-4のproblem・research-notes・proof・verification、results/benchmark-summary。
+- 追加質問なし。Web検索・外部数学資料の取得なし。Git fetchは指定repositoryの状態取得のみ。
+- Stage 2のG002研究ノート・proof・Goalは読んでいない。ただしbenchmark-summaryにはStage 2の証明経路が含まれていた。追加想起とこの情報流入を次のnotes-only checkpointへ具体的に保存してから証明に着手する。
+- 開始時Discovery: `CONTAMINATED`。この時点で新規の証明本文・補助計算は未作成。
+
+## R44-G002 既知情報とGit由来の汚染 — 利用前checkpoint
+
+G002読了時、一般的Ramsey recurrence
+`R(s,t) <= R(s-1,t) + R(s,t-1)` と、その頂点の近傍・非近傍へ分割する証明方針を想起した。
+具体的には `R(3,4)=9` と補グラフ対称性から、18頂点で選んだ頂点の残り17頂点は、
+近傍または非近傍のどちらかが9頂点以上となるという上界ルートを想起した。
+正確な値18はGoal自体からも与えられている。既知の正確な値の記憶とも一致する。
+新たな分類結果・上界に必要な特殊グラフの記憶は使用しない。
+
+この想起を認識しユーザーへ報告した後、開始状態確認のため読んだ `results/benchmark-summary.md`
+のStage 2節から、R35-G002が次数5以上の近傍と次数4以下の非近傍9頂点に場合分けし、
+Stage 1上界を適用したという具体的経路も流入した。Stage 2研究ノート・proof・Goalは未読。
+このGit由来の情報も、近傍分割を再確認させた汚染として明示的に記録する。
+R44-G001文書には既知値・Paley構成の過去の汚染記録と17頂点証明書の特徴もあったが、
+上界はその構成、探索ログ、heuristic failureに依存させない。
+
+Discoveryは **CONTAMINATED**。一般公式を未証明のまま引用せず、必要な特例の全場合を直接証明する。
+Stage 1の既存Claimはstatement・証明・独立受理記録を確認した後に依存として利用する。
+本節だけを独立commitへ保存する。この時点では新しい上界証明の作成・補助計算を開始していない。
+以後の数学的証明は想起の正しさ自体を証拠としない。Discovery成功とは評価しない。
+
+## R44-G002 研究結果・自己監査・handoff
+
+- 開始契約commit: `fbd907553873c197937346a6db689e01027971dc`。
+- 利用前notes-only汚染checkpoint: `9dd3fcbd2b7d5f5b7c8978be6970429d09a64cd4`。新規証明の編集より前に保存した。
+- checkpoint後に確認した依存資料: `benchmarks/r3-4/proof.md`、`benchmarks/r3-4/verification.md`、`benchmarks/r4-4/reviews/G001.md`。
+  Stage 1 C005のstatementは「任意の9頂点グラフは三角形または独立4集合を含む」。依存C003/C004を含めPROVEN × ACCEPTED。
+  受理対象head `55444df461ac40c28f1462413416b17dfa9ad44f`、Reviewer ChatGPT / GPT-5.6 Sol × high、2026-09-12。
+  Stage 1の証明再掲はこのGit資料を出典とし、今回の新発見と扱わない。
+- 新規補助Claim R44-L001: 9頂点への制限、および補グラフへのC005適用を明示。補グラフの三角形は元の独立3集合、独立4集合は元のK4へ戻す。
+- R44-C003: 任意の頂点vでd(v)>=9なら近傍、d(v)<=8なら17−d(v)>=9頂点の非近傍を用いる。
+  各場合で得られる構造をそのまま採用するかvで拡張するかを記述し、全場合を閉じた。
+- R44-C004: 上界を閉じた後にのみ、受理済み下界R44-C002と結合した。
+- 依存DAG: Stage 1 C003→Stage 1 C004→Stage 1 C005→R44-L001→R44-C003、およびR44-C001→R44-C002、R44-C002+R44-C003→R44-C004。
+- 数学的自己監査: d=8と9を含む全整数次数、非近傍からvを除くこと、誘導部分グラフの辺・非辺の保存、補グラフでの向き、追加3辺または3非辺、DAG非循環を確認。独立レビューではない。
+- 計算のみで確認した新規事項: なし。補助計算・SAT・探索・新規コードは不要で実施していない。
+- 失敗した証明方向・反証した仮説: なし。最初の直接的な理論方針で閉じた。別方式を試したという主張はしない。
+- 数学的な未解決gap・残る次数ケース: なし。残作業は独立レビューとclosure/PR統合。
+- 中間計測: `get_goal` updatedAt=1789993812、tokensUsed=48430、timeUsedSeconds=187。`clock.curr_time` は12:30:12Z（開始UTCとの差188秒）。取得元差により1秒の差がある。
+- fresh-session handoff: repository URL・GoalパスだけからGitをfetchし、契約・受理済みClaim・依存証明を読み、追加質問なしに研究を完了できた。外部数学情報源はない。
+  benchmark-summaryからの具体的なStage 2経路の流入は利用前checkpointへ記録済み。handoff成立とDiscovery汚染を区別する。
+  この評価は本セッションの自己記録であり、別fresh sessionによる再演・独立レビュー成功を意味しない。
+- Reviewer artifact予定先: `benchmarks/r4-4/reviews/G002.md`。計算を行う場合の別実装・環境・コマンド・結果は `benchmarks/r4-4/review/` へ保存する。
+- 次の一手: Reviewerはverification.mdの重点監査を行い、判定と対象commitを記録する。
+  独立Reviewer（または明示的に引き継いだclosure担当）がproof・research-notes・verification・benchmark-summaryを同一closureで同期する。
+  統合担当は状態同期と残課題を照合してGitHub上でPRをmergeし、そのSHAを保存する。
+
+## R44-G002 提出記録と終了分類
+
+- Goal終了分類: **SOLVED**。以下は研究提出時点の記録であり、その後独立レビュー・closureは完了、main統合のみ未実施。
+- 数学成果commit: `1265d2fd7ac4218329a096939feb9dae37f9d688`、`2026-09-21T12:32:54Z`。
+  R44-L001/C003/C004のClaim台帳の対象commitはこれを指す。
+- UTC起点12:27:04Zから数学成果commitまで350秒（5分50秒）。準備・契約・汚染記録・証明・自己監査・文書化・commitを含む。
+- 成果commit後counter: `get_goal` updatedAt=1789993975、tokensUsed=72383、timeUsedSeconds=350。
+- 差分確認: `git diff --check` 成功。変更はproof・research-notes・verification・benchmark-summaryの4文書のみ。
+  新規実装なし。数学の検証は上記の理論的自己監査で、独立レビューや計算テストを行ったという記録ではない。
+- 初回push前のbranch: `codex/r44-g002-upper-bound`、upstreamなし、push URL: `https://github.com/hita1999/Ramsey-benchmark.git`。
+  baseからの差分を確認後、`git push -u origin HEAD:refs/heads/codex/r44-g002-upper-bound` を実行、exit 0。
+  remoteは新規branch作成を返した。push後のupstreamは `origin/codex/r44-g002-upper-bound`、同期済み、作業ツリーcleanを確認。
+- PR: [#12](https://github.com/hita1999/Ramsey-benchmark/pull/12)、作成日時 `2026-09-21T12:33:38Z`。
+  作成時base SHAはexecution baseと一致、head SHAは数学成果commitと一致。open、未merge。
+- PR提出後計測: `get_goal` updatedAt=1789994023（`2026-09-21T12:33:43Z`）、tokensUsed=76884、timeUsedSeconds=398。
+  UTC起点との差は399秒（6分39秒）。取得元の異なるcounterと1秒の差がある。
+  この記録は準備からPR提出までを含み、以下の記録コミット・再push・最終応答は計測後の後処理。
+  token counterは生成token数・課金量ではない。20分予算内に数学成果とPRを保存した。
+- Acceptance criteria: 任意の18頂点、全場合・境界・補グラフ、受理済み依存、新規補題の証明、proof単独可読性、
+  G001 heuristic非依存、利用前汚染checkpoint、execution base/fresh/model欠測/予算/終了分類/明示pushを満たした。
+- 研究提出時点の次担当は独立Reviewerであり、本Goal内ではACCEPTEDへ変更していなかった。その後の独立レビューで受理済み。mainへの直接push・force push・引数なしpushなし。
