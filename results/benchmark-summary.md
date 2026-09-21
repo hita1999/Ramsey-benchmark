@@ -6,7 +6,7 @@
 |---|---|---:|---:|---|---:|---|
 | R(3,4) | SOLVED | ≥9 | ≤9 | C001〜C006 独立レビュー ACCEPTED | 完了2件 | R(3,4)=9独立検証済み、Discoveryは両GoalともCONTAMINATED |
 | R(3,5) | SOLVED | ≥14 | ≤14 | R35-C001〜C004 PROVEN × ACCEPTED | 完了2件 | R(3,5)=14独立検証済み、Discovery CONTAMINATED |
-| R(4,4) | PARTIAL_PROGRESS | ≥18 | — | R44-C001/C002 PROVEN × ACCEPTED | 完了1件（G001 SOLVED） | 17頂点68辺を独立検証済み、Discovery CONTAMINATED |
+| R(4,4) | PARTIAL_PROGRESS | ≥18 | — | R44-C001/C002 PROVEN × ACCEPTED | 完了1件、G002定義済み | 17頂点68辺を独立検証済み、上界研究待ち、Discovery CONTAMINATED |
 
 ## 収集する指標
 
@@ -83,8 +83,17 @@ n=18での探索不成功は不存在証明に使わない。全14証明書・ve
 既知内容想起の利用前checkpointは `8ca54fd`、Discoveryは `CONTAMINATED`。
 正確なmodel/effortは `missing`。Gitだけからのfresh-session開始を実施したが、別セッションでの全探索再実行は未実施。
 Goal終了分類・PR提出記録・全体時間・counterは [研究ノート](../benchmarks/r4-4/research-notes.md) と `goal-measurements.json` を参照。
-独立レビューは2026-09-21に完了。mainへのPR統合は後続工程。
+独立レビューは2026-09-21に完了し、PR #10はmerge `4a459b1` でmainへ統合済み。
 
 G001は `SOLVED` として [PR #10](https://github.com/hita1999/Ramsey-benchmark/pull/10) に提出済み。
 成果物commitまで523秒、PR提出後counterは643秒・71,187単位（生成token数・課金量ではない）。
-専用branchへの明示push成功、mainへは未統合。レビュー記録は `benchmarks/r4-4/reviews/G001.md`、R44-C001/C002は `PROVEN × ACCEPTED`。
+専用branchへの明示pushとPR-only統合を完了。レビュー記録は `benchmarks/r4-4/reviews/G001.md`、R44-C001/C002は `PROVEN × ACCEPTED`。
+
+
+## Stage 3 — R44-G002定義
+
+G001統合後、上界Goal `benchmarks/r4-4/goals/G002.md` を定義した。
+G002は任意の18頂点グラフにK4または独立4集合が存在することを自足的に証明し、`R(4,4)<=18` を確立することを目的とする。
+
+具体的な証明ルートはGoalへ与えていない。Git上で既に `PROVEN × ACCEPTED` のClaimは利用可能だが、未確定の一般公式・補題はGoal内で証明する必要がある。
+G001の18頂点heuristic探索失敗は上界の根拠として使用禁止。fresh Codex session、20分予算、専用branch/PR運用で実施する。

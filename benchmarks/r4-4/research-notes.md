@@ -3,7 +3,7 @@
 ## 現在の状態
 
 - Benchmark: `PARTIAL_PROGRESS`（下界のみ、上界・正確な値は未証明）。
-- R44-G001: **SOLVED**。独立レビュー受理済み。main統合は未実施。
+- R44-G001: **SOLVED**。独立レビュー受理済み。PR #10でmainへ統合済み（merge `4a459b19723dbe8f177c7ad07af75d23fa62dd79`）。
 - 今回の最大証明書: 17頂点68辺。n=4..17の全14証明書を保存。
 - `R44-C001` / `R44-C002`: **PROVEN × ACCEPTED**。
 - Discovery: **CONTAMINATED**。利用前checkpoint `8ca54fd7a4dbc751da870e658d5967185e90dfb2`。
@@ -40,8 +40,9 @@ Discoveryは両ClaimともCONTAMINATED。証明書hashはproof.mdに固定。
 
 ## 現在のフロンティア
 
-G001の独立レビューは完了し、R44-C001/C002は `PROVEN × ACCEPTED`。次の工程は別Goalとして上界を設計すること。
-今回の18頂点探索失敗は上界・不存在・最大性の根拠にしない。
+G001の独立レビューとmain統合は完了し、R44-C001/C002は `PROVEN × ACCEPTED`。
+次の研究Goalは `R44-G002`。任意の18頂点グラフにK4または独立4集合があることを自足的に証明し、`R(4,4)<=18` を狙う。
+G002の証明ルートはGoalに埋め込まず、G001の18頂点探索失敗は上界・不存在・最大性の根拠にしない。
 
 
 ## R44-G001 独立レビューとclosure（2026-09-21）
@@ -58,6 +59,7 @@ G001の独立レビューは完了し、R44-C001/C002は `PROVEN × ACCEPTED`。
 - fresh-session handoffは保存記録に基づく運用監査として整合的と判定したが、Reviewerが研究開始セッションを再演したものではない。
 - 汚染checkpoint `8ca54fd` が探索実装 `abb6dfd` と成果 `02b7fee` より前に存在することをGit履歴で確認した。
 - review closureとしてproof・research-notes・verification・benchmark-summaryの現在状態を同期した。研究提出時のUNREVIEWED記録は履歴として保持する。
+- PR #10は2026-09-21にmerge `4a459b19723dbe8f177c7ad07af75d23fa62dd79` でmainへ統合された。
 
 ## R44-G001 実行開始契約（2026-09-21）
 
@@ -159,3 +161,23 @@ goal-measurements、およびPR記録から研究状態を復元できる。
   この最終記録のcommit/pushと応答の僅かな後処理は計測後であり、最終commit日時はGit履歴で監査可能。
 - 数値予算上限30分・10,000,000候補を順守。候補上限到達後の追加探索なし。
 - 研究提出時点では独立レビュー未実施、mainへ未統合だった。PR統合は本Goalの研究完了とは分離する。
+
+
+## R44-G002 定義
+
+2026-09-21、G001の独立受理・main統合後に上界Goal `goals/G002.md` を定義した。
+
+- Goal definition parent: `4a459b19723dbe8f177c7ad07af75d23fa62dd79`
+- 研究対象: 任意の18頂点グラフがK4または独立4集合を含むこと
+- 目標Claim: `R44-C003: R(4,4)<=18`
+- 等号Claim候補: `R44-C004: R(4,4)=18`
+- 推奨: Codex / gpt-6-astra / high
+- fresh session必須
+- wall-clock上限20分
+- 作業branch: `codex/r44-g002-upper-bound`
+- DiscoveryはStage 3既存汚染により `CONTAMINATED`
+- 具体的な上界proof strategyはGoal定義に与えていない
+- acceptedな既存Claimはstatementを確認した上で利用可
+- G001のn=18 heuristic failureは上界根拠として禁止
+
+実際のGoal execution baseは、このG002定義PRがmainへマージされた後のmain HEADを研究開始時に記録する。
