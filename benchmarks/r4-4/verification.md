@@ -2,9 +2,39 @@
 
 ## 現在の状態
 
-研究担当Codexによる有限証明書の完全検査は成功。
-R44-C001（17頂点の回避グラフ）およびR44-C002（R(4,4)>=18）は **PROVEN × UNREVIEWED**。
-独立Reviewerの判定は未実施。Discoveryは **CONTAMINATED**。
+研究担当Codexによる有限証明書の完全検査に加え、独立Reviewerの別実装検査も成功。
+R44-C001（17頂点の回避グラフ）およびR44-C002（R(4,4)>=18）は **PROVEN × ACCEPTED**。
+Discoveryは **CONTAMINATED**。独立レビュー詳細は [reviews/G001.md](reviews/G001.md)。
+
+
+## R44-G001: 独立レビュー結果
+
+- Reviewer: ChatGPT / GPT-5.6 Sol、reasoning effort High。
+- 日付: 2026-09-21。
+- Goal execution base: `a0658a0fe5ca5e957b35f9460477fb6ebc089b95`。
+- 対象数学成果commit: `02b7fee706a2f569be8a9d1f3b5c7aa9324e5078`。
+- レビュー開始時PR head: `1028ee0fa1b49df9c201c53c9a24970c11a6e297`。
+- R44-C001: **PROVEN × ACCEPTED**。
+- R44-C002: **PROVEN × ACCEPTED**。
+- R44-G001: `SOLVED` を受理。
+- Discovery: `CONTAMINATED`。
+
+独立Reviewerは研究側 `verify.py` / `search.py` をimportしないbitmask実装を使用した。実行環境はPython 3.13.5、Linux x86_64。保存資材:
+
+```text
+review/r44-g001-independent.py
+review/r44-g001-independent-result.json
+```
+
+独立検査結果は17頂点、68辺、全頂点次数8、全 `C(17,4)=2380` 集合、K4=0、独立4集合=0。さらに三角形68個・独立3集合68個を検出したため、clique number = independence number = 3 も確認した。証明書SHA-256は研究記録と一致した。
+
+従って保存グラフは単色K4を避けるK17の2彩色を与え、定義から `R(4,4)>17`、すなわち `R(4,4)>=18` が従う。
+
+探索全体の10,000,000候補は独立再実行していない。n=18での探索不成功は数学的Claimに使われておらず、C001/C002の受理は保存証明書だけに依存する。
+
+汚染記録の順序は `fb433354`（開始契約）→ `8ca54fd7`（notes-only contamination checkpoint）→ `abb6dfd5`（探索・verifier実装）→ `02b7fee7`（成果）の順であることを確認した。既知値・Paley構成の想起があったためDiscoveryはCLEANへ変更しない。
+
+fresh-session handoff、budget、model/effort欠測、明示的branch pushの記録はGit上で整合している。Reviewerは当該研究セッション自体を再演していないため、fresh-session評価は保存記録に基づく運用監査であり、探索再現とは区別する。
 
 ## 研究側の検査
 
@@ -25,7 +55,9 @@ R44-C001（17頂点の回避グラフ）およびR44-C002（R(4,4)>=18）は **P
 CLIの不正JSONはinvalid/exit 1として扱う。形式検査を通過しない入力のchecked件数0は、
 有効な証明書を検査したという意味ではない。
 
-## 独立Reviewerへの引継ぎ
+## 研究提出時の独立Reviewerへの引継ぎ（履歴）
+
+以下は研究提出当時の記録であり、上記独立レビューで完了した。
 
 レビューartifactの保存先は `benchmarks/r4-4/reviews/G001.md`。
 補助計算資材は `benchmarks/r4-4/review/` に研究側と別のコード・環境・コマンド・結果として保存する。

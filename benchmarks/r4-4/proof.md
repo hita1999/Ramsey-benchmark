@@ -2,7 +2,7 @@
 
 ## R44-C001: 17頂点の回避グラフ
 
-数学的状態: **PROVEN**。独立レビュー状態: **UNREVIEWED**。
+数学的状態: **PROVEN**。独立レビュー状態: **ACCEPTED**（[独立レビュー](reviews/G001.md)）。
 Discovery: **CONTAMINATED**（想起内容は証明根拠に使わない）。
 依存Claim: なし。対象は同じ成果物commitの `run/certificate.json` と `verify.py`。
 
@@ -46,10 +46,11 @@ Discovery: **CONTAMINATED**（想起内容は証明根拠に使わない）。
 完全検査は標準Pythonの整数・集合演算に依存する有限計算証明であり、proof assistantによる形式検証ではない。
 探索の成功判定・heuristic・乱数・既知構成の正しさを仮定しない。
 verifierの再現コマンドとテストは `reproduce.md`、依存性の隔離実行は `isolated-verification.json` に保存した。
+独立Reviewerは研究側verifierをimportしないbitmask実装でも証明書を直接検査し、全2,380個の4集合についてK4=0・独立4集合=0を再確認した。独立計算資材は `review/` 配下に保存した。
 
 ## R44-C002: 下界
 
-数学的状態: **PROVEN**。独立レビュー状態: **UNREVIEWED**。
+数学的状態: **PROVEN**。独立レビュー状態: **ACCEPTED**（[独立レビュー](reviews/G001.md)）。
 Discovery: **CONTAMINATED**。依存Claim: **R44-C001**。
 
 C001のグラフで辺を赤、非辺を青とすると、K17の赤青彩色で単色K4が存在しない。

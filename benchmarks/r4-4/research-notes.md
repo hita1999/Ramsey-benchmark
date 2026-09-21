@@ -3,9 +3,9 @@
 ## 現在の状態
 
 - Benchmark: `PARTIAL_PROGRESS`（下界のみ、上界・正確な値は未証明）。
-- R44-G001: **SOLVED**。専用branchへの明示的push成功。独立レビュー・main統合は未実施。
+- R44-G001: **SOLVED**。独立レビュー受理済み。main統合は未実施。
 - 今回の最大証明書: 17頂点68辺。n=4..17の全14証明書を保存。
-- `R44-C001` / `R44-C002`: **PROVEN × UNREVIEWED**。
+- `R44-C001` / `R44-C002`: **PROVEN × ACCEPTED**。
 - Discovery: **CONTAMINATED**。利用前checkpoint `8ca54fd7a4dbc751da870e658d5967185e90dfb2`。
 - 探索停止: `EXHAUSTED_BUDGET`（10,000,000候補、124.310935125秒）。
 - fresh-session研究開始: 実施済み。詳細は実行契約・handoff評価。
@@ -33,15 +33,31 @@ G001では正確な値をGoalへ埋め込まず、固定予算内で `K_4` も�
 
 | ID | 正確な主張 | 数学的状態 | 独立レビュー | 根拠 | 依存 | 対象commit |
 |---|---|---|---|---|---|---|
-| R44-C001 | 保存した17頂点68辺のグラフにK4も独立4集合もない | PROVEN | UNREVIEWED | run/certificate.json、verify.py、verification-result.json、proof.md | なし | `02b7fee706a2f569be8a9d1f3b5c7aa9324e5078` |
-| R44-C002 | R(4,4)>=18 | PROVEN | UNREVIEWED | proof.mdの定義と単調性による論証 | R44-C001 | C001と同じ |
+| R44-C001 | 保存した17頂点68辺のグラフにK4も独立4集合もない | PROVEN | ACCEPTED | run/certificate.json、研究側verifier、独立bitmask検査、proof.md | なし | `02b7fee706a2f569be8a9d1f3b5c7aa9324e5078` |
+| R44-C002 | R(4,4)>=18 | PROVEN | ACCEPTED | proof.mdの定義と単調性、`reviews/G001.md` | R44-C001 | C001と同じ |
 
 Discoveryは両ClaimともCONTAMINATED。証明書hashはproof.mdに固定。
 
 ## 現在のフロンティア
 
-G001の独立レビューが次の工程。レビュー受理後、必要なら別Goalで上界または完全探索を設計する。
+G001の独立レビューは完了し、R44-C001/C002は `PROVEN × ACCEPTED`。次の工程は別Goalとして上界を設計すること。
 今回の18頂点探索失敗は上界・不存在・最大性の根拠にしない。
+
+
+## R44-G001 独立レビューとclosure（2026-09-21）
+
+- Reviewer: ChatGPT / GPT-5.6 Sol、reasoning effort High。
+- 対象数学成果commit: `02b7fee706a2f569be8a9d1f3b5c7aa9324e5078`。
+- レビュー開始時PR head: `1028ee0fa1b49df9c201c53c9a24970c11a6e297`。
+- レビュー記録: `reviews/G001.md`。
+- 独立計算: `review/r44-g001-independent.py` と `review/r44-g001-independent-result.json`。
+- 判定: R44-C001 / R44-C002とも **PROVEN × ACCEPTED**。R44-G001の `SOLVED` を受理。
+- Discovery: **CONTAMINATED** を維持。
+- 独立計算では研究側verifierをimportせず、17頂点68辺、全次数8、全2,380個の4集合、K4=0、独立4集合=0を確認した。さらに三角形68個・独立3集合68個を確認し、clique numberとindependence numberがともに3であることを別経路で確認した。
+- 10,000,000候補探索そのものの独立再実行はしていない。下界証明は保存証明書だけで完結するため、数学的受理には不要。
+- fresh-session handoffは保存記録に基づく運用監査として整合的と判定したが、Reviewerが研究開始セッションを再演したものではない。
+- 汚染checkpoint `8ca54fd` が探索実装 `abb6dfd` と成果 `02b7fee` より前に存在することをGit履歴で確認した。
+- review closureとしてproof・research-notes・verification・benchmark-summaryの現在状態を同期した。研究提出時のUNREVIEWED記録は履歴として保持する。
 
 ## R44-G001 実行開始契約（2026-09-21）
 
@@ -109,7 +125,9 @@ UTC差とmonotonic差を同一視しない。Goalの30分上限は準備から�
 次セッションはGoal、problem、research-notes、proof、verification、reproduce、run/search-result、
 goal-measurements、およびPR記録から研究状態を復元できる。
 
-## 独立レビューとclosureの引継ぎ
+## 研究提出時の独立レビューとclosureの引継ぎ（履歴）
+
+以下は研究提出時点の引継ぎ記録であり、その後の独立レビューで解消した。
 
 保存先 `reviews/G001.md` と補助資材 `review/`、監査項目は `verification.md` に指定。
 独立Reviewerがproof・research-notes・verification・benchmark-summaryを同一closureで同期する。
@@ -140,4 +158,4 @@ goal-measurements、およびPR記録から研究状態を復元できる。
   これは準備・実装・探索・検査・文書化・成果物commit・明示push・PR作成を含む約10分43秒の計測。
   この最終記録のcommit/pushと応答の僅かな後処理は計測後であり、最終commit日時はGit履歴で監査可能。
 - 数値予算上限30分・10,000,000候補を順守。候補上限到達後の追加探索なし。
-- 独立レビュー未実施、mainへ未統合。PR統合は本Goalの研究完了とは分離する。
+- 研究提出時点では独立レビュー未実施、mainへ未統合だった。PR統合は本Goalの研究完了とは分離する。

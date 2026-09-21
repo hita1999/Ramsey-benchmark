@@ -6,7 +6,7 @@
 |---|---|---:|---:|---|---:|---|
 | R(3,4) | SOLVED | ≥9 | ≤9 | C001〜C006 独立レビュー ACCEPTED | 完了2件 | R(3,4)=9独立検証済み、Discoveryは両GoalともCONTAMINATED |
 | R(3,5) | SOLVED | ≥14 | ≤14 | R35-C001〜C004 PROVEN × ACCEPTED | 完了2件 | R(3,5)=14独立検証済み、Discovery CONTAMINATED |
-| R(4,4) | PARTIAL_PROGRESS | ≥18 | — | R44-C001/C002 PROVEN × UNREVIEWED | 完了1件（G001 SOLVED） | 17頂点68辺、Discovery CONTAMINATED |
+| R(4,4) | PARTIAL_PROGRESS | ≥18 | — | R44-C001/C002 PROVEN × ACCEPTED | 完了1件（G001 SOLVED） | 17頂点68辺を独立検証済み、Discovery CONTAMINATED |
 
 ## 収集する指標
 
@@ -75,7 +75,7 @@ G001は正確な既知値を目標として与えず、固定予算内で `K_4` 
 
 fresh sessionでbase `a0658a0fe5ca5e957b35f9460477fb6ebc089b95` から実行した。
 17頂点68辺の証明書を構成し、全2,380個の4集合を検査してK4=0・独立4集合=0を確認。
-従って下界 **R(4,4)>=18** は **PROVEN × UNREVIEWED**。
+従って下界 **R(4,4)>=18** は **PROVEN × ACCEPTED**。独立Reviewerが研究側と別のbitmask実装で全2,380個の4集合を再検査した。
 Benchmark全体は下界のみで `PARTIAL_PROGRESS`。上界・正確な値は未証明。
 
 探索はn=4から順に増やすseed固定の焼きなましで、1,000万候補・124.310935125秒で候補予算終了。
@@ -83,8 +83,8 @@ n=18での探索不成功は不存在証明に使わない。全14証明書・ve
 既知内容想起の利用前checkpointは `8ca54fd`、Discoveryは `CONTAMINATED`。
 正確なmodel/effortは `missing`。Gitだけからのfresh-session開始を実施したが、別セッションでの全探索再実行は未実施。
 Goal終了分類・PR提出記録・全体時間・counterは [研究ノート](../benchmarks/r4-4/research-notes.md) と `goal-measurements.json` を参照。
-独立レビューとmainへのPR統合は後続工程。
+独立レビューは2026-09-21に完了。mainへのPR統合は後続工程。
 
 G001は `SOLVED` として [PR #10](https://github.com/hita1999/Ramsey-benchmark/pull/10) に提出済み。
 成果物commitまで523秒、PR提出後counterは643秒・71,187単位（生成token数・課金量ではない）。
-専用branchへの明示push成功、mainへは未統合。独立レビュー状態はUNREVIEWEDを維持する。
+専用branchへの明示push成功、mainへは未統合。レビュー記録は `benchmarks/r4-4/reviews/G001.md`、R44-C001/C002は `PROVEN × ACCEPTED`。
