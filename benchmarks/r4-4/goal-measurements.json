@@ -28,7 +28,7 @@
       "snapshot": {
         "goal": {
           "threadId": "01a0c3ce-126b-7511-b186-b0725087b4bf",
-          "objective": "Repository: `https://github.com/hita1999/Ramsey-benchmark`\\\n&#x20;Goal: `benchmarks/r4-4/goals/G001.md`\\\n&#x20;Gitをsource of truthとしてGoalに従って実行してください。",
+          "objective": "Repository: `https://github.com/hita1999/Ramsey-benchmark`\\\n&#x20;Goal: `benchmarks/r4-4/goals/G001.md`\\\n&#x20;Git\u3092source of truth\u3068\u3057\u3066Goal\u306b\u5f93\u3063\u3066\u5b9f\u884c\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
           "status": "active",
           "tokensUsed": 50228,
           "timeUsedSeconds": 396,
@@ -38,6 +38,14 @@
         "remainingTokens": null,
         "completionBudgetReport": null
       }
+    },
+    {
+      "phase": "after_artifact_commit_and_first_push",
+      "utc": "2026-09-21T12:00:20Z",
+      "tokensUsed": 67474,
+      "timeUsedSeconds": 557,
+      "artifact_commit": "02b7fee706a2f569be8a9d1f3b5c7aa9324e5078",
+      "utc_seconds_through_artifact_commit": 523
     }
   ]
 }

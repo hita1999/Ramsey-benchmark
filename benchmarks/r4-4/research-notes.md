@@ -3,7 +3,7 @@
 ## 現在の状態
 
 - Benchmark: `PARTIAL_PROGRESS`（下界のみ、上界・正確な値は未証明）。
-- R44-G001: 成果物完成、専用branchへのpush待ち。push確認後に `SOLVED` とする。
+- R44-G001: **SOLVED**。専用branchへの明示的push成功。独立レビュー・main統合は未実施。
 - 今回の最大証明書: 17頂点68辺。n=4..17の全14証明書を保存。
 - `R44-C001` / `R44-C002`: **PROVEN × UNREVIEWED**。
 - Discovery: **CONTAMINATED**。利用前checkpoint `8ca54fd7a4dbc751da870e658d5967185e90dfb2`。
@@ -33,7 +33,7 @@ G001では正確な値をGoalへ埋め込まず、固定予算内で `K_4` も�
 
 | ID | 正確な主張 | 数学的状態 | 独立レビュー | 根拠 | 依存 | 対象commit |
 |---|---|---|---|---|---|---|
-| R44-C001 | 保存した17頂点68辺のグラフにK4も独立4集合もない | PROVEN | UNREVIEWED | run/certificate.json、verify.py、verification-result.json、proof.md | なし | 本成果物を初めて追加するcommit（提出記録にSHAを追記） |
+| R44-C001 | 保存した17頂点68辺のグラフにK4も独立4集合もない | PROVEN | UNREVIEWED | run/certificate.json、verify.py、verification-result.json、proof.md | なし | `02b7fee706a2f569be8a9d1f3b5c7aa9324e5078` |
 | R44-C002 | R(4,4)>=18 | PROVEN | UNREVIEWED | proof.mdの定義と単調性による論証 | R44-C001 | C001と同じ |
 
 Discoveryは両ClaimともCONTAMINATED。証明書hashはproof.mdに固定。
@@ -114,3 +114,18 @@ goal-measurements、およびPR記録から研究状態を復元できる。
 保存先 `reviews/G001.md` と補助資材 `review/`、監査項目は `verification.md` に指定。
 独立Reviewerがproof・research-notes・verification・benchmark-summaryを同一closureで同期する。
 統合担当がその後PRをmergeし、merge SHAを保存する。研究担当はmainへpushしない。
+
+## 提出記録と終了分類
+
+- Goal終了分類: **SOLVED**。探索停止分類: **EXHAUSTED_BUDGET**。Benchmarkは下界のみのPARTIAL_PROGRESS。
+- 成果物commit: `02b7fee706a2f569be8a9d1f3b5c7aa9324e5078`、2026-09-21T11:59:48Z。
+- Goal起点11:51:05Zから成果物commitまで523秒（8分43秒、準備・実装・探索・検査・文書化・commitを含む）。
+- 提出後計測: 2026-09-21T12:00:20Z。Goal counterのtimeUsedSeconds=557、tokensUsed=67474。
+  UTCの起点差は555秒であり、取得元の異なるcounterと完全一致しない。いずれも30分内。
+- 初回push前: branch `codex/r44-g001-lower-bound`、upstreamなし、remote push URL `https://github.com/hita1999/Ramsey-benchmark.git`、差分を確認。
+- 実行: `git push -u origin HEAD:refs/heads/codex/r44-g001-lower-bound`、exit 0。
+  remoteは新規branch作成を返し、upstreamは `origin/codex/r44-g001-lower-bound` に設定された。
+- push後 `git status --short --branch` で同upstreamと同期、未コミット変更なしを確認。
+- mainへの直接push、引数なしpush、force push、local mainへの成果mergeはいずれも実行していない。
+- 契約・想起・実装・成果物の順でcheckpointを保存し、その全てを専用PRで提示する。
+- Acceptance criteria: 非自明証明書、全列挙verifier、テスト、手法/seed/予算/停止/再現、fresh/base、model/effort欠測と計測、二軸Claim、利用前checkpoint、明示pushを満たした。

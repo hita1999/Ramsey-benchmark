@@ -6,7 +6,7 @@
 |---|---|---:|---:|---|---:|---|
 | R(3,4) | SOLVED | ≥9 | ≤9 | C001〜C006 独立レビュー ACCEPTED | 完了2件 | R(3,4)=9独立検証済み、Discoveryは両GoalともCONTAMINATED |
 | R(3,5) | SOLVED | ≥14 | ≤14 | R35-C001〜C004 PROVEN × ACCEPTED | 完了2件 | R(3,5)=14独立検証済み、Discovery CONTAMINATED |
-| R(4,4) | PARTIAL_PROGRESS | ≥18 | — | R44-C001/C002 PROVEN × UNREVIEWED | G001成果物完成・push待ち | 17頂点68辺、Discovery CONTAMINATED |
+| R(4,4) | PARTIAL_PROGRESS | ≥18 | — | R44-C001/C002 PROVEN × UNREVIEWED | 完了1件（G001 SOLVED） | 17頂点68辺、Discovery CONTAMINATED |
 
 ## 収集する指標
 
