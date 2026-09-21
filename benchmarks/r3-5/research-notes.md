@@ -12,11 +12,11 @@
 
 ## 現在の状態
 
-- Benchmark状態: `SOLVED`（数学的証明が保存済み。上界・等号の独立レビューは未実施）。
+- Benchmark状態: `SOLVED`（下界・上界・等号の独立レビューまで完了）。
 - 現在のGoal: `R35-G002`、終了分類 **`SOLVED`**。
 - R35-G001の探索停止分類: `EXHAUSTED_BUDGET`、具体的理由 `CANDIDATE_LIMIT`。
 - 確定した下界: **R(3,5) ≥ 14**、`PROVEN × ACCEPTED`。
-- 新しい上界・等号: **R(3,5) ≤ 14、R(3,5) = 14**、`PROVEN × UNREVIEWED`。
+- 確定した上界・等号: **R(3,5) ≤ 14、R(3,5) = 14**、`PROVEN × ACCEPTED`。
 - Discoveryタグ: `CONTAMINATED`。
 - fresh-session開始評価: `PASS`。別fresh sessionによる探索全再実行は未実施。
 
@@ -65,9 +65,21 @@
 - 自己監査: 三角形の有無、整数次数 `d≥5` / `d≤4` の被覆、非近傍数 `13−d≥9`、
   誘導部分グラフへの継承、頂点の追加、Stage 1の偶奇性と依存方向を確認。詳細は `verification.md`。
 - fresh-sessionからGitだけで開始・完了できたか: 研究側 `PASS`。追加質問なし。
-- 現在のボトルネック: 新しい上界と等号の独立レビューが未実施。
-- Reviewerの重点: 9頂点補題の再掲、14頂点の全場合被覆、独立4集合に加える頂点が集合外か、
+- 研究終了時のボトルネックは独立レビュー待ちだったが、下記レビューで解消した。
+- 研究終了時に指定したReviewerの重点: 9頂点補題の再掲、14頂点の全場合被覆、独立4集合に加える頂点が集合外か、
   上界に下界が混入しないか、Claim依存と汚染checkpointの順序。
+
+### R35-G002 — 独立レビューとclosure
+
+- 独立レビュー: 2026-09-12、ChatGPT / GPT-5.6 Sol。
+- 根拠: [reviews/G002.md](reviews/G002.md)（レビュー記録commit `752dd54`、PR #5）。
+- 対象研究commit: `07b809b37a556a85898b38194172f0f3b48ace83`。
+- 復元後のレビュー前PR head: `44ab7d11749d853258b1e97f5cb2dcfc6fc45249`。
+- 判定: R35-C003/C004とも `PROVEN × ACCEPTED`、R35-G002の `SOLVED` を受理。
+  数学的ギャップなし。Discoveryは `CONTAMINATED` を維持する。
+- 2026-09-21 closure: マージ済みPR #5（`f40915a`）を基点に、proof・本書・verification・サマリーの
+  レビュー状態を同期した。証明内容・実行設定・計測値は変更していない。
+- 残る作業: Stage 2の振り返りと次Goalの設計。独立レビュー待ちの数学的Claimはない。
 
 ### R35-G001
 
@@ -139,7 +151,7 @@
 
 - 命題: 14頂点の任意の単純グラフは三角形または独立5集合を持つ。従って `R(3,5) ≤ 14`。
 - 数学的状態: `PROVEN`。
-- 独立レビュー状態: `UNREVIEWED`。
+- 独立レビュー状態: `ACCEPTED`（2026-09-12、[独立レビュー記録](reviews/G002.md)）。
 - Discovery: `CONTAMINATED`。
 - 根拠: `proof.md` の次数による2場合と、同書に再掲した9頂点補題の証明。
 - 依存するClaim: Stage 1 `C005`（推移的に `C004`、`C003`）。
@@ -151,7 +163,7 @@
 
 - 命題: `R(3,5) = 14`。
 - 数学的状態: `PROVEN`。
-- 独立レビュー状態: `UNREVIEWED`。
+- 独立レビュー状態: `ACCEPTED`（2026-09-12、[独立レビュー記録](reviews/G002.md)）。
 - Discovery: `CONTAMINATED`。
 - 根拠: `proof.md` の下界と上界の結合。
 - 依存するClaim: `R35-C002`、`R35-C003`。
@@ -176,7 +188,8 @@
 ## 確定した結果
 
 R35-G002で上界 `R35-C003` と等号 `R35-C004` の自足的証明を保存した。
-両者は `PROVEN × UNREVIEWED` であり、以下のG001に対する独立受理とは区別する。
+両者は [G002独立レビュー](reviews/G002.md) で `PROVEN × ACCEPTED` となった。
+従って `R(3,5)=14` は本benchmarkで独立検証済みである。
 
 R35-C001、R35-C002は独立レビュー `ACCEPTED`。
 保存証明書について研究側verifierは全286個の3集合と全1287個の5集合を検査した。
@@ -191,7 +204,7 @@ R35-C001、R35-C002は独立レビュー `ACCEPTED`。
 
 ## 予想・未検証の主張
 
-上界・正確な値の新しいClaimは証明済みだが独立レビュー未実施である。
+上界・正確な値のClaimは独立レビューまで完了した。
 探索ログの決定的再現性については再現コマンドがあるが、別fresh sessionでの5,000,000候補全再実行は未実施。
 
 ## 反証された仮説・失敗した方針
@@ -232,7 +245,7 @@ R35-C001、R35-C002は独立レビュー `ACCEPTED`。
 ## 現在のフロンティアとボトルネック
 
 - 下界: `R(3,5) ≥ 14`、`PROVEN × ACCEPTED`。
-- 上界・等号: `R(3,5) ≤ 14`、`R(3,5) = 14`、`PROVEN × UNREVIEWED`。
+- 上界・等号: `R(3,5) ≤ 14`、`R(3,5) = 14`、`PROVEN × ACCEPTED`。
 - Discovery評価: `CONTAMINATED`。既知情報を想起せず発見できたという実験ではない。
 - fresh-session研究開始: `PASS`。
 - 別fresh sessionでの探索全再実行: `UNTESTED`。
@@ -241,10 +254,9 @@ R35-C001、R35-C002は独立レビュー `ACCEPTED`。
 
 ## 次に行う具体的な作業
 
-1. `goals/G002.md` と `proof.md` を別Reviewerへ渡し、R35-C003/C004を独立に監査する。
-   判定後に本書・verification・サマリーのレビュー状態を同期する。
+1. 独立レビューと状態同期が完了したStage 2について、効率・Discovery・fresh-session運用を振り返る。
 2. 探索再現性自体を評価したい場合は、別fresh sessionで `verification.md` の5,000,000候補再実行を行い、研究Goalとは分離して記録する。
-3. 独立レビュー後、Stage 2の効率・Discovery・fresh-session運用を振り返って次のGoalを設計する。
+3. 振り返りを踏まえて次のGoalを設計する。
 
-再開時は `goals/G002.md`、本書、`proof.md`、`verification.md` を読む。
+再開時は `goals/G002.md`、本書、`proof.md`、`verification.md`、`reviews/G002.md` を読む。
 既知情報の記録を見た後のセッションでもDiscovery汚染を明示し、既知値を証拠や停止条件にしない。
