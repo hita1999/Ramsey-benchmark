@@ -1,0 +1,20 @@
+{
+  "seed": 20260921,
+  "max_evaluations": 10000000,
+  "seconds": 600.0,
+  "restart_steps": 50000,
+  "initial_temperature": 1.5,
+  "final_temperature": 0.05,
+  "start_n": 4,
+  "vertex_horizon": null,
+  "evaluation_definition": "initial full graph score or proposed single-edge-flip score",
+  "utc_start": "2026-09-21T11:55:14.985591+00:00",
+  "evaluations": 10000000,
+  "best_n": 17,
+  "next_n": 18,
+  "next_n_best_score": 9,
+  "stop_reason": "candidate_budget",
+  "search_status": "EXHAUSTED_BUDGET",
+  "elapsed_seconds": 124.310935125,
+  "utc_end": "2026-09-21T11:57:17.160358+00:00"
+}
