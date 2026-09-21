@@ -42,6 +42,14 @@ class VerifyTests(unittest.TestCase):
             self.assertEqual(r['checked_four_sets'],15)
             self.assertEqual(r['k4_count']+r['independent4_count'],15)
 
+    def test_both_violation_types(self):
+        edges = [list(p) for p in combinations(range(4),2)]
+        r = verify(dict(n=8,edges=edges))
+        self.assertEqual(r['checked_four_sets'],70)
+        self.assertEqual(r['k4_count'],1)
+        self.assertEqual(r['independent4_count'],17)
+        self.assertFalse(r['valid'])
+
     def test_malformed(self):
         invalid = [None,[],{},dict(n=True,edges=[]),dict(n=-1,edges=[]),
                    dict(n=4.0,edges=[]),dict(n=4,edges=None)]

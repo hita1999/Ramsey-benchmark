@@ -1,0 +1,43 @@
+{
+  "source": "get_goal tool; counter units are not generated-token count or billing",
+  "samples": [
+    {
+      "phase": "start",
+      "utc": "2026-09-21T11:51:12Z",
+      "tokensUsed": 5295,
+      "timeUsedSeconds": 7
+    },
+    {
+      "phase": "contract_read",
+      "utc": "2026-09-21T11:51:52Z",
+      "tokensUsed": 20536,
+      "timeUsedSeconds": 47
+    },
+    {
+      "phase": "search_started",
+      "tokensUsed": 39728,
+      "timeUsedSeconds": 250
+    },
+    {
+      "phase": "during_search",
+      "tokensUsed": 43596,
+      "timeUsedSeconds": 278
+    },
+    {
+      "phase": "search_and_verification_done",
+      "snapshot": {
+        "goal": {
+          "threadId": "01a0c3ce-126b-7511-b186-b0725087b4bf",
+          "objective": "Repository: `https://github.com/hita1999/Ramsey-benchmark`\\\n&#x20;Goal: `benchmarks/r4-4/goals/G001.md`\\\n&#x20;Gitをsource of truthとしてGoalに従って実行してください。",
+          "status": "active",
+          "tokensUsed": 50228,
+          "timeUsedSeconds": 396,
+          "createdAt": 1789991465,
+          "updatedAt": 1789991859
+        },
+        "remainingTokens": null,
+        "completionBudgetReport": null
+      }
+    }
+  ]
+}

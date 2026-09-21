@@ -1,0 +1,128 @@
+{
+  "n04.json": {
+    "valid": true,
+    "format_valid": true,
+    "checked_four_sets": 1,
+    "k4_count": 0,
+    "independent4_count": 0,
+    "n": 4,
+    "edge_count": 1
+  },
+  "n05.json": {
+    "valid": true,
+    "format_valid": true,
+    "checked_four_sets": 5,
+    "k4_count": 0,
+    "independent4_count": 0,
+    "n": 5,
+    "edge_count": 6
+  },
+  "n06.json": {
+    "valid": true,
+    "format_valid": true,
+    "checked_four_sets": 15,
+    "k4_count": 0,
+    "independent4_count": 0,
+    "n": 6,
+    "edge_count": 7
+  },
+  "n07.json": {
+    "valid": true,
+    "format_valid": true,
+    "checked_four_sets": 35,
+    "k4_count": 0,
+    "independent4_count": 0,
+    "n": 7,
+    "edge_count": 8
+  },
+  "n08.json": {
+    "valid": true,
+    "format_valid": true,
+    "checked_four_sets": 70,
+    "k4_count": 0,
+    "independent4_count": 0,
+    "n": 8,
+    "edge_count": 16
+  },
+  "n09.json": {
+    "valid": true,
+    "format_valid": true,
+    "checked_four_sets": 126,
+    "k4_count": 0,
+    "independent4_count": 0,
+    "n": 9,
+    "edge_count": 17
+  },
+  "n10.json": {
+    "valid": true,
+    "format_valid": true,
+    "checked_four_sets": 210,
+    "k4_count": 0,
+    "independent4_count": 0,
+    "n": 10,
+    "edge_count": 24
+  },
+  "n11.json": {
+    "valid": true,
+    "format_valid": true,
+    "checked_four_sets": 330,
+    "k4_count": 0,
+    "independent4_count": 0,
+    "n": 11,
+    "edge_count": 27
+  },
+  "n12.json": {
+    "valid": true,
+    "format_valid": true,
+    "checked_four_sets": 495,
+    "k4_count": 0,
+    "independent4_count": 0,
+    "n": 12,
+    "edge_count": 33
+  },
+  "n13.json": {
+    "valid": true,
+    "format_valid": true,
+    "checked_four_sets": 715,
+    "k4_count": 0,
+    "independent4_count": 0,
+    "n": 13,
+    "edge_count": 39
+  },
+  "n14.json": {
+    "valid": true,
+    "format_valid": true,
+    "checked_four_sets": 1001,
+    "k4_count": 0,
+    "independent4_count": 0,
+    "n": 14,
+    "edge_count": 46
+  },
+  "n15.json": {
+    "valid": true,
+    "format_valid": true,
+    "checked_four_sets": 1365,
+    "k4_count": 0,
+    "independent4_count": 0,
+    "n": 15,
+    "edge_count": 51
+  },
+  "n16.json": {
+    "valid": true,
+    "format_valid": true,
+    "checked_four_sets": 1820,
+    "k4_count": 0,
+    "independent4_count": 0,
+    "n": 16,
+    "edge_count": 60
+  },
+  "n17.json": {
+    "valid": true,
+    "format_valid": true,
+    "checked_four_sets": 2380,
+    "k4_count": 0,
+    "independent4_count": 0,
+    "n": 17,
+    "edge_count": 68
+  }
+}

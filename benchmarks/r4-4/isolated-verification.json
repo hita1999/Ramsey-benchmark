@@ -1,0 +1,19 @@
+{
+  "command": "python3 -I <isolated-directory>/verify.py <isolated-directory>/certificate.json",
+  "directory_contents": [
+    "verify.py",
+    "certificate.json"
+  ],
+  "returncode": 0,
+  "result": {
+    "checked_four_sets": 2380,
+    "edge_count": 68,
+    "format_valid": true,
+    "independent4_count": 0,
+    "k4_count": 0,
+    "n": 17,
+    "valid": true
+  },
+  "stderr": "",
+  "certificate_sha256": "e8a743f4ee35213cceef5a065f918678e2d0282628f1b3463f8250736a6f30cf"
+}

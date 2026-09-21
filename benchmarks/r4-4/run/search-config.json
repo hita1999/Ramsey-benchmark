@@ -1,0 +1,12 @@
+{
+  "seed": 20260921,
+  "max_evaluations": 10000000,
+  "seconds": 600.0,
+  "restart_steps": 50000,
+  "initial_temperature": 1.5,
+  "final_temperature": 0.05,
+  "start_n": 4,
+  "vertex_horizon": null,
+  "evaluation_definition": "initial full graph score or proposed single-edge-flip score",
+  "utc_start": "2026-09-21T11:55:14.985591+00:00"
+}

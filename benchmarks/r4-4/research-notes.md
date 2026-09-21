@@ -2,14 +2,14 @@
 
 ## 現在の状態
 
-- Benchmark状態: `READY`。Stage 3初期化済み、研究は未開始。
-- Stage 3 root: `ab5624e9c411afe50137875811c26b46ecf13551`。
-- 現在定義済みGoal: `R44-G001`。
-- 完了Goal: 0。
-- 数学的Claim: まだなし。
-- Discovery: `UNKNOWN`。研究開始前であり、想起が報告されていないことをCLEANとは扱わない。
-- main PR policy: `PASS`。詳細は `results/stage3-pr-policy-verification.md`。
-- fresh-session研究: 未実施。
+- Benchmark: `PARTIAL_PROGRESS`（下界のみ、上界・正確な値は未証明）。
+- R44-G001: 成果物完成、専用branchへのpush待ち。push確認後に `SOLVED` とする。
+- 今回の最大証明書: 17頂点68辺。n=4..17の全14証明書を保存。
+- `R44-C001` / `R44-C002`: **PROVEN × UNREVIEWED**。
+- Discovery: **CONTAMINATED**。利用前checkpoint `8ca54fd7a4dbc751da870e658d5967185e90dfb2`。
+- 探索停止: `EXHAUSTED_BUDGET`（10,000,000候補、124.310935125秒）。
+- fresh-session研究開始: 実施済み。詳細は実行契約・handoff評価。
+- PR policy開始条件: 保存済みPASS確認。mainへの直接pushなし。
 
 ## Stage 3初期化
 
@@ -31,13 +31,17 @@ G001では正確な値をGoalへ埋め込まず、固定予算内で `K_4` も�
 
 ## Claim台帳
 
-まだ新規Claimはない。最初のClaim IDは `R44-C001` から開始する。
+| ID | 正確な主張 | 数学的状態 | 独立レビュー | 根拠 | 依存 | 対象commit |
+|---|---|---|---|---|---|---|
+| R44-C001 | 保存した17頂点68辺のグラフにK4も独立4集合もない | PROVEN | UNREVIEWED | run/certificate.json、verify.py、verification-result.json、proof.md | なし | 本成果物を初めて追加するcommit（提出記録にSHAを追記） |
+| R44-C002 | R(4,4)>=18 | PROVEN | UNREVIEWED | proof.mdの定義と単調性による論証 | R44-C001 | C001と同じ |
+
+Discoveryは両ClaimともCONTAMINATED。証明書hashはproof.mdに固定。
 
 ## 現在のフロンティア
 
-最初の課題は `R44-G001`。固定予算内で下界証明書を構成し、certificate-only verifierと再現資材を保存する。
-
-探索不成功は上界・不存在・最大性の根拠にしない。
+G001の独立レビューが次の工程。レビュー受理後、必要なら別Goalで上界または完全探索を設計する。
+今回の18頂点探索失敗は上界・不存在・最大性の根拠にしない。
 
 ## R44-G001 実行開始契約（2026-09-21）
 
@@ -66,3 +70,47 @@ G001では正確な値をGoalへ埋め込まず、固定予算内で `K_4` も�
 この追記だけを独立commitに保存する時点で探索評価数は0であり、探索コード・証明書はまだ作成していない。
 使用する探索はn=4からの一般的なランダム局所探索であり、既知構成の辺集合・巡回対称性を入力しない。
 記憶の影響が完全に排除されたと主張せず、数学的なcertificate検査とDiscovery評価を分離する。
+
+## 実験結果と失敗した方向
+
+- 実行コード固定commit: `abb6dfd55dcd3df2dc40846790f1f85b27192850`。
+- seed=20260921、50,000提案/再始動、温度1.5から0.05。全nで一般的ランダム初期化、対称性・既知構成なし。
+- n=4..17は各1初期化内で成功。17頂点は累積101,602候補、探索開始から約1.034秒で発見。
+- n=18では198初期化（最後の周期は途中）を実行し、違反数の最良値9、停止時11。成功証明書なし。
+- 初期グラフ評価212回、反転候補9,999,788回、合計10,000,000回。候補予算で停止し、600秒の内部探索時間上限には未到達。
+- 焼きなましの単一辺反転で18頂点の違反を0にできなかったことだけが失敗結果。
+  他の方式を試したという記録はなく、局所最適性・不存在・最大性の主張もない。
+- ボトルネックは大きいnの局所探索で違反が残ること。別Goalで予算を与えるならSAT符号化や完全なケース探索を検討できるが、その完全性は別途証明が必要。
+- 本Goalの候補予算を使い切ったので追加探索は行わない。
+
+探索の開始・終了UTC、純粋な探索時間は `run/search-result.json`。
+探索時間は `time.monotonic()`、UTCはOS wall-clock、Goal counterは別の取得元であり、時計差・計測区間差がある。
+UTC差とmonotonic差を同一視しない。Goalの30分上限は準備から文書化・成果物commitまでを含めて管理した。
+開始・途中・提出時の利用可能counterは `goal-measurements.json`。生成token数・費用の推定ではない。
+
+## 手法と完全検査
+
+候補1回の定義、seed、再始動規則、時間上限、再現コマンドは `search.py`、`run/search-config.json`、`reproduce.md` に固定。
+探索スコアは全4集合内の辺数cについてc=0または6の件数。
+辺追加時はその辺を含む4集合だけが変化し、c=0なら-1、c=5なら+1、それ以外0。
+辺除去時はc=6なら-1、c=1なら+1、それ以外0。採用時のみ関連集合の辺数を更新する。
+この探索最適化の正しさに依存せず、別のcertificate-only verifierで全証明書を検査した。
+7テストと隔離実行成功を保存。研究担当の検算であり、独立レビュー未実施。
+
+## fresh-session handoff評価
+
+ユーザーからrepository URLとGoalパスだけを受け取り、会話履歴なしでGit文書から開始・実行できた。
+初期checkoutは古くGoalパスが存在しなかったためfetchとfast-forwardが必要だった。
+追加の数学情報・既知値のユーザー提供は不要だった。想起した事前学習情報は別checkpointに記録した。
+正確なmodel ID/effortは取得できず `missing`。推奨設定で実行したという主張はしない。
+
+この評価は今回の研究開始handoffについての自己記録である。
+別fresh sessionによる探索全体の再実行・独立レビュー・未知問題への転用性能の実証ではない。
+次セッションはGoal、problem、research-notes、proof、verification、reproduce、run/search-result、
+goal-measurements、およびPR記録から研究状態を復元できる。
+
+## 独立レビューとclosureの引継ぎ
+
+保存先 `reviews/G001.md` と補助資材 `review/`、監査項目は `verification.md` に指定。
+独立Reviewerがproof・research-notes・verification・benchmark-summaryを同一closureで同期する。
+統合担当がその後PRをmergeし、merge SHAを保存する。研究担当はmainへpushしない。
