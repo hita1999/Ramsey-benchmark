@@ -2,8 +2,8 @@
 
 ## 現在の状態
 
-- Benchmark: 上下界と等号の数学的証明を保存済み。上界・等号は独立レビュー待ち。
-- R44-G002: **SOLVED**（研究完了、独立レビュー・PR統合は別工程）。R44-L001/C003/C004は **PROVEN × UNREVIEWED**。
+- Benchmark: **SOLVED**。`R(4,4)=18` を上下界とも独立レビュー済み。
+- R44-G002: **SOLVED**。独立レビュー受理済み、PR統合待ち。R44-L001/C003/C004は **PROVEN × ACCEPTED**。
 - R44-G001: **SOLVED**。独立レビュー受理済み。PR #10でmainへ統合済み（merge `4a459b19723dbe8f177c7ad07af75d23fa62dd79`）。
 - G001の最大証明書: 17頂点68辺。n=4..17の全14証明書を保存。
 - `R44-C001` / `R44-C002`: **PROVEN × ACCEPTED**。
@@ -36,17 +36,17 @@ G001では正確な値をGoalへ埋め込まず、固定予算内で `K_4` も�
 |---|---|---|---|---|---|---|
 | R44-C001 | 保存した17頂点68辺のグラフにK4も独立4集合もない | PROVEN | ACCEPTED | run/certificate.json、研究側verifier、独立bitmask検査、proof.md | なし | `02b7fee706a2f569be8a9d1f3b5c7aa9324e5078` |
 | R44-C002 | R(4,4)>=18 | PROVEN | ACCEPTED | proof.mdの定義と単調性、`reviews/G001.md` | R44-C001 | C001と同じ |
-| R44-L001 | 9頂点以上の任意のグラフはK3または独立4集合を含み、かつK4または独立3集合を含む | PROVEN | UNREVIEWED | proof.mdの9頂点への制限と補グラフ変換 | Stage 1 C005（PROVEN × ACCEPTED） | G002数学成果commit（下記提出記録） |
-| R44-C003 | 任意の18頂点グラフにK4または独立4集合がある。従ってR(4,4)<=18 | PROVEN | UNREVIEWED | proof.mdのd>=9 / d<=8の全場合 | R44-L001 | G002数学成果commit |
-| R44-C004 | R(4,4)=18 | PROVEN | UNREVIEWED | 受理済み下界と本Goalの上界の結合 | R44-C002、R44-C003 | G002数学成果commit |
+| R44-L001 | 9頂点以上の任意のグラフはK3または独立4集合を含み、かつK4または独立3集合を含む | PROVEN | ACCEPTED | proof.mdの9頂点への制限と補グラフ変換、`reviews/G002.md` | Stage 1 C005（PROVEN × ACCEPTED） | `1265d2fd7ac4218329a096939feb9dae37f9d688` |
+| R44-C003 | 任意の18頂点グラフにK4または独立4集合がある。従ってR(4,4)<=18 | PROVEN | ACCEPTED | proof.mdのd>=9 / d<=8の全場合、`reviews/G002.md` | R44-L001 | `1265d2fd7ac4218329a096939feb9dae37f9d688` |
+| R44-C004 | R(4,4)=18 | PROVEN | ACCEPTED | 受理済み下界と本Goalの上界の結合、`reviews/G002.md` | R44-C002、R44-C003 | `1265d2fd7ac4218329a096939feb9dae37f9d688` |
 
 Discoveryは全ClaimともCONTAMINATED。証明書hashはproof.mdに固定。
 
 ## 現在のフロンティア
 
 G001の独立レビューとmain統合は完了し、R44-C001/C002は `PROVEN × ACCEPTED`。
-G002で上界R44-C003と等号R44-C004を証明した。数学的な未解決gapはない。
-次の工程は独立ReviewerによるR44-L001/C003/C004の監査、4文書のclosure同期、PR統合。
+G002の上界R44-C003と等号R44-C004は独立Reviewerに受理された。数学的な未解決gapはない。
+残工程はPR #12のmain統合のみ。
 G001の探索失敗・17頂点証明書の構造は上界に使用していない。
 
 
@@ -187,6 +187,23 @@ goal-measurements、およびPR記録から研究状態を復元できる。
 
 実際のGoal execution baseは、このG002定義PRがmainへマージされた後のmain HEADを研究開始時に記録する。
 
+## R44-G002 独立レビューとclosure（2026-09-21）
+
+- Reviewer: ChatGPT / GPT-5.6 Sol、reasoning effort High。
+- Goal execution base: `89b05a18ecd69baa2d01c815c7e350bfa7c39841`。
+- 対象数学成果commit: `1265d2fd7ac4218329a096939feb9dae37f9d688`。
+- レビュー開始時PR head: `daabf7b3c16458aad282a507db120ad8ea51eca1`。
+- レビュー記録: `reviews/G002.md`。
+- 判定: R44-L001 / R44-C003 / R44-C004 はすべて **PROVEN × ACCEPTED**。R44-G002の `SOLVED` を受理。
+- Benchmark: **SOLVED**。R44-C002とR44-C003から `R(4,4)=18` を独立受理。
+- Discovery: **CONTAMINATED** を維持。
+- 補助計算: なし。証明が短い理論論証であり、既存依存Stage 1 C005は既に独立受理済みのため、新規計算を受理条件にしなかった。
+- 独立監査では、9頂点以上への制限、補グラフのK3↔独立3集合・独立4集合↔K4、18頂点での `d>=9 / d<=8` の完全被覆、vによる拡張、依存DAGの非循環を個別に確認した。
+- 上界はG001の18頂点探索失敗、best score、17頂点certificateの特殊構造、未証明の一般Ramsey recurrenceに依存していない。
+- 汚染checkpoint `9dd3fcbd` が数学成果 `1265d2fd` より前に存在することをGit履歴で確認した。
+- fresh-session handoffは保存記録に基づく運用監査として整合的。Reviewerは研究開始セッションを再演したものではない。
+- review closureとしてproof・research-notes・verification・benchmark-summaryを同期した。研究提出時のUNREVIEWED記録は時点付き履歴として保持する。
+
 ## R44-G002 実行開始契約（2026-09-21）
 
 - Goal execution base: `89b05a18ecd69baa2d01c815c7e350bfa7c39841`（fetch後の `origin/main` と、専用branch作成後の `git rev-parse HEAD` が一致）。
@@ -252,7 +269,7 @@ Stage 1の既存Claimはstatement・証明・独立受理記録を確認した�
 
 ## R44-G002 提出記録と終了分類
 
-- Goal終了分類: **SOLVED**。独立レビュー・closure・main統合は未実施で別工程。
+- Goal終了分類: **SOLVED**。以下は研究提出時点の記録であり、その後独立レビュー・closureは完了、main統合のみ未実施。
 - 数学成果commit: `1265d2fd7ac4218329a096939feb9dae37f9d688`、`2026-09-21T12:32:54Z`。
   R44-L001/C003/C004のClaim台帳の対象commitはこれを指す。
 - UTC起点12:27:04Zから数学成果commitまで350秒（5分50秒）。準備・契約・汚染記録・証明・自己監査・文書化・commitを含む。
@@ -270,4 +287,4 @@ Stage 1の既存Claimはstatement・証明・独立受理記録を確認した�
   token counterは生成token数・課金量ではない。20分予算内に数学成果とPRを保存した。
 - Acceptance criteria: 任意の18頂点、全場合・境界・補グラフ、受理済み依存、新規補題の証明、proof単独可読性、
   G001 heuristic非依存、利用前汚染checkpoint、execution base/fresh/model欠測/予算/終了分類/明示pushを満たした。
-- 次の担当は独立Reviewer。本Goal内でACCEPTEDへ変更していない。mainへの直接push・force push・引数なしpushなし。
+- 研究提出時点の次担当は独立Reviewerであり、本Goal内ではACCEPTEDへ変更していなかった。その後の独立レビューで受理済み。mainへの直接push・force push・引数なしpushなし。

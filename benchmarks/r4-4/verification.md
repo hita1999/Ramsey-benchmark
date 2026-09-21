@@ -7,9 +7,43 @@ R44-C001（17頂点の回避グラフ）およびR44-C002（R(4,4)>=18）は **P
 Discoveryは **CONTAMINATED**。独立レビュー詳細は [reviews/G001.md](reviews/G001.md)。
 
 R44-G002は理論証明により **SOLVED**。新規のR44-L001、R44-C003（上界）、R44-C004（等号）は
-**PROVEN × UNREVIEWED**。以下は研究担当の自己監査であり、独立受理ではない。
+**PROVEN × ACCEPTED**。独立レビュー詳細は [reviews/G002.md](reviews/G002.md)。
 
-## R44-G002: 理論証明の自己監査とReviewerへの引継ぎ
+## R44-G002: 独立レビュー結果
+
+- Reviewer: ChatGPT / GPT-5.6 Sol、reasoning effort High。
+- 日付: 2026-09-21。
+- Goal execution base: `89b05a18ecd69baa2d01c815c7e350bfa7c39841`。
+- 対象数学成果commit: `1265d2fd7ac4218329a096939feb9dae37f9d688`。
+- レビュー開始時PR head: `daabf7b3c16458aad282a507db120ad8ea51eca1`。
+- R44-L001: **PROVEN × ACCEPTED**。
+- R44-C003: **PROVEN × ACCEPTED**。
+- R44-C004: **PROVEN × ACCEPTED**。
+- R44-G002: `SOLVED` を受理。
+- Benchmark: **SOLVED**、`R(4,4)=18`。
+- Discovery: `CONTAMINATED`。
+
+独立Reviewerは計算に頼らず、証明を命題ごとに再検査した。Stage 1 C005の正確なstatementと受理状態を確認し、次を監査した。
+
+1. 9頂点以上のHでは任意の9頂点誘導部分グラフにC005を適用できるため、K3または独立4集合が存在する。
+2. その9頂点誘導部分グラフの補グラフにC005を適用すると、元のグラフに独立3集合またはK4が存在する。補グラフ変換の向きは正しい。
+3. 18頂点Gの任意のvについて `|N(v)|+|M(v)|=17`。整数次数は `d>=9` と `d<=8` で漏れなく分割される。
+4. `d>=9` では近傍内のK3をvでK4へ拡張でき、独立4集合ならそのまま結論となる。
+5. `d<=8` では `|M(v)|>=9`。非近傍内の独立3集合をvで独立4集合へ拡張でき、K4ならそのまま結論となる。
+6. したがって任意の18頂点グラフにK4または独立4集合があり、`R(4,4)<=18`。
+7. 受理済みR44-C002の `R(4,4)>=18` と結合して `R(4,4)=18`。
+
+上界依存DAGは Stage 1 C005 → R44-L001 → R44-C003 であり、下界R44-C002を使うのはR44-C004の等号結合だけである。循環はない。
+
+G001のn=18 heuristic failure・best score・17頂点certificateの構造は上界証明に使われていない。一般Ramsey recurrenceも証明根拠として引用されず、必要な特例が直接証明されている。
+
+新規補助計算は行っていない。これは計算資材の欠落ではなく、理論証明と既にACCEPTEDのStage 1依存だけで監査が完結したためである。
+
+Git履歴では `fbd90755`（開始契約）→ `9dd3fcbd`（想起・Git由来strategy contamination checkpoint）→ `1265d2fd`（数学成果）→ `daabf7b3`（提出記録）の順を確認した。DiscoveryはCLEANへ変更しない。
+
+fresh-session・model/effort欠測・20分予算・明示pushの記録はGit上で整合している。Reviewerは研究セッションそのものを再演していないため、fresh-session評価は保存記録の監査である。
+
+## R44-G002: 研究提出時の理論証明の自己監査とReviewerへの引継ぎ（履歴）
 
 - 実行base: `89b05a18ecd69baa2d01c815c7e350bfa7c39841`。
 - 対象成果commit: research-notes.mdのG002提出記録参照。

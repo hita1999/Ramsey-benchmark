@@ -6,7 +6,7 @@
 |---|---|---:|---:|---|---:|---|
 | R(3,4) | SOLVED | ≥9 | ≤9 | C001〜C006 独立レビュー ACCEPTED | 完了2件 | R(3,4)=9独立検証済み、Discoveryは両GoalともCONTAMINATED |
 | R(3,5) | SOLVED | ≥14 | ≤14 | R35-C001〜C004 PROVEN × ACCEPTED | 完了2件 | R(3,5)=14独立検証済み、Discovery CONTAMINATED |
-| R(4,4) | 数学的SOLVED・上界レビュー待ち | ≥18 | ≤18 | C001/C002 PROVEN × ACCEPTED、L001/C003/C004 PROVEN × UNREVIEWED（全てR44） | 研究完了2件 | R(4,4)=18、上界・等号は独立レビュー待ち、Discovery CONTAMINATED |
+| R(4,4) | SOLVED | ≥18 | ≤18 | R44-C001/C002/L001/C003/C004 PROVEN × ACCEPTED | 完了2件 | R(4,4)=18独立検証済み、Discovery CONTAMINATED |
 
 ## 収集する指標
 
@@ -98,16 +98,16 @@ G002は任意の18頂点グラフにK4または独立4集合が存在するこ�
 具体的な証明ルートはGoalへ与えていない。Git上で既に `PROVEN × ACCEPTED` のClaimは利用可能だが、未確定の一般公式・補題はGoal内で証明する必要がある。
 G001の18頂点heuristic探索失敗は上界の根拠として使用禁止。fresh Codex session、20分予算、専用branch/PR運用で実施する。
 
-## Stage 3 — R44-G002研究成果（独立レビュー待ち）
+## Stage 3 — R44-G002研究成果
 
 base `89b05a18ecd69baa2d01c815c7e350bfa7c39841` からfresh sessionで実行し、研究を **SOLVED** とした。
 任意の18頂点グラフで選んだ頂点の近傍か非近傍が9頂点以上になることから、
 受理済みStage 1 C005とその補グラフでの向きを適用し、上界 **R(4,4)<=18** を理論的に証明した。
 独立受理済み下界との結合により **R(4,4)=18**。
-R44-L001/C003/C004は **PROVEN × UNREVIEWED**、下界R44-C001/C002は **PROVEN × ACCEPTED** のまま。
+R44-L001/C003/C004は独立レビューにより **PROVEN × ACCEPTED**。下界R44-C001/C002も **PROVEN × ACCEPTED**。従って **R(4,4)=18** を独立受理した。
 
 補助計算なし。一般再帰式・近傍分割の想起とGit summary経由のStage 2証明経路の流入を、
 利用前checkpoint `9dd3fcbd2b7d5f5b7c8978be6970429d09a64cd4` に保存した。Discoveryは **CONTAMINATED**。
 正確なmodel ID/effortは `missing`。20分予算、fresh-session評価、counter、成果commit、明示pushとPRの記録は
 [研究ノート](../benchmarks/r4-4/research-notes.md)を参照。
-残工程は独立レビュー、4文書のclosure同期、PR統合。数学的な未解決gapはない。
+独立レビューと4文書のclosure同期は2026-09-21に完了。残工程はPR #12のmain統合のみ。数学的な未解決gapはない。
