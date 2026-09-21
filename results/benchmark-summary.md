@@ -6,7 +6,7 @@
 |---|---|---:|---:|---|---:|---|
 | R(3,4) | SOLVED | ≥9 | ≤9 | C001〜C006 独立レビュー ACCEPTED | 完了2件 | R(3,4)=9独立検証済み、Discoveryは両GoalともCONTAMINATED |
 | R(3,5) | SOLVED | ≥14 | ≤14 | R35-C001〜C004 PROVEN × ACCEPTED | 完了2件 | R(3,5)=14独立検証済み、Discovery CONTAMINATED |
-| R(4,4) | NOT_STARTED | — | — | — | 0 | — |
+| R(4,4) | READY | — | — | — | 0 | G001定義済み。Stage 3 PR policy PASS、研究未開始 |
 
 ## 収集する指標
 
@@ -60,3 +60,12 @@ fresh-sessionの研究開始handoffは機能した一方、mainへの直接push�
 revert→PR #5で成果を復旧し、closure PR #6（`a5b161e`）で4文書の同期まで統合済み。
 独立計算コードは保存されたが、今回のPython 3.9.6での再実行は `int.bit_count` で失敗し、Reviewer環境の記録不足が残る。
 Stage 3はPR必須設定の有効性を証跡付きで確認してから開始する。サーバー設定は現時点で未確認。
+
+
+## Stage 3 initialization
+
+Stage 3 rootは `ab5624e9c411afe50137875811c26b46ecf13551`。PR必須rulesetのread-only検証を保存済み。
+`benchmarks/r4-4/` を初期化し、最初のGoal `R44-G001` を定義した。
+
+G001は正確な既知値を目標として与えず、固定予算内で `K_4` も独立4集合も持たない証明書を構成する。
+研究はfresh Codex sessionで開始し、実際のGoal execution base・model/effort・Discovery・予算を開始前に記録する。
