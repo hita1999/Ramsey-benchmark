@@ -66,3 +66,19 @@ Gitをsource of truthとしてレビューする。Codexの会話履歴、自己
 - 最終的に、同一Claimが現在の要約でACCEPTEDとレビュー待ちの両方になっていないことを確認する。マージ操作だけを独立レビュー受理の証拠にしない。
 
 数学的状態と独立レビュー状態は `methodology.md` §6の2軸で記録する。未判定はUNREVIEWED、判定後はACCEPTED / NEEDS_REVISION / REJECTEDとし、ACCEPTEDだけをPROVENの代わりに使わない。証明の却下と命題自体の反証を区別し、根拠を実質改訂した場合は旧判定を保存して新版を再レビューする。Discoveryタグは別に記録する。
+
+## Stage 2 retrospective後のreview closure
+
+[Stage 2 retrospective](../results/stage2-retrospective.md) で、artifact保存後の同期漏れが再発したことを記録した。
+以後は独立判定と状態同期を一つのレビュー完了手順として扱う。
+
+- Reviewerは対象研究commit、base、担当model/effort、日付、判定範囲を特定したartifactを保存する。
+  fresh-session運用を個別監査していない場合、数学的受理から運用PASSを推定しない。
+- 補助計算にはReviewer自身のPython等のバージョン・依存関係・実行コマンド・結果を保存する。
+  研究側の環境を流用したと推定しない。再実行失敗はエラーと環境を記録し、成功に数えない。
+- 判定後、同じPRでproof・research-notes・verification・サマリーの現在の状態を同期する。
+  分業する場合はPRにclosure担当を明記し、artifactだけで運用上の完了としない。
+- 対象commitへのリンク、4文書の同一Claim状態、時点付き履歴との区別、Discoveryの保持を
+  統合担当が確認してからmergeする。証明変更があればその変更を再レビューし、状態同期だけなら証明再実行は要求しない。
+- レビュー・closureも専用ブランチからPR経由で統合する。mainへの直接pushは行わず、
+  push先の明示などはCodex Goalプロトコルの手順に従う。

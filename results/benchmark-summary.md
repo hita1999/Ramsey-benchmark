@@ -51,3 +51,12 @@ Discoveryは引き続き `CONTAMINATED` とした。
 実行設定は **GPT-6 Astra / High（ユーザー申告）**。環境による独立確認は欠測。
 fresh sessionからGitのみで研究を開始・完了したことを研究側で記録した。
 20分予算・計測値・対象commit・Reviewerへの引継ぎは研究ノートを参照。
+
+### Stage 2 retrospective
+
+[評価・事故復旧・Stage 3への引継ぎ](stage2-retrospective.md) に詳細を保存した。
+G001/G002の完了時計測は562秒・81,995カウンタ単位／367秒・60,968カウンタ単位。
+fresh-sessionの研究開始handoffは機能した一方、mainへの直接push事故とレビュー後の同期漏れが発生した。
+revert→PR #5で成果を復旧し、closure PR #6（`a5b161e`）で4文書の同期まで統合済み。
+独立計算コードは保存されたが、今回のPython 3.9.6での再実行は `int.bit_count` で失敗し、Reviewer環境の記録不足が残る。
+Stage 3はPR必須設定の有効性を証跡付きで確認してから開始する。サーバー設定は現時点で未確認。

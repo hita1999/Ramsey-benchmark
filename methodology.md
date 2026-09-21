@@ -499,3 +499,20 @@ Stage 1から順に実施し、前段階で方法論上の問題が判明した�
 以後のGoalでは、開始時の実行設定・数値予算の固定、汚染時の独立checkpoint、計測時点と単位の記録、レビュー計算資材の保存、レビュー後の状態同期を行う。具体的な手順は `prompts/codex-goal.md` と `prompts/chatgpt-review.md` の運用追記に従う。
 
 Stage 2では、会話履歴を引き継がないセッションへのGit経由の引継ぎを評価対象に加える。成果物が再現可能であることと、この運用実験を実施したことを分けて記録する。Stage 1の過去の記録不足は遡及的に埋めず、欠測として扱う。
+
+## 14. Stage 2 retrospectiveによる運用改善（2026-09-21）
+
+[Stage 2 retrospective](results/stage2-retrospective.md) に、両Goalの時間・token・成果、汚染記録、
+fresh-session handoff、独立レビュー資材、状態同期漏れ、直接push事故と復旧を固定した。
+R(3,5)=14は `PROVEN × ACCEPTED`、Discoveryは `CONTAMINATED`。Git経由の研究開始は機能したが、
+探索全再実行や未知問題への有効性を証明した実験ではない。
+
+以後は成果・レビュー・closure・運用文書・事故復旧を含め、mainへの統合をPR経由に限定する。
+Stage 3開始前には管理担当がmainに対するPR必須ルールとbypass制限の有効性を確認し、
+`results/stage3-pr-policy-verification.md` に証跡を保存する。現時点では未確認であり、
+本書への方針追記だけで技術的な強制が完了したとは扱わない。
+
+研究担当は専用ブランチと明示的なpush先を用い、レビュー担当または明示されたclosure担当が
+proof・research-notes・verification・サマリーを同期する。統合担当は同期と残課題を照合する。
+Reviewer計算は研究側と別に実行環境を記録し、資材の保存と再実行成功を区別する。
+詳細な開始条件・責任分担・GitHub公式仕様への参照はretrospective、実行手順は両プロトコルを参照する。
