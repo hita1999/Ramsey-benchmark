@@ -7,7 +7,7 @@
 - R44-G001: **SOLVED**。独立レビュー受理済み。PR #10でmainへ統合済み（merge `4a459b19723dbe8f177c7ad07af75d23fa62dd79`）。
 - G001の最大証明書: 17頂点68辺。n=4..17の全14証明書を保存。
 - `R44-C001` / `R44-C002`: **PROVEN × ACCEPTED**。
-- Discovery: **CONTAMINATED**。利用前checkpoint `8ca54fd7a4dbc751da870e658d5967185e90dfb2`。
+- Discovery: **CONTAMINATED**。利用前checkpointはG001 `8ca54fd7a4dbc751da870e658d5967185e90dfb2`、G002 `9dd3fcbd2b7d5f5b7c8978be6970429d09a64cd4`。
 - G001探索停止: `EXHAUSTED_BUDGET`（10,000,000候補、124.310935125秒）。G002では探索なし。
 - fresh-session研究開始: 実施済み。詳細は実行契約・handoff評価。
 - PR policy開始条件: 保存済みPASS確認。mainへの直接pushなし。
@@ -249,3 +249,25 @@ Stage 1の既存Claimはstatement・証明・独立受理記録を確認した�
 - 次の一手: Reviewerはverification.mdの重点監査を行い、判定と対象commitを記録する。
   独立Reviewer（または明示的に引き継いだclosure担当）がproof・research-notes・verification・benchmark-summaryを同一closureで同期する。
   統合担当は状態同期と残課題を照合してGitHub上でPRをmergeし、そのSHAを保存する。
+
+## R44-G002 提出記録と終了分類
+
+- Goal終了分類: **SOLVED**。独立レビュー・closure・main統合は未実施で別工程。
+- 数学成果commit: `1265d2fd7ac4218329a096939feb9dae37f9d688`、`2026-09-21T12:32:54Z`。
+  R44-L001/C003/C004のClaim台帳の対象commitはこれを指す。
+- UTC起点12:27:04Zから数学成果commitまで350秒（5分50秒）。準備・契約・汚染記録・証明・自己監査・文書化・commitを含む。
+- 成果commit後counter: `get_goal` updatedAt=1789993975、tokensUsed=72383、timeUsedSeconds=350。
+- 差分確認: `git diff --check` 成功。変更はproof・research-notes・verification・benchmark-summaryの4文書のみ。
+  新規実装なし。数学の検証は上記の理論的自己監査で、独立レビューや計算テストを行ったという記録ではない。
+- 初回push前のbranch: `codex/r44-g002-upper-bound`、upstreamなし、push URL: `https://github.com/hita1999/Ramsey-benchmark.git`。
+  baseからの差分を確認後、`git push -u origin HEAD:refs/heads/codex/r44-g002-upper-bound` を実行、exit 0。
+  remoteは新規branch作成を返した。push後のupstreamは `origin/codex/r44-g002-upper-bound`、同期済み、作業ツリーcleanを確認。
+- PR: [#12](https://github.com/hita1999/Ramsey-benchmark/pull/12)、作成日時 `2026-09-21T12:33:38Z`。
+  作成時base SHAはexecution baseと一致、head SHAは数学成果commitと一致。open、未merge。
+- PR提出後計測: `get_goal` updatedAt=1789994023（`2026-09-21T12:33:43Z`）、tokensUsed=76884、timeUsedSeconds=398。
+  UTC起点との差は399秒（6分39秒）。取得元の異なるcounterと1秒の差がある。
+  この記録は準備からPR提出までを含み、以下の記録コミット・再push・最終応答は計測後の後処理。
+  token counterは生成token数・課金量ではない。20分予算内に数学成果とPRを保存した。
+- Acceptance criteria: 任意の18頂点、全場合・境界・補グラフ、受理済み依存、新規補題の証明、proof単独可読性、
+  G001 heuristic非依存、利用前汚染checkpoint、execution base/fresh/model欠測/予算/終了分類/明示pushを満たした。
+- 次の担当は独立Reviewer。本Goal内でACCEPTEDへ変更していない。mainへの直接push・force push・引数なしpushなし。
