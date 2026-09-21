@@ -84,3 +84,7 @@ n=18での探索不成功は不存在証明に使わない。全14証明書・ve
 正確なmodel/effortは `missing`。Gitだけからのfresh-session開始を実施したが、別セッションでの全探索再実行は未実施。
 Goal終了分類・PR提出記録・全体時間・counterは [研究ノート](../benchmarks/r4-4/research-notes.md) と `goal-measurements.json` を参照。
 独立レビューとmainへのPR統合は後続工程。
+
+G001は `SOLVED` として [PR #10](https://github.com/hita1999/Ramsey-benchmark/pull/10) に提出済み。
+成果物commitまで523秒、PR提出後counterは643秒・71,187単位（生成token数・課金量ではない）。
+専用branchへの明示push成功、mainへは未統合。独立レビュー状態はUNREVIEWEDを維持する。

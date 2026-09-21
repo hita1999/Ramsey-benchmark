@@ -46,6 +46,14 @@
       "timeUsedSeconds": 557,
       "artifact_commit": "02b7fee706a2f569be8a9d1f3b5c7aa9324e5078",
       "utc_seconds_through_artifact_commit": 523
+    },
+    {
+      "phase": "final_after_pr_submission_before_receipt_commit",
+      "updatedAt": 1789992106,
+      "timeUsedSeconds": 643,
+      "tokensUsed": 71187,
+      "pr_url": "https://github.com/hita1999/Ramsey-benchmark/pull/10",
+      "remaining_unmeasured_work": "final receipt commit/push and response"
     }
   ]
 }

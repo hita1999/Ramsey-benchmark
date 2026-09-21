@@ -129,3 +129,15 @@ goal-measurements、およびPR記録から研究状態を復元できる。
 - mainへの直接push、引数なしpush、force push、local mainへの成果mergeはいずれも実行していない。
 - 契約・想起・実装・成果物の順でcheckpointを保存し、その全てを専用PRで提示する。
 - Acceptance criteria: 非自明証明書、全列挙verifier、テスト、手法/seed/予算/停止/再現、fresh/base、model/effort欠測と計測、二軸Claim、利用前checkpoint、明示pushを満たした。
+
+
+### PR提出後の最終計測
+
+- PR: https://github.com/hita1999/Ramsey-benchmark/pull/10 （open、未merge）。
+- PR作成時のhead: `89a686fbfad8c90f1b1b450547166c55d69f0f7d`。
+- PR作成: 2026-09-21T12:01:40Z。baseは実行baseと同じ `a0658a0fe5ca5e957b35f9460477fb6ebc089b95`。
+- PR提出後counter: `get_goal` updatedAt=1789992106、timeUsedSeconds=643、tokensUsed=71187。
+  これは準備・実装・探索・検査・文書化・成果物commit・明示push・PR作成を含む約10分43秒の計測。
+  この最終記録のcommit/pushと応答の僅かな後処理は計測後であり、最終commit日時はGit履歴で監査可能。
+- 数値予算上限30分・10,000,000候補を順守。候補上限到達後の追加探索なし。
+- 独立レビュー未実施、mainへ未統合。PR統合は本Goalの研究完了とは分離する。
