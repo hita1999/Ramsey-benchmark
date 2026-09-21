@@ -5,7 +5,7 @@
 | Benchmark | 状態 | 下界 | 上界 | 検証 | Goal | 備考 |
 |---|---|---:|---:|---|---:|---|
 | R(3,4) | SOLVED | ≥9 | ≤9 | C001〜C006 独立レビュー ACCEPTED | 完了2件 | R(3,4)=9独立検証済み、Discoveryは両GoalともCONTAMINATED |
-| R(3,5) | SOLVED（上界レビュー待ち） | ≥14 | ≤14 | R35-C001/C002 ACCEPTED、C003/C004 UNREVIEWED（全てPROVEN） | 完了2件 | R(3,5)=14の証明を保存。Discovery CONTAMINATED |
+| R(3,5) | SOLVED | ≥14 | ≤14 | R35-C001〜C004 PROVEN × ACCEPTED | 完了2件 | R(3,5)=14独立検証済み、Discovery CONTAMINATED |
 | R(4,4) | NOT_STARTED | — | — | — | 0 | — |
 
 ## 収集する指標
@@ -42,8 +42,10 @@ G001の実際のモデルの正確なID・reasoning effortは環境から確認�
 
 R35-G002では、任意の14頂点の三角形なしグラフについて、次数5以上なら近傍から独立5集合を取り、
 次数4以下なら非近傍の9頂点にStage 1の上界補題を適用する自足的証明を保存した。
-`R35-C003: R(3,5)≤14` と `R35-C004: R(3,5)=14` は **`PROVEN × UNREVIEWED`**。
-数学的証明は完成しているが、新しい上界・等号の独立レビューは次の工程である。
+`R35-C003: R(3,5)≤14` と `R35-C004: R(3,5)=14` は **`PROVEN × ACCEPTED`**。
+2026-09-12にChatGPT / GPT-5.6 Solが上界・等号とG002の `SOLVED` を独立に受理した。
+根拠は [G002独立レビュー記録](../benchmarks/r3-5/reviews/G002.md)（PR #5、commit `752dd54`）。
+2026-09-21に4文書のレビュー状態を同期し、数学的結果の独立レビューまで完了した。
 補助計算は不要だった。一般的なRamsey漸化式等の想起を証明作成前の独立checkpoint `00b886b` に記録し、
 Discoveryは引き続き `CONTAMINATED` とした。
 実行設定は **GPT-6 Astra / High（ユーザー申告）**。環境による独立確認は欠測。
