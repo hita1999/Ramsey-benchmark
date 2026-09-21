@@ -6,6 +6,41 @@
 R44-C001（17頂点の回避グラフ）およびR44-C002（R(4,4)>=18）は **PROVEN × ACCEPTED**。
 Discoveryは **CONTAMINATED**。独立レビュー詳細は [reviews/G001.md](reviews/G001.md)。
 
+R44-G002は理論証明により **SOLVED**。新規のR44-L001、R44-C003（上界）、R44-C004（等号）は
+**PROVEN × UNREVIEWED**。以下は研究担当の自己監査であり、独立受理ではない。
+
+## R44-G002: 理論証明の自己監査とReviewerへの引継ぎ
+
+- 実行base: `89b05a18ecd69baa2d01c815c7e350bfa7c39841`。
+- 対象成果commit: research-notes.mdのG002提出記録参照。
+- 依存確認: Stage 1 C005および依存C003/C004はPROVEN × ACCEPTED。
+  `../r3-4/proof.md` と `../r3-4/verification.md` でstatement・証明・受理対象head `55444df461ac40c28f1462413416b17dfa9ad44f` を確認。
+- 下界確認: `reviews/G001.md` でR44-C002のPROVEN × ACCEPTEDを確認。上界証明内部では使用していない。
+- 完全性: 任意の18頂点グラフと任意のvを取り、整数次数0..17をd>=9とd<=8で尽くす。境界8/9を含む。
+- 補グラフ変換: 補グラフのK3→元の独立3集合、補グラフの独立4集合→元のK4。
+- 頂点の拡張: 近傍の三角形はvへの3辺を加えてK4、非近傍の独立3集合はvへの3非辺を加えて独立4集合になる。
+- 非循環: 上界はStage 1 C005→R44-L001→R44-C003だけ。等号の段階でのみR44-C002を結合する。
+- 主要依存の理論証明をproof.mdへ再掲したため、上界はproof.md単独で外部資料・一般再帰公式・探索実行を前提にせず追跡できる。
+- G002で計算による仮説形成・検算・全探索は行っていない。新規の計算再現資材は不要。
+  既存G001 verifierやStage 1の独立計算も本セッションでは再実行していない。
+- 自己監査結果: 数学的gapなし。これは独立レビュー、形式証明、全18頂点グラフの機械列挙を行ったという意味ではない。
+- Discovery: CONTAMINATED。想起した再帰式・具体的な近傍分割ルートと、summaryから流入したStage 2の経路は
+  notes-only `9dd3fcbd2b7d5f5b7c8978be6970429d09a64cd4` に証明作成前に固定。
+
+Reviewer重点項目:
+
+1. Stage 1 C005の正確なstatement、受理状態、proof.md再掲の忠実性。
+2. 9頂点以上への制限と補グラフでの向き、非近傍にvが含まれないこと。
+3. 18頂点の全グラフ、次数境界8/9、両場合の構造の拡張を網羅していること。
+4. 上界がG001探索失敗・証明書の特殊構造・未証明の再帰公式に依存していないこと。
+5. 下界は等号結合時だけに使用し、Claim DAGが非循環であること。
+6. 契約→汚染checkpoint→成果というGit順序、fresh-session、model/effort欠測、20分予算、明示pushの記録。
+
+独立レビューは別工程。保存先は `reviews/G002.md`、必要な計算資材は `review/`。
+Reviewer自身のmodel/effort・日付・対象commit・方法を明示し、研究担当の自己監査と区別する。
+closure担当は独立Reviewer（または明示的に引き継いだ担当）とし、proof・research-notes・verification・benchmark-summaryを同期する。
+統合担当は同期後にPRをmergeし、merge SHAを記録する。
+
 
 ## R44-G001: 独立レビュー結果
 
