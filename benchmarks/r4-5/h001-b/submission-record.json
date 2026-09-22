@@ -52,6 +52,26 @@
       "research_global_counter": 10000000,
       "phase_b_research_candidate_evaluations": 8000000,
       "test_replay_candidate_evaluations": 556
+    },
+    {
+      "phase": "goal_completed",
+      "goal_service_snapshot": {
+        "goal": {
+          "threadId": "01a0c849-a7c3-72e0-b0aa-372e4a370645",
+          "objective": "Repository: `https://github.com/hita1999/Ramsey-benchmark`\\\n&#x20;Goal: `benchmarks/r4-5/goals/H001-B.md`\\\n&#x20;Git\u3092source of truth\u3068\u3057\u3066Goal\u306b\u5f93\u3063\u3066\u5b9f\u884c\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
+          "status": "complete",
+          "tokensUsed": 97618,
+          "timeUsedSeconds": 751,
+          "createdAt": 1790066700,
+          "updatedAt": 1790067451
+        },
+        "remainingTokens": null,
+        "completionBudgetReport": "Goal achieved. Report final usage from this tool result's structured goal fields. If `goal.tokenBudget` is present, include token usage from `goal.tokensUsed` and `goal.tokenBudget`. If `goal.timeUsedSeconds` is greater than 0, summarize elapsed time in a concise, human-friendly form appropriate to the response language."
+      },
+      "research_global_counter": 10000000,
+      "phase_b_research_candidate_evaluations": 8000000,
+      "test_replay_candidate_evaluations": 556,
+      "classification": "SOLVED; operational self-evaluation PASS; independent review UNREVIEWED"
     }
   ],
   "pushes": [
@@ -63,6 +83,13 @@
       "remote_main_observed": "e1299901c3533ce1f6843c425ff8c458b834facc",
       "upstream": "origin/codex/r45-h001-b-resume",
       "source": "git push output and git ls-remote"
+    },
+    {
+      "phase": "pr_measurements_recording_push",
+      "command": "git push -u origin HEAD:refs/heads/codex/r45-h001-b-resume",
+      "exit_code": 0,
+      "commit_short": "ee5a6a7",
+      "source": "git push output"
     }
   ],
   "unmeasured_intervals": [
@@ -75,5 +102,8 @@
   "research_artifact_commit": "f35b7f445a65b44dba6d22abd3577e4a02d48a58",
   "pull_request_url": "https://github.com/hita1999/Ramsey-benchmark/pull/17",
   "pull_request_created_at": "2026-09-22T08:56:31Z",
-  "within_30_minute_ceiling_at_pr_snapshot": true
+  "within_30_minute_ceiling_at_pr_snapshot": true,
+  "wall_clock_seconds_through_goal_completion": 751,
+  "within_30_minute_ceiling_at_goal_completion": true,
+  "post_completion_recording": "This recording commit, explicit push and remote-state confirmation follow the 751-second completion snapshot. They consume zero research candidates and are postprocessing; they are not included in the frozen goal-service counter. Their commit identity is Git HEAD containing this file, avoiding recursive self-hashes."
 }
