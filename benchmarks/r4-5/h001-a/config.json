@@ -1,0 +1,6 @@
+{
+  "algorithm": "integer-noisy-edge-flip-v1",
+  "seed": 20260922,
+  "start_n": 5,
+  "restart_interval": 10000
+}

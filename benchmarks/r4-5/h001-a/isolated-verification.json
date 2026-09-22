@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "scope": "certificate-only self-audit in isolated process, not independent-session review",
+  "files_available": [
+    "verify.py",
+    "certificate.json"
+  ],
+  "command": "python3 -I verify.py certificate.json",
+  "exit_code": 0,
+  "result": [
+    {
+      "path": "certificate.json",
+      "n": 23,
+      "edges": 114,
+      "k4": 0,
+      "independent5": 0,
+      "valid": true,
+      "lower_bound": 24
+    }
+  ],
+  "stderr": "",
+  "research_evaluations_consumed": 0,
+  "python": "3.9.6 (default, May  7 2023, 23:32:44) \n[Clang 14.0.3 (clang-1403.0.22.14.1)]",
+  "platform": "macOS-13.7.4-arm64-arm-64bit"
+}
