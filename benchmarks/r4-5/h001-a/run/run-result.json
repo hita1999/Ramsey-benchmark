@@ -1,0 +1,16 @@
+{
+  "checkpoint_integrity": "PASS",
+  "checkpoint_sha256": "fd295fd8595c2eff2e4800f2862e7bc61ca54d72c3d7c421a61688f26e43b3a3",
+  "consumed_interval": [
+    0,
+    2000000
+  ],
+  "elapsed_seconds_including_serialization_validation": 46.253464292000004,
+  "ended_at_utc": "2026-09-22T07:55:28.712822+00:00",
+  "phase": "H001-A",
+  "reason": "MANDATORY_HANDOFF_CHECKPOINT",
+  "research_evaluations": 2000000,
+  "started_at_utc": "2026-09-22T07:54:42.462016+00:00",
+  "state_sha256": "e93c2555c8ef11e173ea2a8c1357b09052f004716babc4e1cea68be95d8a051a",
+  "status": "PARTIAL_PROGRESS"
+}

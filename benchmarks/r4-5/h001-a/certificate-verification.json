@@ -1,0 +1,173 @@
+[
+  {
+    "path": "benchmarks/r4-5/h001-a/run/certificates/n05.json",
+    "n": 5,
+    "edges": 3,
+    "k4": 0,
+    "independent5": 0,
+    "valid": true,
+    "lower_bound": 6
+  },
+  {
+    "path": "benchmarks/r4-5/h001-a/run/certificates/n06.json",
+    "n": 6,
+    "edges": 6,
+    "k4": 0,
+    "independent5": 0,
+    "valid": true,
+    "lower_bound": 7
+  },
+  {
+    "path": "benchmarks/r4-5/h001-a/run/certificates/n07.json",
+    "n": 7,
+    "edges": 8,
+    "k4": 0,
+    "independent5": 0,
+    "valid": true,
+    "lower_bound": 8
+  },
+  {
+    "path": "benchmarks/r4-5/h001-a/run/certificates/n08.json",
+    "n": 8,
+    "edges": 15,
+    "k4": 0,
+    "independent5": 0,
+    "valid": true,
+    "lower_bound": 9
+  },
+  {
+    "path": "benchmarks/r4-5/h001-a/run/certificates/n09.json",
+    "n": 9,
+    "edges": 18,
+    "k4": 0,
+    "independent5": 0,
+    "valid": true,
+    "lower_bound": 10
+  },
+  {
+    "path": "benchmarks/r4-5/h001-a/run/certificates/n10.json",
+    "n": 10,
+    "edges": 21,
+    "k4": 0,
+    "independent5": 0,
+    "valid": true,
+    "lower_bound": 11
+  },
+  {
+    "path": "benchmarks/r4-5/h001-a/run/certificates/n11.json",
+    "n": 11,
+    "edges": 27,
+    "k4": 0,
+    "independent5": 0,
+    "valid": true,
+    "lower_bound": 12
+  },
+  {
+    "path": "benchmarks/r4-5/h001-a/run/certificates/n12.json",
+    "n": 12,
+    "edges": 32,
+    "k4": 0,
+    "independent5": 0,
+    "valid": true,
+    "lower_bound": 13
+  },
+  {
+    "path": "benchmarks/r4-5/h001-a/run/certificates/n13.json",
+    "n": 13,
+    "edges": 36,
+    "k4": 0,
+    "independent5": 0,
+    "valid": true,
+    "lower_bound": 14
+  },
+  {
+    "path": "benchmarks/r4-5/h001-a/run/certificates/n14.json",
+    "n": 14,
+    "edges": 39,
+    "k4": 0,
+    "independent5": 0,
+    "valid": true,
+    "lower_bound": 15
+  },
+  {
+    "path": "benchmarks/r4-5/h001-a/run/certificates/n15.json",
+    "n": 15,
+    "edges": 47,
+    "k4": 0,
+    "independent5": 0,
+    "valid": true,
+    "lower_bound": 16
+  },
+  {
+    "path": "benchmarks/r4-5/h001-a/run/certificates/n16.json",
+    "n": 16,
+    "edges": 54,
+    "k4": 0,
+    "independent5": 0,
+    "valid": true,
+    "lower_bound": 17
+  },
+  {
+    "path": "benchmarks/r4-5/h001-a/run/certificates/n17.json",
+    "n": 17,
+    "edges": 58,
+    "k4": 0,
+    "independent5": 0,
+    "valid": true,
+    "lower_bound": 18
+  },
+  {
+    "path": "benchmarks/r4-5/h001-a/run/certificates/n18.json",
+    "n": 18,
+    "edges": 68,
+    "k4": 0,
+    "independent5": 0,
+    "valid": true,
+    "lower_bound": 19
+  },
+  {
+    "path": "benchmarks/r4-5/h001-a/run/certificates/n19.json",
+    "n": 19,
+    "edges": 74,
+    "k4": 0,
+    "independent5": 0,
+    "valid": true,
+    "lower_bound": 20
+  },
+  {
+    "path": "benchmarks/r4-5/h001-a/run/certificates/n20.json",
+    "n": 20,
+    "edges": 86,
+    "k4": 0,
+    "independent5": 0,
+    "valid": true,
+    "lower_bound": 21
+  },
+  {
+    "path": "benchmarks/r4-5/h001-a/run/certificates/n21.json",
+    "n": 21,
+    "edges": 91,
+    "k4": 0,
+    "independent5": 0,
+    "valid": true,
+    "lower_bound": 22
+  },
+  {
+    "path": "benchmarks/r4-5/h001-a/run/certificates/n22.json",
+    "n": 22,
+    "edges": 102,
+    "k4": 0,
+    "independent5": 0,
+    "valid": true,
+    "lower_bound": 23
+  },
+  {
+    "path": "benchmarks/r4-5/h001-a/run/certificates/n23.json",
+    "n": 23,
+    "edges": 114,
+    "k4": 0,
+    "independent5": 0,
+    "valid": true,
+    "lower_bound": 24
+  }
+]

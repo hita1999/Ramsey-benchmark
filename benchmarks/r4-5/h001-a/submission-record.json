@@ -1,0 +1,21 @@
+{
+  "goal": "H001-A",
+  "termination": "PARTIAL_PROGRESS",
+  "reason": "MANDATORY_HANDOFF_CHECKPOINT",
+  "events": [
+    {
+      "phase": "before_outcome_commit",
+      "utc": "2026-09-22T07:59:32.715759+00:00",
+      "research_candidate_counter": 2000000,
+      "test_candidate_evaluations": 556,
+      "token_counter": "missing",
+      "cost_counter": "missing",
+      "source": "saved search state; UTC system datetime"
+    }
+  ],
+  "unmeasured_intervals": [
+    "exact session start before first 07:47:25 UTC sample",
+    "token/cost usage for entire session"
+  ],
+  "postprocessing_note": "Final recording commit/push occurs after phase_stop snapshot; not included in search runtime. Phase B remains forbidden."
+}
