@@ -1,0 +1,12 @@
+test_every_flip_of_all_four_vertex_graphs (test_search.ScoreTests) ... ok
+test_long_flip_sequence (test_search.ScoreTests) ... ok
+test_all_graphs_through_five (test_verify.VerifyTests) ... ok
+test_both_violation_types (test_verify.VerifyTests) ... ok
+test_malformed (test_verify.VerifyTests) ... ok
+test_no_early_exit (test_verify.VerifyTests) ... ok
+test_saved_certificates (test_verify.VerifyTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.142s
+
+OK

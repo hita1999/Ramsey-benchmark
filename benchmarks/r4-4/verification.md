@@ -9,6 +9,10 @@ Discoveryは **CONTAMINATED**。独立レビュー詳細は [reviews/G001.md](re
 R44-G002は理論証明により **SOLVED**。新規のR44-L001、R44-C003（上界）、R44-C004（等号）は
 **PROVEN × ACCEPTED**。独立レビュー詳細は [reviews/G002.md](reviews/G002.md)。
 
+PR #12は2026-09-21T12:43:02Zにmerge `17aece27b5d16331ac2e8a067fb930b1694bdc62` でmainへ統合された。
+2026-09-22の[Stage 3 retrospective](../../results/stage3-retrospective.md)では保存した両verifierと既存7テストを再実行し成功した。
+Reviewer結果の数学的全フィールドは一致し、環境メタデータだけが異なった。既存コードの再現確認であり、新たな独立レビューではない。
+
 ## R44-G002: 独立レビュー結果
 
 - Reviewer: ChatGPT / GPT-5.6 Sol、reasoning effort High。

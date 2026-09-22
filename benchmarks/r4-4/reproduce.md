@@ -62,3 +62,19 @@ python3 -I "$r44_verify_dir/verify.py" "$r44_verify_dir/certificate.json"
 ```
 
 保存結果は `isolated-verification.json`。これは研究担当によるコード依存性の確認であり、別Reviewerによる独立レビューではない。
+
+## Reviewer実装の異環境での再実行（Stage 3 retrospective追記）
+
+`review/r44-g001-independent-result.json` は数学的結果に加えて `python` と `platform` を含む。
+従ってReviewerと異なる環境で全JSONを `cmp` すると、数学的結果が同一でも一致しない。
+元のreview記録は当時の手順として保持し、異環境では次の比較を利用する。
+
+```sh
+# 出力先はまだ存在しないディレクトリを指定する。
+python3 results/stage3-retrospective/reproduce.py --output /tmp/r44-stage3-replay
+```
+
+これは研究側verifier・既存7テスト・Reviewer実装を順に実行し、出力・実行環境・入力hashを保存する。
+比較では `python` と `platform` の2キーだけを除いた残りの全キー・値を照合する。
+元JSONと全フィールドの差分キー・バイト一致の成否も残す。数学的差分があれば終了コード1となる。
+保存済みの再実行結果は `results/stage3-retrospective/run/`。探索全体は実行しない。

@@ -3,7 +3,7 @@
 ## 現在の状態
 
 - Benchmark: **SOLVED**。`R(4,4)=18` を上下界とも独立レビュー済み。
-- R44-G002: **SOLVED**。独立レビュー受理済み、PR統合待ち。R44-L001/C003/C004は **PROVEN × ACCEPTED**。
+- R44-G002: **SOLVED**。独立レビュー受理済み。PR #12でmainへ統合済み（merge `17aece27b5d16331ac2e8a067fb930b1694bdc62`）。R44-L001/C003/C004は **PROVEN × ACCEPTED**。
 - R44-G001: **SOLVED**。独立レビュー受理済み。PR #10でmainへ統合済み（merge `4a459b19723dbe8f177c7ad07af75d23fa62dd79`）。
 - G001の最大証明書: 17頂点68辺。n=4..17の全14証明書を保存。
 - `R44-C001` / `R44-C002`: **PROVEN × ACCEPTED**。
@@ -46,7 +46,8 @@ Discoveryは全ClaimともCONTAMINATED。証明書hashはproof.mdに固定。
 
 G001の独立レビューとmain統合は完了し、R44-C001/C002は `PROVEN × ACCEPTED`。
 G002の上界R44-C003と等号R44-C004は独立Reviewerに受理された。数学的な未解決gapはない。
-残工程はPR #12のmain統合のみ。
+PR #12は2026-09-21T12:43:02Zにmerge `17aece27b5d16331ac2e8a067fb930b1694bdc62` でmainへ統合済み。
+Stage 3の数学・レビュー・統合は完了。プロセス評価と次実験への引継ぎは `../../results/stage3-retrospective.md` を参照。
 G001の探索失敗・17頂点証明書の構造は上界に使用していない。
 
 
@@ -269,7 +270,7 @@ Stage 1の既存Claimはstatement・証明・独立受理記録を確認した�
 
 ## R44-G002 提出記録と終了分類
 
-- Goal終了分類: **SOLVED**。以下は研究提出時点の記録であり、その後独立レビュー・closureは完了、main統合のみ未実施。
+- Goal終了分類: **SOLVED**。以下は研究提出時点の記録であり、その後独立レビュー・closure・PR #12のmain統合まで完了。
 - 数学成果commit: `1265d2fd7ac4218329a096939feb9dae37f9d688`、`2026-09-21T12:32:54Z`。
   R44-L001/C003/C004のClaim台帳の対象commitはこれを指す。
 - UTC起点12:27:04Zから数学成果commitまで350秒（5分50秒）。準備・契約・汚染記録・証明・自己監査・文書化・commitを含む。

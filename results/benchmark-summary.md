@@ -59,7 +59,7 @@ G001/G002の完了時計測は562秒・81,995カウンタ単位／367秒・60,96
 fresh-sessionの研究開始handoffは機能した一方、mainへの直接push事故とレビュー後の同期漏れが発生した。
 revert→PR #5で成果を復旧し、closure PR #6（`a5b161e`）で4文書の同期まで統合済み。
 独立計算コードは保存されたが、今回のPython 3.9.6での再実行は `int.bit_count` で失敗し、Reviewer環境の記録不足が残る。
-Stage 3はPR必須設定の有効性を証跡付きで確認してから開始する。サーバー設定は現時点で未確認。
+Stage 2 retrospective当時はサーバー設定未確認だった。その後、Stage 3開始前に[PR必須設定の確認](stage3-pr-policy-verification.md)を保存した。
 
 
 ## Stage 3 initialization
@@ -110,4 +110,14 @@ R44-L001/C003/C004は独立レビューにより **PROVEN × ACCEPTED**。下界
 利用前checkpoint `9dd3fcbd2b7d5f5b7c8978be6970429d09a64cd4` に保存した。Discoveryは **CONTAMINATED**。
 正確なmodel ID/effortは `missing`。20分予算、fresh-session評価、counter、成果commit、明示pushとPRの記録は
 [研究ノート](../benchmarks/r4-4/research-notes.md)を参照。
-独立レビューと4文書のclosure同期は2026-09-21に完了。残工程はPR #12のmain統合のみ。数学的な未解決gapはない。
+独立レビューと4文書のclosure同期は2026-09-21に完了。
+[PR #12](https://github.com/hita1999/Ramsey-benchmark/pull/12)も同日12:43:02Zにmerge `17aece27b5d16331ac2e8a067fb930b1694bdc62` でmainへ統合済み。数学的な未解決gapはない。
+
+### Stage 3 retrospective
+
+[評価・再現確認・次実験への引継ぎ](stage3-retrospective.md)に保存した。
+両GoalはSOLVED、全ClaimはPROVEN × ACCEPTED、DiscoveryはCONTAMINATED。
+PR-only運用とレビュー時の4文書同期は機能し、保存した両verifierと既存7テストの再実行も成功した。
+異環境のReviewer結果は数学的全フィールドが一致し、Python/OSメタデータのみ異なる。
+Git保存のPR提出後snapshot合計は1,041秒・148,071counter単位であり、全運用工数・生成token数・費用ではない。
+本格的な構造分類、長時間checkpointからの再開、未知問題へのDiscovery、単一セッションに対する優越性は未評価。
