@@ -7,7 +7,7 @@
 | R(3,4) | SOLVED | ≥9 | ≤9 | C001〜C006 独立レビュー ACCEPTED | 完了2件 | R(3,4)=9独立検証済み、Discoveryは両GoalともCONTAMINATED |
 | R(3,5) | SOLVED | ≥14 | ≤14 | R35-C001〜C004 PROVEN × ACCEPTED | 完了2件 | R(3,5)=14独立検証済み、Discovery CONTAMINATED |
 | R(4,4) | SOLVED | ≥18 | ≤18 | R44-C001/C002/L001/C003/C004 PROVEN × ACCEPTED | 完了2件 | R(4,4)=18独立検証済み、Discovery CONTAMINATED |
-| R(4,5) | HANDOFF_EXPERIMENT_READY | — | — | — | H001-A/B定義済み | Stage 4: 未完了checkpoint→別fresh session再開を一次KPIにする |
+| R(4,5) | PARTIAL_PROGRESS | ≥24 | — | R45-C001 PROVEN × ACCEPTED | H001-A PASS / H001-B pending | 2M checkpoint review済み、cross-session resume未実施、Discovery CONTAMINATED |
 
 ## 収集する指標
 
@@ -62,7 +62,6 @@ revert→PR #5で成果を復旧し、closure PR #6（`a5b161e`）で4文書の�
 独立計算コードは保存されたが、今回のPython 3.9.6での再実行は `int.bit_count` で失敗し、Reviewer環境の記録不足が残る。
 Stage 2 retrospective当時はサーバー設定未確認だった。その後、Stage 3開始前に[PR必須設定の確認](stage3-pr-policy-verification.md)を保存した。
 
-
 ## Stage 3 initialization
 
 Stage 3 rootは `ab5624e9c411afe50137875811c26b46ecf13551`。PR必須rulesetのread-only検証を保存済み。
@@ -70,7 +69,6 @@ Stage 3 rootは `ab5624e9c411afe50137875811c26b46ecf13551`。PR必須rulesetのr
 
 G001は正確な既知値を目標として与えず、固定予算内で `K_4` も独立4集合も持たない証明書を構成する。
 研究はfresh Codex sessionで開始し、実際のGoal execution base・model/effort・Discovery・予算を開始前に記録する。
-
 
 ## Stage 3 — R44-G001研究成果
 
@@ -89,7 +87,6 @@ Goal終了分類・PR提出記録・全体時間・counterは [研究ノート](
 G001は `SOLVED` として [PR #10](https://github.com/hita1999/Ramsey-benchmark/pull/10) に提出済み。
 成果物commitまで523秒、PR提出後counterは643秒・71,187単位（生成token数・課金量ではない）。
 専用branchへの明示pushとPR-only統合を完了。レビュー記録は `benchmarks/r4-4/reviews/G001.md`、R44-C001/C002は `PROVEN × ACCEPTED`。
-
 
 ## Stage 3 — R44-G002定義
 
@@ -130,3 +127,13 @@ Stage 4 rootは `63e8067f72b607fdc38c533e39b29e9b135cadf5`。対象workloadは `
 H001-Aはresearch candidate interval `[0,2,000,000)` だけを実行して必ず停止し、portableなcheckpoint・handoff manifest・split/resume equivalence testを保存する。H001-BはAのcheckpoint PRがmainへmergeされた後、別fresh sessionで `[2,000,000,10,000,000)` をexact resumeする。
 
 成功条件には、最初の再開candidate indexが2,000,000であること、Phase A候補の重複が0であること、code/config/checkpoint integrity、追加のsemantic user instruction不要、分割実行と連続実行の状態同値性を含む。数学的certificateの発見は副次成果として通常のClaim状態で扱う。
+
+### H001-A checkpoint outcome and independent review
+
+H001-Aは execution base `6031a203863a71cae5a34793c5d87dbc9b24479b` からfresh sessionで実行し、research interval `[0,2,000,000)` を正確に消費して **PARTIAL_PROGRESS / MANDATORY_HANDOFF_CHECKPOINT** で停止した。next candidate indexは2,000,000、残りは `[2,000,000,10,000,000)`。Phase Bは未実行。
+
+検索はn=5からn=23まで回避グラフを保存した。最強の23頂点114辺certificateは全8,855個の4集合と33,649個の5集合について、K4=0・独立5集合=0を独立Reviewerが別実装で再確認した。従って **R45-C001: R(4,5)>=24 = PROVEN × ACCEPTED**。Discoveryは **CONTAMINATED**。
+
+checkpoint raw SHA-256は `fd295fd8595c2eff2e4800f2862e7bc61ca54d72c3d7c421a61688f26e43b3a3`。current target n=24、current score 40、best score 4であり、score 4はcertificateでも不存在証明でもない。small split/resume testsとcheckpoint mechanismはPhase A acceptanceとしてPASSしたが、実際の別fresh sessionによるcross-session handoffは未評価であり、H001全体は **PARTIAL_PROGRESS** のまま。
+
+PR #15の統合ではcheckpointが参照する immutable `code_commit=5cabb7e2ea0f9ccbd237674666031d7d9f67ae3c` を履歴に保持する必要があるため、**squash/rebaseではなく通常のmerge commitを使用する**。merge後にintegration receiptをPR経由で保存し、その後H001-Bを別fresh sessionで開始する。
