@@ -7,6 +7,7 @@
 | R(3,4) | SOLVED | ≥9 | ≤9 | C001〜C006 独立レビュー ACCEPTED | 完了2件 | R(3,4)=9独立検証済み、Discoveryは両GoalともCONTAMINATED |
 | R(3,5) | SOLVED | ≥14 | ≤14 | R35-C001〜C004 PROVEN × ACCEPTED | 完了2件 | R(3,5)=14独立検証済み、Discovery CONTAMINATED |
 | R(4,4) | SOLVED | ≥18 | ≤18 | R44-C001/C002/L001/C003/C004 PROVEN × ACCEPTED | 完了2件 | R(4,4)=18独立検証済み、Discovery CONTAMINATED |
+| R(4,5) | HANDOFF_EXPERIMENT_READY | — | — | — | H001-A/B定義済み | Stage 4: 未完了checkpoint→別fresh session再開を一次KPIにする |
 
 ## 収集する指標
 
@@ -121,3 +122,11 @@ PR-only運用とレビュー時の4文書同期は機能し、保存した両ver
 異環境のReviewer結果は数学的全フィールドが一致し、Python/OSメタデータのみ異なる。
 Git保存のPR提出後snapshot合計は1,041秒・148,071counter単位であり、全運用工数・生成token数・費用ではない。
 本格的な構造分類、長時間checkpointからの再開、未知問題へのDiscovery、単一セッションに対する優越性は未評価。
+
+## Stage 4 — checkpoint-resume experiment
+
+Stage 4 rootは `63e8067f72b607fdc38c533e39b29e9b135cadf5`。対象workloadは `R(4,5)` の下界certificate探索だが、一次KPIは数学的な正確値ではなく **未完了checkpointを別fresh sessionへGitだけで引き継げるか** とする。
+
+H001-Aはresearch candidate interval `[0,2,000,000)` だけを実行して必ず停止し、portableなcheckpoint・handoff manifest・split/resume equivalence testを保存する。H001-BはAのcheckpoint PRがmainへmergeされた後、別fresh sessionで `[2,000,000,10,000,000)` をexact resumeする。
+
+成功条件には、最初の再開candidate indexが2,000,000であること、Phase A候補の重複が0であること、code/config/checkpoint integrity、追加のsemantic user instruction不要、分割実行と連続実行の状態同値性を含む。数学的certificateの発見は副次成果として通常のClaim状態で扱う。
