@@ -18,7 +18,7 @@
       "goal_service_snapshot": {
         "goal": {
           "threadId": "01a0c849-a7c3-72e0-b0aa-372e4a370645",
-          "objective": "Repository: `https://github.com/hita1999/Ramsey-benchmark`\\\n&#x20;Goal: `benchmarks/r4-5/goals/H001-B.md`\\\n&#x20;Gitをsource of truthとしてGoalに従って実行してください。",
+          "objective": "Repository: `https://github.com/hita1999/Ramsey-benchmark`\\\n&#x20;Goal: `benchmarks/r4-5/goals/H001-B.md`\\\n&#x20;Git\u3092source of truth\u3068\u3057\u3066Goal\u306b\u5f93\u3063\u3066\u5b9f\u884c\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
           "status": "active",
           "tokensUsed": 81663,
           "timeUsedSeconds": 590,
@@ -32,14 +32,48 @@
       "phase_b_research_candidate_evaluations": 8000000,
       "test_replay_candidate_evaluations": 556,
       "source": "get_goal service and saved run/run-result.json"
+    },
+    {
+      "phase": "pr_submitted",
+      "github_created_at": "2026-09-22T08:56:31Z",
+      "goal_service_snapshot": {
+        "goal": {
+          "threadId": "01a0c849-a7c3-72e0-b0aa-372e4a370645",
+          "objective": "Repository: `https://github.com/hita1999/Ramsey-benchmark`\\\n&#x20;Goal: `benchmarks/r4-5/goals/H001-B.md`\\\n&#x20;Git\u3092source of truth\u3068\u3057\u3066Goal\u306b\u5f93\u3063\u3066\u5b9f\u884c\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
+          "status": "active",
+          "tokensUsed": 95989,
+          "timeUsedSeconds": 703,
+          "createdAt": 1790066700,
+          "updatedAt": 1790067403
+        },
+        "remainingTokens": null,
+        "completionBudgetReport": null
+      },
+      "research_global_counter": 10000000,
+      "phase_b_research_candidate_evaluations": 8000000,
+      "test_replay_candidate_evaluations": 556
     }
   ],
-  "pushes": [],
+  "pushes": [
+    {
+      "phase": "research_artifact_push",
+      "command": "git push -u origin HEAD:refs/heads/codex/r45-h001-b-resume",
+      "exit_code": 0,
+      "local_and_remote_commit": "f35b7f445a65b44dba6d22abd3577e4a02d48a58",
+      "remote_main_observed": "e1299901c3533ce1f6843c425ff8c458b834facc",
+      "upstream": "origin/codex/r45-h001-b-resume",
+      "source": "git push output and git ls-remote"
+    }
+  ],
   "unmeasured_intervals": [
     "Exact physical session onset before second-resolution goal createdAt",
     "Monetary cost and precise runtime model/effort",
     "Final recording commit/push after eventual completion snapshot is separately labeled postprocessing"
   ],
   "postprocessing_note": "Outcome commit, PR submission, and Goal completion are separate measurements. A final recording commit/push follows the completion snapshot with zero research evaluations.",
-  "review_handoff": "Independent Reviewer owns reviews/H001-B.md, optional review checker/results and four-document state sync. Integrator owns normal merge and subsequent PR-based results/r45-h001-b-integration-receipt.md."
+  "review_handoff": "Independent Reviewer owns reviews/H001-B.md, optional review checker/results and four-document state sync. Integrator owns normal merge and subsequent PR-based results/r45-h001-b-integration-receipt.md.",
+  "research_artifact_commit": "f35b7f445a65b44dba6d22abd3577e4a02d48a58",
+  "pull_request_url": "https://github.com/hita1999/Ramsey-benchmark/pull/17",
+  "pull_request_created_at": "2026-09-22T08:56:31Z",
+  "within_30_minute_ceiling_at_pr_snapshot": true
 }
