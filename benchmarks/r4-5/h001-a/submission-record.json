@@ -11,11 +11,38 @@
       "token_counter": "missing",
       "cost_counter": "missing",
       "source": "saved search state; UTC system datetime"
+    },
+    {
+      "phase": "pr_submitted",
+      "utc": "2026-09-22T08:00:57Z",
+      "time_source": "GitHub create_pull_request created_at",
+      "research_candidate_counter": 2000000,
+      "phase_b_candidate_counter": 0,
+      "token_counter": "missing",
+      "cost_counter": "missing",
+      "commit": "4189237ad41e171d20a972da09d999263e130cc8"
+    },
+    {
+      "phase": "phase_stop_snapshot_before_final_recording_commit_push",
+      "utc": "2026-09-22T08:01:26.957099+00:00",
+      "time_source": "system datetime UTC",
+      "research_candidate_counter": 2000000,
+      "phase_b_candidate_counter": 0,
+      "test_candidate_evaluations": 556,
+      "token_counter": "missing",
+      "cost_counter": "missing",
+      "classification": "PARTIAL_PROGRESS",
+      "reason": "MANDATORY_HANDOFF_CHECKPOINT"
     }
   ],
   "unmeasured_intervals": [
     "exact session start before first 07:47:25 UTC sample",
     "token/cost usage for entire session"
   ],
-  "postprocessing_note": "Final recording commit/push occurs after phase_stop snapshot; not included in search runtime. Phase B remains forbidden."
+  "postprocessing_note": "Final recording commit/push occurs after phase_stop snapshot; not included in search runtime. Phase B remains forbidden.",
+  "research_artifact_commit": "4189237ad41e171d20a972da09d999263e130cc8",
+  "pull_request_url": "https://github.com/hita1999/Ramsey-benchmark/pull/15",
+  "wall_clock_bound_seconds_through_stop_snapshot": 926.957099,
+  "post_stop_recording_interval": "This file recording commit and final explicit push plus remote-state check occur after the stop snapshot; exact endpoint not embedded recursively. These are postprocessing, with zero research evaluations. Git timestamps/remote ref identify the recording commit.",
+  "within_25_minute_ceiling_at_snapshot": true
 }
