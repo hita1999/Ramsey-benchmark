@@ -7,7 +7,7 @@
 | R(3,4) | SOLVED | ≥9 | ≤9 | C001〜C006 独立レビュー ACCEPTED | 完了2件 | R(3,4)=9独立検証済み、Discoveryは両GoalともCONTAMINATED |
 | R(3,5) | SOLVED | ≥14 | ≤14 | R35-C001〜C004 PROVEN × ACCEPTED | 完了2件 | R(3,5)=14独立検証済み、Discovery CONTAMINATED |
 | R(4,4) | SOLVED | ≥18 | ≤18 | R44-C001/C002/L001/C003/C004 PROVEN × ACCEPTED | 完了2件 | R(4,4)=18独立検証済み、Discovery CONTAMINATED |
-| R(4,5) | PARTIAL_PROGRESS | ≥24 | — | R45-C001 PROVEN × ACCEPTED | H001-A PASS / H001-B pending | 2M checkpoint review済み、cross-session resume未実施、Discovery CONTAMINATED |
+| R(4,5) | PARTIAL_PROGRESS | ≥24 | — | R45-C001 PROVEN × ACCEPTED | H001-A PASS / H001-B SOLVED (研究者判定) | cross-session handoff PASS × UNREVIEWED、10M区間完了、Discovery CONTAMINATED |
 
 ## 収集する指標
 
@@ -128,7 +128,7 @@ H001-Aはresearch candidate interval `[0,2,000,000)` だけを実行して必ず
 
 成功条件には、最初の再開candidate indexが2,000,000であること、Phase A候補の重複が0であること、code/config/checkpoint integrity、追加のsemantic user instruction不要、分割実行と連続実行の状態同値性を含む。数学的certificateの発見は副次成果として通常のClaim状態で扱う。
 
-### H001-A checkpoint outcome and independent review
+### H001-A checkpoint outcome and independent review (historical submission state)
 
 H001-Aは execution base `6031a203863a71cae5a34793c5d87dbc9b24479b` からfresh sessionで実行し、research interval `[0,2,000,000)` を正確に消費して **PARTIAL_PROGRESS / MANDATORY_HANDOFF_CHECKPOINT** で停止した。next candidate indexは2,000,000、残りは `[2,000,000,10,000,000)`。Phase Bは未実行。
 
@@ -137,3 +137,13 @@ H001-Aは execution base `6031a203863a71cae5a34793c5d87dbc9b24479b` からfresh 
 checkpoint raw SHA-256は `fd295fd8595c2eff2e4800f2862e7bc61ca54d72c3d7c421a61688f26e43b3a3`。current target n=24、current score 40、best score 4であり、score 4はcertificateでも不存在証明でもない。small split/resume testsとcheckpoint mechanismはPhase A acceptanceとしてPASSしたが、実際の別fresh sessionによるcross-session handoffは未評価であり、H001全体は **PARTIAL_PROGRESS** のまま。
 
 PR #15の統合ではcheckpointが参照する immutable `code_commit=5cabb7e2ea0f9ccbd237674666031d7d9f67ae3c` を履歴に保持する必要があるため、**squash/rebaseではなく通常のmerge commitを使用する**。merge後にintegration receiptをPR経由で保存し、その後H001-Bを別fresh sessionで開始する。
+
+### H001-B fresh-session continuation
+
+Phase A PR #15はnormal merge `5f061f2` で統合され、receiptもPR #16経由で統合済み。H001-Bは最新main `e1299901c3533ce1f6843c425ff8c458b834facc` から別fresh sessionでGitだけを使って再構築した。上記H001-A節の未実行・統合待ちは当時の履歴であり、現在はこの節を参照。
+
+H001-Bは研究者判定 **SOLVED**、operational handoff **PASS × UNREVIEWED**。最初の候補2,000,000と全入力状態の一致を直接記録し、残り8,000,000候補を実行して最終index 10,000,000に到達した。連結区間 [0,10,000,000)、重複・欠落0、追加質問0、曖昧/欠測semantic field 0、code/config変更0。小規模split/resumeテストは全状態一致でPASS。独立レビューとPhase B PR統合は未完了。
+
+初回候補まで310.815747秒、探索と最終保存/検証107.658952708秒。別枠test/replayは556候補、delta比較11,136件。Phase Aの研究軌跡や10M連続実行全体は再計算していない。model/effort欠測、Discovery CONTAMINATED。新規certificateはなく、n=23/114辺の受理済み下界 **R45-C001: R(4,5)>=24, PROVEN × ACCEPTED** を維持。n=24の最良score 4は上界・不存在証明ではない。
+
+根拠とレビュー/統合担当は [H001-B再現・引継ぎ文書](../benchmarks/r4-5/h001-b/reproduce.md)、計測は `benchmarks/r4-5/h001-b/submission-record.json`。R(4,5)数学的workloadの状態は引き続きPARTIAL_PROGRESSであり、operational Goal完了とは区別する。

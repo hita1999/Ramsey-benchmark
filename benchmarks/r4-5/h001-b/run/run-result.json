@@ -1,0 +1,16 @@
+{
+  "checkpoint_integrity": "PASS",
+  "checkpoint_sha256": "10702e9992f823cfc18135fc68537ca7171506c1f6382b9005a7c87426ee05f4",
+  "consumed_interval": [
+    2000000,
+    10000000
+  ],
+  "elapsed_seconds_including_serialization_validation": 107.658952708,
+  "ended_at_utc": "2026-09-22T08:51:58.467393+00:00",
+  "phase": "H001-B",
+  "reason": "PHASE_B_INTERVAL_COMPLETE",
+  "research_evaluations": 8000000,
+  "started_at_utc": "2026-09-22T08:50:10.814842+00:00",
+  "state_sha256": "de0b95aa593d14e63b48fc85786175ad5dd13eff5447f86841dc532346190bff",
+  "status": "PARTIAL_PROGRESS"
+}

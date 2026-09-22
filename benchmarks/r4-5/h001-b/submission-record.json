@@ -1,0 +1,45 @@
+{
+  "goal": "H001-B",
+  "goal_status": "SOLVED",
+  "handoff_evaluation": "PASS",
+  "independent_review_status": "UNREVIEWED",
+  "mathematical_problem_status": "PARTIAL_PROGRESS",
+  "execution_base": "e1299901c3533ce1f6843c425ff8c458b834facc",
+  "executing_code_commit": "d1c5cdf7e1dfa3a8750f6aaaaab7fc99248203c3",
+  "session_start_unix": 1790066700,
+  "wall_clock_ceiling_seconds": 1800,
+  "actual_model": "missing",
+  "actual_reasoning_effort": "missing",
+  "cost": "missing",
+  "counter_interpretation": "Goal service tokensUsed is tool-reported accounting, not generated tokens or price; timeUsedSeconds is session wall-clock, not search runtime.",
+  "events": [
+    {
+      "phase": "before_outcome_commit",
+      "goal_service_snapshot": {
+        "goal": {
+          "threadId": "01a0c849-a7c3-72e0-b0aa-372e4a370645",
+          "objective": "Repository: `https://github.com/hita1999/Ramsey-benchmark`\\\n&#x20;Goal: `benchmarks/r4-5/goals/H001-B.md`\\\n&#x20;Gitをsource of truthとしてGoalに従って実行してください。",
+          "status": "active",
+          "tokensUsed": 81663,
+          "timeUsedSeconds": 590,
+          "createdAt": 1790066700,
+          "updatedAt": 1790067290
+        },
+        "remainingTokens": null,
+        "completionBudgetReport": null
+      },
+      "research_global_counter": 10000000,
+      "phase_b_research_candidate_evaluations": 8000000,
+      "test_replay_candidate_evaluations": 556,
+      "source": "get_goal service and saved run/run-result.json"
+    }
+  ],
+  "pushes": [],
+  "unmeasured_intervals": [
+    "Exact physical session onset before second-resolution goal createdAt",
+    "Monetary cost and precise runtime model/effort",
+    "Final recording commit/push after eventual completion snapshot is separately labeled postprocessing"
+  ],
+  "postprocessing_note": "Outcome commit, PR submission, and Goal completion are separate measurements. A final recording commit/push follows the completion snapshot with zero research evaluations.",
+  "review_handoff": "Independent Reviewer owns reviews/H001-B.md, optional review checker/results and four-document state sync. Integrator owns normal merge and subsequent PR-based results/r45-h001-b-integration-receipt.md."
+}

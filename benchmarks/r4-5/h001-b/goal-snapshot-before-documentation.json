@@ -1,0 +1,13 @@
+{
+  "goal": {
+    "threadId": "01a0c849-a7c3-72e0-b0aa-372e4a370645",
+    "objective": "Repository: `https://github.com/hita1999/Ramsey-benchmark`\\\n&#x20;Goal: `benchmarks/r4-5/goals/H001-B.md`\\\n&#x20;Gitをsource of truthとしてGoalに従って実行してください。",
+    "status": "active",
+    "tokensUsed": 74894,
+    "timeUsedSeconds": 440,
+    "createdAt": 1790066700,
+    "updatedAt": 1790067140
+  },
+  "remainingTokens": null,
+  "completionBudgetReport": null
+}

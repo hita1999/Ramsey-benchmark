@@ -1,0 +1,26 @@
+{
+  "classification": "researcher self-audit, not independent review",
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-I",
+    "verify.py",
+    "certificate.json"
+  ],
+  "inputs": [
+    "verify.py",
+    "certificate.json"
+  ],
+  "output": [
+    {
+      "edges": 114,
+      "independent5": 0,
+      "k4": 0,
+      "lower_bound": 24,
+      "n": 23,
+      "path": "certificate.json",
+      "valid": true
+    }
+  ],
+  "research_candidate_evaluations": 0,
+  "status": "PASS"
+}

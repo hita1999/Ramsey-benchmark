@@ -1,16 +1,18 @@
 # R(4,5) — Stage 4 research notes
 
-## Current state
+## Current state after H001-B
 
-- H001-A termination: **PARTIAL_PROGRESS**, reason **MANDATORY_HANDOFF_CHECKPOINT**. This intentional termination classification is unchanged by review.
-- H001-A acceptance criteria: **PASS** by independent review.
-- Overall H001 experiment: **PARTIAL_PROGRESS**; intentional unfinished checkpoint, not SOLVED. Cross-session H001-B remains pending.
-- Phase A consumed exactly [0,2,000,000); last completed candidate 1,999,999; next candidate 2,000,000.
-- Phase B consumed zero candidates in Phase A. Remaining interval [2,000,000,10,000,000), exactly 8,000,000 candidates.
-- Current target n=24; current score 40; best score 4. No n=24 certificate was found in the allocated interval. This is not a nonexistence or upper-bound conclusion.
-- Strongest valid certificate: n=23, 114 edges, giving **R(4,5)>=24 = PROVEN × ACCEPTED**.
-- Discovery: **CONTAMINATED**. Recollection and accidental full-methodology exposure were recorded in notes-only commit `e387f94` before design/code. Recalled values and prior-stage constructions were not used in the plan or as mathematical evidence.
-- Independent review is complete; checkpoint PR #15 integration is pending. Phase B starts only after a normal merge commit and an integration receipt, in another fresh session.
+- H001-A: independent acceptance **PASS**; historical termination remains **PARTIAL_PROGRESS / MANDATORY_HANDOFF_CHECKPOINT**. PR #15 merged as `5f061f2`; integration receipt merged in PR #16.
+- H001-B: **SOLVED** at researcher submission; operational handoff **PASS × UNREVIEWED**. Independent Phase B review and integration remain pending.
+- Fresh Phase B reconstructed from Git base `e1299901c3533ce1f6843c425ff8c458b834facc` and consumed exactly [2,000,000,10,000,000). First observed candidate 2,000,000; final next index 10,000,000. Combined interval [0,10,000,000); repeated research indices and gaps 0.
+- Target n=24, current score 27, best score 4. No new certificate. Mathematical workload remains **PARTIAL_PROGRESS**; no upper bound or nonexistence claim follows.
+- Strongest certificate/Claim remains **R45-C001: R(4,5)>=24, PROVEN × ACCEPTED** (n=23, 114 edges).
+- Discovery **CONTAMINATED**, including disclosed Phase B Git-source exposure. Model/effort missing; no extra user questions or semantic checkpoint fields missing.
+- Full Phase B evidence, measurements and review ownership: [h001-b/reproduce.md](h001-b/reproduce.md), machine result [h001-b/handoff-evaluation.json](h001-b/handoff-evaluation.json).
+
+## Phase A historical execution record
+
+The following sections preserve Phase A's measurements and submission-time statements. Their pending-Phase-B language describes that earlier point; the current state above and Phase B record supersede it.
 
 ## Git, inputs, and execution provenance
 
@@ -75,3 +77,11 @@ At research submission, R45-C001 was `PROVEN × UNREVIEWED`, checkpoint integrat
 `h001-a/handoff-manifest.json` is the machine-readable handoff. After PR #15 is merged with a normal merge commit and the integration receipt is recorded, Phase B must validate its raw-file hashes, load the checkpoint, and record the startup audit before any new candidate. Follow goals/H001-B.md only in a separate fresh session. Use a dedicated Phase B branch from freshly fetched main and record that actual execution base. If integrity fails, stop with NEEDS_REPAIR/BLOCKED; do not silently restart or alter code/config.
 
 The next session must reconstruct everything from Git, without this conversation. Actual cross-session resume fidelity, extra questions, repeated research candidates, semantic drift, and overall H001 success are all still unmeasured.
+
+## H001-B findings and remaining work
+
+The continuation used unchanged search.py, verify.py and Phase A config bytes. Startup integrity/ancestry audit was committed before research as `d1c5cdf7e1dfa3a8750f6aaaaab7fc99248203c3`. A first-entry observer confirmed complete state S(2000000) before evaluation; all 80 progress blocks and final checkpoint agree on S(10000000). Actual research was run once. The 556 preregistered test transitions and 11,136 delta comparisons are separate from the 8,000,000 research candidates; no Phase A research trajectory was replayed.
+
+Time to first research step: 310.815747 seconds from second-resolution goal-service start. Search plus serialization/validation: 107.658952708 seconds. Final target counters: 952 restarts, iteration 2439, target evaluations 9,522,439; completed targets 477,561. The best score stayed 4. All 19 carried-forward certificates passed exhaustive certificate-only verification; strongest certificate also passed isolated-process verification. No new Claim or refutation was established.
+
+Operational self-evaluation is PASS, independent review UNREVIEWED. The remaining work is independent review, state synchronization and PR integration, with ownership and artifact paths in h001-b/reproduce.md. The existing budget is exhausted; a new search strategy or further n=24 work needs a new Goal, not an implicit extension of H001-B. No algorithm change is proposed by this execution. Outcome/PR/completion counters and explicit push records are in h001-b/submission-record.json.

@@ -1,14 +1,14 @@
-# H001-A verification record
+# R(4,5) verification record
 
 ## Current state
 
 - R45-C001: **PROVEN × ACCEPTED**. Independent review: [reviews/H001-A.md](reviews/H001-A.md).
 - H001-A acceptance criteria: **PASS**.
 - H001-A termination remains **PARTIAL_PROGRESS / MANDATORY_HANDOFF_CHECKPOINT** by design.
-- Overall H001 experiment: **PARTIAL_PROGRESS**. Phase B has not run, so cross-session handoff PASS/FAIL is not yet determined.
+- H001-B operational handoff: **PASS × UNREVIEWED**, researcher goal **SOLVED**. Phase B consumed exactly [2,000,000,10,000,000); independent review and integration pending. Mathematical workload remains PARTIAL_PROGRESS.
 - Discovery: **CONTAMINATED**.
 
-## Independent review — 2026-09-22
+## Phase A independent review — 2026-09-22
 
 Reviewer: ChatGPT / GPT-5.6 Sol, reasoning effort High. Review target was PR #15 with pre-review head `995a89beb5cbcb5acc2af5776af24e7fc460d79b`.
 
@@ -65,3 +65,17 @@ The checks below were performed by the Phase A researcher before independent rev
 - Phase B: NOT RUN. Cross-session exact resume and combined-interval audit remain pending after this checkpoint PR is merged.
 
 Current 24-vertex best score 4 is not a valid certificate and supplies no lower bound beyond R45-C001. It is not evidence for nonexistence or an upper bound.
+
+## H001-B researcher verification — 2026-09-22
+
+Detailed reproducibility and reviewer handoff: [h001-b/reproduce.md](h001-b/reproduce.md). Operational self-audit [handoff-evaluation.json](h001-b/handoff-evaluation.json) reports PASS; independent Phase B review is UNREVIEWED.
+
+- Startup: all 26 manifest artifacts matched Git/base hashes, historical code/config and checkpoint invariants validated before research. Pre-research audit commit `d1c5cdf7e1dfa3a8750f6aaaaab7fc99248203c3`.
+- Exact first step: index 2,000,000 and full input-state hash match Phase A; observer does not modify semantics. No code/config changes; no extra questions; zero ambiguous/missing semantic fields.
+- Accounting: 80 consecutive 100,000-candidate blocks; final index 10,000,000, Phase B count 8,000,000, no gap or repeated research index by code/counter audit. Final sum 477,561 + 9,522,439 = 10,000,000.
+- Existing split/resume, boundary, tamper, PRNG and certificate tests passed; complete saved output matches Phase A. Phase B ran 556 TEST/REPLAY transitions and 11,136 delta comparisons; no research trajectory replay.
+- Final checkpoint passed raw hash, state hash, graph score, certificate and counter validation. Checkpoint SHA-256 `10702e9992f823cfc18135fc68537ca7171506c1f6382b9005a7c87426ee05f4`; state SHA-256 `de0b95aa593d14e63b48fc85786175ad5dd13eff5447f86841dc532346190bff`.
+- All 19 certificates n=5..23 were carried forward unchanged and certificate-only reverified; isolated verifier confirmed the strongest n=23/114-edge graph. New certificates: 0. R45-C001 remains PROVEN × ACCEPTED from the independent Phase A review.
+- Final n=24 current score 27, best score 4 remains invalid heuristic state, not evidence for an upper bound.
+
+The preceding Phase A sections are historical; references there to Phase B NOT RUN or pending are superseded by this section. Small equivalence tests and code/counter continuity do not claim a full uninterrupted 10M replay. Researcher self-audits do not substitute for independent review.

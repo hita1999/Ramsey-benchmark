@@ -1,0 +1,11 @@
+{
+  "first_resumed_candidate_index": 2000000,
+  "measurement": "entry to first research step, immediately before its body; epoch difference from second-resolution goal createdAt",
+  "observed_at_unix": 1790067010.815747,
+  "observed_at_utc": "2026-09-22T08:50:10.815747+00:00",
+  "observer_changes_to_semantic_state": 0,
+  "profiling_disabled_after_first_entry": true,
+  "seconds_from_session_start": 310.8157470226288,
+  "startup_audit_sha256": "151292200a84bddefe6f650f9458c0775723bd36c91ceda8ee88512b074fb7ab",
+  "state_sha256_before_first_transition": "e93c2555c8ef11e173ea2a8c1357b09052f004716babc4e1cea68be95d8a051a"
+}
