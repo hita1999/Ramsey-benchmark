@@ -1,0 +1,254 @@
+{
+  "actual_launch_command": "python3 benchmarks/r4-5/h001-b/run_resume.py",
+  "artifact_hashes_verified_against_git_and_manifest": {
+    "benchmarks/r4-5/h001-a/config.json": "8d2922315c263a914ce9041f009d1a252673fdcc48758312628ea0bed1adec8b",
+    "benchmarks/r4-5/h001-a/run/best-so-far.json": "61833a8bd5f15df0f7b5662e609d2ce16502528a1a29256d6dd94febafc0aa7a",
+    "benchmarks/r4-5/h001-a/run/certificate.json": "32d0e5d132297bb676195437d0458546e4b44611dc9654981eb05871004f5302",
+    "benchmarks/r4-5/h001-a/run/certificates/n05.json": "5c325c4f31e511a367a994152d013657bcac4d9503704d4dfee4d6d12ace8e11",
+    "benchmarks/r4-5/h001-a/run/certificates/n06.json": "c0d09ba0a7ed9c497ae1cdbea5cd433d6ddcc6d82bc65ae5b86e131340971c04",
+    "benchmarks/r4-5/h001-a/run/certificates/n07.json": "988add49163e98623f5106b3458a6be560213ec986e94896cfc06dc38564e7b0",
+    "benchmarks/r4-5/h001-a/run/certificates/n08.json": "e61df8ff7b65c987c46c442769bf065c2da364df62be9bda58c1016563d456be",
+    "benchmarks/r4-5/h001-a/run/certificates/n09.json": "1c408aa097da78988a5094f4be8d0e0a5646c12555a2445009dd6c44ca97a892",
+    "benchmarks/r4-5/h001-a/run/certificates/n10.json": "52e99243dff13c69280f4f37ff2ebae735838d779d578d41bf9d35b389780037",
+    "benchmarks/r4-5/h001-a/run/certificates/n11.json": "716efd2b4f340b5ef363d6143171a19bae3ae773d86318b7fb78ca47d53aa29e",
+    "benchmarks/r4-5/h001-a/run/certificates/n12.json": "8ed2323201b51a02a7b07c676b78121ebda033cc51ca26f08630d0ad4c0f6973",
+    "benchmarks/r4-5/h001-a/run/certificates/n13.json": "cdade4dbd5614c34180b18d8187db36b8a7ee8920431e62b155fa161336102d4",
+    "benchmarks/r4-5/h001-a/run/certificates/n14.json": "892ae34e74eaefd608f362e101980963ba815d0a0cc42f5e71b6a3cec7d6b155",
+    "benchmarks/r4-5/h001-a/run/certificates/n15.json": "e9bdf37759aeeaffe9f65b449fc779288a884a88a43b02de567a654dfae0cd49",
+    "benchmarks/r4-5/h001-a/run/certificates/n16.json": "530f2c326ef0c52acca11fbcfc4af61cfe9fca832d13f0fef52dcf659baf3d7d",
+    "benchmarks/r4-5/h001-a/run/certificates/n17.json": "8eb7432fb77ca11a742b0fed5fe4872e4635f2401aec1c33c3700ce6743073bd",
+    "benchmarks/r4-5/h001-a/run/certificates/n18.json": "58783c15bd4f5f95d376bd9561fe363330b4099fbc4534889c03be3b327f8cce",
+    "benchmarks/r4-5/h001-a/run/certificates/n19.json": "31a1c60a8a6a5ce5a3783d2666e522e2e889b62d59a704d7966c445ea1bce1aa",
+    "benchmarks/r4-5/h001-a/run/certificates/n20.json": "ffe94ef680b95a46536818621f291517a75db87d6b56b2f2966a4744d3cae638",
+    "benchmarks/r4-5/h001-a/run/certificates/n21.json": "752713b8883391e687e135cc4aa4012d6b4c074ffa86acaca2cfa032f0a07a90",
+    "benchmarks/r4-5/h001-a/run/certificates/n22.json": "f694a8b22735eb564ba80053bf744aa4ce6a2f72387525126e35b02ad4fe29e4",
+    "benchmarks/r4-5/h001-a/run/certificates/n23.json": "32d0e5d132297bb676195437d0458546e4b44611dc9654981eb05871004f5302",
+    "benchmarks/r4-5/h001-a/run/checkpoint.json": "fd295fd8595c2eff2e4800f2862e7bc61ca54d72c3d7c421a61688f26e43b3a3",
+    "benchmarks/r4-5/search.py": "d5ac3a9772b3b92fe5276013ed16fba05de25808e02b81200d9c5a30e4b7940b",
+    "benchmarks/r4-5/test_search.py": "2d46d9af4a6ad009d3bb43c09d173a83854f11b1b403594bda6613fdd1a247d4",
+    "benchmarks/r4-5/verify.py": "4455eec1517d7914075fd971a6a633eb77c4fff618111044ed6a214b29454e62"
+  },
+  "audit_head": "1a1ae3fafe7490c3cba4a9fdddc5c27c5755243c",
+  "checkpoint_path": "benchmarks/r4-5/h001-a/run/checkpoint.json",
+  "checkpoint_schema": "r45-checkpoint-v1",
+  "checkpoint_sha256": "fd295fd8595c2eff2e4800f2862e7bc61ca54d72c3d7c421a61688f26e43b3a3",
+  "code_commit_phase_a": "5cabb7e2ea0f9ccbd237674666031d7d9f67ae3c",
+  "code_config_changed_before_resume": false,
+  "code_sha256": {
+    "search.py": "d5ac3a9772b3b92fe5276013ed16fba05de25808e02b81200d9c5a30e4b7940b",
+    "verify.py": "4455eec1517d7914075fd971a6a633eb77c4fff618111044ed6a214b29454e62"
+  },
+  "config_path": "benchmarks/r4-5/h001-a/config.json",
+  "config_sha256": "8d2922315c263a914ce9041f009d1a252673fdcc48758312628ea0bed1adec8b",
+  "consumed_interval": [
+    0,
+    2000000
+  ],
+  "deadline_utc": "2026-09-22T09:15:00Z",
+  "environment_differences": {},
+  "execution_base": "e1299901c3533ce1f6843c425ff8c458b834facc",
+  "extra_user_questions": 0,
+  "files_read_during_reconstruction": {
+    "README.md": "053f3a775758cd54b0ec3ba2bd1737757f69c0db24b1b4790cf4b63eb5eb4e84",
+    "benchmarks/r4-5/checkpoint-schema.md": "5c68091febddafa2298f483716b2ced376f6b32e81871bf1580a8322264e4af8",
+    "benchmarks/r4-5/goals/H001-A.md": "b0c69f033f3da00e66de2c967ce17743ea83c0e1f112a2985bf99f9a5e4d15b6",
+    "benchmarks/r4-5/goals/H001-B.md": "acdac3cb206c4e94ac1dba4f5860d250c514d81a6c5be1330a54e41154a1331c",
+    "benchmarks/r4-5/h001-a-discovery.md": "e1133476ee5418e67899e029aea404af6389c83e7bdedd4469bfaf4dccf42955",
+    "benchmarks/r4-5/h001-a-plan.md": "5edeace9ba5f129e1af88c63c9e3ad97e252bfaadc88d0e42c796fe28ecafd32",
+    "benchmarks/r4-5/h001-a/audit.py": "ada41207f3d8b42b14c45a661eefd097127fcc229cdf5f85c48b1218ec0014a3",
+    "benchmarks/r4-5/h001-a/config.json": "8d2922315c263a914ce9041f009d1a252673fdcc48758312628ea0bed1adec8b",
+    "benchmarks/r4-5/h001-a/environment.json": "c0eb38590a9bd461e7b6a00f9626c23419b399451f43a9c34cf10f1ec47686cd",
+    "benchmarks/r4-5/h001-a/handoff-manifest.json": "534eed957cd655fa1c2fdb7b8c6b0488287e7dd5e4771907131bb66057c29ebb",
+    "benchmarks/r4-5/h001-a/run/best-so-far.json": "61833a8bd5f15df0f7b5662e609d2ce16502528a1a29256d6dd94febafc0aa7a",
+    "benchmarks/r4-5/h001-a/run/certificate.json": "32d0e5d132297bb676195437d0458546e4b44611dc9654981eb05871004f5302",
+    "benchmarks/r4-5/h001-a/run/certificates/n05.json": "5c325c4f31e511a367a994152d013657bcac4d9503704d4dfee4d6d12ace8e11",
+    "benchmarks/r4-5/h001-a/run/certificates/n06.json": "c0d09ba0a7ed9c497ae1cdbea5cd433d6ddcc6d82bc65ae5b86e131340971c04",
+    "benchmarks/r4-5/h001-a/run/certificates/n07.json": "988add49163e98623f5106b3458a6be560213ec986e94896cfc06dc38564e7b0",
+    "benchmarks/r4-5/h001-a/run/certificates/n08.json": "e61df8ff7b65c987c46c442769bf065c2da364df62be9bda58c1016563d456be",
+    "benchmarks/r4-5/h001-a/run/certificates/n09.json": "1c408aa097da78988a5094f4be8d0e0a5646c12555a2445009dd6c44ca97a892",
+    "benchmarks/r4-5/h001-a/run/certificates/n10.json": "52e99243dff13c69280f4f37ff2ebae735838d779d578d41bf9d35b389780037",
+    "benchmarks/r4-5/h001-a/run/certificates/n11.json": "716efd2b4f340b5ef363d6143171a19bae3ae773d86318b7fb78ca47d53aa29e",
+    "benchmarks/r4-5/h001-a/run/certificates/n12.json": "8ed2323201b51a02a7b07c676b78121ebda033cc51ca26f08630d0ad4c0f6973",
+    "benchmarks/r4-5/h001-a/run/certificates/n13.json": "cdade4dbd5614c34180b18d8187db36b8a7ee8920431e62b155fa161336102d4",
+    "benchmarks/r4-5/h001-a/run/certificates/n14.json": "892ae34e74eaefd608f362e101980963ba815d0a0cc42f5e71b6a3cec7d6b155",
+    "benchmarks/r4-5/h001-a/run/certificates/n15.json": "e9bdf37759aeeaffe9f65b449fc779288a884a88a43b02de567a654dfae0cd49",
+    "benchmarks/r4-5/h001-a/run/certificates/n16.json": "530f2c326ef0c52acca11fbcfc4af61cfe9fca832d13f0fef52dcf659baf3d7d",
+    "benchmarks/r4-5/h001-a/run/certificates/n17.json": "8eb7432fb77ca11a742b0fed5fe4872e4635f2401aec1c33c3700ce6743073bd",
+    "benchmarks/r4-5/h001-a/run/certificates/n18.json": "58783c15bd4f5f95d376bd9561fe363330b4099fbc4534889c03be3b327f8cce",
+    "benchmarks/r4-5/h001-a/run/certificates/n19.json": "31a1c60a8a6a5ce5a3783d2666e522e2e889b62d59a704d7966c445ea1bce1aa",
+    "benchmarks/r4-5/h001-a/run/certificates/n20.json": "ffe94ef680b95a46536818621f291517a75db87d6b56b2f2966a4744d3cae638",
+    "benchmarks/r4-5/h001-a/run/certificates/n21.json": "752713b8883391e687e135cc4aa4012d6b4c074ffa86acaca2cfa032f0a07a90",
+    "benchmarks/r4-5/h001-a/run/certificates/n22.json": "f694a8b22735eb564ba80053bf744aa4ce6a2f72387525126e35b02ad4fe29e4",
+    "benchmarks/r4-5/h001-a/run/certificates/n23.json": "32d0e5d132297bb676195437d0458546e4b44611dc9654981eb05871004f5302",
+    "benchmarks/r4-5/h001-a/run/checkpoint.json": "fd295fd8595c2eff2e4800f2862e7bc61ca54d72c3d7c421a61688f26e43b3a3",
+    "benchmarks/r4-5/h001-a/run/progress.jsonl": "cbb84b13c6838f184c1e898a99d521ede425e4fc4429e356009868565858dcfd",
+    "benchmarks/r4-5/h001-a/run/run-result.json": "0614a67301fc091e57b44c6b795266a030a6f876d844d98541bab79634af54f6",
+    "benchmarks/r4-5/h001-a/submission-record.json": "26b053ac1bf818ecb0f19937707990ed167133fc98a1e356502274e4e8397803",
+    "benchmarks/r4-5/h001-a/test-result.json": "deb5b1992f59b6aeb3064709ae2f377f1f004a9b997586bd2855978cbe783e8b",
+    "benchmarks/r4-5/h001-b-discovery.md": "64b7fcd3a92fad9333fe2ac14932ccd5de0fb32775cacb8e3ad6fee9cfaefb76",
+    "benchmarks/r4-5/handoff-protocol.md": "785b4c0f0d8bbe74da003d593da833b33bcf9ea33d68fceae9b4b9e26d2566ba",
+    "benchmarks/r4-5/problem.md": "109c3158a9fd6421af33768bf03e8b386c654cbbc0a7f59670cab792b2821e69",
+    "benchmarks/r4-5/proof.md": "7bfd0515cbe5fb7fa9c2cfb55a712f30d8236b822b331af612880e2181b6a453",
+    "benchmarks/r4-5/research-notes.md": "ff89c909d4afa4a6fc056427efed88b279b4ed74f7e499d62639ead55c472984",
+    "benchmarks/r4-5/reviews/H001-A.md": "d0a11f46094ac4927da595309de8b7d9fbd360ddec0145a714c6655fd8fac26d",
+    "benchmarks/r4-5/search.py": "d5ac3a9772b3b92fe5276013ed16fba05de25808e02b81200d9c5a30e4b7940b",
+    "benchmarks/r4-5/test_search.py": "2d46d9af4a6ad009d3bb43c09d173a83854f11b1b403594bda6613fdd1a247d4",
+    "benchmarks/r4-5/verification.md": "89e9ebd9b1b5871ce45dc45ff2e60024e973c5a33ecb1da569b77a933daa4b15",
+    "benchmarks/r4-5/verify.py": "4455eec1517d7914075fd971a6a633eb77c4fff618111044ed6a214b29454e62",
+    "methodology.md": "ae1dd63740835a53e1333646713e5293b7ac6a2a126e76650458dd713876c5bd",
+    "prompts/codex-goal.md": "b9e3e0f17043284dfd610e0f0a20e14b69d06d31c8d8d3a17c56797fd685fd67",
+    "results/benchmark-summary.md": "ccb54a54ce4ac47a61189abb28576057dff89bbb1614f1cee786073e81913762",
+    "results/r45-h001-a-integration-receipt.md": "249ef9a40db2130b003d3ab6cc0f984b5283ea9530b4369466e8743def464a94",
+    "results/stage3-pr-policy-verification.md": "df4bda6b01138aca78ef29e364a35a8dc4e726c176ba37325ddcfd60491ba157"
+  },
+  "fresh_session": true,
+  "graph_state_source": "benchmarks/r4-5/h001-a/run/checkpoint.json#state (all fields validated)",
+  "last_completed_candidate_index": 1999999,
+  "manifest_path": "benchmarks/r4-5/h001-a/handoff-manifest.json",
+  "manifest_resume_command": "python3 benchmarks/r4-5/search.py resume --config benchmarks/r4-5/h001-a/config.json --checkpoint benchmarks/r4-5/h001-a/run/checkpoint.json --expected-sha256 fd295fd8595c2eff2e4800f2862e7bc61ca54d72c3d7c421a61688f26e43b3a3 --out benchmarks/r4-5/h001-b/run --execution-base \"$(git rev-parse origin/main)\"",
+  "manifest_sha256": "534eed957cd655fa1c2fdb7b8c6b0488287e7dd5e4771907131bb66057c29ebb",
+  "metadata_caveats": [
+    "Phase A manifest preserves submission-time UNREVIEWED; merged review and integration receipt establish ACCEPTED. This is historical review metadata, not semantic search state."
+  ],
+  "missing_or_ambiguous_semantic_fields": [],
+  "next_candidate_index": 2000000,
+  "observer": "runpy executes unchanged search.py CLI with identical argv; first step entry is observed without state mutation and profiling is immediately disabled",
+  "phase": "H001-B",
+  "phase_a_conversation_supplied": false,
+  "phase_a_merge_commit": "5f061f2df33e74e7b416e958ca1e427536763ce9",
+  "recorded_at_utc": "2026-09-22T08:49:56.801977+00:00",
+  "remaining_candidate_budget": 8000000,
+  "remaining_interval": [
+    2000000,
+    10000000
+  ],
+  "research_evaluations_before_audit": 0,
+  "resolved_resume_argv": [
+    "python3",
+    "benchmarks/r4-5/search.py",
+    "resume",
+    "--config",
+    "benchmarks/r4-5/h001-a/config.json",
+    "--checkpoint",
+    "benchmarks/r4-5/h001-a/run/checkpoint.json",
+    "--expected-sha256",
+    "fd295fd8595c2eff2e4800f2862e7bc61ca54d72c3d7c421a61688f26e43b3a3",
+    "--out",
+    "benchmarks/r4-5/h001-b/run",
+    "--execution-base",
+    "e1299901c3533ce1f6843c425ff8c458b834facc"
+  ],
+  "resolved_resume_command": "python3 benchmarks/r4-5/search.py resume --config benchmarks/r4-5/h001-a/config.json --checkpoint benchmarks/r4-5/h001-a/run/checkpoint.json --expected-sha256 fd295fd8595c2eff2e4800f2862e7bc61ca54d72c3d7c421a61688f26e43b3a3 --out benchmarks/r4-5/h001-b/run --execution-base e1299901c3533ce1f6843c425ff8c458b834facc",
+  "session_start_source": "goal service createdAt, second resolution",
+  "session_start_unix": 1790066700,
+  "state_sha256": "e93c2555c8ef11e173ea2a8c1357b09052f004716babc4e1cea68be95d8a051a",
+  "state_summary": {
+    "best_score": 4,
+    "completed_targets": [
+      {
+        "evaluations": 1,
+        "found_at_index": 0,
+        "n": 5
+      },
+      {
+        "evaluations": 1,
+        "found_at_index": 1,
+        "n": 6
+      },
+      {
+        "evaluations": 1,
+        "found_at_index": 2,
+        "n": 7
+      },
+      {
+        "evaluations": 4,
+        "found_at_index": 6,
+        "n": 8
+      },
+      {
+        "evaluations": 1,
+        "found_at_index": 7,
+        "n": 9
+      },
+      {
+        "evaluations": 5,
+        "found_at_index": 12,
+        "n": 10
+      },
+      {
+        "evaluations": 10,
+        "found_at_index": 22,
+        "n": 11
+      },
+      {
+        "evaluations": 27,
+        "found_at_index": 49,
+        "n": 12
+      },
+      {
+        "evaluations": 45,
+        "found_at_index": 94,
+        "n": 13
+      },
+      {
+        "evaluations": 80,
+        "found_at_index": 174,
+        "n": 14
+      },
+      {
+        "evaluations": 78,
+        "found_at_index": 252,
+        "n": 15
+      },
+      {
+        "evaluations": 295,
+        "found_at_index": 547,
+        "n": 16
+      },
+      {
+        "evaluations": 152,
+        "found_at_index": 699,
+        "n": 17
+      },
+      {
+        "evaluations": 1043,
+        "found_at_index": 1742,
+        "n": 18
+      },
+      {
+        "evaluations": 2331,
+        "found_at_index": 4073,
+        "n": 19
+      },
+      {
+        "evaluations": 5066,
+        "found_at_index": 9139,
+        "n": 20
+      },
+      {
+        "evaluations": 19345,
+        "found_at_index": 28484,
+        "n": 21
+      },
+      {
+        "evaluations": 9465,
+        "found_at_index": 37949,
+        "n": 22
+      },
+      {
+        "evaluations": 439611,
+        "found_at_index": 477560,
+        "n": 23
+      }
+    ],
+    "iteration": 2439,
+    "mode": "search",
+    "next_candidate_index": 2000000,
+    "prng_state": "7431988031815036543",
+    "restart": 152,
+    "score": 40,
+    "target_evaluations": 1522439,
+    "target_n": 24
+  },
+  "status": "PASS"
+}

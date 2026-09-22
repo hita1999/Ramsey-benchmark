@@ -1,0 +1,10 @@
+{
+  "actual_model": "missing",
+  "actual_reasoning_effort": "missing",
+  "dependencies": "Python standard library only",
+  "executable": "/Library/Developer/CommandLineTools/usr/bin/python3",
+  "machine": "arm64",
+  "metadata_only": true,
+  "platform": "macOS-13.7.4-arm64-arm-64bit",
+  "python": "3.9.6 (default, May  7 2023, 23:32:44) \n[Clang 14.0.3 (clang-1403.0.22.14.1)]"
+}
