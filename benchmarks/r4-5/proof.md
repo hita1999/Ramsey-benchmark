@@ -1,6 +1,6 @@
 # R45-C001 — R(4,5) >= 24
 
-Mathematical state: **PROVEN** by a finite certificate. Independent review: **UNREVIEWED**. Discovery: **CONTAMINATED** (see h001-a-discovery.md). No previous-stage Claim is a dependency.
+Mathematical state: **PROVEN** by a finite certificate. Independent review: **ACCEPTED** ([H001-A independent review](reviews/H001-A.md)). Discovery: **CONTAMINATED** (see h001-a-discovery.md). No previous-stage Claim is a dependency.
 
 Let G be the graph on vertices 0 through 22 whose 114 edges are listed in `h001-a/run/certificate.json` (identical to `h001-a/run/certificates/n23.json`).
 
@@ -14,4 +14,6 @@ To reproduce the finite verification from repository root:
 python3 benchmarks/r4-5/verify.py benchmarks/r4-5/h001-a/run/certificate.json
 ```
 
-The proof depends on the complete certificate and exhaustive verifier, not on the local-search score or a remembered Ramsey value. A separate isolated-process self-audit copied only the verifier and certificate; see `h001-a/isolated-verification.json`. Independent-session mathematical review is still outstanding.
+The proof depends on the complete certificate and exhaustive verifier, not on the local-search score or a remembered Ramsey value. A separate isolated-process self-audit copied only the verifier and certificate; see `h001-a/isolated-verification.json`.
+
+The independent Reviewer additionally used `review/r45-h001-a-independent.py`, which imports neither `search.py` nor the research-side `verify.py`, and exhaustively checked all `C(23,4)=8,855` four-sets and `C(23,5)=33,649` five-sets. It found zero K4 and zero independent 5-set; see `review/r45-h001-a-independent-result.json`. Therefore R45-C001 is **PROVEN × ACCEPTED**.
