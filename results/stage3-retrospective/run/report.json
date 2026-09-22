@@ -1,0 +1,63 @@
+{
+  "byte_equal": false,
+  "differing_keys": [
+    "platform",
+    "python"
+  ],
+  "excluded_keys": [
+    "platform",
+    "python"
+  ],
+  "executable": "/Library/Developer/CommandLineTools/usr/bin/python3",
+  "git_head": "17aece27b5d16331ac2e8a067fb930b1694bdc62",
+  "mathematical_fields_equal": true,
+  "platform": "macOS-13.7.4-arm64-arm-64bit",
+  "python": "3.9.6 (default, May  7 2023, 23:32:44) \n[Clang 14.0.3 (clang-1403.0.22.14.1)]",
+  "runs": [
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "benchmarks/r4-4/verify.py",
+        "benchmarks/r4-4/run/certificate.json",
+        "--output",
+        "/Users/h.t/develop/Ramsey-benchmark/results/stage3-retrospective/run/research-result.json"
+      ],
+      "name": "research-verifier",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "benchmarks/r4-4",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "name": "existing-tests",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "benchmarks/r4-4/review/r44-g001-independent.py",
+        "benchmarks/r4-4/run/certificate.json",
+        "--output",
+        "/Users/h.t/develop/Ramsey-benchmark/results/stage3-retrospective/run/reviewer-result.json"
+      ],
+      "name": "reviewer-verifier",
+      "returncode": 0
+    }
+  ],
+  "scope": "Saved certificate verifiers and existing tests only; full search not rerun; not a new independent review",
+  "source_sha256": {
+    "benchmarks/r4-4/review/r44-g001-independent-result.json": "4d9c786f4f1be4e2aa466ea30344cc8adf1e05f1607defd972cd51ee7a23df11",
+    "benchmarks/r4-4/review/r44-g001-independent.py": "dc7f7386f8f447a5fbbd3865764ff57247c5f0a07396844c47d3d74c464df40f",
+    "benchmarks/r4-4/run/certificate.json": "e8a743f4ee35213cceef5a065f918678e2d0282628f1b3463f8250736a6f30cf",
+    "benchmarks/r4-4/verify.py": "57073820917ceebae394fe6baba52303241164504fcf0eb2e61d8d5b16d9adf9"
+  },
+  "utc": "2026-09-22T06:18:34.778795+00:00"
+}

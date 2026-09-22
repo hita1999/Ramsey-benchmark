@@ -509,10 +509,23 @@ R(3,5)=14は `PROVEN × ACCEPTED`、Discoveryは `CONTAMINATED`。Git経由の�
 
 以後は成果・レビュー・closure・運用文書・事故復旧を含め、mainへの統合をPR経由に限定する。
 Stage 3開始前には管理担当がmainに対するPR必須ルールとbypass制限の有効性を確認し、
-`results/stage3-pr-policy-verification.md` に証跡を保存する。現時点では未確認であり、
-本書への方針追記だけで技術的な強制が完了したとは扱わない。
+`results/stage3-pr-policy-verification.md` に証跡を保存する。Stage 2 retrospective当時は未確認だったが、
+その後PR #8で確認済み証跡を保存した。方針追記そのものを技術的な強制の完了とは扱わない。
 
 研究担当は専用ブランチと明示的なpush先を用い、レビュー担当または明示されたclosure担当が
 proof・research-notes・verification・サマリーを同期する。統合担当は同期と残課題を照合する。
 Reviewer計算は研究側と別に実行環境を記録し、資材の保存と再実行成功を区別する。
 詳細な開始条件・責任分担・GitHub公式仕様への参照はretrospective、実行手順は両プロトコルを参照する。
+
+## 15. Stage 3 retrospectiveによる運用改善（2026-09-22）
+
+[Stage 3 retrospective](results/stage3-retrospective.md)で、R(4,4)=18の独立受理・PR統合、
+両verifierと既存テストの再現、PR-only運用とレビュー時の4文書同期の改善を確認した。
+両GoalのDiscoveryはCONTAMINATED。短い上界証明で完了し、本格的な構造分類・長時間の中断復帰・
+未知問題での発見能力・単一セッションとの比較は未評価である。
+
+以後は、研究開始時の必読集合から不要な横断strategy summaryを外し、受理済み依存を必要時に確認する。
+計測は成果commit時・PR提出時・Goal完了時を区別し、取得不能の最終値を推定しない。
+異環境での再現は数学的出力と環境メタデータを分けて比較し、元出力と差分も保存する。
+レビュー時のClaim同期に加え、統合担当がmerge SHA・日時をPR経由で保存する。
+具体的手順は両プロトコル、次実験の設計条件はretrospectiveに記す。

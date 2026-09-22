@@ -134,3 +134,20 @@ Tokenまたは計算予算の上限が近づいた場合、根拠の弱い結論
 - Reviewerへの引継ぎでレビューartifactの保存先と4文書の同期担当を指定する。
   統合担当は状態同期を確認してGitHub上でmergeし、merge SHAを記録する。
 - 事故時は送信を止め、refと履歴・影響を保存する。revertと再適用は差分を確認して復旧PRで行い、履歴を消して事故を隠さない。
+
+## Stage 3 retrospective後の入力・計測・統合記録
+
+[Stage 3 retrospective](../results/stage3-retrospective.md)に基づき、以後は次も明記する。
+
+- Goal設計担当は研究開始時の必読ファイル集合を固定する。独立に方針を考える段階では、
+  他Stageの具体的な証明経路を含む横断サマリーを一律に必読にしない。
+  受理済みClaimの利用が必要になったらstatement・証明・reviewを確認し、出典と時点を記録する。
+  偶発的なstrategy流入はファイル名にかかわらず、利用前に独立checkpointへ記録する。
+- 成果commit時・PR提出時・Goal完了時のcounterを別のphaseとして保存する。
+  最終counter取得後の記録commit/pushは後処理として区別する。取得不能なら最後のsnapshotと未計測区間を明示し、
+  PR提出時counterをGoal完了時counterと呼ばない。研究・レビュー・closureの工数を合算する際も同じ終点を確認する。
+- 統合担当はmerge後のSHA・日時・残工程を保存する担当と保存先を明示する。
+  次の文書PRへまとめて記録してよいが、mainへ直接追記しない。現在地の「統合待ち」はその記録で更新し、
+  提出時点の未統合記録は履歴として残す。
+- 停滞時の切替・checkpoint条件は実行前に固定する。未知問題向けの次実験では、
+  未完了checkpointから別fresh sessionへ引き継ぐ能力を、完成済み成果の再現とは別に評価する。
