@@ -7,7 +7,7 @@
 | R(3,4) | SOLVED | ≥9 | ≤9 | C001〜C006 独立レビュー ACCEPTED | 完了2件 | R(3,4)=9独立検証済み、Discoveryは両GoalともCONTAMINATED |
 | R(3,5) | SOLVED | ≥14 | ≤14 | R35-C001〜C004 PROVEN × ACCEPTED | 完了2件 | R(3,5)=14独立検証済み、Discovery CONTAMINATED |
 | R(4,4) | SOLVED | ≥18 | ≤18 | R44-C001/C002/L001/C003/C004 PROVEN × ACCEPTED | 完了2件 | R(4,4)=18独立検証済み、Discovery CONTAMINATED |
-| R(4,5) | PARTIAL_PROGRESS | ≥24 | — | R45-C001 PROVEN × ACCEPTED | H001-A PASS / H001-B SOLVED (研究者判定) | cross-session handoff PASS × UNREVIEWED、10M区間完了、Discovery CONTAMINATED |
+| R(4,5) | PARTIAL_PROGRESS | ≥24 | — | R45-C001 PROVEN × ACCEPTED | H001-A PASS / H001-B SOLVED（独立受理済み） | cross-session handoff PASS × ACCEPTED、H001全体はoperationally SOLVED、Discovery CONTAMINATED |
 
 ## 収集する指標
 
@@ -142,8 +142,10 @@ PR #15の統合ではcheckpointが参照する immutable `code_commit=5cabb7e2ea
 
 Phase A PR #15はnormal merge `5f061f2` で統合され、receiptもPR #16経由で統合済み。H001-Bは最新main `e1299901c3533ce1f6843c425ff8c458b834facc` から別fresh sessionでGitだけを使って再構築した。上記H001-A節の未実行・統合待ちは当時の履歴であり、現在はこの節を参照。
 
-H001-Bは研究者判定 **SOLVED**、operational handoff **PASS × UNREVIEWED**。最初の候補2,000,000と全入力状態の一致を直接記録し、残り8,000,000候補を実行して最終index 10,000,000に到達した。連結区間 [0,10,000,000)、重複・欠落0、追加質問0、曖昧/欠測semantic field 0、code/config変更0。小規模split/resumeテストは全状態一致でPASS。独立レビューとPhase B PR統合は未完了。
+H001-Bは **SOLVED（独立受理済み）**、operational handoff **PASS × ACCEPTED**。H001全体のcheckpoint-resume実験は **operationally SOLVED / PASS accepted**。最初の候補2,000,000と全入力状態の一致を直接記録し、残り8,000,000候補を実行して最終index 10,000,000に到達した。連結区間 [0,10,000,000)、重複・欠落0、追加質問0、曖昧/欠測semantic field 0、code/config変更0。小規模split/resumeテストは全状態一致でPASS。2026-09-22にChatGPT / GPT-5.6 Sol（High）が独立レビューで受理した。根拠は [H001-B独立レビュー記録](../benchmarks/r4-5/reviews/H001-B.md)（レビュー対象head `7a2330f5df9498f168cba32275c2ececf7c66805`）。Phase B PR #17の統合は未完了。
 
 初回候補まで310.815747秒、探索と最終保存/検証107.658952708秒。別枠test/replayは556候補、delta比較11,136件。Phase Aの研究軌跡や10M連続実行全体は再計算していない。model/effort欠測、Discovery CONTAMINATED。新規certificateはなく、n=23/114辺の受理済み下界 **R45-C001: R(4,5)>=24, PROVEN × ACCEPTED** を維持。n=24の最良score 4は上界・不存在証明ではない。
 
-根拠とレビュー/統合担当は [H001-B再現・引継ぎ文書](../benchmarks/r4-5/h001-b/reproduce.md)、計測は `benchmarks/r4-5/h001-b/submission-record.json`。R(4,5)数学的workloadの状態は引き続きPARTIAL_PROGRESSであり、operational Goal完了とは区別する。
+実行時の根拠と計測は [H001-B再現・引継ぎ文書](../benchmarks/r4-5/h001-b/reproduce.md) と `benchmarks/r4-5/h001-b/submission-record.json`、現在の受理状態と統合要件は [H001-B独立レビュー記録](../benchmarks/r4-5/reviews/H001-B.md) を参照。実行時artifactのUNREVIEWEDは提出時点の履歴として保持する。R(4,5)数学的workloadの状態は引き続き **PARTIAL_PROGRESS** であり、operational Goal完了とは区別する。
+
+残作業はPR #17の **normal merge commit** による統合と、統合担当によるPR経由の `results/r45-h001-b-integration-receipt.md` 保存。final checkpointが参照する `code_commit=d1c5cdf7...` とhistorical bytesの監査を維持するため、squash/rebaseは使用しない。receiptにはmerge SHA/日時、同commitの到達可能性、final checkpoint SHA、受理済みoperational verdictを記録する。
