@@ -103,4 +103,4 @@ The reviewer did not replay a separate uninterrupted 10M research trajectory. Fr
 
 No new mathematical Claim was found in Phase B. **R45-C001 remains PROVEN × ACCEPTED**, and the mathematical `R(4,5)` workload remains **PARTIAL_PROGRESS**.
 
-For integration, PR #17 should use a **normal merge commit**, not squash/rebase, because the final checkpoint names `code_commit=d1c5cdf7...` and the audit verifies historical source bytes with `git show`. A subsequent PR-based integration receipt should record the merge SHA/time, reachability of `d1c5cdf7...`, final checkpoint SHA, and accepted operational verdict.
+Integration completed on 2026-09-26 via normal merge commit `fc823302ef231e57e2eb7945d0472e3221a4cf62`. The merge preserves `d1c5cdf7...` in ancestry, and the merged final checkpoint remains SHA-256 `10702e9992f823cfc18135fc68537ca7171506c1f6382b9005a7c87426ee05f4`. See `results/r45-h001-b-integration-receipt.md`. H001 is operationally closed; any further n=24 research requires a new Goal.

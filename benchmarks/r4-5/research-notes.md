@@ -3,7 +3,7 @@
 ## Current state after H001-B independent review
 
 - H001-A: independent acceptance **PASS**; historical termination remains **PARTIAL_PROGRESS / MANDATORY_HANDOFF_CHECKPOINT**. PR #15 merged as `5f061f2`; integration receipt merged in PR #16.
-- H001-B: **SOLVED** and independently accepted; operational handoff **PASS × ACCEPTED**. Review: [reviews/H001-B.md](reviews/H001-B.md). PR #17 integration remains pending.
+- H001-B: **SOLVED** and independently accepted; operational handoff **PASS × ACCEPTED**. Review: [reviews/H001-B.md](reviews/H001-B.md). PR #17 was normally merged as `fc823302ef231e57e2eb7945d0472e3221a4cf62` at 2026-09-26T05:46:48Z; post-merge receipt: [results/r45-h001-b-integration-receipt.md](../../results/r45-h001-b-integration-receipt.md).
 - Overall H001 checkpoint-resume experiment: **operationally SOLVED / PASS accepted**.
 - Fresh Phase B reconstructed from Git base `e1299901c3533ce1f6843c425ff8c458b834facc` and consumed exactly `[2,000,000,10,000,000)`. First observed candidate 2,000,000; final next index 10,000,000. Combined interval `[0,10,000,000)`; repeated research indices and gaps 0.
 - Target n=24, current score 27, best score 4. No new certificate. Mathematical workload remains **PARTIAL_PROGRESS**; no upper bound or nonexistence claim follows.
@@ -94,4 +94,4 @@ Final checkpoint SHA-256 is `10702e9992f823cfc18135fc68537ca7171506c1f6382b9005a
 - Fresh-session/no-prior-conversation remains provenance attestation, not a cryptographic proof of hidden-context absence.
 - Discovery remains **CONTAMINATED**.
 
-Remaining work is PR #17 integration with a **normal merge commit** and a subsequent PR-based `results/r45-h001-b-integration-receipt.md`. Normal merge is required because the final checkpoint names `code_commit=d1c5cdf7...` and audit logic verifies historical source bytes using `git show`. Further n=24 research requires a new Goal; the H001-B research budget is exhausted.
+PR #17 was integrated with normal merge commit `fc823302ef231e57e2eb7945d0472e3221a4cf62`, preserving the `d1c5cdf7...` historical source ancestry required by the audit. The post-merge receipt is `results/r45-h001-b-integration-receipt.md`. H001 is operationally closed; further n=24 research requires a new Goal because the H001-B research budget is exhausted.
