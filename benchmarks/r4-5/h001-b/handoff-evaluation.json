@@ -1,0 +1,65 @@
+{
+  "best_score": 4,
+  "checked_at_utc": "2026-09-22T08:52:07.863251+00:00",
+  "code_config_changes_before_or_during_resume": false,
+  "combined_interval": [
+    0,
+    10000000
+  ],
+  "delta_comparisons_phase_b": 11136,
+  "evaluation_owner": "researcher self-audit",
+  "executing_code_commit": "d1c5cdf7e1dfa3a8750f6aaaaab7fc99248203c3",
+  "execution_base": "e1299901c3533ce1f6843c425ff8c458b834facc",
+  "extra_user_questions": 0,
+  "final_checkpoint_sha256": "10702e9992f823cfc18135fc68537ca7171506c1f6382b9005a7c87426ee05f4",
+  "final_global_candidate_index": 10000000,
+  "final_score": 27,
+  "final_state_sha256": "de0b95aa593d14e63b48fc85786175ad5dd13eff5447f86841dc532346190bff",
+  "final_target_n": 24,
+  "first_resumed_candidate_index": 2000000,
+  "gap_candidate_count": 0,
+  "goal": "H001-B",
+  "goal_status": "SOLVED",
+  "handoff_evaluation": "PASS",
+  "independent_review_status": "UNREVIEWED",
+  "interval_evidence": "First-step observer anchors complete S(2000000); immutable advance calls step once per iteration and step increments index once. 80 successive 100000-candidate progress blocks end at S(10000000). Only one launch; no research replay. This is code/counter evidence, not an independent 10M-trajectory replay.",
+  "last_evaluated_candidate_index": 9999999,
+  "limitations": [
+    "Fresh-session/no prior conversation is session provenance attestation; Git preserves the audit, not a proof of absence of hidden context.",
+    "Small split tests establish tested serialization cases; the full 10M uninterrupted trajectory was not recomputed.",
+    "Independent Phase B review and PR integration are pending."
+  ],
+  "mathematical_problem_status": "PARTIAL_PROGRESS",
+  "missing_or_ambiguous_semantic_fields": 0,
+  "new_certificate_orders": [],
+  "observer_semantic_mutations": 0,
+  "phase_a_interval": [
+    0,
+    2000000
+  ],
+  "phase_a_research_trajectory_replay_evaluations": 0,
+  "phase_b_candidate_evaluations": 8000000,
+  "phase_b_interval": [
+    2000000,
+    10000000
+  ],
+  "repeated_research_candidate_count": 0,
+  "research_evaluations_consumed_by_audit": 0,
+  "research_stop_reason": "PHASE_B_INTERVAL_COMPLETE",
+  "search_seconds_including_serialization_validation": 107.658952708,
+  "seconds_from_session_start_to_first_candidate": 310.8157470226288,
+  "semantic_drift": false,
+  "split_resume_equivalence": "PASS: all semantic fields and canonical bytes, three preregistered cases; results identical to Phase A",
+  "strongest_certificate": {
+    "edges": 114,
+    "independent5": 0,
+    "k4": 0,
+    "lower_bound": 24,
+    "n": 23,
+    "path": "benchmarks/r4-5/h001-b/run/certificates/n23.json",
+    "sha256": "32d0e5d132297bb676195437d0458546e4b44611dc9654981eb05871004f5302",
+    "valid": true
+  },
+  "test_replay_candidate_evaluations_both_phases": 1112,
+  "test_replay_candidate_evaluations_phase_b": 556
+}

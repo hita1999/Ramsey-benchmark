@@ -1,0 +1,11 @@
+{
+  "certificates": 19,
+  "checked_at_utc": "2026-09-22T08:49:56.527338+00:00",
+  "checkpoint_sha256": "fd295fd8595c2eff2e4800f2862e7bc61ca54d72c3d7c421a61688f26e43b3a3",
+  "hashed_artifacts": 26,
+  "next_candidate_index": 2000000,
+  "phase_b_resume_command_executed": false,
+  "research_evaluations_consumed_by_audit": 0,
+  "scope": "read-only Git/code/config/checkpoint/certificate/test/interval/manifest audit",
+  "status": "PASS"
+}

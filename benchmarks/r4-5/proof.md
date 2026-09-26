@@ -17,3 +17,9 @@ python3 benchmarks/r4-5/verify.py benchmarks/r4-5/h001-a/run/certificate.json
 The proof depends on the complete certificate and exhaustive verifier, not on the local-search score or a remembered Ramsey value. A separate isolated-process self-audit copied only the verifier and certificate; see `h001-a/isolated-verification.json`.
 
 The independent Reviewer additionally used `review/r45-h001-a-independent.py`, which imports neither `search.py` nor the research-side `verify.py`, and exhaustively checked all `C(23,4)=8,855` four-sets and `C(23,5)=33,649` five-sets. It found zero K4 and zero independent 5-set; see `review/r45-h001-a-independent-result.json`. Therefore R45-C001 is **PROVEN × ACCEPTED**.
+
+## H001-B certificate continuity
+
+The Phase B continuation completed [2,000,000,10,000,000) with no new certificate. The strongest output `h001-b/run/certificate.json` is byte-identical to the independently accepted Phase A n=23 certificate (raw SHA-256 `32d0e5d132297bb676195437d0458546e4b44611dc9654981eb05871004f5302`). All carried-forward certificates were rechecked by exhaustive certificate-only verification; the strongest also passed an isolated process with only verifier and certificate. See `h001-b/certificate-verification.json` and `h001-b/isolated-verification.json`.
+
+R45-C001 remains **PROVEN × ACCEPTED**, with no new mathematical Claim or dependency. H001-B's operational handoff is **PASS × ACCEPTED** after independent review; see [reviews/H001-B.md](reviews/H001-B.md). The operational H001 experiment is therefore complete, while the mathematical R(4,5) workload remains `PARTIAL_PROGRESS`. The n=24 best score 4 and failure to improve it within the budget do not prove nonexistence or any upper bound.

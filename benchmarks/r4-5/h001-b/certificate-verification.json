@@ -1,0 +1,192 @@
+[
+  {
+    "edges": 3,
+    "independent5": 0,
+    "k4": 0,
+    "lower_bound": 6,
+    "n": 5,
+    "path": "benchmarks/r4-5/h001-b/run/certificates/n05.json",
+    "sha256": "5c325c4f31e511a367a994152d013657bcac4d9503704d4dfee4d6d12ace8e11",
+    "valid": true
+  },
+  {
+    "edges": 6,
+    "independent5": 0,
+    "k4": 0,
+    "lower_bound": 7,
+    "n": 6,
+    "path": "benchmarks/r4-5/h001-b/run/certificates/n06.json",
+    "sha256": "c0d09ba0a7ed9c497ae1cdbea5cd433d6ddcc6d82bc65ae5b86e131340971c04",
+    "valid": true
+  },
+  {
+    "edges": 8,
+    "independent5": 0,
+    "k4": 0,
+    "lower_bound": 8,
+    "n": 7,
+    "path": "benchmarks/r4-5/h001-b/run/certificates/n07.json",
+    "sha256": "988add49163e98623f5106b3458a6be560213ec986e94896cfc06dc38564e7b0",
+    "valid": true
+  },
+  {
+    "edges": 15,
+    "independent5": 0,
+    "k4": 0,
+    "lower_bound": 9,
+    "n": 8,
+    "path": "benchmarks/r4-5/h001-b/run/certificates/n08.json",
+    "sha256": "e61df8ff7b65c987c46c442769bf065c2da364df62be9bda58c1016563d456be",
+    "valid": true
+  },
+  {
+    "edges": 18,
+    "independent5": 0,
+    "k4": 0,
+    "lower_bound": 10,
+    "n": 9,
+    "path": "benchmarks/r4-5/h001-b/run/certificates/n09.json",
+    "sha256": "1c408aa097da78988a5094f4be8d0e0a5646c12555a2445009dd6c44ca97a892",
+    "valid": true
+  },
+  {
+    "edges": 21,
+    "independent5": 0,
+    "k4": 0,
+    "lower_bound": 11,
+    "n": 10,
+    "path": "benchmarks/r4-5/h001-b/run/certificates/n10.json",
+    "sha256": "52e99243dff13c69280f4f37ff2ebae735838d779d578d41bf9d35b389780037",
+    "valid": true
+  },
+  {
+    "edges": 27,
+    "independent5": 0,
+    "k4": 0,
+    "lower_bound": 12,
+    "n": 11,
+    "path": "benchmarks/r4-5/h001-b/run/certificates/n11.json",
+    "sha256": "716efd2b4f340b5ef363d6143171a19bae3ae773d86318b7fb78ca47d53aa29e",
+    "valid": true
+  },
+  {
+    "edges": 32,
+    "independent5": 0,
+    "k4": 0,
+    "lower_bound": 13,
+    "n": 12,
+    "path": "benchmarks/r4-5/h001-b/run/certificates/n12.json",
+    "sha256": "8ed2323201b51a02a7b07c676b78121ebda033cc51ca26f08630d0ad4c0f6973",
+    "valid": true
+  },
+  {
+    "edges": 36,
+    "independent5": 0,
+    "k4": 0,
+    "lower_bound": 14,
+    "n": 13,
+    "path": "benchmarks/r4-5/h001-b/run/certificates/n13.json",
+    "sha256": "cdade4dbd5614c34180b18d8187db36b8a7ee8920431e62b155fa161336102d4",
+    "valid": true
+  },
+  {
+    "edges": 39,
+    "independent5": 0,
+    "k4": 0,
+    "lower_bound": 15,
+    "n": 14,
+    "path": "benchmarks/r4-5/h001-b/run/certificates/n14.json",
+    "sha256": "892ae34e74eaefd608f362e101980963ba815d0a0cc42f5e71b6a3cec7d6b155",
+    "valid": true
+  },
+  {
+    "edges": 47,
+    "independent5": 0,
+    "k4": 0,
+    "lower_bound": 16,
+    "n": 15,
+    "path": "benchmarks/r4-5/h001-b/run/certificates/n15.json",
+    "sha256": "e9bdf37759aeeaffe9f65b449fc779288a884a88a43b02de567a654dfae0cd49",
+    "valid": true
+  },
+  {
+    "edges": 54,
+    "independent5": 0,
+    "k4": 0,
+    "lower_bound": 17,
+    "n": 16,
+    "path": "benchmarks/r4-5/h001-b/run/certificates/n16.json",
+    "sha256": "530f2c326ef0c52acca11fbcfc4af61cfe9fca832d13f0fef52dcf659baf3d7d",
+    "valid": true
+  },
+  {
+    "edges": 58,
+    "independent5": 0,
+    "k4": 0,
+    "lower_bound": 18,
+    "n": 17,
+    "path": "benchmarks/r4-5/h001-b/run/certificates/n17.json",
+    "sha256": "8eb7432fb77ca11a742b0fed5fe4872e4635f2401aec1c33c3700ce6743073bd",
+    "valid": true
+  },
+  {
+    "edges": 68,
+    "independent5": 0,
+    "k4": 0,
+    "lower_bound": 19,
+    "n": 18,
+    "path": "benchmarks/r4-5/h001-b/run/certificates/n18.json",
+    "sha256": "58783c15bd4f5f95d376bd9561fe363330b4099fbc4534889c03be3b327f8cce",
+    "valid": true
+  },
+  {
+    "edges": 74,
+    "independent5": 0,
+    "k4": 0,
+    "lower_bound": 20,
+    "n": 19,
+    "path": "benchmarks/r4-5/h001-b/run/certificates/n19.json",
+    "sha256": "31a1c60a8a6a5ce5a3783d2666e522e2e889b62d59a704d7966c445ea1bce1aa",
+    "valid": true
+  },
+  {
+    "edges": 86,
+    "independent5": 0,
+    "k4": 0,
+    "lower_bound": 21,
+    "n": 20,
+    "path": "benchmarks/r4-5/h001-b/run/certificates/n20.json",
+    "sha256": "ffe94ef680b95a46536818621f291517a75db87d6b56b2f2966a4744d3cae638",
+    "valid": true
+  },
+  {
+    "edges": 91,
+    "independent5": 0,
+    "k4": 0,
+    "lower_bound": 22,
+    "n": 21,
+    "path": "benchmarks/r4-5/h001-b/run/certificates/n21.json",
+    "sha256": "752713b8883391e687e135cc4aa4012d6b4c074ffa86acaca2cfa032f0a07a90",
+    "valid": true
+  },
+  {
+    "edges": 102,
+    "independent5": 0,
+    "k4": 0,
+    "lower_bound": 23,
+    "n": 22,
+    "path": "benchmarks/r4-5/h001-b/run/certificates/n22.json",
+    "sha256": "f694a8b22735eb564ba80053bf744aa4ce6a2f72387525126e35b02ad4fe29e4",
+    "valid": true
+  },
+  {
+    "edges": 114,
+    "independent5": 0,
+    "k4": 0,
+    "lower_bound": 24,
+    "n": 23,
+    "path": "benchmarks/r4-5/h001-b/run/certificates/n23.json",
+    "sha256": "32d0e5d132297bb676195437d0458546e4b44611dc9654981eb05871004f5302",
+    "valid": true
+  }
+]

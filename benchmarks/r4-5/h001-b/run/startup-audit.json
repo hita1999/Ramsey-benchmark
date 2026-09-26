@@ -1,0 +1,10 @@
+{
+  "checkpoint_validated": true,
+  "code_commit": "d1c5cdf7e1dfa3a8750f6aaaaab7fc99248203c3",
+  "execution_base": "e1299901c3533ce1f6843c425ff8c458b834facc",
+  "input_checkpoint_sha256": "fd295fd8595c2eff2e4800f2862e7bc61ca54d72c3d7c421a61688f26e43b3a3",
+  "phase": "H001-B",
+  "research_evaluations_before_audit": 0,
+  "start_index": 2000000,
+  "started_at_utc": "2026-09-22T08:50:10.814842+00:00"
+}

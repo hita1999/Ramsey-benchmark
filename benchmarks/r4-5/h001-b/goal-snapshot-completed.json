@@ -1,0 +1,13 @@
+{
+  "goal": {
+    "threadId": "01a0c849-a7c3-72e0-b0aa-372e4a370645",
+    "objective": "Repository: `https://github.com/hita1999/Ramsey-benchmark`\\\n&#x20;Goal: `benchmarks/r4-5/goals/H001-B.md`\\\n&#x20;Gitをsource of truthとしてGoalに従って実行してください。",
+    "status": "complete",
+    "tokensUsed": 97618,
+    "timeUsedSeconds": 751,
+    "createdAt": 1790066700,
+    "updatedAt": 1790067451
+  },
+  "remainingTokens": null,
+  "completionBudgetReport": "Goal achieved. Report final usage from this tool result's structured goal fields. If `goal.tokenBudget` is present, include token usage from `goal.tokensUsed` and `goal.tokenBudget`. If `goal.timeUsedSeconds` is greater than 0, summarize elapsed time in a concise, human-friendly form appropriate to the response language."
+}
