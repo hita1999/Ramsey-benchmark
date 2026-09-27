@@ -1,0 +1,95 @@
+{
+  "retrieved_at_utc": "2026-09-27 13:47:22 UTC",
+  "source": "GitHub connector get_pr_info and fetch_pr_comments; read-only snapshot",
+  "repository": "hita1999/Ramsey-benchmark",
+  "fetched_main": "2cbdcd4e1f4758c5d4dc4b427bd408db8a526f3b",
+  "pull_requests": [
+    {
+      "number": 14,
+      "url": "https://github.com/hita1999/Ramsey-benchmark/pull/14",
+      "title": "Define Stage 4 checkpoint-resume experiment",
+      "state": "closed",
+      "merged": true,
+      "head_sha": "817ce0aa38927dbc1595f9ec49a663ac61ec241b",
+      "base_sha": "63e8067f72b607fdc38c533e39b29e9b135cadf5",
+      "merge_commit_sha": "6031a203863a71cae5a34793c5d87dbc9b24479b",
+      "created_at": "2026-09-22T07:44:24Z",
+      "updated_at": "2026-09-22T07:46:07Z",
+      "merged_at": "2026-09-22T07:46:07Z",
+      "body": "Stage 3 retrospectiveで未評価だった「未完了checkpointから別fresh sessionへGitだけで再開できるか」をStage 4の一次KPIとして定義します。\n\nWorkloadは `R(4,5)` の下界certificate探索ですが、正確値の決定は主目的ではありません。\n\n実験構造:\n- H001-A: fresh Codex sessionでexact-resumable searchを実装し、research candidate `[0,2,000,000)` だけ実行。2,000,000で必ず停止し、portable checkpoint / handoff manifest / split-resume equivalence testを保存してPR化。\n- H001-B: Aのcheckpoint PR merge後、別fresh sessionがGitだけから状態を復元し、`[2,000,000,10,000,000)` をexact resume。\n\n主要PASS条件:\n- split+resume と uninterrupted のsemantic state一致\n- Phase B最初のresearch candidate index = 2,000,000\n- Phase A research candidateの重複 = 0\n- code/config/checkpoint hash整合\n- hidden conversationなし、追加semantic user instructionなし\n- replay/test evaluationとresearch evaluationの明確な分離\n\nStage 3 retrospectiveの改善を反映し、初期必読集合から横断benchmark summaryを外し、既知strategy流入を利用前checkpointで記録します。\n\nBase: `63e8067f72b607fdc38c533e39b29e9b135cadf5`\nHead: `817ce0aa38927dbc1595f9ec49a663ac61ec241b`\n\nこのPRでは実験契約だけを定義し、H001-Aの研究自体はまだ開始しません。"
+    },
+    {
+      "number": 15,
+      "url": "https://github.com/hita1999/Ramsey-benchmark/pull/15",
+      "title": "H001-A: save unfinished R(4,5) checkpoint at 2,000,000 evaluations",
+      "state": "closed",
+      "merged": true,
+      "head_sha": "afb386070addbfd5549d21be2a8bc41e2e9acd07",
+      "base_sha": "6031a203863a71cae5a34793c5d87dbc9b24479b",
+      "merge_commit_sha": "5f061f2df33e74e7b416e958ca1e427536763ce9",
+      "created_at": "2026-09-22T08:00:57Z",
+      "updated_at": "2026-09-22T08:33:35Z",
+      "merged_at": "2026-09-22T08:33:35Z",
+      "body": "H001-A provides a deterministic, portable unfinished search checkpoint for a separate fresh-session Phase B. Research consumed exactly `[0,2,000,000)`; next index is `2,000,000`. The saved live state is at n=24, current score 40, best score 4. Phase B has not run; its remaining interval is `[2,000,000,10,000,000)`.\n\nStatus after independent review:\n- H001-A termination: **PARTIAL_PROGRESS / MANDATORY_HANDOFF_CHECKPOINT** (intentional)\n- H001-A acceptance criteria: **PASS**\n- H001 overall: **PARTIAL_PROGRESS**; H001-B pending\n- R45-C001 `R(4,5)>=24`: **PROVEN × ACCEPTED**\n- Discovery: **CONTAMINATED**\n\nExecution base: `6031a203863a71cae5a34793c5d87dbc9b24479b`. Fixed implementation/config commit: `5cabb7e2ea0f9ccbd237674666031d7d9f67ae3c`. Research artifact commit: `4189237ad41e171d20a972da09d999263e130cc8`.\n\nValidation: three split/resume tests compare every semantic state field, including target-advance and restart boundaries (556 separately labeled test evaluations). 11,136 edge-delta comparisons agree with exhaustive scores. Checkpoint/hash/counter audit passes. The strongest 23-vertex/114-edge certificate was independently rechecked over all 8,855 four-sets and 33,649 five-sets: K4=0 and independent5=0.\n\n**Integration requirement: merge this PR using a normal merge commit, not squash/rebase.** The checkpoint records immutable `code_commit=5cabb7e2...`, and `h001-a/audit.py` validates those historical source bytes via `git show <code_commit>:...`. Preserving that commit ancestry is part of the handoff trust model.\n\nAfter merge, record an integration receipt through PR containing merge SHA/time, reachability of `5cabb7e2...`, unchanged checkpoint SHA `fd295fd8595c2eff2e4800f2862e7bc61ca54d72c3d7c421a61688f26e43b3a3`, and remaining Phase B interval. Only then start H001-B in a separate fresh Codex session.\n\nIndependent review: `benchmarks/r4-5/reviews/H001-A.md`. Reviewer artifacts: `benchmarks/r4-5/review/`. This benchmark review is separate from GitHub's official APPROVE state."
+    },
+    {
+      "number": 16,
+      "url": "https://github.com/hita1999/Ramsey-benchmark/pull/16",
+      "title": "Record H001-A integration receipt before Phase B",
+      "state": "closed",
+      "merged": true,
+      "head_sha": "b933f0000fa050b89926061c61a54bab5b3b5c6e",
+      "base_sha": "5f061f2df33e74e7b416e958ca1e427536763ce9",
+      "merge_commit_sha": "e1299901c3533ce1f6843c425ff8c458b834facc",
+      "created_at": "2026-09-22T08:43:02Z",
+      "updated_at": "2026-09-22T08:44:01Z",
+      "merged_at": "2026-09-22T08:44:01Z",
+      "body": "Records the post-merge integration receipt for H001-A before any H001-B research begins.\n\nVerified:\n- PR #15 merged via normal merge commit `5f061f2df33e74e7b416e958ca1e427536763ce9` at 2026-09-22T08:33:35Z\n- immutable code commit `5cabb7e2...` remains reachable in merged history\n- merged checkpoint remains anchored by SHA-256 `fd295fd8595c2eff2e4800f2862e7bc61ca54d72c3d7c421a61688f26e43b3a3`\n- consumed interval remains `[0,2000000)` and remaining Phase B interval `[2000000,10000000)`\n- Phase B research evaluations remain 0\n\nThis PR contains documentation only and does not start or replay the search. After this receipt is merged, H001-B should start in a separate fresh Codex session from freshly fetched `origin/main`."
+    },
+    {
+      "number": 17,
+      "url": "https://github.com/hita1999/Ramsey-benchmark/pull/17",
+      "title": "H001-B: resume merged checkpoint through 10M candidates with handoff PASS",
+      "state": "closed",
+      "merged": true,
+      "head_sha": "3503f0b03d4e4465a006b0cb6f3c52db19f6602f",
+      "base_sha": "e1299901c3533ce1f6843c425ff8c458b834facc",
+      "merge_commit_sha": "fc823302ef231e57e2eb7945d0472e3221a4cf62",
+      "created_at": "2026-09-22T08:56:31Z",
+      "updated_at": "2026-09-26T05:46:48Z",
+      "merged_at": "2026-09-26T05:46:48Z",
+      "body": "H001-B reconstructs the accepted Phase A checkpoint from Git in a fresh session and completes exactly [2,000,000,10,000,000). The first-step observer confirms candidate 2,000,000 and the complete incoming state digest; unchanged code/config, 80 progress blocks and final counters establish no repeated research indices or gaps. Operational researcher verdict: PASS; H001-B: SOLVED; independent Phase B review: UNREVIEWED.\n\nExecution base: e1299901c3533ce1f6843c425ff8c458b834facc. Pre-research audit/observer and executing HEAD: d1c5cdf7e1dfa3a8750f6aaaaab7fc99248203c3. Research artifact commit: f35b7f445a65b44dba6d22abd3577e4a02d48a58. Phase A merge and immutable source ancestry are preserved. Use a normal merge commit to retain the history referenced by the audit.\n\nValidation: all 26 Phase A artifact hashes match Git/manifest; checkpoint loader and historical code/config checks pass; three preregistered split/resume cases compare all state fields and bytes; 556 separate test transitions and 11,136 delta comparisons pass; final checkpoint, interval arithmetic, all 19 certificates and an isolated certificate-only process pass. No Phase A research trajectory or full 10M trajectory was replayed. Startup-to-first-step: 310.815747 s; research plus serialization/validation: 107.658952708 s. Extra questions and missing/ambiguous semantic fields: 0.\n\nNo new certificate or mathematical Claim. R45-C001 remains R(4,5)>=24, PROVEN × ACCEPTED. The final n=24 best score 4 is not a certificate, upper bound or nonexistence proof. Discovery: CONTAMINATED, disclosed before research. Model/effort: missing. The mathematical workload remains PARTIAL_PROGRESS.\n\nReview instructions and evidence: benchmarks/r4-5/h001-b/reproduce.md and handoff-evaluation.json. The independent Reviewer should save reviews/H001-B.md and synchronize the four status documents. The integrator should record merge SHA/time and remaining work in a subsequent PR-based results/r45-h001-b-integration-receipt.md. Outcome, PR-submission and Goal-completion counters are saved separately in submission-record.json. Goal completion: 751 seconds / 97,618 goal-service token-counter units (not generated tokens or cost). The final recording/push is labeled postprocessing; its remote confirmation was at 08:58:03Z, 783 seconds from the second-resolution session start, within the 30-minute ceiling. Final submitted head: 7a2330f5df9498f168cba32275c2ececf7c66805. Independent review and integration remain pending."
+    },
+    {
+      "number": 18,
+      "url": "https://github.com/hita1999/Ramsey-benchmark/pull/18",
+      "title": "Record H001-B integration receipt and close Stage 4 handoff state",
+      "state": "closed",
+      "merged": true,
+      "head_sha": "3c626aefe31725325626b02a80303d33ee842103",
+      "base_sha": "fc823302ef231e57e2eb7945d0472e3221a4cf62",
+      "merge_commit_sha": "2cbdcd4e1f4758c5d4dc4b427bd408db8a526f3b",
+      "created_at": "2026-09-26T05:50:48Z",
+      "updated_at": "2026-09-26T06:00:43Z",
+      "merged_at": "2026-09-26T06:00:43Z",
+      "body": "Post-merge closure for H001-B after PR #17 normal-merge integration. Records merge SHA/time, reviewed-tree preservation, reachability of the immutable Phase B code commit, final checkpoint/state hashes, and the accepted operational verdict. Also removes stale `PR #17 integration pending` text from the Stage 4 status documents. No research candidates are consumed and no mathematical Claim changes."
+    }
+  ],
+  "pr17_comments": [
+    {
+      "url": "https://github.com/hita1999/Ramsey-benchmark/pull/17#pullrequestreview-5277325229",
+      "body": "H001-B の operational evidence は受理できます。execution base `e1299901...` から、Phase A checkpoint `S(2,000,000)` の hash/semantic state を research 前に監査し、first-step observer が candidate 2,000,000 への entry を記録、unchanged code/config で 8,000,000 transitions を1回だけ進めて final next index 10,000,000 に到達したことを確認しました。80個の100k progress block、restart/iteration 算術、final checkpoint hash/state hash、split/resume tests、zero extra questions / zero ambiguous fields も整合しています。新規数学Claimはなく、R45-C001 は PROVEN × ACCEPTED のまま、R(4,5) workload は PARTIAL_PROGRESS です。\n\nただし closure の同期漏れが1点あります。`proof.md` / `research-notes.md` / `verification.md` / `reviews/H001-B.md` は H001-B を `PASS × ACCEPTED` としていますが、`results/benchmark-summary.md` はまだ `H001-B SOLVED (研究者判定)` / `cross-session handoff PASS × UNREVIEWED` / `独立レビュー未完了` のままです。Gitをsource of truthにする本benchmarkではこの不整合を残したままmergeしない方がよいです。\n\n`results/benchmark-summary.md` を H001-B `SOLVED / PASS × ACCEPTED`、overall H001 operationally SOLVED、数学workload PARTIAL_PROGRESS に同期した後で、PR #17 は normal merge commit でmerge可能です。squash/rebaseは避けてください。final checkpoint が `code_commit=d1c5cdf7...` を参照し、auditが historical bytes を検証するためです。",
+      "created_at": "2026-09-22T11:26:15Z",
+      "review": "COMMENTED",
+      "login": "hita1999"
+    },
+    {
+      "url": "https://github.com/hita1999/Ramsey-benchmark/pull/17#issuecomment-5843596704",
+      "body": "再確認しました。前回のblocking pointだった `results/benchmark-summary.md` の同期漏れは commit `3503f0b03d4e4465a006b0cb6f3c52db19f6602f` で解消されています。現在、summary は H001-B `SOLVED（独立受理済み）`、operational handoff `PASS × ACCEPTED`、overall H001 `operationally SOLVED / PASS accepted`、R(4,5) mathematical workload `PARTIAL_PROGRESS` を正しく分離して記録しています。\n\nしたがって PR #17 は **blocking issueなし、normal merge commit でmerge可** です。squash/rebaseは避けてください。final checkpoint が `code_commit=d1c5cdf7...` を参照し、audit が historical source bytes を検証するためです。\n\n非blocking: PR本文はまだ `independent Phase B review: UNREVIEWED` / `Independent review ... pending` と古い状態のままです。Git内のsource-of-truth文書は同期済みなのでmergeを妨げませんが、PRメタデータも揃えるなら本文だけ更新するとより明確です。\n\nmerge後は、予定通り別PRで `results/r45-h001-b-integration-receipt.md` を保存し、merge SHA/time、`d1c5cdf7...` のreachability、final checkpoint SHA `10702e9992f823cfc18135fc68537ca7171506c1f6382b9005a7c87426ee05f4`、accepted operational verdict を固定してください。",
+      "created_at": "2026-09-26T05:40:16Z",
+      "review": null,
+      "login": "hita1999"
+    }
+  ],
+  "scope": "PR metadata is a dated snapshot; current accepted state is established by merged review and integration receipt, not stale submission prose."
+}

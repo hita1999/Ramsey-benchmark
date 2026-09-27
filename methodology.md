@@ -529,3 +529,19 @@ Reviewer計算は研究側と別に実行環境を記録し、資材の保存と
 異環境での再現は数学的出力と環境メタデータを分けて比較し、元出力と差分も保存する。
 レビュー時のClaim同期に加え、統合担当がmerge SHA・日時をPR経由で保存する。
 具体的手順は両プロトコル、次実験の設計条件はretrospectiveに記す。
+
+## 16. Stage 4 retrospectiveによる運用改善（2026-09-27）
+
+[Stage 4 retrospective](results/stage4-retrospective.md)で、意図した2M checkpointから別fresh sessionが
+Gitのみで残り8Mを再開する実験の独立受理とPR #18までの統合を確認した。
+H001はoperationally SOLVED / PASS × ACCEPTEDだが、R(4,5)の数学的workloadはPARTIAL_PROGRESS、
+R45-C001はPROVEN × ACCEPTED、DiscoveryはCONTAMINATEDのままである。
+
+以後は数学Claim・operational判定・独立レビュー・統合状態を分離して記録する。
+4文書同期は今回も一度漏れたため、closure担当と統合担当が最新headの現在地を実物で照合し、PR本文にも最新状態と根拠を示す。
+実行時artifactは当時の状態として保持し、書き込みを伴うauditは別出力先または一時checkoutで再実行する。
+checkpointが参照するcode履歴を維持し、resume前のaudit・最初の候補・残予算・observerの影響範囲を記録する。
+研究・test/replay・後日の再現確認を別会計にし、phase間で異なる計測終点や欠測counterを合算しない。
+
+正常再開1例を突発停止復旧・異環境resume・長時間の証明発見・単一sessionより高効率という結論へ拡張しない。
+次Goalで障害対応を評価するなら、破損入力への停止条件、復旧点、再評価の会計と採点方法を実行前に固定する。

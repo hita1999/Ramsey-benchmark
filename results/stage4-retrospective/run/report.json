@@ -1,0 +1,303 @@
+{
+  "base_commit": "2cbdcd4e1f4758c5d4dc4b427bd408db8a526f3b",
+  "comparisons": {
+    "existing-tests": {
+      "all_nonexcluded_fields_equal": true,
+      "differing_keys": [],
+      "excluded_keys": [],
+      "json_equal": true
+    },
+    "phase-a-audit": {
+      "all_nonexcluded_fields_equal": true,
+      "differing_keys": [
+        "checked_at_utc"
+      ],
+      "excluded_keys": [
+        "checked_at_utc"
+      ],
+      "json_equal": false
+    },
+    "phase-b-audit": {
+      "all_nonexcluded_fields_equal": true,
+      "differing_keys": [
+        "checked_at_utc"
+      ],
+      "excluded_keys": [
+        "checked_at_utc"
+      ],
+      "json_equal": false
+    },
+    "reviewer-verifier": {
+      "all_nonexcluded_fields_equal": true,
+      "byte_equal": false,
+      "differing_keys": [
+        "platform",
+        "python"
+      ],
+      "excluded_keys": [
+        "python",
+        "platform"
+      ],
+      "json_equal": false
+    }
+  },
+  "excluded_comparison_fields": {
+    "existing-tests": [],
+    "phase-a-audit": [
+      "checked_at_utc"
+    ],
+    "phase-b-audit": [
+      "checked_at_utc"
+    ],
+    "reviewer-verifier": [
+      "python",
+      "platform"
+    ]
+  },
+  "executable": "/Library/Developer/CommandLineTools/usr/bin/python3",
+  "first_parent_commits": [
+    "2cbdcd4e1f4758c5d4dc4b427bd408db8a526f3b",
+    "fc823302ef231e57e2eb7945d0472e3221a4cf62",
+    "e1299901c3533ce1f6843c425ff8c458b834facc",
+    "5f061f2df33e74e7b416e958ca1e427536763ce9",
+    "6031a203863a71cae5a34793c5d87dbc9b24479b"
+  ],
+  "fresh_session_experiment": false,
+  "full_trajectory_replay": false,
+  "github_snapshot_sha256": "4e53f3155102f48069321f2f42152066f1672745badaf4c76bed31a4e3a193c2",
+  "historical_code_reachable": {
+    "5cabb7e2ea0f9ccbd237674666031d7d9f67ae3c": true,
+    "d1c5cdf7e1dfa3a8750f6aaaaab7fc99248203c3": true
+  },
+  "historical_research_and_test_counters_unchanged": true,
+  "input_manifests": {
+    "a": {
+      "artifact_count": 26,
+      "status": "PASS"
+    },
+    "b": {
+      "artifact_count": 36,
+      "status": "PASS"
+    }
+  },
+  "intervals": {
+    "combined": [
+      0,
+      10000000
+    ],
+    "new_certificates_phase_b": 0,
+    "phase_a": [
+      0,
+      2000000
+    ],
+    "phase_b": [
+      2000000,
+      10000000
+    ]
+  },
+  "merges": [
+    {
+      "merge_sha": "6031a203863a71cae5a34793c5d87dbc9b24479b",
+      "merged_at_github": "2026-09-22T07:46:07Z",
+      "parents": [
+        "63e8067f72b607fdc38c533e39b29e9b135cadf5",
+        "817ce0aa38927dbc1595f9ec49a663ac61ec241b"
+      ],
+      "pr": 14,
+      "reviewed_head_tree_preserved": true
+    },
+    {
+      "merge_sha": "5f061f2df33e74e7b416e958ca1e427536763ce9",
+      "merged_at_github": "2026-09-22T08:33:35Z",
+      "parents": [
+        "6031a203863a71cae5a34793c5d87dbc9b24479b",
+        "afb386070addbfd5549d21be2a8bc41e2e9acd07"
+      ],
+      "pr": 15,
+      "reviewed_head_tree_preserved": true
+    },
+    {
+      "merge_sha": "e1299901c3533ce1f6843c425ff8c458b834facc",
+      "merged_at_github": "2026-09-22T08:44:01Z",
+      "parents": [
+        "5f061f2df33e74e7b416e958ca1e427536763ce9",
+        "b933f0000fa050b89926061c61a54bab5b3b5c6e"
+      ],
+      "pr": 16,
+      "reviewed_head_tree_preserved": true
+    },
+    {
+      "merge_sha": "fc823302ef231e57e2eb7945d0472e3221a4cf62",
+      "merged_at_github": "2026-09-26T05:46:48Z",
+      "parents": [
+        "e1299901c3533ce1f6843c425ff8c458b834facc",
+        "3503f0b03d4e4465a006b0cb6f3c52db19f6602f"
+      ],
+      "pr": 17,
+      "reviewed_head_tree_preserved": true
+    },
+    {
+      "merge_sha": "2cbdcd4e1f4758c5d4dc4b427bd408db8a526f3b",
+      "merged_at_github": "2026-09-26T06:00:43Z",
+      "parents": [
+        "fc823302ef231e57e2eb7945d0472e3221a4cf62",
+        "3c626aefe31725325626b02a80303d33ee842103"
+      ],
+      "pr": 18,
+      "reviewed_head_tree_preserved": true
+    }
+  ],
+  "new_independent_review": false,
+  "platform": "macOS-13.7.4-arm64-arm-64bit",
+  "python": "3.9.6 (default, May  7 2023, 23:32:44) \n[Clang 14.0.3 (clang-1403.0.22.14.1)]",
+  "research_candidate_evaluations": 0,
+  "retrospective_delta_comparisons": 11136,
+  "retrospective_test_candidate_evaluations": 556,
+  "runs": [
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "benchmarks/r4-5/h001-a/audit.py"
+      ],
+      "cwd": "disposable archive of base_commit",
+      "git_object_source": "original repository, historical read-only git show",
+      "name": "phase-a-audit",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "benchmarks/r4-5/h001-b/audit.py"
+      ],
+      "cwd": "disposable archive of base_commit",
+      "git_object_source": "original repository, historical read-only git show",
+      "name": "phase-b-audit",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "benchmarks/r4-5/test_search.py"
+      ],
+      "cwd": "disposable archive of base_commit",
+      "git_object_source": "original repository, historical read-only git show",
+      "name": "existing-tests",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "benchmarks/r4-5/review/r45-h001-a-independent.py",
+        "benchmarks/r4-5/h001-b/run/certificate.json",
+        "--output",
+        "reviewer-result.json"
+      ],
+      "cwd": "disposable archive of base_commit",
+      "git_object_source": "original repository, historical read-only git show",
+      "name": "reviewer-verifier",
+      "returncode": 0
+    }
+  ],
+  "source_sha256": {
+    "benchmarks/r4-5/.gitignore": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b",
+    "benchmarks/r4-5/checkpoint-schema.md": "5c68091febddafa2298f483716b2ced376f6b32e81871bf1580a8322264e4af8",
+    "benchmarks/r4-5/goals/H001-A.md": "b0c69f033f3da00e66de2c967ce17743ea83c0e1f112a2985bf99f9a5e4d15b6",
+    "benchmarks/r4-5/goals/H001-B.md": "acdac3cb206c4e94ac1dba4f5860d250c514d81a6c5be1330a54e41154a1331c",
+    "benchmarks/r4-5/h001-a-discovery.md": "e1133476ee5418e67899e029aea404af6389c83e7bdedd4469bfaf4dccf42955",
+    "benchmarks/r4-5/h001-a-plan.md": "5edeace9ba5f129e1af88c63c9e3ad97e252bfaadc88d0e42c796fe28ecafd32",
+    "benchmarks/r4-5/h001-a/audit-result.json": "65ea7210bbd98c9c088596529405fe5cb787418cb32be89fa6961293bd4cd3bc",
+    "benchmarks/r4-5/h001-a/audit.py": "ada41207f3d8b42b14c45a661eefd097127fcc229cdf5f85c48b1218ec0014a3",
+    "benchmarks/r4-5/h001-a/certificate-verification.json": "2f4616965b67fe47eefa86e8826b924c8a398d8a214846fe79621dfd728e0160",
+    "benchmarks/r4-5/h001-a/checkpoint-validation.json": "4658edc157763e8c40b3193ce82953e5e08fca7b56d7e8b9bcd434f772d08146",
+    "benchmarks/r4-5/h001-a/config.json": "8d2922315c263a914ce9041f009d1a252673fdcc48758312628ea0bed1adec8b",
+    "benchmarks/r4-5/h001-a/environment.json": "c0eb38590a9bd461e7b6a00f9626c23419b399451f43a9c34cf10f1ec47686cd",
+    "benchmarks/r4-5/h001-a/handoff-manifest.json": "534eed957cd655fa1c2fdb7b8c6b0488287e7dd5e4771907131bb66057c29ebb",
+    "benchmarks/r4-5/h001-a/isolated-verification.json": "bacc6106ee9bb4c0c3bd17a851e5fefc33b97be14ff6e3ac85053f7d9b8256a0",
+    "benchmarks/r4-5/h001-a/run/best-so-far.json": "61833a8bd5f15df0f7b5662e609d2ce16502528a1a29256d6dd94febafc0aa7a",
+    "benchmarks/r4-5/h001-a/run/certificate.json": "32d0e5d132297bb676195437d0458546e4b44611dc9654981eb05871004f5302",
+    "benchmarks/r4-5/h001-a/run/certificates/n05.json": "5c325c4f31e511a367a994152d013657bcac4d9503704d4dfee4d6d12ace8e11",
+    "benchmarks/r4-5/h001-a/run/certificates/n06.json": "c0d09ba0a7ed9c497ae1cdbea5cd433d6ddcc6d82bc65ae5b86e131340971c04",
+    "benchmarks/r4-5/h001-a/run/certificates/n07.json": "988add49163e98623f5106b3458a6be560213ec986e94896cfc06dc38564e7b0",
+    "benchmarks/r4-5/h001-a/run/certificates/n08.json": "e61df8ff7b65c987c46c442769bf065c2da364df62be9bda58c1016563d456be",
+    "benchmarks/r4-5/h001-a/run/certificates/n09.json": "1c408aa097da78988a5094f4be8d0e0a5646c12555a2445009dd6c44ca97a892",
+    "benchmarks/r4-5/h001-a/run/certificates/n10.json": "52e99243dff13c69280f4f37ff2ebae735838d779d578d41bf9d35b389780037",
+    "benchmarks/r4-5/h001-a/run/certificates/n11.json": "716efd2b4f340b5ef363d6143171a19bae3ae773d86318b7fb78ca47d53aa29e",
+    "benchmarks/r4-5/h001-a/run/certificates/n12.json": "8ed2323201b51a02a7b07c676b78121ebda033cc51ca26f08630d0ad4c0f6973",
+    "benchmarks/r4-5/h001-a/run/certificates/n13.json": "cdade4dbd5614c34180b18d8187db36b8a7ee8920431e62b155fa161336102d4",
+    "benchmarks/r4-5/h001-a/run/certificates/n14.json": "892ae34e74eaefd608f362e101980963ba815d0a0cc42f5e71b6a3cec7d6b155",
+    "benchmarks/r4-5/h001-a/run/certificates/n15.json": "e9bdf37759aeeaffe9f65b449fc779288a884a88a43b02de567a654dfae0cd49",
+    "benchmarks/r4-5/h001-a/run/certificates/n16.json": "530f2c326ef0c52acca11fbcfc4af61cfe9fca832d13f0fef52dcf659baf3d7d",
+    "benchmarks/r4-5/h001-a/run/certificates/n17.json": "8eb7432fb77ca11a742b0fed5fe4872e4635f2401aec1c33c3700ce6743073bd",
+    "benchmarks/r4-5/h001-a/run/certificates/n18.json": "58783c15bd4f5f95d376bd9561fe363330b4099fbc4534889c03be3b327f8cce",
+    "benchmarks/r4-5/h001-a/run/certificates/n19.json": "31a1c60a8a6a5ce5a3783d2666e522e2e889b62d59a704d7966c445ea1bce1aa",
+    "benchmarks/r4-5/h001-a/run/certificates/n20.json": "ffe94ef680b95a46536818621f291517a75db87d6b56b2f2966a4744d3cae638",
+    "benchmarks/r4-5/h001-a/run/certificates/n21.json": "752713b8883391e687e135cc4aa4012d6b4c074ffa86acaca2cfa032f0a07a90",
+    "benchmarks/r4-5/h001-a/run/certificates/n22.json": "f694a8b22735eb564ba80053bf744aa4ce6a2f72387525126e35b02ad4fe29e4",
+    "benchmarks/r4-5/h001-a/run/certificates/n23.json": "32d0e5d132297bb676195437d0458546e4b44611dc9654981eb05871004f5302",
+    "benchmarks/r4-5/h001-a/run/checkpoint.json": "fd295fd8595c2eff2e4800f2862e7bc61ca54d72c3d7c421a61688f26e43b3a3",
+    "benchmarks/r4-5/h001-a/run/progress.jsonl": "cbb84b13c6838f184c1e898a99d521ede425e4fc4429e356009868565858dcfd",
+    "benchmarks/r4-5/h001-a/run/run-result.json": "0614a67301fc091e57b44c6b795266a030a6f876d844d98541bab79634af54f6",
+    "benchmarks/r4-5/h001-a/run/startup-audit.json": "6cbf41371e312b1762e5a1015bc95d81b1fa452c3a95ac832bc5d33f900720d1",
+    "benchmarks/r4-5/h001-a/submission-record.json": "26b053ac1bf818ecb0f19937707990ed167133fc98a1e356502274e4e8397803",
+    "benchmarks/r4-5/h001-a/test-result.json": "deb5b1992f59b6aeb3064709ae2f377f1f004a9b997586bd2855978cbe783e8b",
+    "benchmarks/r4-5/h001-b-discovery.md": "64b7fcd3a92fad9333fe2ac14932ccd5de0fb32775cacb8e3ad6fee9cfaefb76",
+    "benchmarks/r4-5/h001-b/artifact-manifest.json": "e2d75deade6da707b98959fecc5e153f48d028e06e42ed405c2831e884c9a258",
+    "benchmarks/r4-5/h001-b/audit.py": "9c4216df7cfefd5144a837a22100345519b163ab50d9111af4761f9a1fe7fbc3",
+    "benchmarks/r4-5/h001-b/certificate-verification.json": "a3960fab91718bdfb111576afe981d9bc98ffb185f94996df3cc6b607d830a73",
+    "benchmarks/r4-5/h001-b/checkpoint-validation.json": "30ac3b79e0fb7b732f9dae0b05a9f69432106fb3b9eba6b47df76e7647568108",
+    "benchmarks/r4-5/h001-b/environment.json": "3b202a8fd0a32480ab2604613d1a56a7cf4b396950bc0331253b90905084da05",
+    "benchmarks/r4-5/h001-b/final-checkpoint-validation.json": "5964d91fe25944b835cbe5e141210424975cfc8f30d99efedc135b69659c4491",
+    "benchmarks/r4-5/h001-b/first-candidate.json": "828751818f7fb5625dbf633ee1eb3da7df64d3f158329440c72e14cbdfbfa70d",
+    "benchmarks/r4-5/h001-b/goal-snapshot-before-documentation.json": "b3140b54f0963950fdc635840bc4b57cb87ecd6026096427ae131643c6c3382d",
+    "benchmarks/r4-5/h001-b/goal-snapshot-completed.json": "329ceb10aa3801ffb98be51d31f8636593b7eb8ce3752b2b4a448bda3732a97a",
+    "benchmarks/r4-5/h001-b/goal-snapshot-pr-submitted.json": "e5d82609daa21225c53c976aa4ca1c382a157940bf7f3829de6bd1ce81882eef",
+    "benchmarks/r4-5/h001-b/handoff-evaluation.json": "d3f7490258e9fd638ac95117b87acb4b2f2e1680763387c9546c8667d37239a5",
+    "benchmarks/r4-5/h001-b/isolated-verification.json": "b959c12aaf4092ff44e7effe2a6dbac32f9a2f3057182791864ac527a17f587d",
+    "benchmarks/r4-5/h001-b/phase-a-audit.json": "9f95f202e7acaf7306a644975db71b1e3a9066fcb7bd0e3240f2d54dea0c68a6",
+    "benchmarks/r4-5/h001-b/reproduce.md": "e82d6d4b01ed25b3c9952bdfb6a2bfb0c5ae3bd108c8b8045dbf8ec0e9644d11",
+    "benchmarks/r4-5/h001-b/run/best-so-far.json": "61833a8bd5f15df0f7b5662e609d2ce16502528a1a29256d6dd94febafc0aa7a",
+    "benchmarks/r4-5/h001-b/run/certificate.json": "32d0e5d132297bb676195437d0458546e4b44611dc9654981eb05871004f5302",
+    "benchmarks/r4-5/h001-b/run/certificates/n05.json": "5c325c4f31e511a367a994152d013657bcac4d9503704d4dfee4d6d12ace8e11",
+    "benchmarks/r4-5/h001-b/run/certificates/n06.json": "c0d09ba0a7ed9c497ae1cdbea5cd433d6ddcc6d82bc65ae5b86e131340971c04",
+    "benchmarks/r4-5/h001-b/run/certificates/n07.json": "988add49163e98623f5106b3458a6be560213ec986e94896cfc06dc38564e7b0",
+    "benchmarks/r4-5/h001-b/run/certificates/n08.json": "e61df8ff7b65c987c46c442769bf065c2da364df62be9bda58c1016563d456be",
+    "benchmarks/r4-5/h001-b/run/certificates/n09.json": "1c408aa097da78988a5094f4be8d0e0a5646c12555a2445009dd6c44ca97a892",
+    "benchmarks/r4-5/h001-b/run/certificates/n10.json": "52e99243dff13c69280f4f37ff2ebae735838d779d578d41bf9d35b389780037",
+    "benchmarks/r4-5/h001-b/run/certificates/n11.json": "716efd2b4f340b5ef363d6143171a19bae3ae773d86318b7fb78ca47d53aa29e",
+    "benchmarks/r4-5/h001-b/run/certificates/n12.json": "8ed2323201b51a02a7b07c676b78121ebda033cc51ca26f08630d0ad4c0f6973",
+    "benchmarks/r4-5/h001-b/run/certificates/n13.json": "cdade4dbd5614c34180b18d8187db36b8a7ee8920431e62b155fa161336102d4",
+    "benchmarks/r4-5/h001-b/run/certificates/n14.json": "892ae34e74eaefd608f362e101980963ba815d0a0cc42f5e71b6a3cec7d6b155",
+    "benchmarks/r4-5/h001-b/run/certificates/n15.json": "e9bdf37759aeeaffe9f65b449fc779288a884a88a43b02de567a654dfae0cd49",
+    "benchmarks/r4-5/h001-b/run/certificates/n16.json": "530f2c326ef0c52acca11fbcfc4af61cfe9fca832d13f0fef52dcf659baf3d7d",
+    "benchmarks/r4-5/h001-b/run/certificates/n17.json": "8eb7432fb77ca11a742b0fed5fe4872e4635f2401aec1c33c3700ce6743073bd",
+    "benchmarks/r4-5/h001-b/run/certificates/n18.json": "58783c15bd4f5f95d376bd9561fe363330b4099fbc4534889c03be3b327f8cce",
+    "benchmarks/r4-5/h001-b/run/certificates/n19.json": "31a1c60a8a6a5ce5a3783d2666e522e2e889b62d59a704d7966c445ea1bce1aa",
+    "benchmarks/r4-5/h001-b/run/certificates/n20.json": "ffe94ef680b95a46536818621f291517a75db87d6b56b2f2966a4744d3cae638",
+    "benchmarks/r4-5/h001-b/run/certificates/n21.json": "752713b8883391e687e135cc4aa4012d6b4c074ffa86acaca2cfa032f0a07a90",
+    "benchmarks/r4-5/h001-b/run/certificates/n22.json": "f694a8b22735eb564ba80053bf744aa4ce6a2f72387525126e35b02ad4fe29e4",
+    "benchmarks/r4-5/h001-b/run/certificates/n23.json": "32d0e5d132297bb676195437d0458546e4b44611dc9654981eb05871004f5302",
+    "benchmarks/r4-5/h001-b/run/checkpoint.json": "10702e9992f823cfc18135fc68537ca7171506c1f6382b9005a7c87426ee05f4",
+    "benchmarks/r4-5/h001-b/run/progress.jsonl": "4b7f2db5a3f13d836a8fb3f8cbd7725f2dff00ab6d0261df31c463c2075007d1",
+    "benchmarks/r4-5/h001-b/run/run-result.json": "b5dabb43e2994c722d19ee806fc9f4b131d163ddedf7256a21fe36f6d95c5540",
+    "benchmarks/r4-5/h001-b/run/startup-audit.json": "86ab4ad39909513aa6c35cece559008368321f536a4bdb9e4ddab6f1bd8a4de9",
+    "benchmarks/r4-5/h001-b/run_resume.py": "65067604375752e9e31160cd10fb90426c201a2718732c38e5f5eabe2becb65e",
+    "benchmarks/r4-5/h001-b/startup-audit.json": "151292200a84bddefe6f650f9458c0775723bd36c91ceda8ee88512b074fb7ab",
+    "benchmarks/r4-5/h001-b/startup_audit.py": "f03c95cf80e23709b11c606a70d92f04f7048cf686504229572544951146466c",
+    "benchmarks/r4-5/h001-b/submission-record.json": "64eee7f3216cbd574f6dc914a61e7ab7dcd3dc05c9370fef5fef150c8a63f3bf",
+    "benchmarks/r4-5/h001-b/test-result.json": "deb5b1992f59b6aeb3064709ae2f377f1f004a9b997586bd2855978cbe783e8b",
+    "benchmarks/r4-5/handoff-protocol.md": "785b4c0f0d8bbe74da003d593da833b33bcf9ea33d68fceae9b4b9e26d2566ba",
+    "benchmarks/r4-5/problem.md": "109c3158a9fd6421af33768bf03e8b386c654cbbc0a7f59670cab792b2821e69",
+    "benchmarks/r4-5/proof.md": "339b02838a8218a67783ab32692042ed99cb8b60a8a88c740b49ad5cb874b467",
+    "benchmarks/r4-5/research-notes.md": "46e99f924be22cd0a8eba27092fc5273ebf0a5a5ec777c8722052a8eb2c43adc",
+    "benchmarks/r4-5/review/r45-h001-a-independent-result.json": "3a2ed44796c9e689adfd316f38fc5b2c46b9cda7f6bc43fb7cb39fe997d4dc2c",
+    "benchmarks/r4-5/review/r45-h001-a-independent.py": "61bcc2f45cdffbc9b8249132e7119e839b5345fdd58bccc26cd9870f6583acdf",
+    "benchmarks/r4-5/reviews/H001-A.md": "d0a11f46094ac4927da595309de8b7d9fbd360ddec0145a714c6655fd8fac26d",
+    "benchmarks/r4-5/reviews/H001-B.md": "4fc578f98adab354201ce3ad301d5a14f17740aa064ba5c86d8c6db42806e72a",
+    "benchmarks/r4-5/search.py": "d5ac3a9772b3b92fe5276013ed16fba05de25808e02b81200d9c5a30e4b7940b",
+    "benchmarks/r4-5/test_search.py": "2d46d9af4a6ad009d3bb43c09d173a83854f11b1b403594bda6613fdd1a247d4",
+    "benchmarks/r4-5/verification.md": "7a4b36c5ea24ca6843d6a71ef5ad24da28b5cb33f162984472262ba8cfb99ea0",
+    "benchmarks/r4-5/verify.py": "4455eec1517d7914075fd971a6a633eb77c4fff618111044ed6a214b29454e62"
+  },
+  "status": "PASS",
+  "utc": "2026-09-27T13:47:22.362963+00:00"
+}

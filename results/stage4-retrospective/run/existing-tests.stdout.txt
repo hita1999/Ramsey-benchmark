@@ -1,0 +1,86 @@
+{
+  "candidate_evaluations": 556,
+  "code_sha256": {
+    "search.py": "d5ac3a9772b3b92fe5276013ed16fba05de25808e02b81200d9c5a30e4b7940b",
+    "verify.py": "4455eec1517d7914075fd971a6a633eb77c4fff618111044ed6a214b29454e62"
+  },
+  "delta_comparisons": 11136,
+  "excluded_metadata": [
+    "all checkpoint wrapper fields; no state fields excluded"
+  ],
+  "label": "TEST_REPLAY_OUTSIDE_RESEARCH_BUDGET",
+  "status": "PASS",
+  "test_code_sha256": "2d46d9af4a6ad009d3bb43c09d173a83854f11b1b403594bda6613fdd1a247d4",
+  "tests": [
+    {
+      "a": 111,
+      "all_semantic_fields_equal": true,
+      "b": 157,
+      "config": {
+        "algorithm": "integer-noisy-edge-flip-v1",
+        "restart_interval": 7,
+        "seed": 123456789,
+        "start_n": 5
+      },
+      "final_state_sha256": "e95dfea8061c293440ad05344ded4e0a92bd24a0f5946d2967644bd9aa53f15e",
+      "name": "split_resume",
+      "split_iteration": 6,
+      "split_mode": "search"
+    },
+    {
+      "a": 1,
+      "all_semantic_fields_equal": true,
+      "b": 1,
+      "config": {
+        "algorithm": "integer-noisy-edge-flip-v1",
+        "restart_interval": 7,
+        "seed": 123456789,
+        "start_n": 5
+      },
+      "final_state_sha256": "206c145e3b374825d89ad0f9c3ccbb43426742634b90b6f1cb31fb13c8d4cd1d",
+      "name": "split_resume",
+      "split_iteration": 0,
+      "split_mode": "initialize"
+    },
+    {
+      "a": 7,
+      "all_semantic_fields_equal": true,
+      "b": 1,
+      "config": {
+        "algorithm": "integer-noisy-edge-flip-v1",
+        "restart_interval": 7,
+        "seed": 123456789,
+        "start_n": 12
+      },
+      "final_state_sha256": "978d0953334fd6724a47a259212ea23e83f96940df76e05ec196cdda34e30072",
+      "name": "split_resume",
+      "split_iteration": 7,
+      "split_mode": "search"
+    },
+    {
+      "name": "prng_integer_arithmetic",
+      "outputs": [
+        17131907776045769687,
+        9120621550721899595,
+        5237368999691878260,
+        2352804886863130741,
+        11490144281350267834,
+        8774848118140167862,
+        9601317632850681100,
+        9990345221644363062
+      ]
+    },
+    {
+      "cases": 7,
+      "name": "tamper_rejection"
+    },
+    {
+      "cases": 11136,
+      "name": "delta_vs_exhaustive"
+    },
+    {
+      "cases": 6,
+      "name": "certificate_negative_controls"
+    }
+  ]
+}
