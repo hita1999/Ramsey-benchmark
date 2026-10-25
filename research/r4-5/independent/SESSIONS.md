@@ -34,6 +34,9 @@
   preserved as `results/replay-initial.log` and in the initial Git checkpoint.
 - Degree 8 is therefore closed within this verification system. Degrees 10
   and 12 remain unverified; the overall status remains `PARTIAL_PROGRESS`.
+- After these checks had completed, the user's answer selected checkpoint
+  PR submission only. Research remains stopped; only artifact transfer and
+  PR submission updates are continued. No degree-10/12 research was started.
 
 The latest exact case ledger is `CHECKPOINT.json`; the earlier 198-case ledger
 remains available in the initial checkpoint commit. A time limit is never
