@@ -1,9 +1,9 @@
 {
   "status": "PARTIAL_PROGRESS",
   "session_started_utc": "2026-10-25T06:09:48+00:00",
-  "checkpoint_captured_utc": "2026-10-25T06:33:59.394375+00:00",
+  "checkpoint_captured_utc": "2026-10-25T06:37:06.857371+00:00",
   "initial_budget_seconds": 1800,
-  "elapsed_at_capture_seconds": 1451.394,
+  "elapsed_at_capture_seconds": 1638.857,
   "base_commit": "d0bb92156a727be7baa8a8eee6140fff7035592f",
   "branch": "codex/r45-independent-verification",
   "lower_bound": "INDEPENDENTLY_VERIFIED_R45_GE_25",
