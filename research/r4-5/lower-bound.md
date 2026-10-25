@@ -27,3 +27,12 @@ This is a concrete, independently reproducible finite witness, distinct from Sta
 It is an independently checked calculation in this work session, **not yet a second-reviewer ACCEPTED claim**. It does not give the upper bound R(4,5) ≤ 25.
 
 No Stage 4 experimental counter, checkpoint, or prior claim is modified.
+
+## Independent recheck (2026-10-25)
+
+[lower24.cpp](independent/src/lower24.cpp) constructs adjacency by undirected
+offset insertion and enumerates fixed-popcount integer masks, without using
+this Python verifier. The [saved result](independent/results/lower24.json)
+confirms all 10,626 four-subsets and 42,504 five-subsets were inspected, with
+zero forbidden sets. This closes the second-implementation computational check;
+it does not supply the upper bound. See [the audit](independent/PROOF.md).

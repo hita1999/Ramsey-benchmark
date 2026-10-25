@@ -4,6 +4,13 @@ This is a **new mathematical effort outside Ramsey-benchmark v1.0**. It is not S
 
 **Mathematical theorem (published): R(4,5)=25.**
 
+**Independent verification checkpoint (2026-10-25): PARTIAL_PROGRESS.**
+See [independent/README.md](independent/README.md) for a second lower-bound
+implementation, a self-contained degree reduction, exhaustive candidate
+coverage checks, saved LRAT certificates, an independent checker, and the
+exact unresolved-case ledger. The full upper bound is still not independently
+proved here. This work does not modify the workflow benchmark.
+
 **What this repository has actually re-established so far:**
 
 - **Lower bound R(4,5)≥25:** explicit 24-vertex circulant graph and exhaustive check, [lower-bound.md](lower-bound.md) and [verify_lower24.py](verify_lower24.py).
