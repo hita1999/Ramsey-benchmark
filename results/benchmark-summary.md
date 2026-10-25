@@ -156,3 +156,11 @@ PR #17のnormal mergeにより `code_commit=d1c5cdf7...` のhistorical ancestry�
 [振り返り・再現確認・次実験の条件](stage4-retrospective.md)を保存した。2026-09-27にGitHub最新main `2cbdcd4` とPR #14〜#18・#17コメントを取得し、H001のoperational SOLVED / PASS × ACCEPTEDとreceipt統合を確認。両Phase監査、既存split/resumeテスト、保存Reviewer verifierの再実行はPASS。今回の検算は研究0候補、別枠test 556候補・delta比較11,136件で、元の実験counterを変更していない。
 
 未完了checkpointから別fresh sessionへの再開は実施できた。一方、4文書同期漏れは再発してmerge前に修正され、PR本文の古い状態表示、Phase A token欠測も残った。数学workloadはPARTIAL_PROGRESS、Discovery CONTAMINATED。突発停止復旧・異環境resume・長時間の証明発見・単一sessionとの効率比較は未評価として、次Goalの設計条件へ引き継ぐ。
+
+## Ramsey-benchmark v1.0 completion decision — 2026-10-25
+
+**v1.0 project status: COMPLETED**, covering the completed Stage 1–4 workflow evaluation. See [completion decision](v1-completion.md). The [Stage 4 retrospective](stage4-retrospective.md) was integrated by PR #19 as merge `b689a934274d5d776e4350eeef0ba75cce763c67`.
+
+This project-level completion is distinct from mathematical and operational states: the Stage 1–3 exact results remain PROVEN × ACCEPTED, Stage 4's `R45-C001: R(4,5)≥24` remains PROVEN × ACCEPTED, the mathematical `R(4,5)` workload remains PARTIAL_PROGRESS, and H001 operational handoff remains PASS × ACCEPTED. Discovery remains CONTAMINATED throughout.
+
+**Stage 5 is not planned or required** for v1.0 closure. Unsolved research questions, crash/portability tests and model comparison remain optional future investigations, not missing acceptance criteria. No extra research candidates were consumed by this completion decision.
