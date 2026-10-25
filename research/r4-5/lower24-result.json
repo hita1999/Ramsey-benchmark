@@ -1,0 +1,13 @@
+{
+  "degree_max": 10,
+  "degree_min": 10,
+  "edges": 120,
+  "five_vertex_subsets_checked": 42504,
+  "four_vertex_subsets_checked": 10626,
+  "graph": "Z24 circulant with circular distances {1,2,4,8,9}",
+  "implied_lower_bound": 25,
+  "independent5_count": 0,
+  "k4_count": 0,
+  "valid": true,
+  "vertices": 24
+}
