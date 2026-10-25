@@ -1,6 +1,6 @@
 # Unresolved obligations — PARTIAL_PROGRESS
 
-Degree 8: 129/358 gluing certificates verified.
+Degree 8: 198/358 gluing certificates verified.
 Both candidate catalogues are complete; the remaining gluing cases are listed below.
 
 Degrees 10 and 12: candidate coverage and gluing exclusion have not been checked.
@@ -12,76 +12,7 @@ A timeout, interrupted run, or absent proof is unresolved, never evidence of non
 
 ## Missing degree-8 refutations
 
-- `glue8-a064-b001`
-- `glue8-a065-b000`
-- `glue8-a065-b001`
-- `glue8-a066-b000`
-- `glue8-a066-b001`
-- `glue8-a067-b000`
-- `glue8-a067-b001`
-- `glue8-a068-b000`
-- `glue8-a068-b001`
-- `glue8-a069-b000`
-- `glue8-a069-b001`
-- `glue8-a070-b000`
-- `glue8-a070-b001`
-- `glue8-a071-b000`
-- `glue8-a071-b001`
-- `glue8-a072-b000`
-- `glue8-a072-b001`
-- `glue8-a073-b000`
-- `glue8-a073-b001`
-- `glue8-a074-b000`
-- `glue8-a074-b001`
-- `glue8-a075-b000`
-- `glue8-a075-b001`
-- `glue8-a076-b000`
-- `glue8-a076-b001`
-- `glue8-a077-b000`
-- `glue8-a077-b001`
-- `glue8-a078-b000`
-- `glue8-a078-b001`
-- `glue8-a079-b000`
-- `glue8-a079-b001`
-- `glue8-a080-b000`
-- `glue8-a080-b001`
-- `glue8-a081-b000`
-- `glue8-a081-b001`
-- `glue8-a082-b000`
-- `glue8-a082-b001`
-- `glue8-a083-b000`
-- `glue8-a083-b001`
-- `glue8-a084-b000`
-- `glue8-a084-b001`
-- `glue8-a085-b000`
-- `glue8-a085-b001`
-- `glue8-a086-b000`
-- `glue8-a086-b001`
-- `glue8-a087-b000`
-- `glue8-a087-b001`
-- `glue8-a088-b000`
-- `glue8-a088-b001`
-- `glue8-a089-b000`
-- `glue8-a089-b001`
 - `glue8-a090-b000`
-- `glue8-a090-b001`
-- `glue8-a091-b000`
-- `glue8-a091-b001`
-- `glue8-a092-b000`
-- `glue8-a092-b001`
-- `glue8-a093-b000`
-- `glue8-a093-b001`
-- `glue8-a094-b000`
-- `glue8-a094-b001`
-- `glue8-a095-b000`
-- `glue8-a095-b001`
-- `glue8-a096-b000`
-- `glue8-a096-b001`
-- `glue8-a097-b000`
-- `glue8-a097-b001`
-- `glue8-a098-b000`
-- `glue8-a098-b001`
-- `glue8-a099-b000`
 - `glue8-a099-b001`
 - `glue8-a100-b000`
 - `glue8-a100-b001`

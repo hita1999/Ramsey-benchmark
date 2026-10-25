@@ -1,9 +1,9 @@
 {
   "status": "PARTIAL_PROGRESS",
   "session_started_utc": "2026-10-25T06:09:48+00:00",
-  "checkpoint_captured_utc": "2026-10-25T06:29:52.374428+00:00",
+  "checkpoint_captured_utc": "2026-10-25T06:33:59.394375+00:00",
   "initial_budget_seconds": 1800,
-  "elapsed_at_capture_seconds": 1204.374,
+  "elapsed_at_capture_seconds": 1451.394,
   "base_commit": "d0bb92156a727be7baa8a8eee6140fff7035592f",
   "branch": "codex/r45-independent-verification",
   "lower_bound": "INDEPENDENTLY_VERIFIED_R45_GE_25",
@@ -18,8 +18,8 @@
     },
     "degree8": {
       "total": 358,
-      "verified_unsat": 129,
-      "unresolved": 229
+      "verified_unsat": 198,
+      "unresolved": 160
     }
   },
   "degree10": "NOT_ATTEMPTED",
@@ -945,1147 +945,1147 @@
     {
       "name": "glue8-a064-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a065-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a065-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a066-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a066-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a067-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a067-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a068-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a068-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a069-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a069-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a070-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a070-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a071-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a071-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a072-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a072-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a073-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a073-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a074-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a074-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a075-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a075-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a076-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a076-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a077-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a077-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a078-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a078-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a079-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a079-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a080-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a080-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a081-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a081-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a082-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a082-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a083-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a083-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a084-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a084-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a085-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a085-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a086-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a086-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a087-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a087-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a088-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a088-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a089-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a089-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a090-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "UNRESOLVED"
     },
     {
       "name": "glue8-a090-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a091-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a091-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a092-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a092-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a093-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a093-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a094-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a094-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a095-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a095-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a096-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a096-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a097-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a097-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a098-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a098-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a099-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "VERIFIED_UNSAT"
     },
     {
       "name": "glue8-a099-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a100-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a100-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a101-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a101-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a102-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a102-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a103-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a103-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a104-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a104-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a105-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a105-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a106-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a106-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a107-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a107-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a108-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a108-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a109-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a109-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a110-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a110-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a111-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a111-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a112-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a112-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a113-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a113-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a114-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a114-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a115-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a115-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a116-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a116-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a117-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a117-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a118-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a118-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a119-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a119-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a120-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a120-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a121-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a121-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a122-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a122-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a123-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a123-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a124-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a124-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a125-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a125-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a126-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a126-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a127-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a127-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a128-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a128-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a129-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a129-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a130-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a130-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a131-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a131-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a132-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a132-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a133-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a133-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a134-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a134-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a135-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a135-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a136-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a136-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a137-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a137-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a138-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a138-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a139-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a139-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a140-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a140-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a141-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a141-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a142-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a142-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a143-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a143-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a144-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a144-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a145-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a145-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a146-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a146-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a147-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a147-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a148-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a148-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a149-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a149-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a150-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a150-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a151-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a151-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a152-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a152-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a153-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a153-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a154-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a154-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a155-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a155-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a156-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a156-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a157-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a157-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a158-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a158-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a159-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a159-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a160-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a160-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a161-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a161-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a162-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a162-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a163-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a163-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a164-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a164-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a165-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a165-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a166-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a166-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a167-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a167-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a168-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a168-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a169-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a169-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a170-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a170-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a171-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a171-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a172-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a172-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a173-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a173-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a174-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a174-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a175-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a175-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a176-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a176-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a177-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a177-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a178-b000",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     },
     {
       "name": "glue8-a178-b001",
       "suite": "degree8",
-      "status": "NOT_ATTEMPTED"
+      "status": "NOT_ATTEMPTED_BUDGET"
     }
   ]
 }

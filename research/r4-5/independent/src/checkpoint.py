@@ -47,6 +47,17 @@ def main():
         'values':invariants,'nonisomorphic':True},indent=2)+'\n')
     now=datetime.now(timezone.utc)
     start=datetime(2026,10,25,6,9,48,tzinfo=timezone.utc)
+    for name,n,reps in [('r35_8',8,179),('r34_7',7,9),('r34_8',8,3)]:
+        data=json.loads((ROOT/'results'/f'{name}.json').read_text())
+        if (data['status'],data['n'],data['representatives'],data['labeled_graphs_checked']) != (
+                'COMPLETE',n,reps,1 << (n*(n-1)//2)):
+            raise ValueError('missing complete small enumeration: '+name)
+    for suite in ['coverage16','degree8']:
+        data=json.loads((ROOT/'results'/f'{suite}-encoding.json').read_text())
+        if data['status']!='VERIFIED_ENCODING_AND_WITNESSES' or data['cases_audited']!=counts[suite]['total']:
+            raise ValueError('missing independent encoding audit: '+suite)
+    if counts['coverage16']['verified_unsat']!=54:
+        raise ValueError('cannot claim 16-vertex catalogue completeness without 54 checked proofs')
     checkpoint={
         'status':'PARTIAL_PROGRESS','session_started_utc':start.isoformat(),
         'checkpoint_captured_utc':now.isoformat(),

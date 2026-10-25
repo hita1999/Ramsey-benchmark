@@ -17,9 +17,12 @@ def main():
     passed=[]
     unsat='p cnf 1 2\n1 0\n-1 0\n'
     sat='p cnf 2 2\n1 2 0\n-1 2 0\n'
+    xor_unsat='p cnf 2 4\n1 2 0\n-1 2 0\n1 -2 0\n-1 -2 0\n'
     examples=[
         ('valid_unit_conflict',unsat,'3 0 1 2 0\n',True),
-        ('valid_learned_unit',sat+'','3 2 0 1 2 0\n',False), # no empty clause
+        ('valid_resolution_chain',xor_unsat,'5 2 0 1 2 0\n6 -2 0 3 4 0\n7 0 5 6 0\n',True),
+        ('duplicate_id',xor_unsat,'5 2 0 1 2 0\n5 -2 0 3 4 0\n7 0 5 5 0\n',False),
+        ('valid_unit_but_missing_empty',sat,'3 2 0 1 2 0\n',False),
         ('nonunit_hint',sat,'3 0 1 2 0\n',False),
         ('missing_conflict',unsat,'3 0 1 0\n',False),
         ('unknown_hint',unsat,'3 0 1 9 0\n',False),

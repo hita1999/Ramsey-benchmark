@@ -2,7 +2,9 @@
   "status": "PASS",
   "tests": [
     "valid_unit_conflict",
-    "valid_learned_unit",
+    "valid_resolution_chain",
+    "duplicate_id",
+    "valid_unit_but_missing_empty",
     "nonunit_hint",
     "missing_conflict",
     "unknown_hint",
@@ -17,5 +19,5 @@
     "reject_altered_cnf_literal",
     "reject_nonbijective_isomorphism"
   ],
-  "count": 15
+  "count": 17
 }

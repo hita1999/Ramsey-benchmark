@@ -2149,6 +2149,22 @@
     "elapsed_seconds": 20.874441
   },
   {
+    "name": "glue8-a080-b000",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 27229903,
+    "status": "VERIFIED_UNSAT",
+    "additions": 148311,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 2529380,
+    "cnf_sha256": "06fc5221cad5672b77f49e8e4676dc1020bf57f65eeec4a0d0b12e5d426c5ba9",
+    "lrat_sha256": "36ccb0b8a497febce8215f2a094bdf1380cffb697317842fa17a8c04259f4703",
+    "lrat_bytes": 21321895,
+    "generated_this_run": true,
+    "elapsed_seconds": 31.395957
+  },
+  {
     "name": "glue8-a080-b001",
     "solver_returncode": 20,
     "solver_stdout": "s UNSATISFIABLE\n",
@@ -2165,6 +2181,22 @@
     "elapsed_seconds": 18.3494
   },
   {
+    "name": "glue8-a081-b000",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 22886552,
+    "status": "VERIFIED_UNSAT",
+    "additions": 125578,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 2185762,
+    "cnf_sha256": "e2bed0ba05e5c2f30313e94c50d8c0911062ce2c96933bf7997fdd99e8b43cde",
+    "lrat_sha256": "9db0a2eab728e4e455b92ae9e2bd81578ab3f5d2438ca9b3673f7b5b2e2c713b",
+    "lrat_bytes": 18335022,
+    "generated_this_run": true,
+    "elapsed_seconds": 24.847415
+  },
+  {
     "name": "glue8-a081-b001",
     "solver_returncode": 20,
     "solver_stdout": "s UNSATISFIABLE\n",
@@ -2179,5 +2211,1191 @@
     "lrat_bytes": 13555609,
     "generated_this_run": true,
     "elapsed_seconds": 19.945484
+  },
+  {
+    "name": "glue8-a082-b000",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 29724048,
+    "status": "VERIFIED_UNSAT",
+    "additions": 156799,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 2873302,
+    "cnf_sha256": "79046324ac0ef7e6bce658c37489e733a67302ac304be4306f774c510e677988",
+    "lrat_sha256": "d3e6a232e4bf7f648f1f6d9ad78d1b6b4100095ca783ad419b6b05f6b0e423e2",
+    "lrat_bytes": 23536082,
+    "generated_this_run": true,
+    "elapsed_seconds": 31.751209
+  },
+  {
+    "name": "glue8-a082-b001",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 20674936,
+    "status": "VERIFIED_UNSAT",
+    "additions": 117398,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 2023088,
+    "cnf_sha256": "0b86f8f42a212e17e92db768203a5750bcd245e575b6d60d55dc459f49b5b017",
+    "lrat_sha256": "500f53b58274de50929ee71df017836daf8b27a8174f1fc6b72104513fd99811",
+    "lrat_bytes": 16504435,
+    "generated_this_run": true,
+    "elapsed_seconds": 23.817212
+  },
+  {
+    "name": "glue8-a083-b000",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 29591083,
+    "status": "VERIFIED_UNSAT",
+    "additions": 150724,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 2870312,
+    "cnf_sha256": "92a5002e3e90a33b95e21274924302f84ae069c74f3c04923cde39ca5bdf79fc",
+    "lrat_sha256": "73aac99a65246600688961b7eb1afba3599daa3c5c18bf911036556ee5dc6659",
+    "lrat_bytes": 23334968,
+    "generated_this_run": true,
+    "elapsed_seconds": 37.989173
+  },
+  {
+    "name": "glue8-a083-b001",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 20510251,
+    "status": "VERIFIED_UNSAT",
+    "additions": 116289,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 2002111,
+    "cnf_sha256": "0adc415b4a7b3c26f7cea702e83752830d21ca8ae81b9a2e47e762d6fd06b0c6",
+    "lrat_sha256": "a297261de357f5e2b438ed2b53f22ff79a8f5fc5a73126eb7d942660d4431c1b",
+    "lrat_bytes": 16318658,
+    "generated_this_run": true,
+    "elapsed_seconds": 24.626857
+  },
+  {
+    "name": "glue8-a084-b000",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 20792005,
+    "status": "VERIFIED_UNSAT",
+    "additions": 117121,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 2040361,
+    "cnf_sha256": "f09df1e71030b7683d6059e4c0b23404a96113ccf17cb9ab911234c38f1a50c6",
+    "lrat_sha256": "c60dcd81f8fcbbef394c614535b3ca0e8653f79d3197f0df2939b1843919aa27",
+    "lrat_bytes": 16683884,
+    "generated_this_run": true,
+    "elapsed_seconds": 24.839085
+  },
+  {
+    "name": "glue8-a084-b001",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 13444883,
+    "status": "VERIFIED_UNSAT",
+    "additions": 80879,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 1283860,
+    "cnf_sha256": "315f95eaf97491f73fdfb228aa9e0977021b7739dc2640b6ff04540b5ec03931",
+    "lrat_sha256": "a1d50d507fbefc7021ba25b90e043d7ca9d71ea72c815f087dad3b75fd3114cd",
+    "lrat_bytes": 10622709,
+    "generated_this_run": true,
+    "elapsed_seconds": 15.246409
+  },
+  {
+    "name": "glue8-a085-b000",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 16069766,
+    "status": "VERIFIED_UNSAT",
+    "additions": 89601,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 1561402,
+    "cnf_sha256": "3afd7fc3009e68fd5dee7c8949aa90418b3c3676f87e20215a567eaad877a01b",
+    "lrat_sha256": "13e139eac5e85674343dde03b3c94e8772dd0d25d1f78e33b72305cb6fc4cb18",
+    "lrat_bytes": 12941537,
+    "generated_this_run": true,
+    "elapsed_seconds": 19.10144
+  },
+  {
+    "name": "glue8-a085-b001",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 16042441,
+    "status": "VERIFIED_UNSAT",
+    "additions": 93713,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 1555204,
+    "cnf_sha256": "e1c8e4017642fa63aa95f813f10bb3aad5e3b59c333086bbbdee7d7231122ec8",
+    "lrat_sha256": "cfac65c14a481714b55b9d3121e34a83821bc4c1b5b9315f736e36a7dba8b15f",
+    "lrat_bytes": 13265037,
+    "generated_this_run": true,
+    "elapsed_seconds": 19.831982
+  },
+  {
+    "name": "glue8-a086-b000",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 20276505,
+    "status": "VERIFIED_UNSAT",
+    "additions": 113196,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 1989105,
+    "cnf_sha256": "a92bee2c4a153ccac839117e06531138ba35d9f12f7630d8ff93653fbf9a88be",
+    "lrat_sha256": "687206b25742a94fa6056cf4fbafd5690de0f0e2610d4416fd8c0bd0dbebc3d1",
+    "lrat_bytes": 16613906,
+    "generated_this_run": true,
+    "elapsed_seconds": 24.088336
+  },
+  {
+    "name": "glue8-a086-b001",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 20618787,
+    "status": "VERIFIED_UNSAT",
+    "additions": 119410,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 1920308,
+    "cnf_sha256": "51fc0f7950bae7a280ed9cf23799b3f316127601d755eac6df545f367050b284",
+    "lrat_sha256": "99f2d1e9e9f7a9cd6c2ce07b28135860a053aad13f350cc9790f15bcb1d33959",
+    "lrat_bytes": 16288501,
+    "generated_this_run": true,
+    "elapsed_seconds": 28.36873
+  },
+  {
+    "name": "glue8-a087-b000",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 38273574,
+    "status": "VERIFIED_UNSAT",
+    "additions": 181813,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 3364825,
+    "cnf_sha256": "2ad189a0f2ae8a14b0817ef6514bf27e00ac487b73be43612abed24d8b59f803",
+    "lrat_sha256": "29ff0ff43e91dbbf1ea55df41f7386c57dc9dfa4590734d5e5028d3c5a21dc14",
+    "lrat_bytes": 28729935,
+    "generated_this_run": true,
+    "elapsed_seconds": 51.85975
+  },
+  {
+    "name": "glue8-a087-b001",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 21703482,
+    "status": "VERIFIED_UNSAT",
+    "additions": 114051,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 1987698,
+    "cnf_sha256": "acc5a2ecb26af04fb92b8ba6e2a2d3d738dcad22065fba9c4145ce57c9cc2e3c",
+    "lrat_sha256": "20b0a6d4cc25dce31f5da8debb0be792bceb38b1b2f5ce30fca3d075c50469a2",
+    "lrat_bytes": 16915247,
+    "generated_this_run": true,
+    "elapsed_seconds": 27.94211
+  },
+  {
+    "name": "glue8-a088-b000",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 34586392,
+    "status": "VERIFIED_UNSAT",
+    "additions": 168632,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 3262057,
+    "cnf_sha256": "1f778bddef392766e10e6e34a902162b3c548490ae8150be9fda04889ba9d849",
+    "lrat_sha256": "c4e1e5d260147a1f9ae59bab0184825f01bf3c2b625d1c76ac282eef49abbedc",
+    "lrat_bytes": 27442415,
+    "generated_this_run": true,
+    "elapsed_seconds": 49.2121
+  },
+  {
+    "name": "glue8-a088-b001",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 21368659,
+    "status": "VERIFIED_UNSAT",
+    "additions": 113172,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 1933742,
+    "cnf_sha256": "67466258a8344cbff6ca1722e529f907e21579b8e6ac183171d0a7e1d354c9c7",
+    "lrat_sha256": "a79769087e9cc4b9d8496a4c4202c4583f414baaa6612db2462981d796f11f87",
+    "lrat_bytes": 16584410,
+    "generated_this_run": true,
+    "elapsed_seconds": 25.619551
+  },
+  {
+    "name": "glue8-a089-b000",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 35753973,
+    "status": "VERIFIED_UNSAT",
+    "additions": 171864,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 3265080,
+    "cnf_sha256": "630aa21c0ca442fcd4bb33c4e18213428d60dfed4f399ed1640b1dcf04a5c63c",
+    "lrat_sha256": "98200eadd002b37b244f887ef9ce420a8cd1693b3bc8ba9c86a5b6cc5123dbbb",
+    "lrat_bytes": 27680822,
+    "generated_this_run": true,
+    "elapsed_seconds": 50.301393
+  },
+  {
+    "name": "glue8-a089-b001",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 19899502,
+    "status": "VERIFIED_UNSAT",
+    "additions": 105422,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 1739795,
+    "cnf_sha256": "cfd54c7095d062c7d8f8ec92a378b0eb81fb7f71243f8836dfc288f18245c36b",
+    "lrat_sha256": "911f298ad1db536db767336d454977d162aca78d6b6f15fca4cbd031c3f0c54f",
+    "lrat_bytes": 15157939,
+    "generated_this_run": true,
+    "elapsed_seconds": 25.490845
+  },
+  {
+    "name": "glue8-a090-b000",
+    "status": "UNRESOLVED",
+    "error": "Command '['/private/tmp/r45-cadical/build/cadical', '--plain', '--lrat', '--no-binary', '-q', '/var/folders/w5/9k75rzk16yg24xpwwfn73jbr0000gn/T/r45-proof-fx3_igyc/case.cnf', '/var/folders/w5/9k75rzk16yg24xpwwfn73jbr0000gn/T/r45-proof-fx3_igyc/case.lrat']' timed out after 60 seconds",
+    "elapsed_seconds": 60.037092
+  },
+  {
+    "name": "glue8-a090-b001",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 35753731,
+    "status": "VERIFIED_UNSAT",
+    "additions": 181774,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 3204430,
+    "cnf_sha256": "a8b55b2b7b5ef059d5c535a117a019ca47ca01217646eaa43fa586c2193e8f7f",
+    "lrat_sha256": "8ae86a3a1f4da9d54ac99035094e223caadfffe87874468359e694a2d07f7000",
+    "lrat_bytes": 27230268,
+    "generated_this_run": true,
+    "elapsed_seconds": 55.136235
+  },
+  {
+    "name": "glue8-a091-b000",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 23738950,
+    "status": "VERIFIED_UNSAT",
+    "additions": 128621,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 2217206,
+    "cnf_sha256": "dad325d4788b93472cce2c6d22a28e458f42e5cc30ce8dc3798fcec5336c2b2e",
+    "lrat_sha256": "a4b47e8154c2a67b27910cc4967e13a608512bdca8b0bcd1c2f00cd16a737913",
+    "lrat_bytes": 18383774,
+    "generated_this_run": true,
+    "elapsed_seconds": 32.48652
+  },
+  {
+    "name": "glue8-a091-b001",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 19462916,
+    "status": "VERIFIED_UNSAT",
+    "additions": 109528,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 1802098,
+    "cnf_sha256": "8ee7ddf003b676401f20e17cba593f853d6925e93a88daabb77a38470d7f88a9",
+    "lrat_sha256": "26be7ce4b262d3ee5793517512ce567f99e5e0a691518fac0a9a720ac9902aa4",
+    "lrat_bytes": 15577239,
+    "generated_this_run": true,
+    "elapsed_seconds": 31.184082
+  },
+  {
+    "name": "glue8-a092-b000",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 19647107,
+    "status": "VERIFIED_UNSAT",
+    "additions": 104545,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 1792278,
+    "cnf_sha256": "99334f055efdc59f19afbf0b095c5874f390f8b150c5c17da29f1727f7892f8a",
+    "lrat_sha256": "387b2d98a8b2f3e75b8965317353254ebd59bf1b5d987c71fded3beeb7b7c50c",
+    "lrat_bytes": 15373606,
+    "generated_this_run": true,
+    "elapsed_seconds": 28.282046
+  },
+  {
+    "name": "glue8-a092-b001",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 21087619,
+    "status": "VERIFIED_UNSAT",
+    "additions": 117662,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 1949506,
+    "cnf_sha256": "0134abf9c6a074e9e1131c0e8def4fde32112beef211a9e1b770bdf616c37df1",
+    "lrat_sha256": "5acf2c2c709957846448409fb88fceb427edaac2225ef494b5df9249a21fdbec",
+    "lrat_bytes": 16879698,
+    "generated_this_run": true,
+    "elapsed_seconds": 30.023443
+  },
+  {
+    "name": "glue8-a093-b000",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 32240141,
+    "status": "VERIFIED_UNSAT",
+    "additions": 166098,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 3164583,
+    "cnf_sha256": "31807875d965957684479cad86a05bc1adddbf8be14e15bcc52325545cb6de3b",
+    "lrat_sha256": "ecb2025f6541705bbbadc87bfdc4c4c48e8f0e19613e0ea679cb944ffe207856",
+    "lrat_bytes": 25847169,
+    "generated_this_run": true,
+    "elapsed_seconds": 51.275144
+  },
+  {
+    "name": "glue8-a093-b001",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 22446403,
+    "status": "VERIFIED_UNSAT",
+    "additions": 128956,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 2200489,
+    "cnf_sha256": "75e6b7e15caf148af01d19fa784f838d9fad08c6bb9b815348b29cfc4d4a5188",
+    "lrat_sha256": "b4e4ae2f90afc811967f3505800860928b4f4877b5948a5de09b8bf7495f00a4",
+    "lrat_bytes": 18276313,
+    "generated_this_run": true,
+    "elapsed_seconds": 30.965089
+  },
+  {
+    "name": "glue8-a094-b000",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 37497490,
+    "status": "VERIFIED_UNSAT",
+    "additions": 186580,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 3445377,
+    "cnf_sha256": "c0c0fa48436af17a967636ae55eaa5640eccd124ba291e197d95be957690d984",
+    "lrat_sha256": "f0681d5855baf1159f3fce677b195cfde3f5df0485b3cdbd6423e9b3a12a77f5",
+    "lrat_bytes": 28702251,
+    "generated_this_run": true,
+    "elapsed_seconds": 48.05171
+  },
+  {
+    "name": "glue8-a094-b001",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 18136990,
+    "status": "VERIFIED_UNSAT",
+    "additions": 104535,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 1798393,
+    "cnf_sha256": "13c0090098316dc30652614aca3abe17fd12e308978226ee0c3feebcbe3d4341",
+    "lrat_sha256": "7f7dabb411230c62db994a45fbfb6ca7b7ef86087efa0e9400167be37a22817f",
+    "lrat_bytes": 14686785,
+    "generated_this_run": true,
+    "elapsed_seconds": 26.261692
+  },
+  {
+    "name": "glue8-a095-b000",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 21740135,
+    "status": "VERIFIED_UNSAT",
+    "additions": 117561,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 2003426,
+    "cnf_sha256": "47eb47a516d0fab3d76364834dc3215f00e2a5165a0e274f9be38dec476870ae",
+    "lrat_sha256": "186f6755b3764b0fb0e4002ad304d959d55e94771708a87fa083a7d1a8c3c67b",
+    "lrat_bytes": 16807280,
+    "generated_this_run": true,
+    "elapsed_seconds": 32.217883
+  },
+  {
+    "name": "glue8-a095-b001",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 17692834,
+    "status": "VERIFIED_UNSAT",
+    "additions": 101671,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 1691997,
+    "cnf_sha256": "8595c01361504633e0d942d078196212128a4e7400797c123cc685b22bdf2be5",
+    "lrat_sha256": "2c2122ebb381a19932f15bf2145e7ac1c3820c484eb9c2698c99cc66f0585ba1",
+    "lrat_bytes": 14179356,
+    "generated_this_run": true,
+    "elapsed_seconds": 23.65977
+  },
+  {
+    "name": "glue8-a096-b000",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 29908507,
+    "status": "VERIFIED_UNSAT",
+    "additions": 145685,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 2749268,
+    "cnf_sha256": "de4f09ea098eb0f8959c1975b812c22b0c7a39599af70d6114d18c52c0ebe47d",
+    "lrat_sha256": "2504b35aabb491901aec25cc5c29eed4c22f0f352362bce1e5531d82c73babe3",
+    "lrat_bytes": 22768989,
+    "generated_this_run": true,
+    "elapsed_seconds": 32.52152
+  },
+  {
+    "name": "glue8-a096-b001",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 20935345,
+    "status": "VERIFIED_UNSAT",
+    "additions": 115397,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 1976367,
+    "cnf_sha256": "645a022893e782782a8df697a6604e0157285650d696a61cbda7eeb1a0571d03",
+    "lrat_sha256": "1fdb186ed50b6ee7e368bc5cb9c12ea9186e28aa70772294527669c39fede7de",
+    "lrat_bytes": 16470833,
+    "generated_this_run": true,
+    "elapsed_seconds": 24.822084
+  },
+  {
+    "name": "glue8-a097-b000",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 21358868,
+    "status": "VERIFIED_UNSAT",
+    "additions": 115691,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 2050401,
+    "cnf_sha256": "7ea60872ddd62a00fbb07ca5cfa91993c118bd08d7b0e82bc3e79938b6aaaea8",
+    "lrat_sha256": "2797eff7339e3cced115b8be1393f8d86e915089f45a8bc3258fb6d4078755ca",
+    "lrat_bytes": 16813070,
+    "generated_this_run": true,
+    "elapsed_seconds": 25.405618
+  },
+  {
+    "name": "glue8-a097-b001",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 18056621,
+    "status": "VERIFIED_UNSAT",
+    "additions": 103391,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 1712198,
+    "cnf_sha256": "f41f77974d16d66b2db33906588b9624a59b328694d482a0f0d0be6ae455b41c",
+    "lrat_sha256": "798be18bceeb8b795e26c66dbe38e5433ede80e848180f0fef265b11d3a740e6",
+    "lrat_bytes": 14475064,
+    "generated_this_run": true,
+    "elapsed_seconds": 20.602318
+  },
+  {
+    "name": "glue8-a098-b000",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 20833452,
+    "status": "VERIFIED_UNSAT",
+    "additions": 117174,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 2043779,
+    "cnf_sha256": "f6d121d0924afe3326b9168a6388f03cef5d6bef6c1de0858e05ac51679e43e1",
+    "lrat_sha256": "7879d2485de11cba623bd2d52f7d9c8229d3ef0fbf75753fecf445cd0d456ba4",
+    "lrat_bytes": 16847487,
+    "generated_this_run": true,
+    "elapsed_seconds": 21.207884
+  },
+  {
+    "name": "glue8-a098-b001",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 16214872,
+    "status": "VERIFIED_UNSAT",
+    "additions": 92340,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 1496622,
+    "cnf_sha256": "7e507214a0a966f5914cd82ce5db3d8c2e6f6cc3f8daaae3586f233e49598bba",
+    "lrat_sha256": "f144410f692610557865ea1c006c52dad8bcbbec61cd150c5ef1eca4aa3d7a73",
+    "lrat_bytes": 12552904,
+    "generated_this_run": true,
+    "elapsed_seconds": 16.709664
+  },
+  {
+    "name": "glue8-a099-b000",
+    "solver_returncode": 20,
+    "solver_stdout": "s UNSATISFIABLE\n",
+    "solver_stderr": "",
+    "untrimmed_lrat_bytes": 22411185,
+    "status": "VERIFIED_UNSAT",
+    "additions": 119860,
+    "deletion_lines_ignored": 0,
+    "hints_checked": 2064217,
+    "cnf_sha256": "c605118402ee6e0300b8f22a3e490ac71140149740ddb2de0ac4a0eb1034a49a",
+    "lrat_sha256": "3c04412298a975dadf590580442fe26ab7d477c764af25f58e221f278457d000",
+    "lrat_bytes": 17502618,
+    "generated_this_run": true,
+    "elapsed_seconds": 17.260315
+  },
+  {
+    "name": "glue8-a099-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a100-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a100-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a101-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a101-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a102-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a102-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a103-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a103-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a104-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a104-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a105-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a105-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a106-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a106-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a107-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a107-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a108-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a108-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a109-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a109-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a110-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a110-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a111-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a111-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a112-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a112-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a113-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a113-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a114-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a114-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a115-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a115-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a116-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a116-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a117-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a117-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a118-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a118-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a119-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a119-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a120-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a120-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a121-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a121-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a122-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a122-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a123-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a123-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a124-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a124-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a125-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a125-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a126-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a126-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a127-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a127-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a128-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a128-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a129-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a129-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a130-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a130-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a131-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a131-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a132-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a132-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a133-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a133-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a134-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a134-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a135-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a135-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a136-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a136-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a137-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a137-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a138-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a138-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a139-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a139-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a140-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a140-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a141-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a141-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a142-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a142-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a143-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a143-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a144-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a144-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a145-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a145-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a146-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a146-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a147-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a147-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a148-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a148-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a149-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a149-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a150-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a150-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a151-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a151-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a152-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a152-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a153-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a153-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a154-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a154-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a155-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a155-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a156-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a156-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a157-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a157-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a158-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a158-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a159-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a159-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a160-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a160-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a161-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a161-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a162-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a162-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a163-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a163-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a164-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a164-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a165-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a165-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a166-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a166-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a167-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a167-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a168-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a168-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a169-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a169-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a170-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a170-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a171-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a171-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a172-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a172-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a173-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a173-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a174-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a174-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a175-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a175-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a176-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a176-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a177-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a177-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a178-b000",
+    "status": "NOT_ATTEMPTED_BUDGET"
+  },
+  {
+    "name": "glue8-a178-b001",
+    "status": "NOT_ATTEMPTED_BUDGET"
   }
 ]
