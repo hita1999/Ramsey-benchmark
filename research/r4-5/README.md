@@ -17,7 +17,7 @@ proved here. This work does not modify the workflow benchmark.
 
 - **Lower bound R(4,5)≥25:** explicit 24-vertex circulant graph and exhaustive check, [lower-bound.md](lower-bound.md) and [verify_lower24.py](verify_lower24.py).
 - **Upper-bound starting lemma:** a hypothetical 25-vertex counterexample must have a vertex of degree 8, 10, or 12, with neighbor and antineighbor subgraphs of types (3,5) and (4,4), respectively; [upper-bound.md](upper-bound.md).
-- **Upper-bound exhaustive certificate:** **not yet produced or independently checked here**. Reproducing the published computational/formal proof remains the substantive work.
+- **Full upper-bound certificate:** **still incomplete**. Degree 8 has been independently excluded; exhaustive coverage and gluing exclusion for degrees 10 and 12 remain necessary.
 
 Do not conflate the externally established theorem with the independently reproduced subset of its proof. Mathematical proof status here should only be upgraded after auditable evidence exists.
 

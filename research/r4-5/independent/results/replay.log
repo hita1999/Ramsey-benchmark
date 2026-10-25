@@ -1,10 +1,3 @@
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LC_ALL = "C.UTF-8",
-	LC_CTYPE = "C.UTF-8",
-	LANG = "C.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to the standard locale ("C").
 {"vertices":24,"edges":120,"degree":10,"four_subsets_checked":10626,"five_subsets_checked":42504,"k4_count":0,"independent5_count":0,"lower_bound":25,"status":"VERIFIED"}
 {"n":8,"s":3,"t":5,"representatives":179,"labeled_graphs_checked":268435456,"valid_labeled_graphs":2728617,"orbit_union":2728617,"permutations_checked":7217280,"status":"COMPLETE"}
 {"n":7,"s":3,"t":4,"representatives":9,"labeled_graphs_checked":2097152,"valid_labeled_graphs":13842,"orbit_union":13842,"permutations_checked":45360,"status":"COMPLETE"}
@@ -34,23 +27,31 @@ perl: warning: Falling back to the standard locale ("C").
 }
 {"suite": "coverage16", "cases_audited": 54, "clauses_audited": 21758, "status": "VERIFIED_ENCODING_AND_WITNESSES"}
 {"suite": "degree8", "cases_audited": 358, "clauses_audited": 1075768, "status": "VERIFIED_ENCODING_AND_WITNESSES"}
-{"completed": 20, "total": 54, "last": "cover16-d7-a006-b001", "status": "VERIFIED_UNSAT"}
-{"completed": 40, "total": 54, "last": "cover16-d8-a001-b003", "status": "VERIFIED_UNSAT"}
-{"suite": "coverage16", "checked": 54, "unresolved": 0}
-{"completed": 20, "total": 198, "last": "glue8-a008-b001", "status": "VERIFIED_UNSAT"}
-{"completed": 40, "total": 198, "last": "glue8-a019-b001", "status": "VERIFIED_UNSAT"}
-{"completed": 60, "total": 198, "last": "glue8-a029-b001", "status": "VERIFIED_UNSAT"}
-{"completed": 80, "total": 198, "last": "glue8-a039-b000", "status": "VERIFIED_UNSAT"}
-{"completed": 100, "total": 198, "last": "glue8-a048-b001", "status": "VERIFIED_UNSAT"}
-{"completed": 120, "total": 198, "last": "glue8-a059-b001", "status": "VERIFIED_UNSAT"}
-{"completed": 140, "total": 198, "last": "glue8-a069-b001", "status": "VERIFIED_UNSAT"}
-{"completed": 160, "total": 198, "last": "glue8-a079-b001", "status": "VERIFIED_UNSAT"}
-{"completed": 180, "total": 198, "last": "glue8-a089-b000", "status": "VERIFIED_UNSAT"}
-{"suite": "degree8", "checked": 198, "unresolved": 0}
+{"completed_this_run": 20, "total_this_run": 54, "last": "cover16-d7-a006-b001", "status": "VERIFIED_UNSAT"}
+{"completed_this_run": 40, "total_this_run": 54, "last": "cover16-d8-a001-b003", "status": "VERIFIED_UNSAT"}
+{"suite": "coverage16", "cases_recorded": 54, "verified_unsat": 54, "unresolved": 0}
+{"completed_this_run": 20, "total_this_run": 358, "last": "glue8-a008-b001", "status": "VERIFIED_UNSAT"}
+{"completed_this_run": 40, "total_this_run": 358, "last": "glue8-a019-b001", "status": "VERIFIED_UNSAT"}
+{"completed_this_run": 60, "total_this_run": 358, "last": "glue8-a029-b001", "status": "VERIFIED_UNSAT"}
+{"completed_this_run": 80, "total_this_run": 358, "last": "glue8-a039-b000", "status": "VERIFIED_UNSAT"}
+{"completed_this_run": 100, "total_this_run": 358, "last": "glue8-a048-b001", "status": "VERIFIED_UNSAT"}
+{"completed_this_run": 120, "total_this_run": 358, "last": "glue8-a059-b001", "status": "VERIFIED_UNSAT"}
+{"completed_this_run": 140, "total_this_run": 358, "last": "glue8-a069-b001", "status": "VERIFIED_UNSAT"}
+{"completed_this_run": 160, "total_this_run": 358, "last": "glue8-a079-b000", "status": "VERIFIED_UNSAT"}
+{"completed_this_run": 180, "total_this_run": 358, "last": "glue8-a089-b000", "status": "VERIFIED_UNSAT"}
+{"completed_this_run": 200, "total_this_run": 358, "last": "glue8-a099-b001", "status": "VERIFIED_UNSAT"}
+{"completed_this_run": 220, "total_this_run": 358, "last": "glue8-a109-b000", "status": "VERIFIED_UNSAT"}
+{"completed_this_run": 240, "total_this_run": 358, "last": "glue8-a119-b001", "status": "VERIFIED_UNSAT"}
+{"completed_this_run": 260, "total_this_run": 358, "last": "glue8-a130-b000", "status": "VERIFIED_UNSAT"}
+{"completed_this_run": 280, "total_this_run": 358, "last": "glue8-a139-b000", "status": "VERIFIED_UNSAT"}
+{"completed_this_run": 300, "total_this_run": 358, "last": "glue8-a149-b001", "status": "VERIFIED_UNSAT"}
+{"completed_this_run": 320, "total_this_run": 358, "last": "glue8-a159-b001", "status": "VERIFIED_UNSAT"}
+{"completed_this_run": 340, "total_this_run": 358, "last": "glue8-a168-b000", "status": "VERIFIED_UNSAT"}
+{"suite": "degree8", "cases_recorded": 358, "verified_unsat": 358, "unresolved": 0}
 {
   "checkpoint_status": "PARTIAL_PROGRESS",
-  "degree8_proofs_checked": 198,
-  "degree8_proofs_missing": 160,
+  "degree8_proofs_checked": 358,
+  "degree8_proofs_missing": 0,
   "degree10": "NOT_ATTEMPTED",
   "degree12": "NOT_ATTEMPTED",
   "full_upper_bound_proved": false
