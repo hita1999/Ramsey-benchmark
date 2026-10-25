@@ -49,27 +49,48 @@ def main():
     p.add_argument('--jobs',type=int,default=1)
     p.add_argument('--budget-seconds',type=int,default=0)
     p.add_argument('--available-only',action='store_true')
+    p.add_argument('--only-missing',action='store_true',
+                   help='preserve hash-matching verified records and work on unresolved cases')
     p.add_argument('--report',type=Path)
     args=p.parse_args()
     cases=json.loads((ROOT/'results'/f'{args.suite}-cases.json').read_text())
+    if args.only_missing and (not args.solver or args.available_only):
+        p.error('--only-missing requires --solver and cannot use --available-only')
     if args.available_only:
         cases=[c for c in cases if (ROOT/'proofs'/f'{c["name"]}.lrat.gz').exists()]
     results=[]
     output=args.report or ROOT/'results'/f'{args.suite}-proofs.json'
+    if args.only_missing and output.exists():
+        previous={r['name']:r for r in json.loads(output.read_text())}
+        pending_cases=[]
+        for case in cases:
+            name=case['name']
+            record=previous.get(name,{})
+            reusable=record.get('status')=='VERIFIED_UNSAT'
+            if reusable:
+                for extension,key in [('cnf','cnf_sha256'),('lrat','lrat_sha256')]:
+                    path=ROOT/'proofs'/f'{name}.{extension}.gz'
+                    if not path.exists() or hashlib.sha256(gzip.decompress(path.read_bytes())).hexdigest()!=record.get(key):
+                        raise ValueError(f'previously verified artifact changed: {path}')
+                results.append(record)
+            else:
+                pending_cases.append(case)
+        cases=pending_cases
+        print(json.dumps({'preserved_verified_records':len(results),'cases_to_run':len(cases)}),flush=True)
     stop=threading.Event()
     signal.signal(signal.SIGINT,lambda *_:stop.set())
     deadline=time.monotonic()+args.budget_seconds if args.budget_seconds else float('inf')
     def process(case):
-      if stop.is_set() or time.monotonic()>=deadline:
-        return {'name':case['name'],'status':'NOT_ATTEMPTED_BUDGET'}
-      with tempfile.TemporaryDirectory(prefix='r45-proof-') as temp:
-        cnf,proof=Path(temp)/'case.cnf',Path(temp)/'case.lrat'
-        start=time.monotonic()
-        name=case['name']
-        cnf.write_bytes(gzip.decompress((ROOT/'proofs'/f'{name}.cnf.gz').read_bytes()))
-        saved=ROOT/'proofs'/f'{name}.lrat.gz'
-        result={'name':name}
-        try:
+        if stop.is_set() or time.monotonic()>=deadline:
+            return {'name':case['name'],'status':'NOT_ATTEMPTED_BUDGET'}
+        with tempfile.TemporaryDirectory(prefix='r45-proof-') as temp:
+            cnf,proof=Path(temp)/'case.cnf',Path(temp)/'case.lrat'
+            start=time.monotonic()
+            name=case['name']
+            cnf.write_bytes(gzip.decompress((ROOT/'proofs'/f'{name}.cnf.gz').read_bytes()))
+            saved=ROOT/'proofs'/f'{name}.lrat.gz'
+            result={'name':name}
+            try:
                 generated=False
                 if args.solver and not saved.exists():
                     command=[str(args.solver),'--plain','--lrat','--no-binary','-q',
@@ -98,22 +119,25 @@ def main():
                     pending.write_bytes(gzip.compress(proof.read_bytes(),mtime=0))
                     pending.replace(saved)
                 result['generated_this_run']=generated
-        except (OSError, ValueError, subprocess.TimeoutExpired) as e:
+            except (OSError, ValueError, subprocess.TimeoutExpired) as e:
                 result.update(status='UNRESOLVED',error=str(e))
-        result['elapsed_seconds']=round(time.monotonic()-start,6)
-        return result
+            result['elapsed_seconds']=round(time.monotonic()-start,6)
+            return result
+    completed=0
     with ThreadPoolExecutor(max_workers=args.jobs) as pool:
         for future in as_completed([pool.submit(process,case) for case in cases]):
             result=future.result()
             results.append(result)
+            completed+=1
             pending=output.with_suffix('.pending')
             pending.write_text(json.dumps(sorted(results,key=lambda r:r['name']),indent=2)+'\n')
             pending.replace(output)
-            if len(results)%20==0 or result['status']!='VERIFIED_UNSAT':
-                print(json.dumps({'completed':len(results),'total':len(cases),
+            if completed%20==0 or result['status']=='UNRESOLVED':
+                print(json.dumps({'completed_this_run':completed,'total_this_run':len(cases),
                                   'last':result['name'],'status':result['status']}),flush=True)
     failures=[r for r in results if r['status']!='VERIFIED_UNSAT']
-    print(json.dumps({'suite':args.suite,'checked':len(results),'unresolved':len(failures)}))
+    print(json.dumps({'suite':args.suite,'cases_recorded':len(results),
+                      'verified_unsat':len(results)-len(failures),'unresolved':len(failures)}))
     if failures:
         raise SystemExit(1)
 

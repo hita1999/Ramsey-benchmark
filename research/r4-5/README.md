@@ -8,7 +8,9 @@ This is a **new mathematical effort outside Ramsey-benchmark v1.0**. It is not S
 See [independent/README.md](independent/README.md) for a second lower-bound
 implementation, a self-contained degree reduction, exhaustive candidate
 coverage checks, saved LRAT certificates, an independent checker, and the
-exact unresolved-case ledger. The full upper bound is still not independently
+exact unresolved-case ledger. **The degree-8 case is now fully excluded by
+358 checked gluing refutations and complete candidate coverage. Degrees 10
+and 12 remain unresolved.** The full upper bound is still not independently
 proved here. This work does not modify the workflow benchmark.
 
 **What this repository has actually re-established so far:**

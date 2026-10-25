@@ -38,11 +38,11 @@ A complete upper-bound proof requires an exhaustive and independently checkable 
 ## 3. Concrete next research task
 
 The [independent checkpoint](independent/README.md) now verifies completeness
-of both degree-8 candidate lists and records the exact subset of the 358
-gluing problems with independently checked certificates. Consult its ledger
-before continuing; the remaining degree cases are still unresolved.
+of both degree-8 candidate lists and all **358/358 gluing refutations**.
+Thus degree 8 is closed. Consult its ledger before continuing; degrees 10
+and 12 are still unresolved.
 
-1. Start with d=8. The 1995 enumeration and the 2024 formal proof report 179 nonisomorphic (3,5,8)-graphs and 2 nonisomorphic (4,4,16)-graphs. Verify the census/canonicalization rather than blindly trust its completeness, then check all 358 representative gluings using a SAT solver and a checkable proof format.
+1. **Completed for d=8.** The 179 nonisomorphic (3,5,8)-graphs and 2 nonisomorphic (4,4,16)-graphs now have independently verified complete coverage, and all 358 representative gluings have checked LRAT refutations. See [the proof](independent/PROOF.md) and [the case ledger](independent/CHECKPOINT.json).
 2. Develop graph-generalization covers and reliable isomorphism witnesses for d=10 and d=12; naive pair products are enormous. The original result uses exhaustive gluing; the later formalization relies on SAT and HOL4.
 3. For every excluded pair, preserve a machine-checkable UNSAT proof (or formally check the inference in a theorem prover). Independently audit the exhaustiveness of all covers, not merely individual SAT outputs.
 4. Only after all three d-cases are closed, combine with [the 24-vertex witness](lower-bound.md) and mark R(4,5)=25 independently proved by this project.

@@ -3,6 +3,11 @@
 This is mathematical verification of `research/r4-5/`, outside the completed
 benchmark. **The full upper bound `R(4,5) <= 25` is not proved by this work.**
 
+**The degree-8 case is complete:** both candidate catalogues are complete,
+and all **358/358** representative gluing problems have independently checked
+UNSAT certificates. Thus a `(4,5,25)` graph cannot have a degree-8 vertex.
+The remaining even-degree cases are **10 and 12**.
+
 Verified in this session:
 
 - A new C++ implementation exhausts all four- and five-subsets of the
@@ -16,9 +21,10 @@ Verified in this session:
   refutations**, with 128 checked permutation witnesses for blocked models.
 - All 358 degree-8 gluing CNFs are checked against a second encoding that
   enumerates every forbidden subset, including the splitting vertex.
-- Saved gluing refutations are independently checked. The exact completed
-  subset and all remaining cases are in [CHECKPOINT.json](CHECKPOINT.json)
-  and [UNRESOLVED.md](UNRESOLVED.md). Do not infer completion from solver logs.
+- All **358 gluing refutations** are saved and independently checked. The
+  complete ledger is in [CHECKPOINT.json](CHECKPOINT.json); remaining
+  degree-10/12 obligations are in [UNRESOLVED.md](UNRESOLVED.md).
+  Completion follows from checked certificates, not solver logs.
 
 The [proof and trust-boundary document](PROOF.md) separates these results from
 the cited 1995 theorem and 2024 HOL4 proof. HOL4 was not replayed. The checker
@@ -36,7 +42,7 @@ is independent of CaDiCaL but is not itself formally verified in a logic kernel.
 
 ## Replay without a SAT solver
 
-From the repository root, with Python 3.9+ and a C++17 compiler:
+From the repository root, with Python 3.9+ and Clang or GCC supporting C++17:
 
 ```sh
 bash research/r4-5/independent/reproduce.sh
@@ -55,11 +61,13 @@ in `PROVENANCE.json`. Then run, using your actual executable paths:
 clang++ -O2 -std=c++17 research/r4-5/independent/src/check_lrat.cpp -o /tmp/r45-check-lrat
 python3 research/r4-5/independent/src/run_proofs.py degree8 \
   --solver /path/to/cadical --checker /tmp/r45-check-lrat --jobs 4 \
-  --budget-seconds 600
+  --budget-seconds 600 --only-missing
 ```
 
-The runner rechecks existing proofs, generates missing ones, and accepts
-only proofs passing the independent checker. A budget stop is unresolved;
+With `--only-missing`, the runner preserves previously verified records only
+after checking both their CNF and proof hashes, then generates missing proofs.
+Omit this option to recheck every existing proof. New proofs are accepted only
+after passing the independent checker. A budget stop is unresolved;
 it is not UNSAT. The budget stops scheduling fresh cases; already running
 solver/checker calls can run up to their per-call timeout. The separate
 encoding audit must also pass before using a proof mathematically.
@@ -70,4 +78,6 @@ headers need not be. Recheck generated files with `audit_cases.py` before use.
 
 Initial budget: 30 minutes beginning 2026-10-25 15:09:48 JST. The checkpoint
 records its capture time and leaves degrees 10 and 12 explicitly unresolved.
-No claim of a new discovery or a complete independent proof is made.
+The user subsequently requested continuation; later research sessions and
+their cutoffs are recorded in `SESSIONS.md`. No claim of a new discovery or a
+complete independent proof is made.

@@ -139,13 +139,23 @@ optimization is checked, not merely presumed. No degree constraints,
 isomorphism clauses, solver assumptions, or symmetry breaking are added to
 these 358 gluing formulas.
 
-Both candidate lists are complete. However, only the gluing instances with
-a saved certificate accepted by the independent checker are excluded here.
-`CHECKPOINT.json` lists every one of the 358 pairs and its status. An absent
-certificate, timeout, unfinished job, or missing result is **unresolved**.
-Until all 358 are checked, even the degree-8 case remains open in this
-repository's independent proof. Degrees 10 and 12 are not checked in this
-checkpoint. The final upper bound and equality are therefore not claimed.
+Both candidate lists are complete, and **all 358 gluing instances now have
+saved certificates accepted by the independent checker**. Therefore no
+`(4,5,25)` graph has a degree-8 vertex: choosing such a vertex would give a
+pair isomorphic to one of these representatives, and its cross edges would
+satisfy a CNF that has been refuted. Relabeling the two sides is legitimate
+because they are disjoint and all cross-edge assignments were allowed.
+
+`CHECKPOINT.json` lists every pair and its status. The initial checkpoint
+contained 198 accepted refutations; the continuation supplies the other 160,
+including a valid refutation for the previously timed-out instance. A timeout
+was not used as evidence. In general, an absent certificate, timeout,
+unfinished job, or missing result is **unresolved**.
+
+**The degree-8 case is closed. Degrees 10 and 12 are not checked.** By section
+2 a hypothetical counterexample must therefore have a vertex of degree 10
+or 12. Excluding these remaining cases is still necessary; the final upper
+bound and equality are not claimed.
 
 ## 6. Independent proof checker and trust boundary
 

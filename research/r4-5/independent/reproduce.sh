@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
+export LC_ALL=C
 task_root="$(cd "$(dirname "$0")" && pwd)"
 task_tmp="$(mktemp -d "${TMPDIR:-/tmp}/r45-replay.XXXXXX")"
 trap 'rm -rf "$task_tmp"' EXIT
