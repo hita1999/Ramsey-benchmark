@@ -148,4 +148,11 @@ H001-Bは **SOLVED（独立受理済み）**、operational handoff **PASS × ACC
 
 実行時の根拠と計測は [H001-B再現・引継ぎ文書](../benchmarks/r4-5/h001-b/reproduce.md) と `benchmarks/r4-5/h001-b/submission-record.json`、現在の受理状態と統合要件は [H001-B独立レビュー記録](../benchmarks/r4-5/reviews/H001-B.md) を参照。実行時artifactのUNREVIEWEDは提出時点の履歴として保持する。R(4,5)数学的workloadの状態は引き続き **PARTIAL_PROGRESS** であり、operational Goal完了とは区別する。
 
-PR #17のnormal mergeにより `code_commit=d1c5cdf7...` のhistorical ancestryは保持された。post-merge integration receiptは `results/r45-h001-b-integration-receipt.md` に保存する。本receipt統合をもってH001 checkpoint-resume experimentのoperational closureを完了する。R(4,5)の数学的workloadは引き続きPARTIAL_PROGRESSであり、追加のn=24研究は新しいGoalを必要とする。
+PR #17のnormal mergeにより `code_commit=d1c5cdf7...` のhistorical ancestryは保持された。[post-merge integration receipt](r45-h001-b-integration-receipt.md)はPR #18として2026-09-26T06:00:43Zにmerge `2cbdcd4e1f4758c5d4dc4b427bd408db8a526f3b` で統合済み。H001 checkpoint-resume experimentのoperational closureは完了した。R(4,5)の数学的workloadは引き続きPARTIAL_PROGRESSであり、追加のn=24研究は新しいGoalを必要とする。
+
+
+### Stage 4 retrospective
+
+[振り返り・再現確認・次実験の条件](stage4-retrospective.md)を保存した。2026-09-27にGitHub最新main `2cbdcd4` とPR #14〜#18・#17コメントを取得し、H001のoperational SOLVED / PASS × ACCEPTEDとreceipt統合を確認。両Phase監査、既存split/resumeテスト、保存Reviewer verifierの再実行はPASS。今回の検算は研究0候補、別枠test 556候補・delta比較11,136件で、元の実験counterを変更していない。
+
+未完了checkpointから別fresh sessionへの再開は実施できた。一方、4文書同期漏れは再発してmerge前に修正され、PR本文の古い状態表示、Phase A token欠測も残った。数学workloadはPARTIAL_PROGRESS、Discovery CONTAMINATED。突発停止復旧・異環境resume・長時間の証明発見・単一sessionとの効率比較は未評価として、次Goalの設計条件へ引き継ぐ。

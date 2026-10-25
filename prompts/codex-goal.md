@@ -151,3 +151,15 @@ Tokenまたは計算予算の上限が近づいた場合、根拠の弱い結論
   提出時点の未統合記録は履歴として残す。
 - 停滞時の切替・checkpoint条件は実行前に固定する。未知問題向けの次実験では、
   未完了checkpointから別fresh sessionへ引き継ぐ能力を、完成済み成果の再現とは別に評価する。
+
+## Stage 4 retrospective後のresumeと計測
+
+[Stage 4 retrospective](../results/stage4-retrospective.md)に基づき、以後のcheckpoint-resume Goalでは次を記録する。
+
+- 数学Claimの状態、operational Goalの判定と独立レビュー、PR統合状態を別にする。運用SOLVEDは数学的問題のSOLVEDを意味しない。
+- resume前にGit base・checkpoint/code/config hash・全semantic state・次候補・残予算を監査し、入力と結果をGitへ固定する。
+  計測observerを追加する場合は研究前に固定し、観測点とsemantic stateへ影響しない根拠を保存する。
+- integrity不一致やsemantic code修復が必要なら研究評価前に停止する。修復実験は新しいversion/Goalとし、元のexact resume成功に数えない。
+- 意図したcheckpoint停止と突発停止復旧を区別する。後者のGoalでは永続checkpoint頻度、復旧点、再評価のresearch/replay会計を先に決める。
+- test/replay・後日の再現検算を研究counterに混ぜない。実行時artifactを再検算で上書きせず、書き込むauditは一時checkoutか新出力先で実行する。
+- 提出・完了・後処理に加え、review/closureの計測範囲を明示する。欠測をcommit間隔や別Phaseのcounterから補完しない。

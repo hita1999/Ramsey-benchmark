@@ -92,3 +92,12 @@ Gitをsource of truthとしてレビューする。Codexの会話履歴、自己
 - 保存済みReviewer実装の再実行は再現確認であり、新規の独立実装・独立数学レビューとは別に記録する。
 - Claim状態の4文書同期はmerge前に終える。merge SHA・日時の保存は統合担当の別工程とし、
   現在地の「統合待ち」を次の文書PR等で更新する。過去のレビューartifactを当時から統合済みだったように書き換えない。
+
+## Stage 4 retrospective後のoperational reviewとclosure
+
+- 数学的受理とoperational handoffの受理を分離する。fresh-session申告、Gitのstate整合性、small split tests、実軌跡replayの有無をそれぞれ記録し、未実施の確認を推定しない。
+- resume監査では入力checkpointの全semantic state、最初の候補、残予算、code/config continuity、区間のgap/overlap、test/replay別会計を確認する。observerがあれば観測点と非変更性も対象にする。
+- closure担当はproof・research-notes・verification・benchmark-summaryの現在地を実際に読み、数学Claim、operational判定、各独立レビュー状態、統合待ちの整合性を照合する。review artifact保存だけでclosure完了としない。
+- 統合担当は最新PR headを確認し、PR本文にも現在の判定とreviewへのリンクを反映する。提出時点のUNREVIEWEDやpendingは時点付き履歴へ分け、凍結した実行JSONを遡って書き換えない。
+- code_commitを履歴から検証するcheckpointでは、その到達可能性を保つmerge方法を採り、merge tree・checkpoint hash・到達可能性をreceiptへ保存する。receipt自体のPR統合後は現在地の保存予定を統合済みへ更新する。
+- 保存済みauditの再実行は新規独立レビューと区別する。書き込みを伴うauditは別出力先または一時checkoutで走らせ、除外する時刻/環境fieldを実行前に固定して他の全fieldを比較する。
