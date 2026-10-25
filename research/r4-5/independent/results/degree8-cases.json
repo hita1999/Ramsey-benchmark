@@ -1,0 +1,3582 @@
+[
+  {
+    "name": "glue8-a000-b000",
+    "variables": 128,
+    "clauses": 3092,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 0,
+    "b": 0
+  },
+  {
+    "name": "glue8-a000-b001",
+    "variables": 128,
+    "clauses": 3092,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 0,
+    "b": 1
+  },
+  {
+    "name": "glue8-a001-b000",
+    "variables": 128,
+    "clauses": 3096,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 1,
+    "b": 0
+  },
+  {
+    "name": "glue8-a001-b001",
+    "variables": 128,
+    "clauses": 3096,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 1,
+    "b": 1
+  },
+  {
+    "name": "glue8-a002-b000",
+    "variables": 128,
+    "clauses": 3076,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 2,
+    "b": 0
+  },
+  {
+    "name": "glue8-a002-b001",
+    "variables": 128,
+    "clauses": 3076,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 2,
+    "b": 1
+  },
+  {
+    "name": "glue8-a003-b000",
+    "variables": 128,
+    "clauses": 2960,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 3,
+    "b": 0
+  },
+  {
+    "name": "glue8-a003-b001",
+    "variables": 128,
+    "clauses": 2960,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 3,
+    "b": 1
+  },
+  {
+    "name": "glue8-a004-b000",
+    "variables": 128,
+    "clauses": 2944,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 4,
+    "b": 0
+  },
+  {
+    "name": "glue8-a004-b001",
+    "variables": 128,
+    "clauses": 2944,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 4,
+    "b": 1
+  },
+  {
+    "name": "glue8-a005-b000",
+    "variables": 128,
+    "clauses": 3152,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 5,
+    "b": 0
+  },
+  {
+    "name": "glue8-a005-b001",
+    "variables": 128,
+    "clauses": 3152,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 5,
+    "b": 1
+  },
+  {
+    "name": "glue8-a006-b000",
+    "variables": 128,
+    "clauses": 3132,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 6,
+    "b": 0
+  },
+  {
+    "name": "glue8-a006-b001",
+    "variables": 128,
+    "clauses": 3132,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 6,
+    "b": 1
+  },
+  {
+    "name": "glue8-a007-b000",
+    "variables": 128,
+    "clauses": 3076,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 7,
+    "b": 0
+  },
+  {
+    "name": "glue8-a007-b001",
+    "variables": 128,
+    "clauses": 3076,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 7,
+    "b": 1
+  },
+  {
+    "name": "glue8-a008-b000",
+    "variables": 128,
+    "clauses": 3020,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 8,
+    "b": 0
+  },
+  {
+    "name": "glue8-a008-b001",
+    "variables": 128,
+    "clauses": 3020,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 8,
+    "b": 1
+  },
+  {
+    "name": "glue8-a009-b000",
+    "variables": 128,
+    "clauses": 3284,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 9,
+    "b": 0
+  },
+  {
+    "name": "glue8-a009-b001",
+    "variables": 128,
+    "clauses": 3284,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 9,
+    "b": 1
+  },
+  {
+    "name": "glue8-a010-b000",
+    "variables": 128,
+    "clauses": 2960,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 10,
+    "b": 0
+  },
+  {
+    "name": "glue8-a010-b001",
+    "variables": 128,
+    "clauses": 2960,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 10,
+    "b": 1
+  },
+  {
+    "name": "glue8-a011-b000",
+    "variables": 128,
+    "clauses": 3016,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 11,
+    "b": 0
+  },
+  {
+    "name": "glue8-a011-b001",
+    "variables": 128,
+    "clauses": 3016,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 11,
+    "b": 1
+  },
+  {
+    "name": "glue8-a012-b000",
+    "variables": 128,
+    "clauses": 3416,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 12,
+    "b": 0
+  },
+  {
+    "name": "glue8-a012-b001",
+    "variables": 128,
+    "clauses": 3416,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 12,
+    "b": 1
+  },
+  {
+    "name": "glue8-a013-b000",
+    "variables": 128,
+    "clauses": 3492,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 13,
+    "b": 0
+  },
+  {
+    "name": "glue8-a013-b001",
+    "variables": 128,
+    "clauses": 3492,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 13,
+    "b": 1
+  },
+  {
+    "name": "glue8-a014-b000",
+    "variables": 128,
+    "clauses": 3092,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 14,
+    "b": 0
+  },
+  {
+    "name": "glue8-a014-b001",
+    "variables": 128,
+    "clauses": 3092,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 14,
+    "b": 1
+  },
+  {
+    "name": "glue8-a015-b000",
+    "variables": 128,
+    "clauses": 3224,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 15,
+    "b": 0
+  },
+  {
+    "name": "glue8-a015-b001",
+    "variables": 128,
+    "clauses": 3224,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 15,
+    "b": 1
+  },
+  {
+    "name": "glue8-a016-b000",
+    "variables": 128,
+    "clauses": 3228,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 16,
+    "b": 0
+  },
+  {
+    "name": "glue8-a016-b001",
+    "variables": 128,
+    "clauses": 3228,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 16,
+    "b": 1
+  },
+  {
+    "name": "glue8-a017-b000",
+    "variables": 128,
+    "clauses": 3208,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 17,
+    "b": 0
+  },
+  {
+    "name": "glue8-a017-b001",
+    "variables": 128,
+    "clauses": 3208,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 17,
+    "b": 1
+  },
+  {
+    "name": "glue8-a018-b000",
+    "variables": 128,
+    "clauses": 2884,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 18,
+    "b": 0
+  },
+  {
+    "name": "glue8-a018-b001",
+    "variables": 128,
+    "clauses": 2884,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 18,
+    "b": 1
+  },
+  {
+    "name": "glue8-a019-b000",
+    "variables": 128,
+    "clauses": 2828,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 19,
+    "b": 0
+  },
+  {
+    "name": "glue8-a019-b001",
+    "variables": 128,
+    "clauses": 2828,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 19,
+    "b": 1
+  },
+  {
+    "name": "glue8-a020-b000",
+    "variables": 128,
+    "clauses": 3208,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 20,
+    "b": 0
+  },
+  {
+    "name": "glue8-a020-b001",
+    "variables": 128,
+    "clauses": 3208,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 20,
+    "b": 1
+  },
+  {
+    "name": "glue8-a021-b000",
+    "variables": 128,
+    "clauses": 3000,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 21,
+    "b": 0
+  },
+  {
+    "name": "glue8-a021-b001",
+    "variables": 128,
+    "clauses": 3000,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 21,
+    "b": 1
+  },
+  {
+    "name": "glue8-a022-b000",
+    "variables": 128,
+    "clauses": 2828,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 22,
+    "b": 0
+  },
+  {
+    "name": "glue8-a022-b001",
+    "variables": 128,
+    "clauses": 2828,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 22,
+    "b": 1
+  },
+  {
+    "name": "glue8-a023-b000",
+    "variables": 128,
+    "clauses": 3076,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 23,
+    "b": 0
+  },
+  {
+    "name": "glue8-a023-b001",
+    "variables": 128,
+    "clauses": 3076,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 23,
+    "b": 1
+  },
+  {
+    "name": "glue8-a024-b000",
+    "variables": 128,
+    "clauses": 2960,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 24,
+    "b": 0
+  },
+  {
+    "name": "glue8-a024-b001",
+    "variables": 128,
+    "clauses": 2960,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 24,
+    "b": 1
+  },
+  {
+    "name": "glue8-a025-b000",
+    "variables": 128,
+    "clauses": 2964,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 25,
+    "b": 0
+  },
+  {
+    "name": "glue8-a025-b001",
+    "variables": 128,
+    "clauses": 2964,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 25,
+    "b": 1
+  },
+  {
+    "name": "glue8-a026-b000",
+    "variables": 128,
+    "clauses": 3076,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 26,
+    "b": 0
+  },
+  {
+    "name": "glue8-a026-b001",
+    "variables": 128,
+    "clauses": 3076,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 26,
+    "b": 1
+  },
+  {
+    "name": "glue8-a027-b000",
+    "variables": 128,
+    "clauses": 3208,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 27,
+    "b": 0
+  },
+  {
+    "name": "glue8-a027-b001",
+    "variables": 128,
+    "clauses": 3208,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 27,
+    "b": 1
+  },
+  {
+    "name": "glue8-a028-b000",
+    "variables": 128,
+    "clauses": 2696,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 28,
+    "b": 0
+  },
+  {
+    "name": "glue8-a028-b001",
+    "variables": 128,
+    "clauses": 2696,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 28,
+    "b": 1
+  },
+  {
+    "name": "glue8-a029-b000",
+    "variables": 128,
+    "clauses": 3360,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 29,
+    "b": 0
+  },
+  {
+    "name": "glue8-a029-b001",
+    "variables": 128,
+    "clauses": 3360,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 29,
+    "b": 1
+  },
+  {
+    "name": "glue8-a030-b000",
+    "variables": 128,
+    "clauses": 3568,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 30,
+    "b": 0
+  },
+  {
+    "name": "glue8-a030-b001",
+    "variables": 128,
+    "clauses": 3568,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 30,
+    "b": 1
+  },
+  {
+    "name": "glue8-a031-b000",
+    "variables": 128,
+    "clauses": 3228,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 31,
+    "b": 0
+  },
+  {
+    "name": "glue8-a031-b001",
+    "variables": 128,
+    "clauses": 3228,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 31,
+    "b": 1
+  },
+  {
+    "name": "glue8-a032-b000",
+    "variables": 128,
+    "clauses": 3400,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 32,
+    "b": 0
+  },
+  {
+    "name": "glue8-a032-b001",
+    "variables": 128,
+    "clauses": 3400,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 32,
+    "b": 1
+  },
+  {
+    "name": "glue8-a033-b000",
+    "variables": 128,
+    "clauses": 3152,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 33,
+    "b": 0
+  },
+  {
+    "name": "glue8-a033-b001",
+    "variables": 128,
+    "clauses": 3152,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 33,
+    "b": 1
+  },
+  {
+    "name": "glue8-a034-b000",
+    "variables": 128,
+    "clauses": 2964,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 34,
+    "b": 0
+  },
+  {
+    "name": "glue8-a034-b001",
+    "variables": 128,
+    "clauses": 2964,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 34,
+    "b": 1
+  },
+  {
+    "name": "glue8-a035-b000",
+    "variables": 128,
+    "clauses": 2828,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 35,
+    "b": 0
+  },
+  {
+    "name": "glue8-a035-b001",
+    "variables": 128,
+    "clauses": 2828,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 35,
+    "b": 1
+  },
+  {
+    "name": "glue8-a036-b000",
+    "variables": 128,
+    "clauses": 2888,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 36,
+    "b": 0
+  },
+  {
+    "name": "glue8-a036-b001",
+    "variables": 128,
+    "clauses": 2888,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 36,
+    "b": 1
+  },
+  {
+    "name": "glue8-a037-b000",
+    "variables": 128,
+    "clauses": 2752,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 37,
+    "b": 0
+  },
+  {
+    "name": "glue8-a037-b001",
+    "variables": 128,
+    "clauses": 2752,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 37,
+    "b": 1
+  },
+  {
+    "name": "glue8-a038-b000",
+    "variables": 128,
+    "clauses": 2944,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 38,
+    "b": 0
+  },
+  {
+    "name": "glue8-a038-b001",
+    "variables": 128,
+    "clauses": 2944,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 38,
+    "b": 1
+  },
+  {
+    "name": "glue8-a039-b000",
+    "variables": 128,
+    "clauses": 2696,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 39,
+    "b": 0
+  },
+  {
+    "name": "glue8-a039-b001",
+    "variables": 128,
+    "clauses": 2696,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 39,
+    "b": 1
+  },
+  {
+    "name": "glue8-a040-b000",
+    "variables": 128,
+    "clauses": 3132,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 40,
+    "b": 0
+  },
+  {
+    "name": "glue8-a040-b001",
+    "variables": 128,
+    "clauses": 3132,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 40,
+    "b": 1
+  },
+  {
+    "name": "glue8-a041-b000",
+    "variables": 128,
+    "clauses": 2944,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 41,
+    "b": 0
+  },
+  {
+    "name": "glue8-a041-b001",
+    "variables": 128,
+    "clauses": 2944,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 41,
+    "b": 1
+  },
+  {
+    "name": "glue8-a042-b000",
+    "variables": 128,
+    "clauses": 2884,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 42,
+    "b": 0
+  },
+  {
+    "name": "glue8-a042-b001",
+    "variables": 128,
+    "clauses": 2884,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 42,
+    "b": 1
+  },
+  {
+    "name": "glue8-a043-b000",
+    "variables": 128,
+    "clauses": 3360,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 43,
+    "b": 0
+  },
+  {
+    "name": "glue8-a043-b001",
+    "variables": 128,
+    "clauses": 3360,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 43,
+    "b": 1
+  },
+  {
+    "name": "glue8-a044-b000",
+    "variables": 128,
+    "clauses": 3268,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 44,
+    "b": 0
+  },
+  {
+    "name": "glue8-a044-b001",
+    "variables": 128,
+    "clauses": 3268,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 44,
+    "b": 1
+  },
+  {
+    "name": "glue8-a045-b000",
+    "variables": 128,
+    "clauses": 3152,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 45,
+    "b": 0
+  },
+  {
+    "name": "glue8-a045-b001",
+    "variables": 128,
+    "clauses": 3152,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 45,
+    "b": 1
+  },
+  {
+    "name": "glue8-a046-b000",
+    "variables": 128,
+    "clauses": 3076,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 46,
+    "b": 0
+  },
+  {
+    "name": "glue8-a046-b001",
+    "variables": 128,
+    "clauses": 3076,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 46,
+    "b": 1
+  },
+  {
+    "name": "glue8-a047-b000",
+    "variables": 128,
+    "clauses": 3208,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 47,
+    "b": 0
+  },
+  {
+    "name": "glue8-a047-b001",
+    "variables": 128,
+    "clauses": 3208,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 47,
+    "b": 1
+  },
+  {
+    "name": "glue8-a048-b000",
+    "variables": 128,
+    "clauses": 3096,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 48,
+    "b": 0
+  },
+  {
+    "name": "glue8-a048-b001",
+    "variables": 128,
+    "clauses": 3096,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 48,
+    "b": 1
+  },
+  {
+    "name": "glue8-a049-b000",
+    "variables": 128,
+    "clauses": 3624,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 49,
+    "b": 0
+  },
+  {
+    "name": "glue8-a049-b001",
+    "variables": 128,
+    "clauses": 3624,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 49,
+    "b": 1
+  },
+  {
+    "name": "glue8-a050-b000",
+    "variables": 128,
+    "clauses": 2776,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 50,
+    "b": 0
+  },
+  {
+    "name": "glue8-a050-b001",
+    "variables": 128,
+    "clauses": 2776,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 50,
+    "b": 1
+  },
+  {
+    "name": "glue8-a051-b000",
+    "variables": 128,
+    "clauses": 2828,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 51,
+    "b": 0
+  },
+  {
+    "name": "glue8-a051-b001",
+    "variables": 128,
+    "clauses": 2828,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 51,
+    "b": 1
+  },
+  {
+    "name": "glue8-a052-b000",
+    "variables": 128,
+    "clauses": 2676,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 52,
+    "b": 0
+  },
+  {
+    "name": "glue8-a052-b001",
+    "variables": 128,
+    "clauses": 2676,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 52,
+    "b": 1
+  },
+  {
+    "name": "glue8-a053-b000",
+    "variables": 128,
+    "clauses": 3116,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 53,
+    "b": 0
+  },
+  {
+    "name": "glue8-a053-b001",
+    "variables": 128,
+    "clauses": 3116,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 53,
+    "b": 1
+  },
+  {
+    "name": "glue8-a054-b000",
+    "variables": 128,
+    "clauses": 3000,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 54,
+    "b": 0
+  },
+  {
+    "name": "glue8-a054-b001",
+    "variables": 128,
+    "clauses": 3000,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 54,
+    "b": 1
+  },
+  {
+    "name": "glue8-a055-b000",
+    "variables": 128,
+    "clauses": 2884,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 55,
+    "b": 0
+  },
+  {
+    "name": "glue8-a055-b001",
+    "variables": 128,
+    "clauses": 2884,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 55,
+    "b": 1
+  },
+  {
+    "name": "glue8-a056-b000",
+    "variables": 128,
+    "clauses": 2620,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 56,
+    "b": 0
+  },
+  {
+    "name": "glue8-a056-b001",
+    "variables": 128,
+    "clauses": 2620,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 56,
+    "b": 1
+  },
+  {
+    "name": "glue8-a057-b000",
+    "variables": 128,
+    "clauses": 2792,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 57,
+    "b": 0
+  },
+  {
+    "name": "glue8-a057-b001",
+    "variables": 128,
+    "clauses": 2792,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 57,
+    "b": 1
+  },
+  {
+    "name": "glue8-a058-b000",
+    "variables": 128,
+    "clauses": 2824,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 58,
+    "b": 0
+  },
+  {
+    "name": "glue8-a058-b001",
+    "variables": 128,
+    "clauses": 2824,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 58,
+    "b": 1
+  },
+  {
+    "name": "glue8-a059-b000",
+    "variables": 128,
+    "clauses": 2832,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 59,
+    "b": 0
+  },
+  {
+    "name": "glue8-a059-b001",
+    "variables": 128,
+    "clauses": 2832,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 59,
+    "b": 1
+  },
+  {
+    "name": "glue8-a060-b000",
+    "variables": 128,
+    "clauses": 2808,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 60,
+    "b": 0
+  },
+  {
+    "name": "glue8-a060-b001",
+    "variables": 128,
+    "clauses": 2808,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 60,
+    "b": 1
+  },
+  {
+    "name": "glue8-a061-b000",
+    "variables": 128,
+    "clauses": 3152,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 61,
+    "b": 0
+  },
+  {
+    "name": "glue8-a061-b001",
+    "variables": 128,
+    "clauses": 3152,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 61,
+    "b": 1
+  },
+  {
+    "name": "glue8-a062-b000",
+    "variables": 128,
+    "clauses": 3360,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 62,
+    "b": 0
+  },
+  {
+    "name": "glue8-a062-b001",
+    "variables": 128,
+    "clauses": 3360,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 62,
+    "b": 1
+  },
+  {
+    "name": "glue8-a063-b000",
+    "variables": 128,
+    "clauses": 3208,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 63,
+    "b": 0
+  },
+  {
+    "name": "glue8-a063-b001",
+    "variables": 128,
+    "clauses": 3208,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 63,
+    "b": 1
+  },
+  {
+    "name": "glue8-a064-b000",
+    "variables": 128,
+    "clauses": 3152,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 64,
+    "b": 0
+  },
+  {
+    "name": "glue8-a064-b001",
+    "variables": 128,
+    "clauses": 3152,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 64,
+    "b": 1
+  },
+  {
+    "name": "glue8-a065-b000",
+    "variables": 128,
+    "clauses": 2752,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 65,
+    "b": 0
+  },
+  {
+    "name": "glue8-a065-b001",
+    "variables": 128,
+    "clauses": 2752,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 65,
+    "b": 1
+  },
+  {
+    "name": "glue8-a066-b000",
+    "variables": 128,
+    "clauses": 3284,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 66,
+    "b": 0
+  },
+  {
+    "name": "glue8-a066-b001",
+    "variables": 128,
+    "clauses": 3284,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 66,
+    "b": 1
+  },
+  {
+    "name": "glue8-a067-b000",
+    "variables": 128,
+    "clauses": 2884,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 67,
+    "b": 0
+  },
+  {
+    "name": "glue8-a067-b001",
+    "variables": 128,
+    "clauses": 2884,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 67,
+    "b": 1
+  },
+  {
+    "name": "glue8-a068-b000",
+    "variables": 128,
+    "clauses": 3192,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 68,
+    "b": 0
+  },
+  {
+    "name": "glue8-a068-b001",
+    "variables": 128,
+    "clauses": 3192,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 68,
+    "b": 1
+  },
+  {
+    "name": "glue8-a069-b000",
+    "variables": 128,
+    "clauses": 2944,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 69,
+    "b": 0
+  },
+  {
+    "name": "glue8-a069-b001",
+    "variables": 128,
+    "clauses": 2944,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 69,
+    "b": 1
+  },
+  {
+    "name": "glue8-a070-b000",
+    "variables": 128,
+    "clauses": 3000,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 70,
+    "b": 0
+  },
+  {
+    "name": "glue8-a070-b001",
+    "variables": 128,
+    "clauses": 3000,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 70,
+    "b": 1
+  },
+  {
+    "name": "glue8-a071-b000",
+    "variables": 128,
+    "clauses": 3324,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 71,
+    "b": 0
+  },
+  {
+    "name": "glue8-a071-b001",
+    "variables": 128,
+    "clauses": 3324,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 71,
+    "b": 1
+  },
+  {
+    "name": "glue8-a072-b000",
+    "variables": 128,
+    "clauses": 3324,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 72,
+    "b": 0
+  },
+  {
+    "name": "glue8-a072-b001",
+    "variables": 128,
+    "clauses": 3324,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 72,
+    "b": 1
+  },
+  {
+    "name": "glue8-a073-b000",
+    "variables": 128,
+    "clauses": 3208,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 73,
+    "b": 0
+  },
+  {
+    "name": "glue8-a073-b001",
+    "variables": 128,
+    "clauses": 3208,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 73,
+    "b": 1
+  },
+  {
+    "name": "glue8-a074-b000",
+    "variables": 128,
+    "clauses": 2944,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 74,
+    "b": 0
+  },
+  {
+    "name": "glue8-a074-b001",
+    "variables": 128,
+    "clauses": 2944,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 74,
+    "b": 1
+  },
+  {
+    "name": "glue8-a075-b000",
+    "variables": 128,
+    "clauses": 3060,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 75,
+    "b": 0
+  },
+  {
+    "name": "glue8-a075-b001",
+    "variables": 128,
+    "clauses": 3060,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 75,
+    "b": 1
+  },
+  {
+    "name": "glue8-a076-b000",
+    "variables": 128,
+    "clauses": 2828,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 76,
+    "b": 0
+  },
+  {
+    "name": "glue8-a076-b001",
+    "variables": 128,
+    "clauses": 2828,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 76,
+    "b": 1
+  },
+  {
+    "name": "glue8-a077-b000",
+    "variables": 128,
+    "clauses": 3076,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 77,
+    "b": 0
+  },
+  {
+    "name": "glue8-a077-b001",
+    "variables": 128,
+    "clauses": 3076,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 77,
+    "b": 1
+  },
+  {
+    "name": "glue8-a078-b000",
+    "variables": 128,
+    "clauses": 3340,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 78,
+    "b": 0
+  },
+  {
+    "name": "glue8-a078-b001",
+    "variables": 128,
+    "clauses": 3340,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 78,
+    "b": 1
+  },
+  {
+    "name": "glue8-a079-b000",
+    "variables": 128,
+    "clauses": 2752,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 79,
+    "b": 0
+  },
+  {
+    "name": "glue8-a079-b001",
+    "variables": 128,
+    "clauses": 2752,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 79,
+    "b": 1
+  },
+  {
+    "name": "glue8-a080-b000",
+    "variables": 128,
+    "clauses": 2696,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 80,
+    "b": 0
+  },
+  {
+    "name": "glue8-a080-b001",
+    "variables": 128,
+    "clauses": 2696,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 80,
+    "b": 1
+  },
+  {
+    "name": "glue8-a081-b000",
+    "variables": 128,
+    "clauses": 2832,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 81,
+    "b": 0
+  },
+  {
+    "name": "glue8-a081-b001",
+    "variables": 128,
+    "clauses": 2832,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 81,
+    "b": 1
+  },
+  {
+    "name": "glue8-a082-b000",
+    "variables": 128,
+    "clauses": 2736,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 82,
+    "b": 0
+  },
+  {
+    "name": "glue8-a082-b001",
+    "variables": 128,
+    "clauses": 2736,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 82,
+    "b": 1
+  },
+  {
+    "name": "glue8-a083-b000",
+    "variables": 128,
+    "clauses": 2676,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 83,
+    "b": 0
+  },
+  {
+    "name": "glue8-a083-b001",
+    "variables": 128,
+    "clauses": 2676,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 83,
+    "b": 1
+  },
+  {
+    "name": "glue8-a084-b000",
+    "variables": 128,
+    "clauses": 2868,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 84,
+    "b": 0
+  },
+  {
+    "name": "glue8-a084-b001",
+    "variables": 128,
+    "clauses": 2868,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 84,
+    "b": 1
+  },
+  {
+    "name": "glue8-a085-b000",
+    "variables": 128,
+    "clauses": 3152,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 85,
+    "b": 0
+  },
+  {
+    "name": "glue8-a085-b001",
+    "variables": 128,
+    "clauses": 3152,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 85,
+    "b": 1
+  },
+  {
+    "name": "glue8-a086-b000",
+    "variables": 128,
+    "clauses": 3192,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 86,
+    "b": 0
+  },
+  {
+    "name": "glue8-a086-b001",
+    "variables": 128,
+    "clauses": 3192,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 86,
+    "b": 1
+  },
+  {
+    "name": "glue8-a087-b000",
+    "variables": 128,
+    "clauses": 2696,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 87,
+    "b": 0
+  },
+  {
+    "name": "glue8-a087-b001",
+    "variables": 128,
+    "clauses": 2696,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 87,
+    "b": 1
+  },
+  {
+    "name": "glue8-a088-b000",
+    "variables": 128,
+    "clauses": 2692,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 88,
+    "b": 0
+  },
+  {
+    "name": "glue8-a088-b001",
+    "variables": 128,
+    "clauses": 2692,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 88,
+    "b": 1
+  },
+  {
+    "name": "glue8-a089-b000",
+    "variables": 128,
+    "clauses": 2700,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 89,
+    "b": 0
+  },
+  {
+    "name": "glue8-a089-b001",
+    "variables": 128,
+    "clauses": 2700,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 89,
+    "b": 1
+  },
+  {
+    "name": "glue8-a090-b000",
+    "variables": 128,
+    "clauses": 2660,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 90,
+    "b": 0
+  },
+  {
+    "name": "glue8-a090-b001",
+    "variables": 128,
+    "clauses": 2660,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 90,
+    "b": 1
+  },
+  {
+    "name": "glue8-a091-b000",
+    "variables": 128,
+    "clauses": 3076,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 91,
+    "b": 0
+  },
+  {
+    "name": "glue8-a091-b001",
+    "variables": 128,
+    "clauses": 3076,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 91,
+    "b": 1
+  },
+  {
+    "name": "glue8-a092-b000",
+    "variables": 128,
+    "clauses": 3020,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 92,
+    "b": 0
+  },
+  {
+    "name": "glue8-a092-b001",
+    "variables": 128,
+    "clauses": 3020,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 92,
+    "b": 1
+  },
+  {
+    "name": "glue8-a093-b000",
+    "variables": 128,
+    "clauses": 2752,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 93,
+    "b": 0
+  },
+  {
+    "name": "glue8-a093-b001",
+    "variables": 128,
+    "clauses": 2752,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 93,
+    "b": 1
+  },
+  {
+    "name": "glue8-a094-b000",
+    "variables": 128,
+    "clauses": 2756,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 94,
+    "b": 0
+  },
+  {
+    "name": "glue8-a094-b001",
+    "variables": 128,
+    "clauses": 2756,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 94,
+    "b": 1
+  },
+  {
+    "name": "glue8-a095-b000",
+    "variables": 128,
+    "clauses": 3000,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 95,
+    "b": 0
+  },
+  {
+    "name": "glue8-a095-b001",
+    "variables": 128,
+    "clauses": 3000,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 95,
+    "b": 1
+  },
+  {
+    "name": "glue8-a096-b000",
+    "variables": 128,
+    "clauses": 2868,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 96,
+    "b": 0
+  },
+  {
+    "name": "glue8-a096-b001",
+    "variables": 128,
+    "clauses": 2868,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 96,
+    "b": 1
+  },
+  {
+    "name": "glue8-a097-b000",
+    "variables": 128,
+    "clauses": 2888,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 97,
+    "b": 0
+  },
+  {
+    "name": "glue8-a097-b001",
+    "variables": 128,
+    "clauses": 2888,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 97,
+    "b": 1
+  },
+  {
+    "name": "glue8-a098-b000",
+    "variables": 128,
+    "clauses": 2868,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 98,
+    "b": 0
+  },
+  {
+    "name": "glue8-a098-b001",
+    "variables": 128,
+    "clauses": 2868,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 98,
+    "b": 1
+  },
+  {
+    "name": "glue8-a099-b000",
+    "variables": 128,
+    "clauses": 2884,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 99,
+    "b": 0
+  },
+  {
+    "name": "glue8-a099-b001",
+    "variables": 128,
+    "clauses": 2884,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 99,
+    "b": 1
+  },
+  {
+    "name": "glue8-a100-b000",
+    "variables": 128,
+    "clauses": 2868,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 100,
+    "b": 0
+  },
+  {
+    "name": "glue8-a100-b001",
+    "variables": 128,
+    "clauses": 2868,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 100,
+    "b": 1
+  },
+  {
+    "name": "glue8-a101-b000",
+    "variables": 128,
+    "clauses": 2644,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 101,
+    "b": 0
+  },
+  {
+    "name": "glue8-a101-b001",
+    "variables": 128,
+    "clauses": 2644,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 101,
+    "b": 1
+  },
+  {
+    "name": "glue8-a102-b000",
+    "variables": 128,
+    "clauses": 2884,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 102,
+    "b": 0
+  },
+  {
+    "name": "glue8-a102-b001",
+    "variables": 128,
+    "clauses": 2884,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 102,
+    "b": 1
+  },
+  {
+    "name": "glue8-a103-b000",
+    "variables": 128,
+    "clauses": 3700,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 103,
+    "b": 0
+  },
+  {
+    "name": "glue8-a103-b001",
+    "variables": 128,
+    "clauses": 3700,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 103,
+    "b": 1
+  },
+  {
+    "name": "glue8-a104-b000",
+    "variables": 128,
+    "clauses": 3492,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 104,
+    "b": 0
+  },
+  {
+    "name": "glue8-a104-b001",
+    "variables": 128,
+    "clauses": 3492,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 104,
+    "b": 1
+  },
+  {
+    "name": "glue8-a105-b000",
+    "variables": 128,
+    "clauses": 3400,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 105,
+    "b": 0
+  },
+  {
+    "name": "glue8-a105-b001",
+    "variables": 128,
+    "clauses": 3400,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 105,
+    "b": 1
+  },
+  {
+    "name": "glue8-a106-b000",
+    "variables": 128,
+    "clauses": 3284,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 106,
+    "b": 0
+  },
+  {
+    "name": "glue8-a106-b001",
+    "variables": 128,
+    "clauses": 3284,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 106,
+    "b": 1
+  },
+  {
+    "name": "glue8-a107-b000",
+    "variables": 128,
+    "clauses": 3152,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 107,
+    "b": 0
+  },
+  {
+    "name": "glue8-a107-b001",
+    "variables": 128,
+    "clauses": 3152,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 107,
+    "b": 1
+  },
+  {
+    "name": "glue8-a108-b000",
+    "variables": 128,
+    "clauses": 2812,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 108,
+    "b": 0
+  },
+  {
+    "name": "glue8-a108-b001",
+    "variables": 128,
+    "clauses": 2812,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 108,
+    "b": 1
+  },
+  {
+    "name": "glue8-a109-b000",
+    "variables": 128,
+    "clauses": 3400,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 109,
+    "b": 0
+  },
+  {
+    "name": "glue8-a109-b001",
+    "variables": 128,
+    "clauses": 3400,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 109,
+    "b": 1
+  },
+  {
+    "name": "glue8-a110-b000",
+    "variables": 128,
+    "clauses": 3284,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 110,
+    "b": 0
+  },
+  {
+    "name": "glue8-a110-b001",
+    "variables": 128,
+    "clauses": 3284,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 110,
+    "b": 1
+  },
+  {
+    "name": "glue8-a111-b000",
+    "variables": 128,
+    "clauses": 3020,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 111,
+    "b": 0
+  },
+  {
+    "name": "glue8-a111-b001",
+    "variables": 128,
+    "clauses": 3020,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 111,
+    "b": 1
+  },
+  {
+    "name": "glue8-a112-b000",
+    "variables": 128,
+    "clauses": 3016,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 112,
+    "b": 0
+  },
+  {
+    "name": "glue8-a112-b001",
+    "variables": 128,
+    "clauses": 3016,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 112,
+    "b": 1
+  },
+  {
+    "name": "glue8-a113-b000",
+    "variables": 128,
+    "clauses": 3284,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 113,
+    "b": 0
+  },
+  {
+    "name": "glue8-a113-b001",
+    "variables": 128,
+    "clauses": 3284,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 113,
+    "b": 1
+  },
+  {
+    "name": "glue8-a114-b000",
+    "variables": 128,
+    "clauses": 3700,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 114,
+    "b": 0
+  },
+  {
+    "name": "glue8-a114-b001",
+    "variables": 128,
+    "clauses": 3700,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 114,
+    "b": 1
+  },
+  {
+    "name": "glue8-a115-b000",
+    "variables": 128,
+    "clauses": 2944,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 115,
+    "b": 0
+  },
+  {
+    "name": "glue8-a115-b001",
+    "variables": 128,
+    "clauses": 2944,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 115,
+    "b": 1
+  },
+  {
+    "name": "glue8-a116-b000",
+    "variables": 128,
+    "clauses": 2984,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 116,
+    "b": 0
+  },
+  {
+    "name": "glue8-a116-b001",
+    "variables": 128,
+    "clauses": 2984,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 116,
+    "b": 1
+  },
+  {
+    "name": "glue8-a117-b000",
+    "variables": 128,
+    "clauses": 3416,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 117,
+    "b": 0
+  },
+  {
+    "name": "glue8-a117-b001",
+    "variables": 128,
+    "clauses": 3416,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 117,
+    "b": 1
+  },
+  {
+    "name": "glue8-a118-b000",
+    "variables": 128,
+    "clauses": 3284,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 118,
+    "b": 0
+  },
+  {
+    "name": "glue8-a118-b001",
+    "variables": 128,
+    "clauses": 3284,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 118,
+    "b": 1
+  },
+  {
+    "name": "glue8-a119-b000",
+    "variables": 128,
+    "clauses": 3000,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 119,
+    "b": 0
+  },
+  {
+    "name": "glue8-a119-b001",
+    "variables": 128,
+    "clauses": 3000,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 119,
+    "b": 1
+  },
+  {
+    "name": "glue8-a120-b000",
+    "variables": 128,
+    "clauses": 3020,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 120,
+    "b": 0
+  },
+  {
+    "name": "glue8-a120-b001",
+    "variables": 128,
+    "clauses": 3020,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 120,
+    "b": 1
+  },
+  {
+    "name": "glue8-a121-b000",
+    "variables": 128,
+    "clauses": 2868,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 121,
+    "b": 0
+  },
+  {
+    "name": "glue8-a121-b001",
+    "variables": 128,
+    "clauses": 2868,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 121,
+    "b": 1
+  },
+  {
+    "name": "glue8-a122-b000",
+    "variables": 128,
+    "clauses": 2828,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 122,
+    "b": 0
+  },
+  {
+    "name": "glue8-a122-b001",
+    "variables": 128,
+    "clauses": 2828,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 122,
+    "b": 1
+  },
+  {
+    "name": "glue8-a123-b000",
+    "variables": 128,
+    "clauses": 2752,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 123,
+    "b": 0
+  },
+  {
+    "name": "glue8-a123-b001",
+    "variables": 128,
+    "clauses": 2752,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 123,
+    "b": 1
+  },
+  {
+    "name": "glue8-a124-b000",
+    "variables": 128,
+    "clauses": 2944,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 124,
+    "b": 0
+  },
+  {
+    "name": "glue8-a124-b001",
+    "variables": 128,
+    "clauses": 2944,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 124,
+    "b": 1
+  },
+  {
+    "name": "glue8-a125-b000",
+    "variables": 128,
+    "clauses": 2940,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 125,
+    "b": 0
+  },
+  {
+    "name": "glue8-a125-b001",
+    "variables": 128,
+    "clauses": 2940,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 125,
+    "b": 1
+  },
+  {
+    "name": "glue8-a126-b000",
+    "variables": 128,
+    "clauses": 2908,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 126,
+    "b": 0
+  },
+  {
+    "name": "glue8-a126-b001",
+    "variables": 128,
+    "clauses": 2908,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 126,
+    "b": 1
+  },
+  {
+    "name": "glue8-a127-b000",
+    "variables": 128,
+    "clauses": 2696,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 127,
+    "b": 0
+  },
+  {
+    "name": "glue8-a127-b001",
+    "variables": 128,
+    "clauses": 2696,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 127,
+    "b": 1
+  },
+  {
+    "name": "glue8-a128-b000",
+    "variables": 128,
+    "clauses": 2588,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 128,
+    "b": 0
+  },
+  {
+    "name": "glue8-a128-b001",
+    "variables": 128,
+    "clauses": 2588,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 128,
+    "b": 1
+  },
+  {
+    "name": "glue8-a129-b000",
+    "variables": 128,
+    "clauses": 3492,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 129,
+    "b": 0
+  },
+  {
+    "name": "glue8-a129-b001",
+    "variables": 128,
+    "clauses": 3492,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 129,
+    "b": 1
+  },
+  {
+    "name": "glue8-a130-b000",
+    "variables": 128,
+    "clauses": 2828,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 130,
+    "b": 0
+  },
+  {
+    "name": "glue8-a130-b001",
+    "variables": 128,
+    "clauses": 2828,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 130,
+    "b": 1
+  },
+  {
+    "name": "glue8-a131-b000",
+    "variables": 128,
+    "clauses": 3000,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 131,
+    "b": 0
+  },
+  {
+    "name": "glue8-a131-b001",
+    "variables": 128,
+    "clauses": 3000,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 131,
+    "b": 1
+  },
+  {
+    "name": "glue8-a132-b000",
+    "variables": 128,
+    "clauses": 2640,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 132,
+    "b": 0
+  },
+  {
+    "name": "glue8-a132-b001",
+    "variables": 128,
+    "clauses": 2640,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 132,
+    "b": 1
+  },
+  {
+    "name": "glue8-a133-b000",
+    "variables": 128,
+    "clauses": 2812,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 133,
+    "b": 0
+  },
+  {
+    "name": "glue8-a133-b001",
+    "variables": 128,
+    "clauses": 2812,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 133,
+    "b": 1
+  },
+  {
+    "name": "glue8-a134-b000",
+    "variables": 128,
+    "clauses": 2812,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 134,
+    "b": 0
+  },
+  {
+    "name": "glue8-a134-b001",
+    "variables": 128,
+    "clauses": 2812,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 134,
+    "b": 1
+  },
+  {
+    "name": "glue8-a135-b000",
+    "variables": 128,
+    "clauses": 3000,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 135,
+    "b": 0
+  },
+  {
+    "name": "glue8-a135-b001",
+    "variables": 128,
+    "clauses": 3000,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 135,
+    "b": 1
+  },
+  {
+    "name": "glue8-a136-b000",
+    "variables": 128,
+    "clauses": 3608,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 136,
+    "b": 0
+  },
+  {
+    "name": "glue8-a136-b001",
+    "variables": 128,
+    "clauses": 3608,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 136,
+    "b": 1
+  },
+  {
+    "name": "glue8-a137-b000",
+    "variables": 128,
+    "clauses": 3116,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 137,
+    "b": 0
+  },
+  {
+    "name": "glue8-a137-b001",
+    "variables": 128,
+    "clauses": 3116,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 137,
+    "b": 1
+  },
+  {
+    "name": "glue8-a138-b000",
+    "variables": 128,
+    "clauses": 3060,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 138,
+    "b": 0
+  },
+  {
+    "name": "glue8-a138-b001",
+    "variables": 128,
+    "clauses": 3060,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 138,
+    "b": 1
+  },
+  {
+    "name": "glue8-a139-b000",
+    "variables": 128,
+    "clauses": 2924,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 139,
+    "b": 0
+  },
+  {
+    "name": "glue8-a139-b001",
+    "variables": 128,
+    "clauses": 2924,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 139,
+    "b": 1
+  },
+  {
+    "name": "glue8-a140-b000",
+    "variables": 128,
+    "clauses": 2928,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 140,
+    "b": 0
+  },
+  {
+    "name": "glue8-a140-b001",
+    "variables": 128,
+    "clauses": 2928,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 140,
+    "b": 1
+  },
+  {
+    "name": "glue8-a141-b000",
+    "variables": 128,
+    "clauses": 3076,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 141,
+    "b": 0
+  },
+  {
+    "name": "glue8-a141-b001",
+    "variables": 128,
+    "clauses": 3076,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 141,
+    "b": 1
+  },
+  {
+    "name": "glue8-a142-b000",
+    "variables": 128,
+    "clauses": 2808,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 142,
+    "b": 0
+  },
+  {
+    "name": "glue8-a142-b001",
+    "variables": 128,
+    "clauses": 2808,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 142,
+    "b": 1
+  },
+  {
+    "name": "glue8-a143-b000",
+    "variables": 128,
+    "clauses": 2692,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 143,
+    "b": 0
+  },
+  {
+    "name": "glue8-a143-b001",
+    "variables": 128,
+    "clauses": 2692,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 143,
+    "b": 1
+  },
+  {
+    "name": "glue8-a144-b000",
+    "variables": 128,
+    "clauses": 2696,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 144,
+    "b": 0
+  },
+  {
+    "name": "glue8-a144-b001",
+    "variables": 128,
+    "clauses": 2696,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 144,
+    "b": 1
+  },
+  {
+    "name": "glue8-a145-b000",
+    "variables": 128,
+    "clauses": 2792,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 145,
+    "b": 0
+  },
+  {
+    "name": "glue8-a145-b001",
+    "variables": 128,
+    "clauses": 2792,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 145,
+    "b": 1
+  },
+  {
+    "name": "glue8-a146-b000",
+    "variables": 128,
+    "clauses": 2808,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 146,
+    "b": 0
+  },
+  {
+    "name": "glue8-a146-b001",
+    "variables": 128,
+    "clauses": 2808,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 146,
+    "b": 1
+  },
+  {
+    "name": "glue8-a147-b000",
+    "variables": 128,
+    "clauses": 2808,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 147,
+    "b": 0
+  },
+  {
+    "name": "glue8-a147-b001",
+    "variables": 128,
+    "clauses": 2808,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 147,
+    "b": 1
+  },
+  {
+    "name": "glue8-a148-b000",
+    "variables": 128,
+    "clauses": 3908,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 148,
+    "b": 0
+  },
+  {
+    "name": "glue8-a148-b001",
+    "variables": 128,
+    "clauses": 3908,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 148,
+    "b": 1
+  },
+  {
+    "name": "glue8-a149-b000",
+    "variables": 128,
+    "clauses": 3192,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 149,
+    "b": 0
+  },
+  {
+    "name": "glue8-a149-b001",
+    "variables": 128,
+    "clauses": 3192,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 149,
+    "b": 1
+  },
+  {
+    "name": "glue8-a150-b000",
+    "variables": 128,
+    "clauses": 2960,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 150,
+    "b": 0
+  },
+  {
+    "name": "glue8-a150-b001",
+    "variables": 128,
+    "clauses": 2960,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 150,
+    "b": 1
+  },
+  {
+    "name": "glue8-a151-b000",
+    "variables": 128,
+    "clauses": 4208,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 151,
+    "b": 0
+  },
+  {
+    "name": "glue8-a151-b001",
+    "variables": 128,
+    "clauses": 4208,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 151,
+    "b": 1
+  },
+  {
+    "name": "glue8-a152-b000",
+    "variables": 128,
+    "clauses": 3608,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 152,
+    "b": 0
+  },
+  {
+    "name": "glue8-a152-b001",
+    "variables": 128,
+    "clauses": 3608,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 152,
+    "b": 1
+  },
+  {
+    "name": "glue8-a153-b000",
+    "variables": 128,
+    "clauses": 3192,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 153,
+    "b": 0
+  },
+  {
+    "name": "glue8-a153-b001",
+    "variables": 128,
+    "clauses": 3192,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 153,
+    "b": 1
+  },
+  {
+    "name": "glue8-a154-b000",
+    "variables": 128,
+    "clauses": 2984,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 154,
+    "b": 0
+  },
+  {
+    "name": "glue8-a154-b001",
+    "variables": 128,
+    "clauses": 2984,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 154,
+    "b": 1
+  },
+  {
+    "name": "glue8-a155-b000",
+    "variables": 128,
+    "clauses": 3308,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 155,
+    "b": 0
+  },
+  {
+    "name": "glue8-a155-b001",
+    "variables": 128,
+    "clauses": 3308,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 155,
+    "b": 1
+  },
+  {
+    "name": "glue8-a156-b000",
+    "variables": 128,
+    "clauses": 2960,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 156,
+    "b": 0
+  },
+  {
+    "name": "glue8-a156-b001",
+    "variables": 128,
+    "clauses": 2960,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 156,
+    "b": 1
+  },
+  {
+    "name": "glue8-a157-b000",
+    "variables": 128,
+    "clauses": 2772,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 157,
+    "b": 0
+  },
+  {
+    "name": "glue8-a157-b001",
+    "variables": 128,
+    "clauses": 2772,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 157,
+    "b": 1
+  },
+  {
+    "name": "glue8-a158-b000",
+    "variables": 128,
+    "clauses": 2696,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 158,
+    "b": 0
+  },
+  {
+    "name": "glue8-a158-b001",
+    "variables": 128,
+    "clauses": 2696,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 158,
+    "b": 1
+  },
+  {
+    "name": "glue8-a159-b000",
+    "variables": 128,
+    "clauses": 2884,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 159,
+    "b": 0
+  },
+  {
+    "name": "glue8-a159-b001",
+    "variables": 128,
+    "clauses": 2884,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 159,
+    "b": 1
+  },
+  {
+    "name": "glue8-a160-b000",
+    "variables": 128,
+    "clauses": 2752,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 160,
+    "b": 0
+  },
+  {
+    "name": "glue8-a160-b001",
+    "variables": 128,
+    "clauses": 2752,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 160,
+    "b": 1
+  },
+  {
+    "name": "glue8-a161-b000",
+    "variables": 128,
+    "clauses": 2640,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 161,
+    "b": 0
+  },
+  {
+    "name": "glue8-a161-b001",
+    "variables": 128,
+    "clauses": 2640,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 161,
+    "b": 1
+  },
+  {
+    "name": "glue8-a162-b000",
+    "variables": 128,
+    "clauses": 2808,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 162,
+    "b": 0
+  },
+  {
+    "name": "glue8-a162-b001",
+    "variables": 128,
+    "clauses": 2808,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 162,
+    "b": 1
+  },
+  {
+    "name": "glue8-a163-b000",
+    "variables": 128,
+    "clauses": 2776,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 163,
+    "b": 0
+  },
+  {
+    "name": "glue8-a163-b001",
+    "variables": 128,
+    "clauses": 2776,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 163,
+    "b": 1
+  },
+  {
+    "name": "glue8-a164-b000",
+    "variables": 128,
+    "clauses": 2924,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 164,
+    "b": 0
+  },
+  {
+    "name": "glue8-a164-b001",
+    "variables": 128,
+    "clauses": 2924,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 164,
+    "b": 1
+  },
+  {
+    "name": "glue8-a165-b000",
+    "variables": 128,
+    "clauses": 2584,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 165,
+    "b": 0
+  },
+  {
+    "name": "glue8-a165-b001",
+    "variables": 128,
+    "clauses": 2584,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 165,
+    "b": 1
+  },
+  {
+    "name": "glue8-a166-b000",
+    "variables": 128,
+    "clauses": 3016,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 166,
+    "b": 0
+  },
+  {
+    "name": "glue8-a166-b001",
+    "variables": 128,
+    "clauses": 3016,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 166,
+    "b": 1
+  },
+  {
+    "name": "glue8-a167-b000",
+    "variables": 128,
+    "clauses": 2752,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 167,
+    "b": 0
+  },
+  {
+    "name": "glue8-a167-b001",
+    "variables": 128,
+    "clauses": 2752,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 167,
+    "b": 1
+  },
+  {
+    "name": "glue8-a168-b000",
+    "variables": 128,
+    "clauses": 2636,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 168,
+    "b": 0
+  },
+  {
+    "name": "glue8-a168-b001",
+    "variables": 128,
+    "clauses": 2636,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 168,
+    "b": 1
+  },
+  {
+    "name": "glue8-a169-b000",
+    "variables": 128,
+    "clauses": 2924,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 169,
+    "b": 0
+  },
+  {
+    "name": "glue8-a169-b001",
+    "variables": 128,
+    "clauses": 2924,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 169,
+    "b": 1
+  },
+  {
+    "name": "glue8-a170-b000",
+    "variables": 128,
+    "clauses": 3072,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 170,
+    "b": 0
+  },
+  {
+    "name": "glue8-a170-b001",
+    "variables": 128,
+    "clauses": 3072,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 170,
+    "b": 1
+  },
+  {
+    "name": "glue8-a171-b000",
+    "variables": 128,
+    "clauses": 3040,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 171,
+    "b": 0
+  },
+  {
+    "name": "glue8-a171-b001",
+    "variables": 128,
+    "clauses": 3040,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 171,
+    "b": 1
+  },
+  {
+    "name": "glue8-a172-b000",
+    "variables": 128,
+    "clauses": 2808,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 172,
+    "b": 0
+  },
+  {
+    "name": "glue8-a172-b001",
+    "variables": 128,
+    "clauses": 2808,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 172,
+    "b": 1
+  },
+  {
+    "name": "glue8-a173-b000",
+    "variables": 128,
+    "clauses": 2580,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 173,
+    "b": 0
+  },
+  {
+    "name": "glue8-a173-b001",
+    "variables": 128,
+    "clauses": 2580,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 173,
+    "b": 1
+  },
+  {
+    "name": "glue8-a174-b000",
+    "variables": 128,
+    "clauses": 2940,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 174,
+    "b": 0
+  },
+  {
+    "name": "glue8-a174-b001",
+    "variables": 128,
+    "clauses": 2940,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 174,
+    "b": 1
+  },
+  {
+    "name": "glue8-a175-b000",
+    "variables": 128,
+    "clauses": 2576,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 175,
+    "b": 0
+  },
+  {
+    "name": "glue8-a175-b001",
+    "variables": 128,
+    "clauses": 2576,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 175,
+    "b": 1
+  },
+  {
+    "name": "glue8-a176-b000",
+    "variables": 128,
+    "clauses": 2544,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 176,
+    "b": 0
+  },
+  {
+    "name": "glue8-a176-b001",
+    "variables": 128,
+    "clauses": 2544,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 176,
+    "b": 1
+  },
+  {
+    "name": "glue8-a177-b000",
+    "variables": 128,
+    "clauses": 2564,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 177,
+    "b": 0
+  },
+  {
+    "name": "glue8-a177-b001",
+    "variables": 128,
+    "clauses": 2564,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 177,
+    "b": 1
+  },
+  {
+    "name": "glue8-a178-b000",
+    "variables": 128,
+    "clauses": 2592,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 178,
+    "b": 0
+  },
+  {
+    "name": "glue8-a178-b001",
+    "variables": 128,
+    "clauses": 2592,
+    "blocked_assignments": 0,
+    "suite": "degree8",
+    "degree": 8,
+    "a": 178,
+    "b": 1
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "tests": [
+    "valid_unit_conflict",
+    "valid_resolution_chain",
+    "duplicate_id",
+    "valid_unit_but_missing_empty",
+    "nonunit_hint",
+    "missing_conflict",
+    "unknown_hint",
+    "forward_reference",
+    "out_of_range_literal",
+    "empty_proof",
+    "unsupported_rat",
+    "truncated_hints",
+    "header_count",
+    "forged_empty_without_hints",
+    "valid_coverage_encoding",
+    "reject_altered_cnf_literal",
+    "reject_nonbijective_isomorphism"
+  ],
+  "count": 17
+}

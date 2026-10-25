@@ -24,6 +24,17 @@ python3 research/r4-5/verify_lower24.py
 
 This is a concrete, independently reproducible finite witness, distinct from Stage 4's 23-vertex/114-edge witness. Its generation was a local search among cyclic distance sets; the verifier enumerates *all vertex subsets* of the chosen graph without relying on that search.
 
-It is an independently checked calculation in this work session, **not yet a second-reviewer ACCEPTED claim**. It does not give the upper bound R(4,5) ≤ 25.
+This finite calculation has also been rechecked by a separate C++ implementation,
+as recorded below. These mathematical checks do not give the upper bound
+R(4,5) ≤ 25 and do not use workflow-benchmark acceptance labels.
 
 No Stage 4 experimental counter, checkpoint, or prior claim is modified.
+
+## Independent recheck (2026-10-25)
+
+[lower24.cpp](independent/src/lower24.cpp) constructs adjacency by undirected
+offset insertion and enumerates fixed-popcount integer masks, without using
+this Python verifier. The [saved result](independent/results/lower24.json)
+confirms all 10,626 four-subsets and 42,504 five-subsets were inspected, with
+zero forbidden sets. This closes the second-implementation computational check;
+it does not supply the upper bound. See [the audit](independent/PROOF.md).

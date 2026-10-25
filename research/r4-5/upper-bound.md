@@ -17,7 +17,7 @@ Assume for contradiction there is a 25-vertex graph F with neither K4 nor an ind
 Then:
 - A cannot contain a triangle (it would form a K4 together with v), and A cannot contain an independent 5-set (it would also be one in F): A is a (3,5,d)-graph.
 - B cannot contain a K4 (it would be one in F), nor an independent 4-set (together with v it would form an independent 5-set): B is a (4,4,24-d)-graph.
-- The accepted values R(3,5)=14 and R(4,4)=18 imply d ≤ 13 and 24-d ≤ 17, respectively, so **7 ≤ d ≤ 13**.
+- The bounds R(3,5)≤14 and R(4,4)≤18 imply d ≤ 13 and 24-d ≤ 17, respectively, so **7 ≤ d ≤ 13**. Their elementary derivations, including R(3,4)≤9 by parity, are now written out in [the independent audit](independent/PROOF.md); no exact smaller Ramsey values need be assumed.
 - In every finite graph the number of odd-degree vertices is even (handshaking lemma). Because F has 25 vertices, at least one vertex has even degree. At that vertex, the allowed range 7..13 gives exactly **d∈{8,10,12}**.
 
 Therefore, to establish R(4,5) ≤ 25 it is sufficient to exclude all compatible gluings for these three degree cases.
@@ -37,7 +37,12 @@ A complete upper-bound proof requires an exhaustive and independently checkable 
 
 ## 3. Concrete next research task
 
-1. Start with d=8. The 1995 enumeration and the 2024 formal proof report 179 nonisomorphic (3,5,8)-graphs and 2 nonisomorphic (4,4,16)-graphs. Verify the census/canonicalization rather than blindly trust its completeness, then check all 358 representative gluings using a SAT solver and a checkable proof format.
+The [independent checkpoint](independent/README.md) now verifies completeness
+of both degree-8 candidate lists and all **358/358 gluing refutations**.
+Thus degree 8 is closed. Consult its ledger before continuing; degrees 10
+and 12 are still unresolved.
+
+1. **Completed for d=8.** The 179 nonisomorphic (3,5,8)-graphs and 2 nonisomorphic (4,4,16)-graphs now have independently verified complete coverage, and all 358 representative gluings have checked LRAT refutations. See [the proof](independent/PROOF.md) and [the case ledger](independent/CHECKPOINT.json).
 2. Develop graph-generalization covers and reliable isomorphism witnesses for d=10 and d=12; naive pair products are enormous. The original result uses exhaustive gluing; the later formalization relies on SAT and HOL4.
 3. For every excluded pair, preserve a machine-checkable UNSAT proof (or formally check the inference in a theorem prover). Independently audit the exhaustiveness of all covers, not merely individual SAT outputs.
 4. Only after all three d-cases are closed, combine with [the 24-vertex witness](lower-bound.md) and mark R(4,5)=25 independently proved by this project.

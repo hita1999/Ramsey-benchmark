@@ -1,0 +1,8 @@
+{
+  "invariant": "nonadjacent degree-7 pairs with exactly two common neighbors",
+  "values": [
+    0,
+    8
+  ],
+  "nonisomorphic": true
+}

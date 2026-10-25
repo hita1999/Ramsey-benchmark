@@ -1,0 +1,542 @@
+[
+  {
+    "name": "cover16-d7-a000-b000",
+    "variables": 56,
+    "clauses": 395,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 0,
+    "b": 0
+  },
+  {
+    "name": "cover16-d7-a000-b001",
+    "variables": 56,
+    "clauses": 406,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 0,
+    "b": 1
+  },
+  {
+    "name": "cover16-d7-a000-b002",
+    "variables": 56,
+    "clauses": 416,
+    "blocked_assignments": 32,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 0,
+    "b": 2
+  },
+  {
+    "name": "cover16-d7-a001-b000",
+    "variables": 56,
+    "clauses": 405,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 1,
+    "b": 0
+  },
+  {
+    "name": "cover16-d7-a001-b001",
+    "variables": 56,
+    "clauses": 414,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 1,
+    "b": 1
+  },
+  {
+    "name": "cover16-d7-a001-b002",
+    "variables": 56,
+    "clauses": 396,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 1,
+    "b": 2
+  },
+  {
+    "name": "cover16-d7-a002-b000",
+    "variables": 56,
+    "clauses": 395,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 2,
+    "b": 0
+  },
+  {
+    "name": "cover16-d7-a002-b001",
+    "variables": 56,
+    "clauses": 406,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 2,
+    "b": 1
+  },
+  {
+    "name": "cover16-d7-a002-b002",
+    "variables": 56,
+    "clauses": 384,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 2,
+    "b": 2
+  },
+  {
+    "name": "cover16-d7-a003-b000",
+    "variables": 56,
+    "clauses": 407,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 3,
+    "b": 0
+  },
+  {
+    "name": "cover16-d7-a003-b001",
+    "variables": 56,
+    "clauses": 414,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 3,
+    "b": 1
+  },
+  {
+    "name": "cover16-d7-a003-b002",
+    "variables": 56,
+    "clauses": 400,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 3,
+    "b": 2
+  },
+  {
+    "name": "cover16-d7-a004-b000",
+    "variables": 56,
+    "clauses": 397,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 4,
+    "b": 0
+  },
+  {
+    "name": "cover16-d7-a004-b001",
+    "variables": 56,
+    "clauses": 406,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 4,
+    "b": 1
+  },
+  {
+    "name": "cover16-d7-a004-b002",
+    "variables": 56,
+    "clauses": 388,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 4,
+    "b": 2
+  },
+  {
+    "name": "cover16-d7-a005-b000",
+    "variables": 56,
+    "clauses": 417,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 5,
+    "b": 0
+  },
+  {
+    "name": "cover16-d7-a005-b001",
+    "variables": 56,
+    "clauses": 422,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 5,
+    "b": 1
+  },
+  {
+    "name": "cover16-d7-a005-b002",
+    "variables": 56,
+    "clauses": 412,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 5,
+    "b": 2
+  },
+  {
+    "name": "cover16-d7-a006-b000",
+    "variables": 56,
+    "clauses": 399,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 6,
+    "b": 0
+  },
+  {
+    "name": "cover16-d7-a006-b001",
+    "variables": 56,
+    "clauses": 406,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 6,
+    "b": 1
+  },
+  {
+    "name": "cover16-d7-a006-b002",
+    "variables": 56,
+    "clauses": 392,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 6,
+    "b": 2
+  },
+  {
+    "name": "cover16-d7-a007-b000",
+    "variables": 56,
+    "clauses": 397,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 7,
+    "b": 0
+  },
+  {
+    "name": "cover16-d7-a007-b001",
+    "variables": 56,
+    "clauses": 406,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 7,
+    "b": 1
+  },
+  {
+    "name": "cover16-d7-a007-b002",
+    "variables": 56,
+    "clauses": 388,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 7,
+    "b": 2
+  },
+  {
+    "name": "cover16-d7-a008-b000",
+    "variables": 56,
+    "clauses": 425,
+    "blocked_assignments": 32,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 8,
+    "b": 0
+  },
+  {
+    "name": "cover16-d7-a008-b001",
+    "variables": 56,
+    "clauses": 406,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 8,
+    "b": 1
+  },
+  {
+    "name": "cover16-d7-a008-b002",
+    "variables": 56,
+    "clauses": 380,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 7,
+    "a": 8,
+    "b": 2
+  },
+  {
+    "name": "cover16-d8-a000-b000",
+    "variables": 56,
+    "clauses": 395,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 0,
+    "b": 0
+  },
+  {
+    "name": "cover16-d8-a000-b001",
+    "variables": 56,
+    "clauses": 405,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 0,
+    "b": 1
+  },
+  {
+    "name": "cover16-d8-a000-b002",
+    "variables": 56,
+    "clauses": 395,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 0,
+    "b": 2
+  },
+  {
+    "name": "cover16-d8-a000-b003",
+    "variables": 56,
+    "clauses": 407,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 0,
+    "b": 3
+  },
+  {
+    "name": "cover16-d8-a000-b004",
+    "variables": 56,
+    "clauses": 397,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 0,
+    "b": 4
+  },
+  {
+    "name": "cover16-d8-a000-b005",
+    "variables": 56,
+    "clauses": 417,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 0,
+    "b": 5
+  },
+  {
+    "name": "cover16-d8-a000-b006",
+    "variables": 56,
+    "clauses": 399,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 0,
+    "b": 6
+  },
+  {
+    "name": "cover16-d8-a000-b007",
+    "variables": 56,
+    "clauses": 397,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 0,
+    "b": 7
+  },
+  {
+    "name": "cover16-d8-a000-b008",
+    "variables": 56,
+    "clauses": 425,
+    "blocked_assignments": 32,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 0,
+    "b": 8
+  },
+  {
+    "name": "cover16-d8-a001-b000",
+    "variables": 56,
+    "clauses": 406,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 1,
+    "b": 0
+  },
+  {
+    "name": "cover16-d8-a001-b001",
+    "variables": 56,
+    "clauses": 414,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 1,
+    "b": 1
+  },
+  {
+    "name": "cover16-d8-a001-b002",
+    "variables": 56,
+    "clauses": 406,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 1,
+    "b": 2
+  },
+  {
+    "name": "cover16-d8-a001-b003",
+    "variables": 56,
+    "clauses": 414,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 1,
+    "b": 3
+  },
+  {
+    "name": "cover16-d8-a001-b004",
+    "variables": 56,
+    "clauses": 406,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 1,
+    "b": 4
+  },
+  {
+    "name": "cover16-d8-a001-b005",
+    "variables": 56,
+    "clauses": 422,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 1,
+    "b": 5
+  },
+  {
+    "name": "cover16-d8-a001-b006",
+    "variables": 56,
+    "clauses": 406,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 1,
+    "b": 6
+  },
+  {
+    "name": "cover16-d8-a001-b007",
+    "variables": 56,
+    "clauses": 406,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 1,
+    "b": 7
+  },
+  {
+    "name": "cover16-d8-a001-b008",
+    "variables": 56,
+    "clauses": 406,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 1,
+    "b": 8
+  },
+  {
+    "name": "cover16-d8-a002-b000",
+    "variables": 56,
+    "clauses": 416,
+    "blocked_assignments": 32,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 2,
+    "b": 0
+  },
+  {
+    "name": "cover16-d8-a002-b001",
+    "variables": 56,
+    "clauses": 396,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 2,
+    "b": 1
+  },
+  {
+    "name": "cover16-d8-a002-b002",
+    "variables": 56,
+    "clauses": 384,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 2,
+    "b": 2
+  },
+  {
+    "name": "cover16-d8-a002-b003",
+    "variables": 56,
+    "clauses": 400,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 2,
+    "b": 3
+  },
+  {
+    "name": "cover16-d8-a002-b004",
+    "variables": 56,
+    "clauses": 388,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 2,
+    "b": 4
+  },
+  {
+    "name": "cover16-d8-a002-b005",
+    "variables": 56,
+    "clauses": 412,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 2,
+    "b": 5
+  },
+  {
+    "name": "cover16-d8-a002-b006",
+    "variables": 56,
+    "clauses": 392,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 2,
+    "b": 6
+  },
+  {
+    "name": "cover16-d8-a002-b007",
+    "variables": 56,
+    "clauses": 388,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 2,
+    "b": 7
+  },
+  {
+    "name": "cover16-d8-a002-b008",
+    "variables": 56,
+    "clauses": 380,
+    "blocked_assignments": 0,
+    "suite": "coverage16",
+    "degree": 8,
+    "a": 2,
+    "b": 8
+  }
+]
